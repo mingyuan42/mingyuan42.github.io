@@ -5,8 +5,8 @@
     <link>https://read-and-build-vkkc4zaaicr.qoder.website</link>
     <atom:link href="https://read-and-build-vkkc4zaaicr.qoder.website/rss.xml" rel="self" type="application/rss+xml"/>
     <language>zh-CN</language>
-    <description>Christopher 的个人博客与作品集：塔勒布课程创作手记、投资笔记与十年践行记录。两门已上线的课程站点，一个用 EmDash CMS 驱动的静态博客。</description>
-    <lastBuildDate>Sat, 14 Nov 2026 09:44:11 GMT</lastBuildDate>
+    <description>Christopher 的个人博客与作品集：塔勒布与交易课程创作手记、投资笔记与十年践行记录。三门已上线的课程站点，一个用 EmDash CMS 驱动的静态博客。</description>
+    <lastBuildDate>Sat, 14 Nov 2026 14:09:37 GMT</lastBuildDate>
     <item>
       <title>这个博客是怎么搭起来的：Astro + EmDash</title>
       <link>https://read-and-build-vkkc4zaaicr.qoder.website/blog/building-this-site-with-emdash.html</link>
