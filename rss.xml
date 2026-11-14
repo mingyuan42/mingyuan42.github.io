@@ -5,8 +5,29 @@
     <link>https://read-and-build-vkkc4zaaicr.qoder.website</link>
     <atom:link href="https://read-and-build-vkkc4zaaicr.qoder.website/rss.xml" rel="self" type="application/rss+xml"/>
     <language>zh-CN</language>
-    <description>Christopher 的个人博客与作品集：塔勒布与交易课程创作手记、投资笔记与十年践行记录。三门已上线的课程站点，一个用 EmDash CMS 驱动的静态博客。</description>
-    <lastBuildDate>Sat, 14 Nov 2026 14:09:37 GMT</lastBuildDate>
+    <description>Christopher 的个人博客与作品集：塔勒布与交易课程创作手记、豆豆三部曲读书笔记、投资笔记与十年践行记录。三门已上线的课程站点，一个用 EmDash CMS 驱动的静态博客。</description>
+    <lastBuildDate>Sat, 14 Nov 2026 15:17:27 GMT</lastBuildDate>
+    <item>
+      <title>他算尽了所有变量，唯独没算良心能承受多少</title>
+      <link>https://read-and-build-vkkc4zaaicr.qoder.website/blog/betrayal-conscience-load.html</link>
+      <guid isPermaLink="true">https://read-and-build-vkkc4zaaicr.qoder.website/blog/betrayal-conscience-load.html</guid>
+      <pubDate>Sat, 14 Nov 2026 10:00:00 GMT</pubDate>
+      <description>豆豆三部曲的第一部，常被当成商战小说读完就放下。把书里的账算细一点，它其实是一份极冷静的失败复盘：一个算尽规则、人性和风控的操盘手，输给了一个没被纳入模型的变量——良心能承受多少负荷。</description>
+    </item>
+    <item>
+      <title>他没给那个村子一分钱，却让全村翻了身</title>
+      <link>https://read-and-build-vkkc4zaaicr.qoder.website/blog/distant-savior-zero-money.html</link>
+      <guid isPermaLink="true">https://read-and-build-vkkc4zaaicr.qoder.website/blog/distant-savior-zero-money.html</guid>
+      <pubDate>Sat, 14 Nov 2026 09:00:00 GMT</pubDate>
+      <description>《天道》原著。整个王庙村的故事里，丁元英一共掏了多少钱？答案是零。他给的不是钱，是规则、市场和一根鞭子——而他自己，还得爬一趟五台山去讨一个许可。</description>
+    </item>
+    <item>
+      <title>他退回50万红利，只要了四个字，最后死在莫斯科</title>
+      <link>https://read-and-build-vkkc4zaaicr.qoder.website/blog/jian-lu-bu-zou.html</link>
+      <guid isPermaLink="true">https://read-and-build-vkkc4zaaicr.qoder.website/blog/jian-lu-bu-zou.html</guid>
+      <pubDate>Sat, 14 Nov 2026 08:00:00 GMT</pubDate>
+      <description>罗家明死前，手里已经握着正确答案：见路不走。他还是死了。三部曲的最后一部讲的不是怎么找路，而是抄一条现成的路时，你同时买到了什么——责任豁免。</description>
+    </item>
     <item>
       <title>这个博客是怎么搭起来的：Astro + EmDash</title>
       <link>https://read-and-build-vkkc4zaaicr.qoder.website/blog/building-this-site-with-emdash.html</link>
