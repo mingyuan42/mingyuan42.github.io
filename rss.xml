@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Christopher · 博客与作品集</title>
+    <link>https://read-and-build-vkkc4zaaicr.qoder.website</link>
+    <atom:link href="https://read-and-build-vkkc4zaaicr.qoder.website/rss.xml" rel="self" type="application/rss+xml"/>
+    <language>zh-CN</language>
+    <description>Christopher 的个人博客与作品集：塔勒布课程创作手记、投资笔记与十年践行记录。两门已上线的课程站点，一个用 EmDash CMS 驱动的静态博客。</description>
+    <lastBuildDate>Sat, 14 Nov 2026 09:44:11 GMT</lastBuildDate>
+    <item>
+      <title>这个博客是怎么搭起来的：Astro + EmDash</title>
+      <link>https://read-and-build-vkkc4zaaicr.qoder.website/blog/building-this-site-with-emdash.html</link>
+      <guid isPermaLink="true">https://read-and-build-vkkc4zaaicr.qoder.website/blog/building-this-site-with-emdash.html</guid>
+      <pubDate>Thu, 12 Nov 2026 09:30:00 GMT</pubDate>
+      <description>用 EmDash CMS 管理内容，用 Astro 构建静态页面，发布到 Qoder Sites。后台在本地跑，前台是纯静态——一套既好写又省心的个人站方案。</description>
+    </item>
+    <item>
+      <title>人生十年：把日子过成一个项目</title>
+      <link>https://read-and-build-vkkc4zaaicr.qoder.website/blog/ten-year-practice.html</link>
+      <guid isPermaLink="true">https://read-and-build-vkkc4zaaicr.qoder.website/blog/ten-year-practice.html</guid>
+      <pubDate>Wed, 04 Nov 2026 20:10:00 GMT</pubDate>
+      <description>健康、语言、投资、AI——四个领域，一套数据，十年刻度。我为什么给自己建了一个工作台，以及「践行」和「计划」到底差在哪里。</description>
+    </item>
+    <item>
+      <title>杠铃：一头极稳，一头极冒险</title>
+      <link>https://read-and-build-vkkc4zaaicr.qoder.website/blog/barbell-strategy.html</link>
+      <guid isPermaLink="true">https://read-and-build-vkkc4zaaicr.qoder.website/blog/barbell-strategy.html</guid>
+      <pubDate>Tue, 27 Oct 2026 14:00:00 GMT</pubDate>
+      <description>泰勒斯用一点定金租下所有榨油机，对了大赚、错了小亏。杠铃策略不是 50 对 50，而是 90 对 10：大头极稳，小头极敢，中间地带最要小心。</description>
+    </item>
+    <item>
+      <title>火鸡的一千零一天</title>
+      <link>https://read-and-build-vkkc4zaaicr.qoder.website/blog/turkey-thousand-and-one-days.html</link>
+      <guid isPermaLink="true">https://read-and-build-vkkc4zaaicr.qoder.website/blog/turkey-thousand-and-one-days.html</guid>
+      <pubDate>Mon, 19 Oct 2026 08:45:00 GMT</pubDate>
+      <description>火鸡记录了 1000 天「人类爱我」的证据，第 1001 天是感恩节。过去一直这样，不等于以后也会这样——这是黑天鹅最温柔也最锋利的一课。</description>
+    </item>
+    <item>
+      <title>《动态对冲》：一门「制造保险」的手艺</title>
+      <link>https://read-and-build-vkkc4zaaicr.qoder.website/blog/dynamic-hedging-as-insurance.html</link>
+      <guid isPermaLink="true">https://read-and-build-vkkc4zaaicr.qoder.website/blog/dynamic-hedging-as-insurance.html</guid>
+      <pubDate>Sun, 11 Oct 2026 16:20:00 GMT</pubDate>
+      <description>460 页的交易员手册，讲的其实是一门制造保险的手艺：期权是保险单，希腊字母是仪表盘，动态对冲是每天调整头寸、让自己不被波动咬伤。</description>
+    </item>
+    <item>
+      <title>把塔勒布五部曲，讲成孩子的 12 堂课</title>
+      <link>https://read-and-build-vkkc4zaaicr.qoder.website/blog/why-taleb-for-kids.html</link>
+      <guid isPermaLink="true">https://read-and-build-vkkc4zaaicr.qoder.website/blog/why-taleb-for-kids.html</guid>
+      <pubDate>Sat, 03 Oct 2026 10:00:00 GMT</pubDate>
+      <description>五本厚书，其实只回答一个问题：世界很爱突然变脸，我们该怎么办？我把它们拆成 12 节课、32 张卡片和 21 天复习表，讲讲这门课是怎么设计出来的。</description>
+    </item>
+  </channel>
+</rss>
