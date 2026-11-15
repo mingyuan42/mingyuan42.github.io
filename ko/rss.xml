@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Christopher · 博客与作品集</title>
+    <title>Christopher · 블로그와 포트폴리오</title>
     <link>https://chenmingyuan.site/ko/index.html</link>
     <atom:link href="https://chenmingyuan.site/ko/rss.xml" rel="self" type="application/rss+xml"/>
     <language>ko-KR</language>
-    <description>Christopher 的个人博客与作品集：塔勒布与交易课程创作手记、《韭菜的自我修养》与《富爸爸穷爸爸》小学生双语课、《海龟交易法则》中英双语通识课、埃尔德《以交易为生》与《卖出的艺术》小学生课、豆豆三部曲读书笔记、投资笔记与十年践行记录。八门课程站点，一个用 EmDash CMS 驱动的静态博客。</description>
-    <lastBuildDate>Sun, 15 Nov 2026 03:50:02 GMT</lastBuildDate>
+    <description>Christopher의 개인 블로그와 작품집: 탈레브와 트레이딩 강의 제작 노트, 《韭菜的自我修养》와 《富爸爸穷爸爸》 초등학생 이중언어 강의, 《海龟交易法则》 중영 이중언어 교양 강의, 엘더 《Trading for a Living》+《The Art of Selling》 통합 초등학생 강의, 더우더우 3부작 독서 노트, 투자 노트와 10년 실천기록한다.일곱 개 강의 사이트와 EmDash CMS로 구동되는 정적 블로그.</description>
+    <lastBuildDate>Sun, 15 Nov 2026 05:20:04 GMT</lastBuildDate>
     <item>
       <title>他算尽了所有变量，唯独没算良心能承受多少</title>
       <link>https://chenmingyuan.site/ko/blog/betrayal-conscience-load.html</link>
@@ -22,11 +22,11 @@
       <description>《天道》原著。整个王庙村的故事里，丁元英一共掏了多少钱？答案是零。他给的不是钱，是规则、市场和一根鞭子——而他自己，还得爬一趟五台山去讨一个许可。</description>
     </item>
     <item>
-      <title>他退回50万红利，只要了四个字，最后死在莫斯科</title>
+      <title>그는 50만 배당금을 돌려주고 네 글자만 받은 뒤, 끝내 莫斯科에서 죽었습니다</title>
       <link>https://chenmingyuan.site/ko/blog/jian-lu-bu-zou.html</link>
       <guid isPermaLink="true">https://chenmingyuan.site/ko/blog/jian-lu-bu-zou.html</guid>
       <pubDate>Sat, 14 Nov 2026 08:00:00 GMT</pubDate>
-      <description>罗家明死前，手里已经握着正确答案：见路不走。他还是死了。三部曲的最后一部讲的不是怎么找路，而是抄一条现成的路时，你同时买到了什么——责任豁免。</description>
+      <description>罗家明은 죽기 전 이미 정답을 쥐고 있었습니다. 见路不走. 그런데도 그는 죽었습니다. 3부작의 마지막 권이 말하는 건 길을 찾는 법이 아니라, 이미 닦인 길을 그대로 베낄 때 함께 사들이게 되는 것——책임 면제입니다.</description>
     </item>
     <item>
       <title>这个博客是怎么搭起来的：Astro + EmDash</title>
@@ -43,7 +43,7 @@
       <description>健康、语言、投资、AI——四个领域，一套数据，十年刻度。我为什么给自己建了一个工作台，以及「践行」和「计划」到底差在哪里。</description>
     </item>
     <item>
-      <title>杠铃：一头极稳，一头极冒险</title>
+      <title>바벨: 한쪽은 극도로 안전, 다른 한쪽은 극도로 모험</title>
       <link>https://chenmingyuan.site/ko/blog/barbell-strategy.html</link>
       <guid isPermaLink="true">https://chenmingyuan.site/ko/blog/barbell-strategy.html</guid>
       <pubDate>Tue, 27 Oct 2026 14:00:00 GMT</pubDate>
@@ -54,14 +54,14 @@
       <link>https://chenmingyuan.site/ko/blog/turkey-thousand-and-one-days.html</link>
       <guid isPermaLink="true">https://chenmingyuan.site/ko/blog/turkey-thousand-and-one-days.html</guid>
       <pubDate>Mon, 19 Oct 2026 08:45:00 GMT</pubDate>
-      <description>火鸡记录了 1000 天「人类爱我」的证据，第 1001 天是感恩节。过去一直这样，不等于以后也会这样——这是黑天鹅最温柔也最锋利的一课。</description>
+      <description>칠면조는 1000일 동안 “인간은 나를 사랑한다”는 증거를 기록했고, 1001일째는 추수감사절이었습니다. 지금까지 늘 그랬다고 해서 앞으로도 그렇다는 건 아닙니다——이것이 黑天鹅가 주는 가장 다정하면서도 가장 날카로운 수업입니다.</description>
     </item>
     <item>
       <title>《动态对冲》：一门「制造保险」的手艺</title>
       <link>https://chenmingyuan.site/ko/blog/dynamic-hedging-as-insurance.html</link>
       <guid isPermaLink="true">https://chenmingyuan.site/ko/blog/dynamic-hedging-as-insurance.html</guid>
       <pubDate>Sun, 11 Oct 2026 16:20:00 GMT</pubDate>
-      <description>460 页的交易员手册，讲的其实是一门制造保险的手艺：期权是保险单，希腊字母是仪表盘，动态对冲是每天调整头寸、让自己不被波动咬伤。</description>
+      <description>460쪽짜리 트레이더 핸드북이 사실 말하는 것은 보험을 만드는 기술입니다. 옵션은 보험 증권, 그리스 문자들은 계기판, 동적 헤징은 매일 포지션을 조정해 변동성에 물리지 않게 하는 일입니다.</description>
     </item>
     <item>
       <title>把塔勒布五部曲，讲成孩子的 12 堂课</title>

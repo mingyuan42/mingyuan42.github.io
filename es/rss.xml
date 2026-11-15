@@ -1,74 +1,74 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Christopher · 博客与作品集</title>
+    <title>Christopher · Blog y portafolio</title>
     <link>https://chenmingyuan.site/es/index.html</link>
     <atom:link href="https://chenmingyuan.site/es/rss.xml" rel="self" type="application/rss+xml"/>
     <language>es-ES</language>
-    <description>Christopher 的个人博客与作品集：塔勒布与交易课程创作手记、《韭菜的自我修养》与《富爸爸穷爸爸》小学生双语课、《海龟交易法则》中英双语通识课、埃尔德《以交易为生》与《卖出的艺术》小学生课、豆豆三部曲读书笔记、投资笔记与十年践行记录。八门课程站点，一个用 EmDash CMS 驱动的静态博客。</description>
-    <lastBuildDate>Sun, 15 Nov 2026 03:50:01 GMT</lastBuildDate>
+    <description>Blog personal y portafolio de Christopher: notas de creación de los cursos de Taleb y trading, cursos bilingües para niños sobre Leeks&apos; Self-Cultivation y Rich Dad Poor Dad, curso chino-inglés sobre The Turtle Trading Rules, curso fusionado para niños Trading for a Living + The Art of Selling de Elder, notas de lectura de la trilogía Doudou, notas de inversión y una práctica de diez añosRegistrar. Siete sitios de cursos y un blog estático impulsado por EmDash CMS.</description>
+    <lastBuildDate>Sun, 15 Nov 2026 05:20:04 GMT</lastBuildDate>
     <item>
-      <title>他算尽了所有变量，唯独没算良心能承受多少</title>
+      <title>Calculó todas las variables menos una: cuánto aguanta la conciencia</title>
       <link>https://chenmingyuan.site/es/blog/betrayal-conscience-load.html</link>
       <guid isPermaLink="true">https://chenmingyuan.site/es/blog/betrayal-conscience-load.html</guid>
       <pubDate>Sat, 14 Nov 2026 10:00:00 GMT</pubDate>
-      <description>豆豆三部曲的第一部，常被当成商战小说读完就放下。把书里的账算细一点，它其实是一份极冷静的失败复盘：一个算尽规则、人性和风控的操盘手，输给了一个没被纳入模型的变量——良心能承受多少负荷。</description>
+      <description>Primera entrega de la trilogía de Dou Dou, a menudo leída como novela de negocios y dejada ahí. Si haces las cuentas con detalle, en realidad es un análisis de fracaso de una frialdad extrema: un operador que lo tenía todo calculado, reglas, naturaleza humana y control de riesgo, perdió ante una variable que no entraba en su modelo: cuánta carga puede soportar la conciencia.</description>
     </item>
     <item>
-      <title>他没给那个村子一分钱，却让全村翻了身</title>
+      <title>No le dio al pueblo ni un céntimo y, aun así, cambió la suerte de todos</title>
       <link>https://chenmingyuan.site/es/blog/distant-savior-zero-money.html</link>
       <guid isPermaLink="true">https://chenmingyuan.site/es/blog/distant-savior-zero-money.html</guid>
       <pubDate>Sat, 14 Nov 2026 09:00:00 GMT</pubDate>
-      <description>《天道》原著。整个王庙村的故事里，丁元英一共掏了多少钱？答案是零。他给的不是钱，是规则、市场和一根鞭子——而他自己，还得爬一趟五台山去讨一个许可。</description>
+      <description>Obra original de 《天道》. En toda la historia de 王庙村, ¿cuánto dinero puso 丁元英 en total? La respuesta es cero. Lo que dio no fue dinero, sino reglas, un mercado y un látigo; y él mismo tuvo que subir al 五台山 a pedir un permiso.</description>
     </item>
     <item>
-      <title>他退回50万红利，只要了四个字，最后死在莫斯科</title>
+      <title>Renunció a una prima de 500.000, pidió solo cuatro caracteres y acabó muriendo en Moscú</title>
       <link>https://chenmingyuan.site/es/blog/jian-lu-bu-zou.html</link>
       <guid isPermaLink="true">https://chenmingyuan.site/es/blog/jian-lu-bu-zou.html</guid>
       <pubDate>Sat, 14 Nov 2026 08:00:00 GMT</pubDate>
-      <description>罗家明死前，手里已经握着正确答案：见路不走。他还是死了。三部曲的最后一部讲的不是怎么找路，而是抄一条现成的路时，你同时买到了什么——责任豁免。</description>
+      <description>Antes de morir, Luo Jiaming ya tenía en la mano la respuesta correcta: «ver el camino y no seguirlo». Y aun así murió. La última parte de la trilogía no habla de cómo encontrar un camino, sino de qué compras al mismo tiempo cuando copias uno ya hecho: la exención de responsabilidad.</description>
     </item>
     <item>
-      <title>这个博客是怎么搭起来的：Astro + EmDash</title>
+      <title>Cómo se montó este blog: Astro + EmDash</title>
       <link>https://chenmingyuan.site/es/blog/building-this-site-with-emdash.html</link>
       <guid isPermaLink="true">https://chenmingyuan.site/es/blog/building-this-site-with-emdash.html</guid>
       <pubDate>Thu, 12 Nov 2026 09:30:00 GMT</pubDate>
-      <description>用 EmDash CMS 管理内容，用 Astro 构建静态页面，发布到 Qoder Sites。后台在本地跑，前台是纯静态——一套既好写又省心的个人站方案。</description>
+      <description>EmDash CMS gestiona el contenido, Astro construye las páginas estáticas y se publica en Qoder Sites. El backend corre en local y el frontend es puramente estático: una fórmula de sitio personal cómoda de escribir y sin preocupaciones.</description>
     </item>
     <item>
-      <title>人生十年：把日子过成一个项目</title>
+      <title>Diez años de vida: convertir los días en un proyecto</title>
       <link>https://chenmingyuan.site/es/blog/ten-year-practice.html</link>
       <guid isPermaLink="true">https://chenmingyuan.site/es/blog/ten-year-practice.html</guid>
       <pubDate>Wed, 04 Nov 2026 20:10:00 GMT</pubDate>
-      <description>健康、语言、投资、AI——四个领域，一套数据，十年刻度。我为什么给自己建了一个工作台，以及「践行」和「计划」到底差在哪里。</description>
+      <description>Salud, idiomas, inversión e IA: cuatro áreas, un solo juego de datos, una escala de diez años. Por qué me construí un espacio de trabajo y en qué se diferencian de verdad «practicar» y «planificar».</description>
     </item>
     <item>
-      <title>杠铃：一头极稳，一头极冒险</title>
+      <title>Estrategia de barra: un extremo ultraseguro y el otro ultrarriesgado</title>
       <link>https://chenmingyuan.site/es/blog/barbell-strategy.html</link>
       <guid isPermaLink="true">https://chenmingyuan.site/es/blog/barbell-strategy.html</guid>
       <pubDate>Tue, 27 Oct 2026 14:00:00 GMT</pubDate>
-      <description>泰勒斯用一点定金租下所有榨油机，对了大赚、错了小亏。杠铃策略不是 50 对 50，而是 90 对 10：大头极稳，小头极敢，中间地带最要小心。</description>
+      <description>泰勒斯 alquiló todas las prensas de aceite con una pequeña señal: si acertaba, ganaba mucho; si se equivocaba, perdía poco. La estrategia de la barra no es 50/50, sino 90/10: la parte grande, ultrasegura; la pequeña, muy atrevida; la franja intermedia, la que más cuidado exige.</description>
     </item>
     <item>
       <title>火鸡的一千零一天</title>
       <link>https://chenmingyuan.site/es/blog/turkey-thousand-and-one-days.html</link>
       <guid isPermaLink="true">https://chenmingyuan.site/es/blog/turkey-thousand-and-one-days.html</guid>
       <pubDate>Mon, 19 Oct 2026 08:45:00 GMT</pubDate>
-      <description>火鸡记录了 1000 天「人类爱我」的证据，第 1001 天是感恩节。过去一直这样，不等于以后也会这样——这是黑天鹅最温柔也最锋利的一课。</description>
+      <description>El pavo acumuló 1000 días de pruebas de que «los humanos me quieren»; el día 1001 fue Acción de Gracias. Que siempre haya sido así no significa que vaya a seguir siéndolo: es la lección más tierna y más afilada del cisne negro.</description>
     </item>
     <item>
-      <title>《动态对冲》：一门「制造保险」的手艺</title>
+      <title>«Cobertura dinámica»: el oficio de «fabricar seguros»</title>
       <link>https://chenmingyuan.site/es/blog/dynamic-hedging-as-insurance.html</link>
       <guid isPermaLink="true">https://chenmingyuan.site/es/blog/dynamic-hedging-as-insurance.html</guid>
       <pubDate>Sun, 11 Oct 2026 16:20:00 GMT</pubDate>
-      <description>460 页的交易员手册，讲的其实是一门制造保险的手艺：期权是保险单，希腊字母是仪表盘，动态对冲是每天调整头寸、让自己不被波动咬伤。</description>
+      <description>Un manual de 460 páginas para operadores que en realidad enseña un oficio: fabricar seguros. Las opciones son la póliza, las letras griegas el salpicadero y la cobertura dinámica, ajustar la posición cada día para que la volatilidad no te muerda.</description>
     </item>
     <item>
-      <title>把塔勒布五部曲，讲成孩子的 12 堂课</title>
+      <title>Convertir la pentalogía de 塔勒布 en 12 lecciones para niños</title>
       <link>https://chenmingyuan.site/es/blog/why-taleb-for-kids.html</link>
       <guid isPermaLink="true">https://chenmingyuan.site/es/blog/why-taleb-for-kids.html</guid>
       <pubDate>Sat, 03 Oct 2026 10:00:00 GMT</pubDate>
-      <description>五本厚书，其实只回答一个问题：世界很爱突然变脸，我们该怎么办？我把它们拆成 12 节课、32 张卡片和 21 天复习表，讲讲这门课是怎么设计出来的。</description>
+      <description>Cinco libros gruesos responden en realidad a una sola pregunta: al mundo le encanta cambiar de cara de golpe, ¿qué hacemos? Los desmenucé en 12 lecciones, 32 fichas y un calendario de repaso de 21 días, y aquí explico cómo se diseñó este curso.</description>
     </item>
   </channel>
 </rss>

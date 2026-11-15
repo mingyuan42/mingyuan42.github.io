@@ -1,74 +1,74 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Christopher · 博客与作品集</title>
+    <title>Christopher · Blog &amp; Portfolio</title>
     <link>https://chenmingyuan.site/en/index.html</link>
     <atom:link href="https://chenmingyuan.site/en/rss.xml" rel="self" type="application/rss+xml"/>
     <language>en-US</language>
-    <description>Christopher 的个人博客与作品集：塔勒布与交易课程创作手记、《韭菜的自我修养》与《富爸爸穷爸爸》小学生双语课、《海龟交易法则》中英双语通识课、埃尔德《以交易为生》与《卖出的艺术》小学生课、豆豆三部曲读书笔记、投资笔记与十年践行记录。八门课程站点，一个用 EmDash CMS 驱动的静态博客。</description>
-    <lastBuildDate>Sun, 15 Nov 2026 03:50:01 GMT</lastBuildDate>
+    <description>Christopher&apos;s personal blog and portfolio: notes on building the Taleb and trading courses, primary-school bilingual courses for Leeks&apos; Self-Cultivation and Rich Dad Poor Dad, a Chinese-English course on The Turtle Trading Rules, Elder&apos;s Trading for a Living + The Art of Selling merged kids&apos; course, reading notes on the Doudou trilogy, investing notes and a ten-year practiceRecord. Seven course sites and a static blog powered by EmDash CMS.</description>
+    <lastBuildDate>Sun, 15 Nov 2026 05:20:04 GMT</lastBuildDate>
     <item>
-      <title>他算尽了所有变量，唯独没算良心能承受多少</title>
+      <title>He calculated every variable — except how much his conscience could bear</title>
       <link>https://chenmingyuan.site/en/blog/betrayal-conscience-load.html</link>
       <guid isPermaLink="true">https://chenmingyuan.site/en/blog/betrayal-conscience-load.html</guid>
       <pubDate>Sat, 14 Nov 2026 10:00:00 GMT</pubDate>
-      <description>豆豆三部曲的第一部，常被当成商战小说读完就放下。把书里的账算细一点，它其实是一份极冷静的失败复盘：一个算尽规则、人性和风控的操盘手，输给了一个没被纳入模型的变量——良心能承受多少负荷。</description>
+      <description>The first book of Doudou&apos;s trilogy is often read as a business-war novel and then set aside. Do the math more carefully and it&apos;s actually a cold, clear post-mortem of a failure: an operator who accounted for every rule, every human motive, and every risk control lost to a variable he never put in the model—how much weight a conscience can bear.</description>
     </item>
     <item>
-      <title>他没给那个村子一分钱，却让全村翻了身</title>
+      <title>He Didn&apos;t Give That Village a Single Cent, Yet Turned the Whole Village Around</title>
       <link>https://chenmingyuan.site/en/blog/distant-savior-zero-money.html</link>
       <guid isPermaLink="true">https://chenmingyuan.site/en/blog/distant-savior-zero-money.html</guid>
       <pubDate>Sat, 14 Nov 2026 09:00:00 GMT</pubDate>
-      <description>《天道》原著。整个王庙村的故事里，丁元英一共掏了多少钱？答案是零。他给的不是钱，是规则、市场和一根鞭子——而他自己，还得爬一趟五台山去讨一个许可。</description>
+      <description>The original novel behind &apos;Tiandao&apos; (The Way of Heaven). Across the whole Wangmiao Village story, how much money did Ding Yuanying actually put in? Zero. What he gave wasn&apos;t money but rules, a market, and a whip — and he himself still had to climb Mount Wutai to ask for permission.</description>
     </item>
     <item>
-      <title>他退回50万红利，只要了四个字，最后死在莫斯科</title>
+      <title>He gave back a 500,000 bonus, asked only for four words, and finally died in Moscow</title>
       <link>https://chenmingyuan.site/en/blog/jian-lu-bu-zou.html</link>
       <guid isPermaLink="true">https://chenmingyuan.site/en/blog/jian-lu-bu-zou.html</guid>
       <pubDate>Sat, 14 Nov 2026 08:00:00 GMT</pubDate>
-      <description>罗家明死前，手里已经握着正确答案：见路不走。他还是死了。三部曲的最后一部讲的不是怎么找路，而是抄一条现成的路时，你同时买到了什么——责任豁免。</description>
+      <description>Before he died, Luo Jiaming already held the right answer: see the road but don&apos;t walk it. He died anyway. The last book of the trilogy isn&apos;t about how to find a path; it&apos;s about what else you buy when you copy a ready-made one—exemption from responsibility.</description>
     </item>
     <item>
-      <title>这个博客是怎么搭起来的：Astro + EmDash</title>
+      <title>How This Blog Was Built: Astro + EmDash</title>
       <link>https://chenmingyuan.site/en/blog/building-this-site-with-emdash.html</link>
       <guid isPermaLink="true">https://chenmingyuan.site/en/blog/building-this-site-with-emdash.html</guid>
       <pubDate>Thu, 12 Nov 2026 09:30:00 GMT</pubDate>
-      <description>用 EmDash CMS 管理内容，用 Astro 构建静态页面，发布到 Qoder Sites。后台在本地跑，前台是纯静态——一套既好写又省心的个人站方案。</description>
+      <description>Manage content with EmDash CMS, build static pages with Astro, and publish to Qoder Sites. The admin runs locally, the front end is purely static—a personal-site setup that&apos;s both easy to write for and easy to live with.</description>
     </item>
     <item>
-      <title>人生十年：把日子过成一个项目</title>
+      <title>A Decade of Life: turn your days into a project</title>
       <link>https://chenmingyuan.site/en/blog/ten-year-practice.html</link>
       <guid isPermaLink="true">https://chenmingyuan.site/en/blog/ten-year-practice.html</guid>
       <pubDate>Wed, 04 Nov 2026 20:10:00 GMT</pubDate>
-      <description>健康、语言、投资、AI——四个领域，一套数据，十年刻度。我为什么给自己建了一个工作台，以及「践行」和「计划」到底差在哪里。</description>
+      <description>Health, language, investing, AI—four domains, one dataset, a ten-year scale. Why I built myself a workbench, and what really separates &quot;practice&quot; from &quot;planning.&quot;</description>
     </item>
     <item>
-      <title>杠铃：一头极稳，一头极冒险</title>
+      <title>The barbell: one end extremely safe, the other extremely risky</title>
       <link>https://chenmingyuan.site/en/blog/barbell-strategy.html</link>
       <guid isPermaLink="true">https://chenmingyuan.site/en/blog/barbell-strategy.html</guid>
       <pubDate>Tue, 27 Oct 2026 14:00:00 GMT</pubDate>
-      <description>泰勒斯用一点定金租下所有榨油机，对了大赚、错了小亏。杠铃策略不是 50 对 50，而是 90 对 10：大头极稳，小头极敢，中间地带最要小心。</description>
+      <description>Thales put down a small deposit and rented every olive press — a big win if right, a small loss if wrong. The barbell strategy isn&apos;t 50/50 but 90/10: the large portion extremely safe, the small portion extremely bold, the middle ground the most dangerous.</description>
     </item>
     <item>
-      <title>火鸡的一千零一天</title>
+      <title>The turkey&apos;s one thousand and first day</title>
       <link>https://chenmingyuan.site/en/blog/turkey-thousand-and-one-days.html</link>
       <guid isPermaLink="true">https://chenmingyuan.site/en/blog/turkey-thousand-and-one-days.html</guid>
       <pubDate>Mon, 19 Oct 2026 08:45:00 GMT</pubDate>
-      <description>火鸡记录了 1000 天「人类爱我」的证据，第 1001 天是感恩节。过去一直这样，不等于以后也会这样——这是黑天鹅最温柔也最锋利的一课。</description>
+      <description>The turkey logged 1,000 days of evidence that &apos;humans love me&apos;; day 1,001 was Thanksgiving. That things have always been this way doesn&apos;t mean they always will be—this is the Black Swan&apos;s gentlest and sharpest lesson.</description>
     </item>
     <item>
-      <title>《动态对冲》：一门「制造保险」的手艺</title>
+      <title>Dynamic Hedging: A Craft for &quot;Manufacturing Insurance&quot;</title>
       <link>https://chenmingyuan.site/en/blog/dynamic-hedging-as-insurance.html</link>
       <guid isPermaLink="true">https://chenmingyuan.site/en/blog/dynamic-hedging-as-insurance.html</guid>
       <pubDate>Sun, 11 Oct 2026 16:20:00 GMT</pubDate>
-      <description>460 页的交易员手册，讲的其实是一门制造保险的手艺：期权是保险单，希腊字母是仪表盘，动态对冲是每天调整头寸、让自己不被波动咬伤。</description>
+      <description>A 460-page trader&apos;s manual that is really about the craft of manufacturing insurance: options are the policies, the Greeks are the dashboard, and dynamic hedging is adjusting your position day by day so volatility doesn&apos;t bite you.</description>
     </item>
     <item>
-      <title>把塔勒布五部曲，讲成孩子的 12 堂课</title>
+      <title>Turning Taleb&apos;s Incerto series into 12 lessons for children</title>
       <link>https://chenmingyuan.site/en/blog/why-taleb-for-kids.html</link>
       <guid isPermaLink="true">https://chenmingyuan.site/en/blog/why-taleb-for-kids.html</guid>
       <pubDate>Sat, 03 Oct 2026 10:00:00 GMT</pubDate>
-      <description>五本厚书，其实只回答一个问题：世界很爱突然变脸，我们该怎么办？我把它们拆成 12 节课、32 张卡片和 21 天复习表，讲讲这门课是怎么设计出来的。</description>
+      <description>Five thick books really answer just one question: the world loves to change its face without warning — what should we do? I broke them into 12 lessons, 32 cards, and a 21-day review schedule, and here I&apos;ll explain how the course was designed.</description>
     </item>
   </channel>
 </rss>
