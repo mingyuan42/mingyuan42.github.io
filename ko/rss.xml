@@ -5,70 +5,70 @@
     <link>https://chenmingyuan.site/ko/index.html</link>
     <atom:link href="https://chenmingyuan.site/ko/rss.xml" rel="self" type="application/rss+xml"/>
     <language>ko-KR</language>
-    <description>Christopher의 개인 블로그와 작품집: 탈레브와 트레이딩 강의 제작 노트, 《韭菜的自我修养》와 《富爸爸穷爸爸》 초등학생 이중언어 강의, 《海龟交易法则》 중영 이중언어 교양 강의, 엘더 《Trading for a Living》+《The Art of Selling》 통합 초등학생 강의, 더우더우 3부작 독서 노트, 투자 노트와 10년 실천기록한다.일곱 개 강의 사이트와 EmDash CMS로 구동되는 정적 블로그.</description>
-    <lastBuildDate>Sun, 15 Nov 2026 05:20:04 GMT</lastBuildDate>
+    <description>Christopher의 개인 블로그와 포트폴리오: 탈레브·트레이딩 강의 제작기, 『부추의 자기 수양』과 『부자 아빠 가난한 아빠』 초등 이중언어 강의, 『터틀 트레이딩 법칙』 한·영 이중언어 교양 강의, 엘더 『Trading for a Living』+『The Art of Selling』 통합 초등 강의, 더우더우 3부작 독서 노트, 투자 노트와 10년 실천기록.일곱 개의 강좌 사이트와 EmDash CMS로 구동되는 정적 블로그입니다.</description>
+    <lastBuildDate>Sun, 15 Nov 2026 07:13:45 GMT</lastBuildDate>
     <item>
-      <title>他算尽了所有变量，唯独没算良心能承受多少</title>
+      <title>그는 모든 변수를 계산했지만, 단 하나 양심이 얼마를 견딜 수 있는지만 계산하지 못했습니다</title>
       <link>https://chenmingyuan.site/ko/blog/betrayal-conscience-load.html</link>
       <guid isPermaLink="true">https://chenmingyuan.site/ko/blog/betrayal-conscience-load.html</guid>
       <pubDate>Sat, 14 Nov 2026 10:00:00 GMT</pubDate>
-      <description>豆豆三部曲的第一部，常被当成商战小说读完就放下。把书里的账算细一点，它其实是一份极冷静的失败复盘：一个算尽规则、人性和风控的操盘手，输给了一个没被纳入模型的变量——良心能承受多少负荷。</description>
+      <description>더우더우 트릴로지의 첫 작품은 흔히 상업 전쟁 소설로 읽고 덮어둡니다. 책의 계산을 세밀하게 들여다보면 이것은 지극히 냉정한 실패 복기입니다: 규칙과 인간성과 리스크 관리를 전부 꿰어 만든 플레이어가, 모델에 담기지 않은 한 변수 — 양심이 감당할 수 있는 하중 — 에 패배한 이야기입니다.</description>
     </item>
     <item>
-      <title>他没给那个村子一分钱，却让全村翻了身</title>
+      <title>그는 그 마을에 단 한 푼도 주지 않았지만, 마을 전체를 일으켜 세웠습니다</title>
       <link>https://chenmingyuan.site/ko/blog/distant-savior-zero-money.html</link>
       <guid isPermaLink="true">https://chenmingyuan.site/ko/blog/distant-savior-zero-money.html</guid>
       <pubDate>Sat, 14 Nov 2026 09:00:00 GMT</pubDate>
-      <description>《天道》原著。整个王庙村的故事里，丁元英一共掏了多少钱？答案是零。他给的不是钱，是规则、市场和一根鞭子——而他自己，还得爬一趟五台山去讨一个许可。</description>
+      <description>『천도』의 원작입니다. 왕먀오촌 이야기 전체에서 딩위안잉은 도대체 얼마를 꺼냈을까요? 답은 0원입니다. 그가 준 것은 돈이 아니라 규칙, 시장, 그리고 채찍 한 대였습니다 —— 그리고 그 자신은 허가를 얻으러 우타이산까지 올라가야 했습니다.</description>
     </item>
     <item>
-      <title>그는 50만 배당금을 돌려주고 네 글자만 받은 뒤, 끝내 莫斯科에서 죽었습니다</title>
+      <title>그는 50만 배당금을 돌려주고 네 글자만 받은 뒤, 끝내 모스크바에서 죽었습니다</title>
       <link>https://chenmingyuan.site/ko/blog/jian-lu-bu-zou.html</link>
       <guid isPermaLink="true">https://chenmingyuan.site/ko/blog/jian-lu-bu-zou.html</guid>
       <pubDate>Sat, 14 Nov 2026 08:00:00 GMT</pubDate>
-      <description>罗家明은 죽기 전 이미 정답을 쥐고 있었습니다. 见路不走. 그런데도 그는 죽었습니다. 3부작의 마지막 권이 말하는 건 길을 찾는 법이 아니라, 이미 닦인 길을 그대로 베낄 때 함께 사들이게 되는 것——책임 면제입니다.</description>
+      <description>뤄자밍은 죽기 전 이미 정답을 쥐고 있었습니다. “견로불주”. 그런데도 그는 죽었습니다. 3부작의 마지막 권이 말하는 건 길을 찾는 법이 아니라, 이미 닦인 길을 그대로 베낄 때 함께 사들이게 되는 것——책임 면제입니다.</description>
     </item>
     <item>
-      <title>这个博客是怎么搭起来的：Astro + EmDash</title>
+      <title>이 블로그는 어떻게 세워졌나: Astro + EmDash</title>
       <link>https://chenmingyuan.site/ko/blog/building-this-site-with-emdash.html</link>
       <guid isPermaLink="true">https://chenmingyuan.site/ko/blog/building-this-site-with-emdash.html</guid>
       <pubDate>Thu, 12 Nov 2026 09:30:00 GMT</pubDate>
-      <description>用 EmDash CMS 管理内容，用 Astro 构建静态页面，发布到 Qoder Sites。后台在本地跑，前台是纯静态——一套既好写又省心的个人站方案。</description>
+      <description>콘텐츠는 EmDash CMS로 관리하고, Astro로 정적 페이지를 빌드해 Qoder Sites로 발행합니다. 관리 화면은 로컬에서, 프론트엔드는 순수 정적으로 — 쓰기 편하면서도 손 덜 가는 개인 사이트 구성입니다.</description>
     </item>
     <item>
-      <title>人生十年：把日子过成一个项目</title>
+      <title>인생 10년: 삶을 하나의 프로젝트로 만들기</title>
       <link>https://chenmingyuan.site/ko/blog/ten-year-practice.html</link>
       <guid isPermaLink="true">https://chenmingyuan.site/ko/blog/ten-year-practice.html</guid>
       <pubDate>Wed, 04 Nov 2026 20:10:00 GMT</pubDate>
-      <description>健康、语言、投资、AI——四个领域，一套数据，十年刻度。我为什么给自己建了一个工作台，以及「践行」和「计划」到底差在哪里。</description>
+      <description>건강, 언어, 투자, AI — 네 분야, 한 벌의 데이터, 10년의 눈금. 제가 왜 스스로 작업대를 하나 만들었는지, 그리고 “실천”과 “계획”이 어디서 갈리는지에 대한 이야기입니다.</description>
     </item>
     <item>
       <title>바벨: 한쪽은 극도로 안전, 다른 한쪽은 극도로 모험</title>
       <link>https://chenmingyuan.site/ko/blog/barbell-strategy.html</link>
       <guid isPermaLink="true">https://chenmingyuan.site/ko/blog/barbell-strategy.html</guid>
       <pubDate>Tue, 27 Oct 2026 14:00:00 GMT</pubDate>
-      <description>泰勒斯用一点定金租下所有榨油机，对了大赚、错了小亏。杠铃策略不是 50 对 50，而是 90 对 10：大头极稳，小头极敢，中间地带最要小心。</description>
+      <description>탈레스는 약간의 계약금으로 기름 짜는 기계를 모두 빌려, 맞으면 크게 벌고 틀리면 조금 잃었습니다. 바벨 전략은 50 대 50이 아니라 90 대 10입니다: 큰 몫은 극히 안정적으로, 작은 몫은 극히 대담하게, 중간 지대가 가장 조심해야 합니다.</description>
     </item>
     <item>
-      <title>火鸡的一千零一天</title>
+      <title>칠면조의 1001일</title>
       <link>https://chenmingyuan.site/ko/blog/turkey-thousand-and-one-days.html</link>
       <guid isPermaLink="true">https://chenmingyuan.site/ko/blog/turkey-thousand-and-one-days.html</guid>
       <pubDate>Mon, 19 Oct 2026 08:45:00 GMT</pubDate>
-      <description>칠면조는 1000일 동안 “인간은 나를 사랑한다”는 증거를 기록했고, 1001일째는 추수감사절이었습니다. 지금까지 늘 그랬다고 해서 앞으로도 그렇다는 건 아닙니다——이것이 黑天鹅가 주는 가장 다정하면서도 가장 날카로운 수업입니다.</description>
+      <description>칠면조는 1000일 동안 “인간은 나를 사랑한다”는 증거를 기록했고, 1001일째는 추수감사절이었습니다. 지금까지 늘 그랬다고 해서 앞으로도 그렇다는 건 아닙니다——이것이 블랙 스완이 주는 가장 다정하면서도 가장 날카로운 수업입니다.</description>
     </item>
     <item>
-      <title>《动态对冲》：一门「制造保险」的手艺</title>
+      <title>『동적 헤징』: “보험을 만들어내는” 기술</title>
       <link>https://chenmingyuan.site/ko/blog/dynamic-hedging-as-insurance.html</link>
       <guid isPermaLink="true">https://chenmingyuan.site/ko/blog/dynamic-hedging-as-insurance.html</guid>
       <pubDate>Sun, 11 Oct 2026 16:20:00 GMT</pubDate>
       <description>460쪽짜리 트레이더 핸드북이 사실 말하는 것은 보험을 만드는 기술입니다. 옵션은 보험 증권, 그리스 문자들은 계기판, 동적 헤징은 매일 포지션을 조정해 변동성에 물리지 않게 하는 일입니다.</description>
     </item>
     <item>
-      <title>把塔勒布五部曲，讲成孩子的 12 堂课</title>
+      <title>탈레브(Taleb)의 5부작을 아이를 위한 12번의 수업으로 풀어냅니다</title>
       <link>https://chenmingyuan.site/ko/blog/why-taleb-for-kids.html</link>
       <guid isPermaLink="true">https://chenmingyuan.site/ko/blog/why-taleb-for-kids.html</guid>
       <pubDate>Sat, 03 Oct 2026 10:00:00 GMT</pubDate>
-      <description>五本厚书，其实只回答一个问题：世界很爱突然变脸，我们该怎么办？我把它们拆成 12 节课、32 张卡片和 21 天复习表，讲讲这门课是怎么设计出来的。</description>
+      <description>두꺼운 책 다섯 권은 사실 하나의 질문에 답할 뿐입니다: 세계는 느닷없이 돌변하기 좋아하는데, 우리는 어떻게 해야 할까요? 저는 이 책들을 12개 강의, 카드 32장, 21일 복습표로 쪼개어, 이 과정이 어떻게 설계되었는지 이야기하겠습니다.</description>
     </item>
   </channel>
 </rss>

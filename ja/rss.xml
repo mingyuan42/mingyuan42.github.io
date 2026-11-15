@@ -5,10 +5,10 @@
     <link>https://chenmingyuan.site/ja/index.html</link>
     <atom:link href="https://chenmingyuan.site/ja/rss.xml" rel="self" type="application/rss+xml"/>
     <language>ja-JP</language>
-    <description>Christopherの個人ブログと作品集：タレブとトレード講座の制作ノート、『韭菜的自我修养』と『富爸爸穷爸爸』の小学生向け双语講座、『海龟交易法则』の中英双语一般教養講座、エルダー『Trading for a Living』＋『The Art of Selling』統合小学生講座、豆豆三部作の読書ノート、投資ノートと10年の実践記録する。7つの講座サイトと、EmDash CMSで動く静的ブログ。</description>
-    <lastBuildDate>Sun, 15 Nov 2026 05:20:04 GMT</lastBuildDate>
+    <description>Christopher の個人ブログとポートフォリオ：タレブとトレード講座の創作ノート、『ニラの自己修養』と『金持ち父さん貧乏父さん』の小学生向けバイリンガル講座、『タートル流投資の魔術』の日英バイリンガル教養講座、エルダー『取引で生計を立てる』＋「売りの芸術」合併小学生講座、豆豆三部作の読書ノート、投資ノートと十年の実践記録。七つの講座サイトと、EmDash CMS で動く静的ブログです。</description>
+    <lastBuildDate>Sun, 15 Nov 2026 07:13:45 GMT</lastBuildDate>
     <item>
-      <title>他算尽了所有变量，唯独没算良心能承受多少</title>
+      <title>彼はすべての変数を計算し尽くしたのに、良心がどれだけ耐えられるかだけは計算しなかった</title>
       <link>https://chenmingyuan.site/ja/blog/betrayal-conscience-load.html</link>
       <guid isPermaLink="true">https://chenmingyuan.site/ja/blog/betrayal-conscience-load.html</guid>
       <pubDate>Sat, 14 Nov 2026 10:00:00 GMT</pubDate>
@@ -19,7 +19,7 @@
       <link>https://chenmingyuan.site/ja/blog/distant-savior-zero-money.html</link>
       <guid isPermaLink="true">https://chenmingyuan.site/ja/blog/distant-savior-zero-money.html</guid>
       <pubDate>Sat, 14 Nov 2026 09:00:00 GMT</pubDate>
-      <description>《天道》原著。整个王庙村的故事里，丁元英一共掏了多少钱？答案是零。他给的不是钱，是规则、市场和一根鞭子——而他自己，还得爬一趟五台山去讨一个许可。</description>
+      <description>『天道』の原作です。王廟村の話全体で、丁元英は結局いくら出したのか。答えはゼロ。彼が渡したのはお金ではなく、ルール、市場、そして一本の鞭でした——しかも本人が、五台山へ一度登って許しを請わねばならなかったのです。</description>
     </item>
     <item>
       <title>彼は50万の配当を返し、四字だけを求め、最後はモスクワで死んだ</title>
@@ -36,7 +36,7 @@
       <description>EmDash CMS で中身を管理し、Astro で静的ページを組み立て、Qoder Sites に公開します。管理画面はローカルで動き、公開側は完全な静的——書きやすく、手のかからない個人サイトの構成です。</description>
     </item>
     <item>
-      <title>人生十年：把日子过成一个项目</title>
+      <title>人生十年：日々を一つのプロジェクトにする</title>
       <link>https://chenmingyuan.site/ja/blog/ten-year-practice.html</link>
       <guid isPermaLink="true">https://chenmingyuan.site/ja/blog/ten-year-practice.html</guid>
       <pubDate>Wed, 04 Nov 2026 20:10:00 GMT</pubDate>
@@ -47,10 +47,10 @@
       <link>https://chenmingyuan.site/ja/blog/barbell-strategy.html</link>
       <guid isPermaLink="true">https://chenmingyuan.site/ja/blog/barbell-strategy.html</guid>
       <pubDate>Tue, 27 Oct 2026 14:00:00 GMT</pubDate>
-      <description>泰勒斯用一点定金租下所有榨油机，对了大赚、错了小亏。杠铃策略不是 50 对 50，而是 90 对 10：大头极稳，小头极敢，中间地带最要小心。</description>
+      <description>タレスは少額の手付金で搾油機をすべて借り切り、当たれば大きく儲け、外れても小さく損しました。バーベル戦略は50対50ではなく、90対10です。大部分は極めて堅実、小部分は極めて大胆、そして真ん中がいちばん要注意です。</description>
     </item>
     <item>
-      <title>七面鳥の一千一日</title>
+      <title>七面鳥の1001日目</title>
       <link>https://chenmingyuan.site/ja/blog/turkey-thousand-and-one-days.html</link>
       <guid isPermaLink="true">https://chenmingyuan.site/ja/blog/turkey-thousand-and-one-days.html</guid>
       <pubDate>Mon, 19 Oct 2026 08:45:00 GMT</pubDate>
@@ -64,11 +64,11 @@
       <description>460ページのトレーダー手帳がじつに説いているのは、保険をこしらえる職人技です。オプションは保険証券、ギリシャ文字は計器盤、ダイナミックヘッジは毎日ポジションを調整して、値動きに噛まれないようにすること。</description>
     </item>
     <item>
-      <title>把塔勒布五部曲，讲成孩子的 12 堂课</title>
+      <title>タレブ五部作を、子どものための12講に話す</title>
       <link>https://chenmingyuan.site/ja/blog/why-taleb-for-kids.html</link>
       <guid isPermaLink="true">https://chenmingyuan.site/ja/blog/why-taleb-for-kids.html</guid>
       <pubDate>Sat, 03 Oct 2026 10:00:00 GMT</pubDate>
-      <description>五本厚书，其实只回答一个问题：世界很爱突然变脸，我们该怎么办？我把它们拆成 12 节课、32 张卡片和 21 天复习表，讲讲这门课是怎么设计出来的。</description>
+      <description>分厚い五冊も、じつは一つの問いに答えているだけです。世界はよく突然豹変する、私たちはどうすればよいのか。私はそれらを12回の授業、32枚のカード、21日間の復習表に分け、この講がどう設計されたかを話します。</description>
     </item>
   </channel>
 </rss>

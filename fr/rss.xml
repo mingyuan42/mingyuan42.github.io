@@ -5,10 +5,10 @@
     <link>https://chenmingyuan.site/fr/index.html</link>
     <atom:link href="https://chenmingyuan.site/fr/rss.xml" rel="self" type="application/rss+xml"/>
     <language>fr-FR</language>
-    <description>Blog personnel et portfolio de Christopher : notes de création des cours Taleb et trading, cours bilingues pour enfants sur Leeks&apos; Self-Cultivation et Rich Dad Poor Dad, cours chinois-anglais sur The Turtle Trading Rules, cours fusionné pour enfants Trading for a Living + The Art of Selling d&apos;Elder, notes de lecture sur la trilogie Doudou, notes d&apos;investissement et une pratique sur dix ansConsigner. Sept sites de cours et un blog statique propulsé par EmDash CMS.</description>
-    <lastBuildDate>Sun, 15 Nov 2026 05:20:04 GMT</lastBuildDate>
+    <description>Le blog et le portfolio personnels de Christopher : notes de création des cours Taleb et trading, cours bilingues pour écoliers sur « L&apos;Autodiscipline du poireau » et « Père riche, père pauvre », cours bilingue de culture générale sur « Les Règles des tortues traders », cours combiné pour enfants sur « Vivre du trading » + « L&apos;Art de vendre » d&apos;Elder, notes de lecture de la trilogie de Doudou, notes d&apos;investissement et dix ans de pratiqueDes notes. Sept sites de cours, et un blog statique propulsé par EmDash CMS.</description>
+    <lastBuildDate>Sun, 15 Nov 2026 07:13:45 GMT</lastBuildDate>
     <item>
-      <title>他算尽了所有变量，唯独没算良心能承受多少</title>
+      <title>Il avait calculé toutes les variables, sauf la charge qu&apos;une conscience peut supporter</title>
       <link>https://chenmingyuan.site/fr/blog/betrayal-conscience-load.html</link>
       <guid isPermaLink="true">https://chenmingyuan.site/fr/blog/betrayal-conscience-load.html</guid>
       <pubDate>Sat, 14 Nov 2026 10:00:00 GMT</pubDate>
@@ -19,7 +19,7 @@
       <link>https://chenmingyuan.site/fr/blog/distant-savior-zero-money.html</link>
       <guid isPermaLink="true">https://chenmingyuan.site/fr/blog/distant-savior-zero-money.html</guid>
       <pubDate>Sat, 14 Nov 2026 09:00:00 GMT</pubDate>
-      <description>《天道》原著。整个王庙村的故事里，丁元英一共掏了多少钱？答案是零。他给的不是钱，是规则、市场和一根鞭子——而他自己，还得爬一趟五台山去讨一个许可。</description>
+      <description>Le roman à l&apos;origine de Tian Dao. Dans toute l&apos;histoire du village de Wangmiao, combien Ding Yuanying a-t-il déboursé ? Réponse : zéro. Ce qu&apos;il a donné n&apos;est pas de l&apos;argent, mais des règles, un marché et un fouet — et lui-même a encore dû gravir le mont Wutai pour demander une autorisation.</description>
     </item>
     <item>
       <title>Il a rendu une prime de 500 000, n&apos;a demandé que quatre mots et a fini par mourir à Moscou</title>
@@ -36,7 +36,7 @@
       <description>Gérer le contenu avec EmDash CMS, construire les pages statiques avec Astro, publier sur Qoder Sites. L&apos;administration tourne en local, le front-end est purement statique : une formule de site personnel aussi agréable à écrire qu&apos;à vivre.</description>
     </item>
     <item>
-      <title>人生十年：把日子过成一个项目</title>
+      <title>Décennie de vie : faire de ses jours un projet</title>
       <link>https://chenmingyuan.site/fr/blog/ten-year-practice.html</link>
       <guid isPermaLink="true">https://chenmingyuan.site/fr/blog/ten-year-practice.html</guid>
       <pubDate>Wed, 04 Nov 2026 20:10:00 GMT</pubDate>
@@ -47,7 +47,7 @@
       <link>https://chenmingyuan.site/fr/blog/barbell-strategy.html</link>
       <guid isPermaLink="true">https://chenmingyuan.site/fr/blog/barbell-strategy.html</guid>
       <pubDate>Tue, 27 Oct 2026 14:00:00 GMT</pubDate>
-      <description>泰勒斯用一点定金租下所有榨油机，对了大赚、错了小亏。杠铃策略不是 50 对 50，而是 90 对 10：大头极稳，小头极敢，中间地带最要小心。</description>
+      <description>Avec un petit acompte, Thalès loua tous les pressoirs : gros gain s&apos;il avait raison, petite perte s&apos;il avait tort. La stratégie de l&apos;haltère n&apos;est pas 50/50, mais 90/10 : le gros bout extrêmement sûr, le petit bout extrêmement audacieux, et la zone du milieu, celle dont il faut le plus se méfier.</description>
     </item>
     <item>
       <title>Les mille et un jours de la dinde</title>
@@ -64,11 +64,11 @@
       <description>Un manuel de trader de 460 pages qui parle en réalité d&apos;un artisanat : fabriquer de l&apos;assurance. Les options sont les polices, les Grecs sont le tableau de bord, et la couverture dynamique consiste à ajuster sa position chaque jour pour ne pas se faire mordre par la volatilité.</description>
     </item>
     <item>
-      <title>把塔勒布五部曲，讲成孩子的 12 堂课</title>
+      <title>Raconter le cycle en cinq volumes de Taleb en 12 leçons pour les enfants</title>
       <link>https://chenmingyuan.site/fr/blog/why-taleb-for-kids.html</link>
       <guid isPermaLink="true">https://chenmingyuan.site/fr/blog/why-taleb-for-kids.html</guid>
       <pubDate>Sat, 03 Oct 2026 10:00:00 GMT</pubDate>
-      <description>五本厚书，其实只回答一个问题：世界很爱突然变脸，我们该怎么办？我把它们拆成 12 节课、32 张卡片和 21 天复习表，讲讲这门课是怎么设计出来的。</description>
+      <description>Cinq gros livres ne répondent en réalité qu&apos;à une seule question : le monde aime changer de visage sans prévenir, que faire ? Je les ai découpés en 12 leçons, 32 cartes et un planning de révision sur 21 jours, et je raconte ici comment le cours a été conçu.</description>
     </item>
   </channel>
 </rss>

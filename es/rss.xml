@@ -5,21 +5,21 @@
     <link>https://chenmingyuan.site/es/index.html</link>
     <atom:link href="https://chenmingyuan.site/es/rss.xml" rel="self" type="application/rss+xml"/>
     <language>es-ES</language>
-    <description>Blog personal y portafolio de Christopher: notas de creación de los cursos de Taleb y trading, cursos bilingües para niños sobre Leeks&apos; Self-Cultivation y Rich Dad Poor Dad, curso chino-inglés sobre The Turtle Trading Rules, curso fusionado para niños Trading for a Living + The Art of Selling de Elder, notas de lectura de la trilogía Doudou, notas de inversión y una práctica de diez añosRegistrar. Siete sitios de cursos y un blog estático impulsado por EmDash CMS.</description>
-    <lastBuildDate>Sun, 15 Nov 2026 05:20:04 GMT</lastBuildDate>
+    <description>El blog y el portafolio personal de Christopher: notas de creación de los cursos de Taleb y trading, cursos bilingües para niños sobre «La autosuperación del puerro» y «Padre rico, padre pobre», un curso bilingüe de cultura general sobre «Las reglas de las Tortugas Trader», el curso combinado para niños de «Vivir del trading» + «El arte de vender» de Elder, notas de lectura de la trilogía de Doudou, notas de inversión y diez años de prácticaNotas. Siete sitios de cursos y un blog estático impulsado por EmDash CMS.</description>
+    <lastBuildDate>Sun, 15 Nov 2026 07:13:45 GMT</lastBuildDate>
     <item>
-      <title>Calculó todas las variables menos una: cuánto aguanta la conciencia</title>
+      <title>Calculó todas las variables menos una: cuánto puede soportar la conciencia</title>
       <link>https://chenmingyuan.site/es/blog/betrayal-conscience-load.html</link>
       <guid isPermaLink="true">https://chenmingyuan.site/es/blog/betrayal-conscience-load.html</guid>
       <pubDate>Sat, 14 Nov 2026 10:00:00 GMT</pubDate>
-      <description>Primera entrega de la trilogía de Dou Dou, a menudo leída como novela de negocios y dejada ahí. Si haces las cuentas con detalle, en realidad es un análisis de fracaso de una frialdad extrema: un operador que lo tenía todo calculado, reglas, naturaleza humana y control de riesgo, perdió ante una variable que no entraba en su modelo: cuánta carga puede soportar la conciencia.</description>
+      <description>La primera de la trilogía de Doudou suele leerse como una novela de guerra empresarial y se deja ahí. Pero si haces bien las cuentas, es en realidad una autopsia fría y lúcida de un fracaso: un operador que lo había calculado todo (reglas, naturaleza humana y control de riesgos) perdió ante una variable que no entraba en su modelo: cuánta carga puede soportar la conciencia.</description>
     </item>
     <item>
-      <title>No le dio al pueblo ni un céntimo y, aun así, cambió la suerte de todos</title>
+      <title>No le dio al pueblo ni una moneda y, aun así, cambió la suerte de todos sus habitantes</title>
       <link>https://chenmingyuan.site/es/blog/distant-savior-zero-money.html</link>
       <guid isPermaLink="true">https://chenmingyuan.site/es/blog/distant-savior-zero-money.html</guid>
       <pubDate>Sat, 14 Nov 2026 09:00:00 GMT</pubDate>
-      <description>Obra original de 《天道》. En toda la historia de 王庙村, ¿cuánto dinero puso 丁元英 en total? La respuesta es cero. Lo que dio no fue dinero, sino reglas, un mercado y un látigo; y él mismo tuvo que subir al 五台山 a pedir un permiso.</description>
+      <description>La novela original de «El camino del cielo». En toda la historia del pueblo de Wangmiao, ¿cuánto dinero puso Ding Yuanying? La respuesta es cero. Lo que dio no fue dinero, sino reglas, mercado y un látigo, y él mismo tuvo que subir al monte Wutai a pedir un permiso.</description>
     </item>
     <item>
       <title>Renunció a una prima de 500.000, pidió solo cuatro caracteres y acabó muriendo en Moscú</title>
@@ -33,42 +33,42 @@
       <link>https://chenmingyuan.site/es/blog/building-this-site-with-emdash.html</link>
       <guid isPermaLink="true">https://chenmingyuan.site/es/blog/building-this-site-with-emdash.html</guid>
       <pubDate>Thu, 12 Nov 2026 09:30:00 GMT</pubDate>
-      <description>EmDash CMS gestiona el contenido, Astro construye las páginas estáticas y se publica en Qoder Sites. El backend corre en local y el frontend es puramente estático: una fórmula de sitio personal cómoda de escribir y sin preocupaciones.</description>
+      <description>Gestionar el contenido con EmDash CMS, construir las páginas estáticas con Astro y publicar en Qoder Sites: el backend corre en local y el frontend es puramente estático, una solución para un sitio personal fácil de escribir y sin complicaciones.</description>
     </item>
     <item>
-      <title>Diez años de vida: convertir los días en un proyecto</title>
+      <title>La década de una vida: convertir los días en un proyecto</title>
       <link>https://chenmingyuan.site/es/blog/ten-year-practice.html</link>
       <guid isPermaLink="true">https://chenmingyuan.site/es/blog/ten-year-practice.html</guid>
       <pubDate>Wed, 04 Nov 2026 20:10:00 GMT</pubDate>
-      <description>Salud, idiomas, inversión e IA: cuatro áreas, un solo juego de datos, una escala de diez años. Por qué me construí un espacio de trabajo y en qué se diferencian de verdad «practicar» y «planificar».</description>
+      <description>Salud, idiomas, inversión y AI: cuatro áreas, un solo conjunto de datos, una escala de diez años. Por qué me construí un panel de trabajo y en qué se diferencian de verdad «practicar» y «planear».</description>
     </item>
     <item>
       <title>Estrategia de barra: un extremo ultraseguro y el otro ultrarriesgado</title>
       <link>https://chenmingyuan.site/es/blog/barbell-strategy.html</link>
       <guid isPermaLink="true">https://chenmingyuan.site/es/blog/barbell-strategy.html</guid>
       <pubDate>Tue, 27 Oct 2026 14:00:00 GMT</pubDate>
-      <description>泰勒斯 alquiló todas las prensas de aceite con una pequeña señal: si acertaba, ganaba mucho; si se equivocaba, perdía poco. La estrategia de la barra no es 50/50, sino 90/10: la parte grande, ultrasegura; la pequeña, muy atrevida; la franja intermedia, la que más cuidado exige.</description>
+      <description>Tales alquiló todas las prensas de aceite con un pequeño anticipo: si acertaba ganaba mucho, si fallaba perdía poco. La estrategia de barra no es 50 contra 50, sino 90 contra 10: la parte grande ultrasegura, la pequeña muy atrevida, y la zona del medio, la que más cuidado exige.</description>
     </item>
     <item>
-      <title>火鸡的一千零一天</title>
+      <title>El día 1001 del pavo</title>
       <link>https://chenmingyuan.site/es/blog/turkey-thousand-and-one-days.html</link>
       <guid isPermaLink="true">https://chenmingyuan.site/es/blog/turkey-thousand-and-one-days.html</guid>
       <pubDate>Mon, 19 Oct 2026 08:45:00 GMT</pubDate>
       <description>El pavo acumuló 1000 días de pruebas de que «los humanos me quieren»; el día 1001 fue Acción de Gracias. Que siempre haya sido así no significa que vaya a seguir siéndolo: es la lección más tierna y más afilada del cisne negro.</description>
     </item>
     <item>
-      <title>«Cobertura dinámica»: el oficio de «fabricar seguros»</title>
+      <title>«Cobertura dinámica»: el oficio de «fabricar seguros».</title>
       <link>https://chenmingyuan.site/es/blog/dynamic-hedging-as-insurance.html</link>
       <guid isPermaLink="true">https://chenmingyuan.site/es/blog/dynamic-hedging-as-insurance.html</guid>
       <pubDate>Sun, 11 Oct 2026 16:20:00 GMT</pubDate>
       <description>Un manual de 460 páginas para operadores que en realidad enseña un oficio: fabricar seguros. Las opciones son la póliza, las letras griegas el salpicadero y la cobertura dinámica, ajustar la posición cada día para que la volatilidad no te muerda.</description>
     </item>
     <item>
-      <title>Convertir la pentalogía de 塔勒布 en 12 lecciones para niños</title>
+      <title>Contar los cinco libros de Taleb en 12 lecciones para niños</title>
       <link>https://chenmingyuan.site/es/blog/why-taleb-for-kids.html</link>
       <guid isPermaLink="true">https://chenmingyuan.site/es/blog/why-taleb-for-kids.html</guid>
       <pubDate>Sat, 03 Oct 2026 10:00:00 GMT</pubDate>
-      <description>Cinco libros gruesos responden en realidad a una sola pregunta: al mundo le encanta cambiar de cara de golpe, ¿qué hacemos? Los desmenucé en 12 lecciones, 32 fichas y un calendario de repaso de 21 días, y aquí explico cómo se diseñó este curso.</description>
+      <description>Cinco libros gruesos que en realidad responden a una sola pregunta: el mundo cambia de cara de golpe y con gusto, ¿qué hacemos? Los desmenucé en 12 lecciones, 32 tarjetas y un calendario de repaso de 21 días, y aquí cuento cómo se diseñó el curso.</description>
     </item>
   </channel>
 </rss>
