@@ -1,0 +1,207 @@
+<!doctype html>
+<!-- page: en/lesson-11.html -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Entries — Follow Price Only · The Turtle Rules</title>
+<meta name="description" content="What you will learn: Systems One and Two, the S1 filter, the fail-safe role of S2, and why the exact parameters are not holy writ.">
+<meta name="theme-color" content="#08110f">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Entries — Follow Price Only · The Turtle Rules">
+<meta property="og:description" content="What you will learn: Systems One and Two, the S1 filter, the fail-safe role of S2, and why the exact parameters are not holy writ.">
+<meta property="og:site_name" content="The Complete TurtleTrader · A Bilingual Course">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2308110f'/%3E%3Cpath d='M32 12c11 0 20 9 20 20s-9 20-20 20S12 43 12 32' fill='none' stroke='%23e6b566' stroke-width='3'/%3E%3Cpath d='M32 20c6.6 0 12 5.4 12 12s-5.4 12-12 12' fill='none' stroke='%2363d2a4' stroke-width='3'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="../assets/site.css">
+</head>
+<body data-page="lesson-11" data-lang="en" data-title="Entries — Follow Price Only">
+<a class="skip" href="#start">Skip to content</a>
+<div class="read-progress" id="read-progress" aria-hidden="true"></div>
+
+<header class="topbar">
+  <button class="topbar-btn" id="nav-toggle" type="button" aria-label="menu" aria-controls="sidebar" aria-expanded="false">
+    <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+  </button>
+  <a class="topbar-title" href="index.html">The Turtle Rules</a>
+  <a class="lang-pill" href="../zh/lesson-11.html" hreflang="zh">中文</a>
+</header>
+
+<div class="nav-overlay" id="nav-overlay"></div>
+
+<aside class="sidebar" id="sidebar" aria-label="course navigation">
+  <button class="nav-close" id="nav-close" type="button" aria-label="close">×</button>
+  <a class="brand" href="index.html">
+    <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 40 40" width="30" height="30"><path d="M20 4c8.8 0 16 7.2 16 16s-7.2 16-16 16S4 28.8 4 20" fill="none" stroke="currentColor" stroke-width="2.4"/><path d="M20 11c5 0 9 4 9 9s-4 9-9 9" fill="none" stroke="currentColor" stroke-width="2.4"/><circle cx="20" cy="20" r="2.4" fill="currentColor"/></svg></span>
+    <span class="brand-text">
+      <span class="brand-title">The Turtle Rules</span>
+      <span class="brand-sub">A beginner&#x27;s course in trend following</span>
+    </span>
+  </a>
+  <nav class="nav">
+<p class="nav-group-title">Start</p>
+<a class="nav-link" href="index.html"><span class="nav-num">◎</span><span>Course home</span></a>
+<div class="nav-group"><p class="nav-group-title">Part One · The Story and the Experiment</p>
+<a class="nav-link" href="lesson-01.html"><span class="nav-num">01</span><span>A Bet That Lasted a Decade</span></a>
+<a class="nav-link" href="lesson-02.html"><span class="nav-num">02</span><span>The Prince of the Pit and the Mathematician</span></a>
+<a class="nav-link" href="lesson-03.html"><span class="nav-num">03</span><span>One Ad, a Thousand Résumés</span></a>
+<a class="nav-link" href="lesson-04.html"><span class="nav-num">04</span><span>Two Weeks in the Classroom</span></a>
+<a class="nav-link" href="lesson-05.html"><span class="nav-num">05</span><span>How the Experiment Ended</span></a>
+</div>
+<div class="nav-group"><p class="nav-group-title">Part Two · Survive First, Profit Second</p>
+<a class="nav-link" href="lesson-06.html"><span class="nav-num">06</span><span>Expectation: Where the Edge Comes From</span></a>
+<a class="nav-link" href="lesson-07.html"><span class="nav-num">07</span><span>Risk of Ruin: Survive First</span></a>
+<a class="nav-link" href="lesson-08.html"><span class="nav-num">08</span><span>Memoryless Trading: Keeping Emotion Out</span></a>
+</div>
+<div class="nav-group"><p class="nav-group-title">Part Three · The Turtle Rules</p>
+<a class="nav-link" href="lesson-09.html"><span class="nav-num">09</span><span>N: The Market&#x27;s Breath</span></a>
+<a class="nav-link" href="lesson-10.html"><span class="nav-num">10</span><span>Units: The 2% Rule</span></a>
+<a class="nav-link" href="lesson-11.html" aria-current="page"><span class="nav-num">11</span><span>Entries: System One and System Two</span></a>
+<a class="nav-link" href="lesson-12.html"><span class="nav-num">12</span><span>Stops, Pyramiding, and Cutting Back</span></a>
+<a class="nav-link" href="lesson-13.html"><span class="nav-num">13</span><span>The Portfolio: Correlation and Netting</span></a>
+</div>
+<div class="nav-group"><p class="nav-group-title">Part Four · Aftermath and Today</p>
+<a class="nav-link" href="lesson-14.html"><span class="nav-num">14</span><span>After the Turtles</span></a>
+</div>
+<div class="nav-group"><p class="nav-group-title">Appendices · Rules and Self-Test</p>
+<a class="nav-link" href="appendix-a.html"><span class="nav-num">A</span><span>The Complete Rules at a Glance</span></a>
+<a class="nav-link" href="appendix-b.html"><span class="nav-num">B</span><span>Exercises and Answers</span></a>
+</div>
+  </nav>
+  <div class="sidebar-foot">
+    <a class="back-home" href="https://chenmingyuan.site/works.html">← Back to portfolio</a><br>
+    14 lessons · 2 appendices<br>For study only. Not investment advice.
+  </div>
+</aside>
+
+<div class="shell">
+  <main class="main">
+    <div class="column">
+<header class="page-hero">
+  <span class="hero-num" aria-hidden="true">11</span>
+  <p class="kicker">Part Three · Lesson 11</p>
+  <h1>Entries — Follow Price Only</h1>
+  <p class="hero-meta">About 7 min read<span class="dot">·</span>Based on Michael W. Covel&#x27;s The Complete TurtleTrader</p>
+</header>
+
+      <article class="article" id="start">
+<blockquote>
+<p>What you will learn: Systems One and Two, the S1 filter, the fail-safe role of S2, and why the exact parameters are not holy writ.</p>
+</blockquote>
+<h2 id="1-breakouts-no-calling-tops-or-bottoms">1. Breakouts: no calling tops or bottoms<a class="anchor" href="#1-breakouts-no-calling-tops-or-bottoms" aria-label="section link">#</a></h2>
+<p>The Turtle entry rule is one thing: <strong>price makes a recent new high or new low.</strong></p>
+<ul>
+<li>New 20-day high → buy.</li>
+<li>New 20-day low → sell short.</li>
+</ul>
+<p>No valuation, no news, no "it feels like it has fallen enough." In Eckhardt's words:</p>
+<blockquote>
+<p>Pure price systems are close enough to the North Pole that any departure tends to bring you farther south.</p>
+</blockquote>
+<p>Meaning: price alone is as close as you get to market truth; every subjective variable you add moves you further away.</p>
+<p>It also means the Turtles were the opposite of "buy low, sell high": <strong>they bought what was getting more expensive and sold what was getting cheaper.</strong> They had no long or short bias.</p>
+<h2 id="2-s1-four-weeks-in-two-weeks-out">2. S1: four weeks in, two weeks out<a class="anchor" href="#2-s1-four-weeks-in-two-weeks-out" aria-label="section link">#</a></h2>
+<p><strong>System One (S1)</strong> was the workhorse:</p>
+<ul>
+<li><strong>Entry</strong>: a new 20-trading-day (four-week) high → long; a new 20-day low → short.</li>
+<li><strong>Exit</strong>: after a long, a new 10-trading-day (two-week) low closes it; after a short, a new 10-day high.</li>
+</ul>
+<p>Note the exit is an <strong>opposite breakout</strong>, not a fixed profit target. As long as the trend keeps making new highs you hold; you only concede "this trend is over" when the market itself prints a two-week opposite extreme.</p>
+<p>That is "let profits run" in mechanical form: <strong>you do not decide how far it runs; the market does.</strong></p>
+<h2 id="3-the-s1-filter-skip-after-a-winner">3. The S1 filter: skip after a winner<a class="anchor" href="#3-the-s1-filter-skip-after-a-winner" aria-label="section link">#</a></h2>
+<p>S1 carried an odd-looking filter:</p>
+<blockquote>
+<p><strong>If the last 20-day breakout signal was a winner, skip the next 20-day breakout signal.</strong></p>
+</blockquote>
+<p>The conditions are strict:</p>
+<ul>
+<li>Even if you <strong>did not actually take</strong> the previous signal, it counts.</li>
+<li>Even if it was only <strong>theoretically</strong> a winner, it counts.</li>
+<li>Whether the previous signal was long or short is <strong>irrelevant</strong>.</li>
+<li>Only if the previous breakout ended in a <strong>2N loss</strong> may you take the current one.</li>
+</ul>
+<p>Why design it that way?</p>
+<p>Because in choppy markets, two consecutive same-direction breakouts are often false breakout followed by false breakout. After the first breakout works, the move is often largely spent, and the second entry tends to buy a short-term high. The filter's purpose is: <strong>in environments prone to repeated failure, take one fewer shot.</strong></p>
+<p>It trades "might miss" for "fewer wasted trades."</p>
+<h2 id="4-s2-the-fail-safe-for-filtered-out-trends">4. S2: the fail-safe for filtered-out trends<a class="anchor" href="#4-s2-the-fail-safe-for-filtered-out-trends" aria-label="section link">#</a></h2>
+<p>The filter has an obvious hole: what if the skipped breakout was the start of a huge trend? You stand aside while the market leaves without you.</p>
+<p>The Turtles' answer was <strong>System Two (S2)</strong>, the fail-safe:</p>
+<ul>
+<li><strong>Entry</strong>: a 55-trading-day (eleven-week) breakout.</li>
+<li><strong>Exit</strong>: a 20-trading-day (four-week) opposite breakout.</li>
+</ul>
+<p>S2 is slower and rarer, but when it fires it usually marks a larger trend. <strong>What S1 filters out, S2 picks up.</strong></p>
+<p>The book's yen example is typical: on 16 February 1995 the September yen made a four-week high, so S1 entered the next trading day; the position was held through every subsequent new high and exited on a new two-week low on 26 April.</p>
+<h2 id="5-half-and-half">5. Half and half<a class="anchor" href="#5-half-and-half" aria-label="section link">#</a></h2>
+<p>S1 and S2 were not alternatives. The Turtles typically allocated <strong>half their money to each</strong>.</p>
+<p>Some blended them:</p>
+<ul>
+<li>Mike Carr combined S1 and S2 to get more entry and exit points and smooth his results.</li>
+<li>Jeff Gordon preferred S1 but mixed in S2 for a smoother curve.</li>
+</ul>
+<p>The principle: <strong>the two systems cover different time scales; together they are steadier than either alone.</strong> The short-term system reacts fast and produces more false signals; the long-term system reacts slowly, trades rarely, but catches larger moves.</p>
+<h2 id="6-s3-the-do-whatever-you-want-account">6. S3: the "do whatever you want" account<a class="anchor" href="#6-s3-the-do-whatever-you-want-account" aria-label="section link">#</a></h2>
+<p>There was a third system, which Dennis called the <strong>flair account</strong> (S3).</p>
+<p>The rules were almost absent: <strong>do anything you like, but do not lose more than $50,000. One dollar past that and you are out of the program.</strong></p>
+<p>It was a deliberate experiment: give the Turtles a small account of complete freedom and see whether freedom would destroy them.</p>
+<p>The result: within about six weeks almost everyone voluntarily shut it down. Erle Keefer explained:</p>
+<blockquote>
+<p>They had already lived emotionally losing seven out of ten trades. They knew that was the right thing to do. That was the only way you were ever going to hook the real trend.</p>
+</blockquote>
+<p><strong>S3's value was not profit; it was proof that when the rules are removed, people return to rules</strong> — because they had seen why the rules work.</p>
+<h2 id="7-robustness-20-and-55-are-not-the-holy-grail">7. Robustness: 20 and 55 are not the Holy Grail<a class="anchor" href="#7-robustness-20-and-55-are-not-the-holy-grail" aria-label="section link">#</a></h2>
+<p>Over the years, traders who learned the Turtle rules became obsessed with the exact numbers, arguing whether a 50-day breakout beats a 51-day breakout.</p>
+<p>That is missing the forest for the tree.</p>
+<p>The principle that matters is <strong>robustness</strong>:</p>
+<blockquote>
+<p>A minor change of a variable in any robust trading system should not cause significant performance changes. If it does, you are in trouble.</p>
+</blockquote>
+<p>Jerry Parker makes the point with the Mount Lucas Management Index, a trend-following index based on a 52-week moving average running since the 1960s. Parker says the <strong>core simple moving-average/breakout system drives about two-thirds of profits</strong>; if the little extras — early entries, quick exits, volatility filters — became the main source of returns, "we're going to be in bad shape."</p>
+<p>His conclusion: parameters can be lengthened, but the moment it needs too much thinking, too much analysis, too much fancy work, "it is going to be a very bad situation."</p>
+<p>Trader Ed Seykota called this over-complication "math-turbation."</p>
+<h2 id="8-how-you-might-use-it">8. How you might use it<a class="anchor" href="#8-how-you-might-use-it" aria-label="section link">#</a></h2>
+<p>Three practical takeaways:</p>
+<ol type="1">
+<li><strong>Pick a breakout length and apply it consistently.</strong> 20/10 or 55/20 are both reasonable starting points; do not switch mid-stream.</li>
+<li><strong>If you add a filter, know what it defends against.</strong> The Turtle filter defends against repeated false breakouts in chop, not "raising accuracy."</li>
+<li><strong>Test on paper before risking money.</strong> You need to see the losing streaks and drawdowns yourself in order to hold the system when it hurts.</li>
+</ol>
+<h2 id="key-points">Key points<a class="anchor" href="#key-points" aria-label="section link">#</a></h2>
+<ul>
+<li>Entries depend only on price breakouts — no forecasting, no fundamentals.</li>
+<li>S1: 20-day breakout entry, 10-day opposite breakout exit.</li>
+<li>S1 filter: skip after a winning breakout (even untaken, even theoretical); direction irrelevant; a prior 2N loss allows entry.</li>
+<li>S2: 55-day entry, 20-day opposite exit, catching what S1 filters out.</li>
+<li>Capital is typically split half to S1, half to S2.</li>
+<li>S3 was a "lose no more than $50,000" freedom account that most Turtles shut within weeks.</li>
+<li>Robustness matters more than exact parameters.</li>
+</ul>
+<h2 id="self-test">Self-test<a class="anchor" href="#self-test" aria-label="section link">#</a></h2>
+<ol type="1">
+<li>A market makes a 20-day high and the Turtles go long. It keeps making new highs. When do they exit?</li>
+<li>The last 20-day breakout was not traded but would theoretically have won. A new 20-day breakout appears. Do you take it? If the move continues, do you still get a chance?</li>
+<li>Why is "changing 50 days to 51 days destroys performance" a danger sign?</li>
+</ol>
+<details>
+<summary>Answers</summary>
+<p><strong>1.</strong> Only when price makes a new 10-day low (a two-week opposite breakout). New highs in between are not exit reasons.</p>
+<p><strong>2.</strong> No — the filter counts theoretical winners regardless of whether you traded. If the move continues, S2's 55-day breakout gives a second entry.</p>
+<p><strong>3.</strong> It implies the returns depend on a very narrow parameter range, likely overfitting to history, and will break when conditions shift. A robust system performs similarly under small parameter changes.</p>
+</details>
+
+      </article>
+<nav class="pager" aria-label="pager"><a class="prev" href="lesson-10.html"><span class="lbl">Previous</span><span class="ttl">Units: The 2% Rule</span></a><a class="next" href="lesson-12.html"><span class="lbl">Next</span><span class="ttl">Stops, Pyramiding, and Cutting Back</span></a></nav>
+      <footer class="page-foot">
+        <p>This course is a study guide to Michael W. Covel&#x27;s The Complete TurtleTrader. It is for education only and is not investment advice.</p>
+        <p>© 2026 · The Turtle Rules</p>
+      </footer>
+    </div>
+    <aside class="toc" aria-label="table of contents">
+      <p class="toc-title">On this page</p>
+      <nav id="toc-list"></nav>
+    </aside>
+  </main>
+</div>
+
+<script src="../assets/site.js" defer></script>
+</body>
+</html>

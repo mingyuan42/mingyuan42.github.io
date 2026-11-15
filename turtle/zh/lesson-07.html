@@ -1,0 +1,226 @@
+<!doctype html>
+<!-- page: zh/lesson-07.html -->
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>破产风险——你会活着，还是死掉？ · 海龟交易法则</title>
+<meta name="description" content="本课目标：理解为什么“正期望”还不够，学会用减仓规则把“破产概率”压到接近零，并算清回撤与恢复的不对称。">
+<meta name="theme-color" content="#08110f">
+<meta property="og:type" content="article">
+<meta property="og:title" content="破产风险——你会活着，还是死掉？ · 海龟交易法则">
+<meta property="og:description" content="本课目标：理解为什么“正期望”还不够，学会用减仓规则把“破产概率”压到接近零，并算清回撤与恢复的不对称。">
+<meta property="og:site_name" content="《海龟交易法则》中英双语通识课">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2308110f'/%3E%3Cpath d='M32 12c11 0 20 9 20 20s-9 20-20 20S12 43 12 32' fill='none' stroke='%23e6b566' stroke-width='3'/%3E%3Cpath d='M32 20c6.6 0 12 5.4 12 12s-5.4 12-12 12' fill='none' stroke='%2363d2a4' stroke-width='3'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="../assets/site.css">
+</head>
+<body data-page="lesson-07" data-lang="zh" data-title="破产风险——你会活着，还是死掉？">
+<a class="skip" href="#start">跳到正文</a>
+<div class="read-progress" id="read-progress" aria-hidden="true"></div>
+
+<header class="topbar">
+  <button class="topbar-btn" id="nav-toggle" type="button" aria-label="menu" aria-controls="sidebar" aria-expanded="false">
+    <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+  </button>
+  <a class="topbar-title" href="index.html">海龟交易法则</a>
+  <a class="lang-pill" href="../en/lesson-07.html" hreflang="en">English</a>
+</header>
+
+<div class="nav-overlay" id="nav-overlay"></div>
+
+<aside class="sidebar" id="sidebar" aria-label="course navigation">
+  <button class="nav-close" id="nav-close" type="button" aria-label="close">×</button>
+  <a class="brand" href="index.html">
+    <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 40 40" width="30" height="30"><path d="M20 4c8.8 0 16 7.2 16 16s-7.2 16-16 16S4 28.8 4 20" fill="none" stroke="currentColor" stroke-width="2.4"/><path d="M20 11c5 0 9 4 9 9s-4 9-9 9" fill="none" stroke="currentColor" stroke-width="2.4"/><circle cx="20" cy="20" r="2.4" fill="currentColor"/></svg></span>
+    <span class="brand-text">
+      <span class="brand-title">海龟交易法则</span>
+      <span class="brand-sub">从零读懂趋势跟踪</span>
+    </span>
+  </a>
+  <nav class="nav">
+<p class="nav-group-title">开始</p>
+<a class="nav-link" href="index.html"><span class="nav-num">◎</span><span>课程首页</span></a>
+<div class="nav-group"><p class="nav-group-title">第一部分 · 故事与实验</p>
+<a class="nav-link" href="lesson-01.html"><span class="nav-num">01</span><span>一个持续十年的赌局</span></a>
+<a class="nav-link" href="lesson-02.html"><span class="nav-num">02</span><span>王子与数学家</span></a>
+<a class="nav-link" href="lesson-03.html"><span class="nav-num">03</span><span>一则广告，上千份简历</span></a>
+<a class="nav-link" href="lesson-04.html"><span class="nav-num">04</span><span>两周课堂</span></a>
+<a class="nav-link" href="lesson-05.html"><span class="nav-num">05</span><span>实验的结局</span></a>
+</div>
+<div class="nav-group"><p class="nav-group-title">第二部分 · 先活下来，再赚钱</p>
+<a class="nav-link" href="lesson-06.html"><span class="nav-num">06</span><span>期望值：你靠什么长期赚钱</span></a>
+<a class="nav-link" href="lesson-07.html" aria-current="page"><span class="nav-num">07</span><span>破产风险：先活下来</span></a>
+<a class="nav-link" href="lesson-08.html"><span class="nav-num">08</span><span>无记忆交易：把情绪关在门外</span></a>
+</div>
+<div class="nav-group"><p class="nav-group-title">第三部分 · 海龟的规则</p>
+<a class="nav-link" href="lesson-09.html"><span class="nav-num">09</span><span>N：市场的呼吸</span></a>
+<a class="nav-link" href="lesson-10.html"><span class="nav-num">10</span><span>单位：2% 规则</span></a>
+<a class="nav-link" href="lesson-11.html"><span class="nav-num">11</span><span>入场：系统一与系统二</span></a>
+<a class="nav-link" href="lesson-12.html"><span class="nav-num">12</span><span>止损、加仓与减仓</span></a>
+<a class="nav-link" href="lesson-13.html"><span class="nav-num">13</span><span>组合：相关性与净头寸</span></a>
+</div>
+<div class="nav-group"><p class="nav-group-title">第四部分 · 之后与今天</p>
+<a class="nav-link" href="lesson-14.html"><span class="nav-num">14</span><span>海龟之后</span></a>
+</div>
+<div class="nav-group"><p class="nav-group-title">附录 · 规则与自测</p>
+<a class="nav-link" href="appendix-a.html"><span class="nav-num">A</span><span>完整规则速查</span></a>
+<a class="nav-link" href="appendix-b.html"><span class="nav-num">B</span><span>练习与答案</span></a>
+</div>
+  </nav>
+  <div class="sidebar-foot">
+    <a class="back-home" href="https://chenmingyuan.site/works.html">← 返回作品集</a><br>
+    14 节课 · 2 个附录<br>仅供学习，不构成投资建议
+  </div>
+</aside>
+
+<div class="shell">
+  <main class="main">
+    <div class="column">
+<header class="page-hero">
+  <span class="hero-num" aria-hidden="true">07</span>
+  <p class="kicker">第二部分 · 第 07 课</p>
+  <h1>破产风险——你会活着，还是死掉？</h1>
+  <p class="hero-meta">阅读约 5 分钟<span class="dot">·</span>迈克尔·科维尔《The Complete TurtleTrader》通识课</p>
+</header>
+
+      <article class="article" id="start">
+<blockquote>
+<p>本课目标：理解为什么“正期望”还不够，学会用减仓规则把“破产概率”压到接近零，并算清回撤与恢复的不对称。</p>
+</blockquote>
+<h2 id="一期望值回答不了的问题">一、期望值回答不了的问题<a class="anchor" href="#一期望值回答不了的问题" aria-label="section link">#</a></h2>
+<p>上一课我们算出：一套正期望的系统，长期一定赚钱。</p>
+<p>但“长期一定赚钱”有一个前提：<strong>你得活到长期。</strong></p>
+<p>想象两个人用同一套系统：</p>
+<ul>
+<li>A 每笔冒账户的 2%。</li>
+<li>B 每笔冒账户的 60%。</li>
+</ul>
+<p>系统完全一样，期望值完全一样。但 B 只要连续遇到几次正常范围内的亏损，账户就归零了——归零之后，再好的期望值也与他无关。</p>
+<p>所以风险管理要回答的不是“能不能赚”，而是：<strong>“我会不会在中途死掉？”</strong></p>
+<h2 id="二亏损是线性的盈利是指数的">二、亏损是线性的，盈利是指数的<a class="anchor" href="#二亏损是线性的盈利是指数的" aria-label="section link">#</a></h2>
+<p>埃克哈特有个很关键的观察：不要让海龟们害怕账户的<strong>线性下降</strong>，因为一次大趋势带来的<strong>指数上升</strong>，最终会超过他们亏损时看到的最陡的线性下跌。</p>
+<p>这句话需要拆开看：</p>
+<ul>
+<li><strong>亏损的日常形态是线性的</strong>：一笔亏 2%，再一笔亏 2%，账户一点点往下磨。看起来漫长、难受、没有尽头。</li>
+<li><strong>盈利的形态是指数的</strong>：大部分时间不赚钱，一旦趋势展开，几周内的复利增长可以非常陡。</li>
+</ul>
+<p>这就像挖隧道：前面九十米都是黑的，最后一米见光。<strong>如果你在第八十九米退出，前面所有的坚持都归零。</strong></p>
+<p>趋势跟踪者的日常，就是长时间承受线性磨损，等待那一次指数跳跃。</p>
+<h2 id="三下注太大会毁掉正期望">三、下注太大，会毁掉正期望<a class="anchor" href="#三下注太大会毁掉正期望" aria-label="section link">#</a></h2>
+<p>用一个极简模型感受一下“下注比例”的威力。</p>
+<p>假设你每次把<strong>全部资金</strong>押上，哪怕胜率 60%、赔率 1:1：</p>
+<ul>
+<li>赢一次，资金翻倍。</li>
+<li>输一次，资金归零。</li>
+</ul>
+<p>只要交易次数足够多，归零几乎必然发生。<strong>期望值为正，破产概率却是 100%。</strong></p>
+<p>再假设每次押 50%：</p>
+<ul>
+<li>连输两次：剩 25%。</li>
+<li>连输三次：剩 12.5%。</li>
+</ul>
+<p>要回到原点，你得连赢三次（12.5% → 25% → 50% → 100%）。而连输三次的概率，远比直觉高。</p>
+<p>这就是为什么海龟只用 <strong>2%</strong>：不是因为 2% 最优，而是因为它让“连续亏损十几次仍然活着”成为常态。</p>
+<p>一个粗略的算术：每笔亏 2%，连亏 10 笔，账户还剩 0.98¹⁰ ≈ 81.7%；连亏 20 笔，还剩约 66.8%。虽然难受，但远未出局。而每笔亏 20%，连亏 10 笔只剩 10.7%。</p>
+<h2 id="四海龟的减仓规则">四、海龟的减仓规则<a class="anchor" href="#四海龟的减仓规则" aria-label="section link">#</a></h2>
+<p>海龟不只是“每笔 2%”这么简单。他们还有一条随回撤自动减速的规则：</p>
+<blockquote>
+<p><strong>账户每回撤 10%，就把每单位的风险降低 20%。</strong></p>
+</blockquote>
+<p>以 2% 为起点：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>从峰值回撤</th>
+<th>单位风险</th>
+<th>计算</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0%</td>
+<td>2.00%</td>
+<td>起点</td>
+</tr>
+<tr>
+<td>10%</td>
+<td>1.60%</td>
+<td>2.00 × 0.8</td>
+</tr>
+<tr>
+<td>20%</td>
+<td>1.28%</td>
+<td>1.60 × 0.8</td>
+</tr>
+<tr>
+<td>30%</td>
+<td>1.024%</td>
+<td>1.28 × 0.8</td>
+</tr>
+<tr>
+<td>40%</td>
+<td>0.819%</td>
+<td>1.024 × 0.8</td>
+</tr>
+</tbody>
+</table></div>
+<p>注意这条规则的两个特征：</p>
+<ol type="1">
+<li><strong>它是预先写死的</strong>，不靠临场判断。你不需要在亏损时“冷静地做个决定”，规则已经替你决定了。</li>
+<li><strong>它同时降低风险和恢复难度</strong>：亏损时暴露变小，账户不会加速失血；等权益回升，仓位逐步恢复，趋势来临时你仍然在场。</li>
+</ol>
+<p>当资金重新上涨、回撤收窄，单位规模就逐步调回正常。海龟不是“亏了就永久缩手”，而是<strong>跟着权益走</strong>。</p>
+<h2 id="五代价难受而且看起来很慢">五、代价：难受，而且看起来“很慢”<a class="anchor" href="#五代价难受而且看起来很慢" aria-label="section link">#</a></h2>
+<p>减仓不是免费的。它带来两个心理成本：</p>
+<ul>
+<li><strong>回本变慢</strong>：仓位小了，同样的行情赚得少。</li>
+<li><strong>自我怀疑</strong>：连续几个月缩着做，会觉得自己“错过了”。</li>
+</ul>
+<p>厄尔·基弗记得有位同行哀叹：“天啊，我亏太多了，我得赚 100% 才能回本。”但那个人最后年底拿到了不错的奖金——因为市场终于开始联动、开始走趋势。基弗说：当统计终于起作用、所有市场开始动起来时，那些“热线”能把你从回撤里飞快地拉出来。</p>
+<p>海龟的真实记录更能说明问题：他们可能连续十一个月亏损，然后在最后三周里，从 −30% 或 −40% 一路做到 +150%。<strong>前提是，那三周到来时，他们还在场上，而且手里还有仓位。</strong></p>
+<h2 id="六把规则变成习惯">六、把规则变成习惯<a class="anchor" href="#六把规则变成习惯" aria-label="section link">#</a></h2>
+<p>这一课可以浓缩成三个动作：</p>
+<ol type="1">
+<li><strong>先定最大可承受回撤</strong>，再反推每笔风险。如果你只能接受 20% 的回撤，就不要用会带来 50% 回撤的仓位。</li>
+<li><strong>把减仓规则写在纸上</strong>，包括触发条件和具体数字。情绪上头时，人不会做算术，只会做决定。</li>
+<li><strong>区分“系统失效”和“系统在亏损”</strong>。前者需要证据（期望值是否仍为正、规则是否被正确执行），后者是系统的正常呼吸。</li>
+</ol>
+<h2 id="本课要点">本课要点<a class="anchor" href="#本课要点" aria-label="section link">#</a></h2>
+<ul>
+<li>正期望不足以保证赚钱，必须先保证活到期望兑现。</li>
+<li>亏损通常线性累积，趋势盈利可能指数跳升；关键是不要在跳跃前出局。</li>
+<li>下注比例过大时，正期望系统的破产概率仍可接近 100%。</li>
+<li>海龟规则：每回撤 10%，单位风险降 20%（2% → 1.6% → 1.28% → …）。</li>
+<li>减仓会自动降低失血速度，并在权益恢复时逐步加回暴露。</li>
+<li>代价是恢复慢、心理难受；收益是极大概率活到趋势到来。</li>
+</ul>
+<h2 id="自测">自测<a class="anchor" href="#自测" aria-label="section link">#</a></h2>
+<ol type="1">
+<li>为什么“每笔 2%”比“每笔 20%”更可能让一个正期望系统最终赚到钱？</li>
+<li>一个账户从 100 万回撤到 50 万，需要上涨多少才回到原点？如果回撤到 20 万呢？</li>
+<li>减仓规则最大的心理难点是什么？为什么“预先写死”能缓解它？</li>
+</ol>
+<details>
+<summary>参考答案</summary>
+<p><strong>1.</strong> 因为破产是吸收态：一旦归零，后续期望值再高也无法参与。2% 让连续亏损成为可承受的波动，20% 让几次正常亏损就接近出局，从而大幅提高“在优势兑现前死亡”的概率。</p>
+<p><strong>2.</strong> 从 50 万回到 100 万需要 +100%；从 20 万回到 100 万需要 +400%。亏损越深，恢复所需收益越呈非线性放大。</p>
+<p><strong>3.</strong> 难点是在最难受、最想“扳回来”的时候主动缩小仓位，这与本能相反。预先写死规则把决策从情绪现场移到冷静时刻，减少临场自我谈判的空间。</p>
+</details>
+
+      </article>
+<nav class="pager" aria-label="pager"><a class="prev" href="lesson-06.html"><span class="lbl">上一课</span><span class="ttl">期望值：你靠什么长期赚钱</span></a><a class="next" href="lesson-08.html"><span class="lbl">下一课</span><span class="ttl">无记忆交易：把情绪关在门外</span></a></nav>
+      <footer class="page-foot">
+        <p>本课程基于迈克尔·科维尔《The Complete TurtleTrader》整理，用于知识学习，不构成任何投资建议。</p>
+        <p>© 2026 · 海龟交易法则通识课</p>
+      </footer>
+    </div>
+    <aside class="toc" aria-label="table of contents">
+      <p class="toc-title">本页目录</p>
+      <nav id="toc-list"></nav>
+    </aside>
+  </main>
+</div>
+
+<script src="../assets/site.js" defer></script>
+</body>
+</html>

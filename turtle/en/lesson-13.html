@@ -1,0 +1,305 @@
+<!doctype html>
+<!-- page: en/lesson-13.html -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Portfolio — Spread Your Bets Across Many Tables · The Turtle Rules</title>
+<meta name="description" content="What you will learn: why the Turtles traded more than twenty markets, how to spot fake diversification, and how to compute net long/short units.">
+<meta name="theme-color" content="#08110f">
+<meta property="og:type" content="article">
+<meta property="og:title" content="The Portfolio — Spread Your Bets Across Many Tables · The Turtle Rules">
+<meta property="og:description" content="What you will learn: why the Turtles traded more than twenty markets, how to spot fake diversification, and how to compute net long/short units.">
+<meta property="og:site_name" content="The Complete TurtleTrader · A Bilingual Course">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2308110f'/%3E%3Cpath d='M32 12c11 0 20 9 20 20s-9 20-20 20S12 43 12 32' fill='none' stroke='%23e6b566' stroke-width='3'/%3E%3Cpath d='M32 20c6.6 0 12 5.4 12 12s-5.4 12-12 12' fill='none' stroke='%2363d2a4' stroke-width='3'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="../assets/site.css">
+</head>
+<body data-page="lesson-13" data-lang="en" data-title="The Portfolio — Spread Your Bets Across Many Tables">
+<a class="skip" href="#start">Skip to content</a>
+<div class="read-progress" id="read-progress" aria-hidden="true"></div>
+
+<header class="topbar">
+  <button class="topbar-btn" id="nav-toggle" type="button" aria-label="menu" aria-controls="sidebar" aria-expanded="false">
+    <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+  </button>
+  <a class="topbar-title" href="index.html">The Turtle Rules</a>
+  <a class="lang-pill" href="../zh/lesson-13.html" hreflang="zh">中文</a>
+</header>
+
+<div class="nav-overlay" id="nav-overlay"></div>
+
+<aside class="sidebar" id="sidebar" aria-label="course navigation">
+  <button class="nav-close" id="nav-close" type="button" aria-label="close">×</button>
+  <a class="brand" href="index.html">
+    <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 40 40" width="30" height="30"><path d="M20 4c8.8 0 16 7.2 16 16s-7.2 16-16 16S4 28.8 4 20" fill="none" stroke="currentColor" stroke-width="2.4"/><path d="M20 11c5 0 9 4 9 9s-4 9-9 9" fill="none" stroke="currentColor" stroke-width="2.4"/><circle cx="20" cy="20" r="2.4" fill="currentColor"/></svg></span>
+    <span class="brand-text">
+      <span class="brand-title">The Turtle Rules</span>
+      <span class="brand-sub">A beginner&#x27;s course in trend following</span>
+    </span>
+  </a>
+  <nav class="nav">
+<p class="nav-group-title">Start</p>
+<a class="nav-link" href="index.html"><span class="nav-num">◎</span><span>Course home</span></a>
+<div class="nav-group"><p class="nav-group-title">Part One · The Story and the Experiment</p>
+<a class="nav-link" href="lesson-01.html"><span class="nav-num">01</span><span>A Bet That Lasted a Decade</span></a>
+<a class="nav-link" href="lesson-02.html"><span class="nav-num">02</span><span>The Prince of the Pit and the Mathematician</span></a>
+<a class="nav-link" href="lesson-03.html"><span class="nav-num">03</span><span>One Ad, a Thousand Résumés</span></a>
+<a class="nav-link" href="lesson-04.html"><span class="nav-num">04</span><span>Two Weeks in the Classroom</span></a>
+<a class="nav-link" href="lesson-05.html"><span class="nav-num">05</span><span>How the Experiment Ended</span></a>
+</div>
+<div class="nav-group"><p class="nav-group-title">Part Two · Survive First, Profit Second</p>
+<a class="nav-link" href="lesson-06.html"><span class="nav-num">06</span><span>Expectation: Where the Edge Comes From</span></a>
+<a class="nav-link" href="lesson-07.html"><span class="nav-num">07</span><span>Risk of Ruin: Survive First</span></a>
+<a class="nav-link" href="lesson-08.html"><span class="nav-num">08</span><span>Memoryless Trading: Keeping Emotion Out</span></a>
+</div>
+<div class="nav-group"><p class="nav-group-title">Part Three · The Turtle Rules</p>
+<a class="nav-link" href="lesson-09.html"><span class="nav-num">09</span><span>N: The Market&#x27;s Breath</span></a>
+<a class="nav-link" href="lesson-10.html"><span class="nav-num">10</span><span>Units: The 2% Rule</span></a>
+<a class="nav-link" href="lesson-11.html"><span class="nav-num">11</span><span>Entries: System One and System Two</span></a>
+<a class="nav-link" href="lesson-12.html"><span class="nav-num">12</span><span>Stops, Pyramiding, and Cutting Back</span></a>
+<a class="nav-link" href="lesson-13.html" aria-current="page"><span class="nav-num">13</span><span>The Portfolio: Correlation and Netting</span></a>
+</div>
+<div class="nav-group"><p class="nav-group-title">Part Four · Aftermath and Today</p>
+<a class="nav-link" href="lesson-14.html"><span class="nav-num">14</span><span>After the Turtles</span></a>
+</div>
+<div class="nav-group"><p class="nav-group-title">Appendices · Rules and Self-Test</p>
+<a class="nav-link" href="appendix-a.html"><span class="nav-num">A</span><span>The Complete Rules at a Glance</span></a>
+<a class="nav-link" href="appendix-b.html"><span class="nav-num">B</span><span>Exercises and Answers</span></a>
+</div>
+  </nav>
+  <div class="sidebar-foot">
+    <a class="back-home" href="https://chenmingyuan.site/works.html">← Back to portfolio</a><br>
+    14 lessons · 2 appendices<br>For study only. Not investment advice.
+  </div>
+</aside>
+
+<div class="shell">
+  <main class="main">
+    <div class="column">
+<header class="page-hero">
+  <span class="hero-num" aria-hidden="true">13</span>
+  <p class="kicker">Part Three · Lesson 13</p>
+  <h1>The Portfolio — Spread Your Bets Across Many Tables</h1>
+  <p class="hero-meta">About 6 min read<span class="dot">·</span>Based on Michael W. Covel&#x27;s The Complete TurtleTrader</p>
+</header>
+
+      <article class="article" id="start">
+<blockquote>
+<p>What you will learn: why the Turtles traded more than twenty markets, how to spot fake diversification, and how to compute net long/short units.</p>
+</blockquote>
+<h2 id="1-you-do-not-know-which-table-pays">1. You do not know which table pays<a class="anchor" href="#1-you-do-not-know-which-table-pays" aria-label="section link">#</a></h2>
+<p>The hard truth of trend following: <strong>you cannot predict which market will trend big, or how far it will go.</strong></p>
+<p>This year may be the yen, next year crude, the year after cocoa. The only certainty is that <strong>a big trend will happen somewhere — you just do not know where.</strong></p>
+<p>Trade only three markets and the year's main move may be in the fourth; you end flat. Worse, the small losses along the way drain your capital and confidence before the real move arrives.</p>
+<p>The Turtles' answer: <strong>cover as many loosely related markets as possible.</strong> If one of them trends, it pays for all the small losses elsewhere.</p>
+<h2 id="2-the-original-21-markets">2. The original 21 markets<a class="anchor" href="#2-the-original-21-markets" aria-label="section link">#</a></h2>
+<p>The Turtles began with these:</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Rates</th>
+<th>Currencies</th>
+<th>Commodities</th>
+<th>Index &amp; energy</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>30-year T-bond</td>
+<td>Deutschmark</td>
+<td>Cotton</td>
+<td>S&amp;P 500</td>
+</tr>
+<tr>
+<td>10-year T-bond</td>
+<td>British pound</td>
+<td>Sugar</td>
+<td>Crude oil</td>
+</tr>
+<tr>
+<td>90-day T-bill</td>
+<td>French franc</td>
+<td>Cocoa</td>
+<td>Heating oil</td>
+</tr>
+<tr>
+<td>Eurodollar</td>
+<td>Japanese yen</td>
+<td>Coffee</td>
+<td>Unleaded gas</td>
+</tr>
+<tr>
+<td></td>
+<td>Canadian dollar</td>
+<td>Swiss franc</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>Gold</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>Silver</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>Copper</td>
+<td></td>
+</tr>
+</tbody>
+</table></div>
+<p>Twenty-one in total, spanning four different drivers: interest rates, currencies, agricultural/industrial commodities, and equity/energy.</p>
+<p>The mix was not random. It was designed so that <strong>no single event would blow up every position at once.</strong></p>
+<h2 id="3-fake-diversification-many-names-one-bet">3. Fake diversification: many names, one bet<a class="anchor" href="#3-fake-diversification-many-names-one-bet" aria-label="section link">#</a></h2>
+<p>Suppose you hold four markets: corn, soybeans, gold, silver.</p>
+<p>Four markets, four units, four opportunities — right?</p>
+<ul>
+<li>Corn and soybeans are both grains, driven by weather, acreage and stocks. They move together often.</li>
+<li>Gold and silver are both precious metals, driven by fear, the dollar and real rates. Highly correlated.</li>
+</ul>
+<p>So those four "markets" contain about <strong>two</strong> independent sources of risk. You think you diversified; in reality you <strong>placed the same bet twice</strong>.</p>
+<p>The book's analogies are direct:</p>
+<ul>
+<li>The Dow and the S&amp;P 500 are highly correlated. One unit of each is like two units of either.</li>
+<li>Apple and Dell moved in lockstep in those years. One unit of each is double the Apple exposure.</li>
+</ul>
+<p>Conclusion: <strong>correlated markets must be combined when counting risk, not counted separately.</strong></p>
+<h2 id="4-more-risk-vs-less-risk">4. More risk vs less risk<a class="anchor" href="#4-more-risk-vs-less-risk" aria-label="section link">#</a></h2>
+<p>Two portfolios with the same number of markets and the same number of units can carry very different risk:</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>More risk (highly correlated)</th>
+<th></th>
+<th>Less risk (loosely correlated)</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Longs</td>
+<td>Shorts</td>
+<td>Longs</td>
+<td>Shorts</td>
+</tr>
+<tr>
+<td>Corn</td>
+<td>Gold</td>
+<td>Soybeans</td>
+<td>Gold</td>
+</tr>
+<tr>
+<td>Soybeans</td>
+<td>Silver</td>
+<td>Japanese yen</td>
+<td>Five-year notes</td>
+</tr>
+<tr>
+<td>Japanese yen</td>
+<td>Ten-year notes</td>
+<td>Live cattle</td>
+<td>Sugar</td>
+</tr>
+<tr>
+<td></td>
+<td>Five-year notes</td>
+<td></td>
+<td>Crude oil</td>
+</tr>
+</tbody>
+</table></div>
+<p>On the left: corn with soybeans, gold with silver, ten-year with five-year notes — <strong>four "independent" positions, really two or three risk sources.</strong></p>
+<p>On the right: soybeans, yen, cattle, sugar, crude, gold, five-year notes — different drivers. Historically the yen and crude oil do not move together.</p>
+<p><strong>Diversification is counted in independent risk sources, not market names.</strong></p>
+<h2 id="5-net-longshort-units-a-counter-intuitive-formula">5. Net long/short units: a counter-intuitive formula<a class="anchor" href="#5-net-longshort-units-a-counter-intuitive-formula" aria-label="section link">#</a></h2>
+<p>The Turtles had another trick: net long and short positions against each other.</p>
+<p>Because longs and shorts often move oppositely in stress, holding both lets you <strong>carry more units without more risk</strong>.</p>
+<p>The formula:</p>
+<pre><code>Net unit risk = larger side − (smaller side ÷ 2)</code></pre>
+<p>In other words: <strong>the smaller side counts at half weight.</strong></p>
+<h3 id="example-one">Example one<a class="anchor" href="#example-one" aria-label="section link">#</a></h3>
+<ul>
+<li>Long: corn, live cattle, cocoa, Swiss franc = 4 units</li>
+<li>Short: wheat, sugar, ten-year notes = 3 units</li>
+</ul>
+<pre><code>Net risk = 4 − (3 ÷ 2) = 4 − 1.5 = 2.5 units</code></pre>
+<p>Eleven notional units, only <strong>2.5 units</strong> of real risk.</p>
+<h3 id="example-two">Example two<a class="anchor" href="#example-two" aria-label="section link">#</a></h3>
+<ul>
+<li>Long: corn (1), live cattle (3), cocoa (1), Swiss franc (2) = 7</li>
+<li>Short: wheat (1), sugar (2), ten-year notes (1) = 3</li>
+</ul>
+<pre><code>Net risk = 7 − (3 ÷ 2) = 7 − 1.5 = 5.5 units</code></pre>
+<h3 id="example-three">Example three<a class="anchor" href="#example-three" aria-label="section link">#</a></h3>
+<ul>
+<li>Long: coffee (3), natural gas (1), soybeans (2), S&amp;P 500 (2) = 8</li>
+<li>Short: crude oil (4), Australian dollar (3) = 7</li>
+</ul>
+<pre><code>Net risk = 8 − (7 ÷ 2) = 8 − 3.5 = 4.5 units</code></pre>
+<p>This is why the Turtles looked over-leveraged to outsiders yet stayed inside their budget: <strong>notional exposure of 11, 10 or 15 units, net risk of only 2.5, 5.5 or 4.5.</strong></p>
+<h2 id="6-unit-caps-and-portfolio-caps">6. Unit caps and portfolio caps<a class="anchor" href="#6-unit-caps-and-portfolio-caps" aria-label="section link">#</a></h2>
+<p>Recall the per-market cap from Lesson 10:</p>
+<ul>
+<li><strong>One market</strong>: at most 4–5 units.</li>
+<li><strong>The whole portfolio</strong>: net units are used to keep total risk inside the budget.</li>
+</ul>
+<p>If one unit is 2% of equity, 2.5 net units means 5% portfolio risk; 5.5 net units means 11%. The Turtles set an overall ceiling based on account size and risk tolerance.</p>
+<p>Note: <strong>this formula is a heuristic, not a law of physics.</strong> It assumes longs and shorts really do offset in stress. In a liquidity crisis everything can fall together and the hedge fails. Use it as a supplement, never as a substitute for thinking about correlation.</p>
+<h2 id="7-the-final-order-practise">7. The final order: practise<a class="anchor" href="#7-the-final-order-practise" aria-label="section link">#</a></h2>
+<p>At the end of the two weeks, the Turtles received not only rules but one overriding command: <strong>practise.</strong></p>
+<p>Two analogies from the book:</p>
+<ul>
+<li><strong>Tiger Woods</strong>: swinging a club on television at three years old, practising ever since. "No matter how good you get, you can always get better, and that's the exciting part."</li>
+<li><strong>Medical students</strong>: clumsy the first time they hunt for a vein, but through repetition and discipline they become doctors with decades-long careers.</li>
+</ul>
+<p>Trading is the same. <strong>There is no secret sauce.</strong> One Turtle said it plainly:</p>
+<blockquote>
+<p>Richard didn't quite give us the Holy Grail. There's no single magic element.</p>
+</blockquote>
+<p>The rules take two weeks to teach. <strong>Execution takes a lifetime to practise.</strong></p>
+<h2 id="key-points">Key points<a class="anchor" href="#key-points" aria-label="section link">#</a></h2>
+<ul>
+<li>You cannot predict which market will trend, so cover many.</li>
+<li>The original 21 markets spanned rates, currencies, commodities, equity and energy.</li>
+<li>Correlation creates fake diversification: corn/soybeans, gold/silver, Dow/S&amp;P are one bet twice.</li>
+<li>Count independent risk sources, not market names.</li>
+<li>Net units = larger side − (smaller side ÷ 2): 4v3 → 2.5; 7v3 → 5.5; 8v7 → 4.5.</li>
+<li>Cap units at 4–5 per market; use net units for the portfolio.</li>
+<li>Beyond the rules, the only command is practice.</li>
+</ul>
+<h2 id="self-test">Self-test<a class="anchor" href="#self-test" aria-label="section link">#</a></h2>
+<ol type="1">
+<li>Six long units and two short units. What is net risk?</li>
+<li>Three long units and five short units. What is net risk?</li>
+<li>A portfolio holds one unit each of corn, soybeans, gold and silver. Roughly how many independent markets is that, and why?</li>
+</ol>
+<details>
+<summary>Answers</summary>
+<p><strong>1.</strong> 6 − (2 ÷ 2) = 5 units.</p>
+<p><strong>2.</strong> 5 − (3 ÷ 2) = 3.5 units (larger side minus half the smaller).</p>
+<p><strong>3.</strong> About two: corn and soybeans are highly correlated, as are gold and silver. Four notional units, two real risk sources — textbook fake diversification.</p>
+</details>
+
+      </article>
+<nav class="pager" aria-label="pager"><a class="prev" href="lesson-12.html"><span class="lbl">Previous</span><span class="ttl">Stops, Pyramiding, and Cutting Back</span></a><a class="next" href="lesson-14.html"><span class="lbl">Next</span><span class="ttl">After the Turtles</span></a></nav>
+      <footer class="page-foot">
+        <p>This course is a study guide to Michael W. Covel&#x27;s The Complete TurtleTrader. It is for education only and is not investment advice.</p>
+        <p>© 2026 · The Turtle Rules</p>
+      </footer>
+    </div>
+    <aside class="toc" aria-label="table of contents">
+      <p class="toc-title">On this page</p>
+      <nav id="toc-list"></nav>
+    </aside>
+  </main>
+</div>
+
+<script src="../assets/site.js" defer></script>
+</body>
+</html>

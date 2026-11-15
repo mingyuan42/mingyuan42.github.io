@@ -1,0 +1,233 @@
+<!doctype html>
+<!-- page: en/lesson-06.html -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Expectation · The Turtle Rules</title>
+<meta name="description" content="What you will learn: how to judge whether a method can make money over the long run with one formula — and why &quot;90% accuracy&quot; can be a trap.">
+<meta name="theme-color" content="#08110f">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Expectation · The Turtle Rules">
+<meta property="og:description" content="What you will learn: how to judge whether a method can make money over the long run with one formula — and why &quot;90% accuracy&quot; can be a trap.">
+<meta property="og:site_name" content="The Complete TurtleTrader · A Bilingual Course">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2308110f'/%3E%3Cpath d='M32 12c11 0 20 9 20 20s-9 20-20 20S12 43 12 32' fill='none' stroke='%23e6b566' stroke-width='3'/%3E%3Cpath d='M32 20c6.6 0 12 5.4 12 12s-5.4 12-12 12' fill='none' stroke='%2363d2a4' stroke-width='3'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="../assets/site.css">
+</head>
+<body data-page="lesson-06" data-lang="en" data-title="Expectation">
+<a class="skip" href="#start">Skip to content</a>
+<div class="read-progress" id="read-progress" aria-hidden="true"></div>
+
+<header class="topbar">
+  <button class="topbar-btn" id="nav-toggle" type="button" aria-label="menu" aria-controls="sidebar" aria-expanded="false">
+    <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+  </button>
+  <a class="topbar-title" href="index.html">The Turtle Rules</a>
+  <a class="lang-pill" href="../zh/lesson-06.html" hreflang="zh">中文</a>
+</header>
+
+<div class="nav-overlay" id="nav-overlay"></div>
+
+<aside class="sidebar" id="sidebar" aria-label="course navigation">
+  <button class="nav-close" id="nav-close" type="button" aria-label="close">×</button>
+  <a class="brand" href="index.html">
+    <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 40 40" width="30" height="30"><path d="M20 4c8.8 0 16 7.2 16 16s-7.2 16-16 16S4 28.8 4 20" fill="none" stroke="currentColor" stroke-width="2.4"/><path d="M20 11c5 0 9 4 9 9s-4 9-9 9" fill="none" stroke="currentColor" stroke-width="2.4"/><circle cx="20" cy="20" r="2.4" fill="currentColor"/></svg></span>
+    <span class="brand-text">
+      <span class="brand-title">The Turtle Rules</span>
+      <span class="brand-sub">A beginner&#x27;s course in trend following</span>
+    </span>
+  </a>
+  <nav class="nav">
+<p class="nav-group-title">Start</p>
+<a class="nav-link" href="index.html"><span class="nav-num">◎</span><span>Course home</span></a>
+<div class="nav-group"><p class="nav-group-title">Part One · The Story and the Experiment</p>
+<a class="nav-link" href="lesson-01.html"><span class="nav-num">01</span><span>A Bet That Lasted a Decade</span></a>
+<a class="nav-link" href="lesson-02.html"><span class="nav-num">02</span><span>The Prince of the Pit and the Mathematician</span></a>
+<a class="nav-link" href="lesson-03.html"><span class="nav-num">03</span><span>One Ad, a Thousand Résumés</span></a>
+<a class="nav-link" href="lesson-04.html"><span class="nav-num">04</span><span>Two Weeks in the Classroom</span></a>
+<a class="nav-link" href="lesson-05.html"><span class="nav-num">05</span><span>How the Experiment Ended</span></a>
+</div>
+<div class="nav-group"><p class="nav-group-title">Part Two · Survive First, Profit Second</p>
+<a class="nav-link" href="lesson-06.html" aria-current="page"><span class="nav-num">06</span><span>Expectation: Where the Edge Comes From</span></a>
+<a class="nav-link" href="lesson-07.html"><span class="nav-num">07</span><span>Risk of Ruin: Survive First</span></a>
+<a class="nav-link" href="lesson-08.html"><span class="nav-num">08</span><span>Memoryless Trading: Keeping Emotion Out</span></a>
+</div>
+<div class="nav-group"><p class="nav-group-title">Part Three · The Turtle Rules</p>
+<a class="nav-link" href="lesson-09.html"><span class="nav-num">09</span><span>N: The Market&#x27;s Breath</span></a>
+<a class="nav-link" href="lesson-10.html"><span class="nav-num">10</span><span>Units: The 2% Rule</span></a>
+<a class="nav-link" href="lesson-11.html"><span class="nav-num">11</span><span>Entries: System One and System Two</span></a>
+<a class="nav-link" href="lesson-12.html"><span class="nav-num">12</span><span>Stops, Pyramiding, and Cutting Back</span></a>
+<a class="nav-link" href="lesson-13.html"><span class="nav-num">13</span><span>The Portfolio: Correlation and Netting</span></a>
+</div>
+<div class="nav-group"><p class="nav-group-title">Part Four · Aftermath and Today</p>
+<a class="nav-link" href="lesson-14.html"><span class="nav-num">14</span><span>After the Turtles</span></a>
+</div>
+<div class="nav-group"><p class="nav-group-title">Appendices · Rules and Self-Test</p>
+<a class="nav-link" href="appendix-a.html"><span class="nav-num">A</span><span>The Complete Rules at a Glance</span></a>
+<a class="nav-link" href="appendix-b.html"><span class="nav-num">B</span><span>Exercises and Answers</span></a>
+</div>
+  </nav>
+  <div class="sidebar-foot">
+    <a class="back-home" href="https://chenmingyuan.site/works.html">← Back to portfolio</a><br>
+    14 lessons · 2 appendices<br>For study only. Not investment advice.
+  </div>
+</aside>
+
+<div class="shell">
+  <main class="main">
+    <div class="column">
+<header class="page-hero">
+  <span class="hero-num" aria-hidden="true">06</span>
+  <p class="kicker">Part Two · Lesson 06</p>
+  <h1>Expectation</h1>
+  <p class="hero-meta">About 5 min read<span class="dot">·</span>Based on Michael W. Covel&#x27;s The Complete TurtleTrader</p>
+</header>
+
+      <article class="article" id="start">
+<blockquote>
+<p>What you will learn: how to judge whether a method can make money over the long run with one formula — and why "90% accuracy" can be a trap.</p>
+</blockquote>
+<h2 id="1-ask-the-right-question">1. Ask the right question<a class="anchor" href="#1-ask-the-right-question" aria-label="section link">#</a></h2>
+<p>Most beginners ask: "How accurate is this method?"</p>
+<p>The Turtles were trained to ask something else:</p>
+<blockquote>
+<p><strong>Over the long run, how much does each trade earn me on average?</strong></p>
+</blockquote>
+<p>In casino language, this is the <strong>edge</strong>. A casino does not care who wins the next hand; it cares how many dollars it keeps per hundred wagered over time. Dennis wanted his trading to resemble being the house.</p>
+<h2 id="2-one-formula">2. One formula<a class="anchor" href="#2-one-formula" aria-label="section link">#</a></h2>
+<p>Expectation (E) is simple:</p>
+<pre><code>E = (PW × AW) − (PL × AL)</code></pre>
+<p>Where:</p>
+<ul>
+<li>PW = winning percentage</li>
+<li>AW = average winner</li>
+<li>PL = losing percentage (= 1 − PW)</li>
+<li>AL = average loser (as a positive number)</li>
+</ul>
+<h3 id="example-one">Example one<a class="anchor" href="#example-one" aria-label="section link">#</a></h3>
+<p>A system wins 50% of the time, average winner $500, average loser $350:</p>
+<pre><code>E = (0.50 × 500) − (0.50 × 350)
+  = 250 − 175
+  = $75 per trade</code></pre>
+<p>Over time, each trade is worth $75 on average.</p>
+<h3 id="example-two">Example two<a class="anchor" href="#example-two" aria-label="section link">#</a></h3>
+<p>Another system wins only 40% of the time, but its average winner is $1,000 and its average loser is still $350:</p>
+<pre><code>E = (0.40 × 1,000) − (0.60 × 350)
+  = 400 − 210
+  = $190 per trade</code></pre>
+<p><strong>The second system has 2.5 times the edge of the first, despite a win rate ten points lower.</strong></p>
+<p>Hence the Turtles' refrain: <strong>percent accuracy means nothing.</strong></p>
+<h2 id="3-break-even-win-rate">3. Break-even win rate<a class="anchor" href="#3-break-even-win-rate" aria-label="section link">#</a></h2>
+<p>Given average winner and average loser, the minimum win rate needed to break even is:</p>
+<pre><code>Break-even PW = AL ÷ (AW + AL)</code></pre>
+<ul>
+<li>System one: 350 ÷ (500 + 350) = 41.2%. Anything above that is profitable long run.</li>
+<li>System two: 350 ÷ (1,000 + 350) = 25.9%. Anything above that is profitable.</li>
+</ul>
+<p>Now turn it around. A system advertising "90% accuracy" that wins $10 but loses $200 has:</p>
+<pre><code>0.9 × 10 − 0.1 × 200 = 9 − 20 = −$11 per trade</code></pre>
+<p><strong>Nine wins, one loss, still losing.</strong> High accuracy feels good, and it is exactly how small gains accumulate until one large loss wipes them out.</p>
+<h2 id="4-the-baseball-analogy">4. The baseball analogy<a class="anchor" href="#4-the-baseball-analogy" aria-label="section link">#</a></h2>
+<p>Dennis used baseball:</p>
+<blockquote>
+<p>The average batter hits maybe .280, and the average system might be successful 35 percent of the time.</p>
+</blockquote>
+<p>What matters is not how often you hit but <strong>whether the hits are singles or home runs</strong>. A .280 hitter who hits home runs is worth far more than a .320 hitter who only singles.</p>
+<p>Trend-following systems are built this way: <strong>most trades are small losses, a few are large gains.</strong> You might make ten trades, lose small on seven and win big on three, and end up positive. Therefore:</p>
+<ul>
+<li>Losing streaks are the system breathing, not the system breaking.</li>
+<li>Judge a system over hundreds of trades, not the last five.</li>
+<li>If you demand that every trade wins, you structurally exclude every trend system.</li>
+</ul>
+<h2 id="5-run-the-numbers-on-real-data">5. Run the numbers on real data<a class="anchor" href="#5-run-the-numbers-on-real-data" aria-label="section link">#</a></h2>
+<p>The book reports monthly figures for seven Turtle-style traders from inception to August 2006. Take Liz Cheval:</p>
+<ul>
+<li>Average winning month: +12.45%</li>
+<li>Average losing month: −6.64%</li>
+<li>Winning months: 49.62%</li>
+</ul>
+<pre><code>E = (0.4962 × 12.45) − (0.5038 × 6.64)
+  = 6.18 − 3.35
+  ≈ 2.83% per month</code></pre>
+<p>She wins less than half her months (49.62%) and still earns about +2.83% per month in expectation. Compare the indexes:</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Market</th>
+<th>Avg winning month</th>
+<th>Avg losing month</th>
+<th>Winning months</th>
+<th>Expectation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Dow Jones</td>
+<td>3.87%</td>
+<td>−3.85%</td>
+<td>58.09%</td>
+<td>0.63%</td>
+</tr>
+<tr>
+<td>NASDAQ</td>
+<td>4.98%</td>
+<td>−4.61%</td>
+<td>57.75%</td>
+<td>0.93%</td>
+</tr>
+<tr>
+<td>S&amp;P 500</td>
+<td>3.83%</td>
+<td>−3.92%</td>
+<td>58.37%</td>
+<td>0.60%</td>
+</tr>
+</tbody>
+</table></div>
+<p>The indexes win more often — nearly 58% of months — and earn far less. The reason is single: <strong>the Turtles' winning months are much larger than their losing months.</strong></p>
+<p>That is the whole secret of trend following: do not chase frequency, chase magnitude.</p>
+<h2 id="6-expectation-and-risk-management-are-different-jobs">6. Expectation and risk management are different jobs<a class="anchor" href="#6-expectation-and-risk-management-are-different-jobs" aria-label="section link">#</a></h2>
+<p>Expectation tells you whether a method has an edge. It does not tell you whether you will survive long enough to collect it.</p>
+<p>A positive-expectation system can still ruin you if each bet is too large — that is the next lesson. Eckhardt's summary is exact:</p>
+<blockquote>
+<p><strong>The important thing is to limit portfolio risk. The trades will take care of themselves.</strong></p>
+</blockquote>
+<h2 id="key-points">Key points<a class="anchor" href="#key-points" aria-label="section link">#</a></h2>
+<ul>
+<li>E = (PW × AW) − (PL × AL) measures average profit per trade over the long run.</li>
+<li>Low accuracy is not necessarily bad: 40% at 1,000:350 beats 50% at 500:350 by 2.5 times.</li>
+<li>Break-even PW = AL ÷ (AW + AL).</li>
+<li>High accuracy with small wins and large losses equals negative expectation — the most common way retail traders die.</li>
+<li>Trend systems normally lose small often and win big rarely; streaks do not invalidate the system.</li>
+<li>Expectation answers "can it make money"; risk management answers "will you live to collect it."</li>
+</ul>
+<h2 id="self-test">Self-test<a class="anchor" href="#self-test" aria-label="section link">#</a></h2>
+<ol type="1">
+<li>A system wins 35% of the time, average winner 1,200, average loser 400. What is its expectation and break-even win rate?</li>
+<li>"My method only loses twice a month — 90% accuracy." Which two numbers do you still need before judging it?</li>
+<li>Why is judging a system on the last ten trades statistically useless?</li>
+</ol>
+<details>
+<summary>Answers</summary>
+<p><strong>1.</strong> E = 0.35 × 1,200 − 0.65 × 400 = 420 − 260 = 160 per trade. Break-even PW = 400 ÷ 1,600 = 25%. At 35%, the edge is clearly positive.</p>
+<p><strong>2.</strong> Average winner and average loser. If it wins 50 and loses 800, E = 0.9 × 50 − 0.1 × 800 = 45 − 80 = −35 per trade — a guaranteed long-run loss.</p>
+<p><strong>3.</strong> Trend-system returns are concentrated in a few large trades. A ten-trade sample may contain none of them; the variance is enormous and the sample cannot represent the long-run distribution.</p>
+</details>
+
+      </article>
+<nav class="pager" aria-label="pager"><a class="prev" href="lesson-05.html"><span class="lbl">Previous</span><span class="ttl">How the Experiment Ended</span></a><a class="next" href="lesson-07.html"><span class="lbl">Next</span><span class="ttl">Risk of Ruin: Survive First</span></a></nav>
+      <footer class="page-foot">
+        <p>This course is a study guide to Michael W. Covel&#x27;s The Complete TurtleTrader. It is for education only and is not investment advice.</p>
+        <p>© 2026 · The Turtle Rules</p>
+      </footer>
+    </div>
+    <aside class="toc" aria-label="table of contents">
+      <p class="toc-title">On this page</p>
+      <nav id="toc-list"></nav>
+    </aside>
+  </main>
+</div>
+
+<script src="../assets/site.js" defer></script>
+</body>
+</html>

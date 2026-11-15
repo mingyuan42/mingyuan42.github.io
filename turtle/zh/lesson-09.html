@@ -1,0 +1,280 @@
+<!doctype html>
+<!-- page: zh/lesson-09.html -->
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>N——市场的呼吸 · 海龟交易法则</title>
+<meta name="description" content="本课目标：学会用真实波幅（True Range）计算 N，理解 N 为什么是仓位、止损和加仓的共同标尺。">
+<meta name="theme-color" content="#08110f">
+<meta property="og:type" content="article">
+<meta property="og:title" content="N——市场的呼吸 · 海龟交易法则">
+<meta property="og:description" content="本课目标：学会用真实波幅（True Range）计算 N，理解 N 为什么是仓位、止损和加仓的共同标尺。">
+<meta property="og:site_name" content="《海龟交易法则》中英双语通识课">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2308110f'/%3E%3Cpath d='M32 12c11 0 20 9 20 20s-9 20-20 20S12 43 12 32' fill='none' stroke='%23e6b566' stroke-width='3'/%3E%3Cpath d='M32 20c6.6 0 12 5.4 12 12s-5.4 12-12 12' fill='none' stroke='%2363d2a4' stroke-width='3'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="../assets/site.css">
+</head>
+<body data-page="lesson-09" data-lang="zh" data-title="N——市场的呼吸">
+<a class="skip" href="#start">跳到正文</a>
+<div class="read-progress" id="read-progress" aria-hidden="true"></div>
+
+<header class="topbar">
+  <button class="topbar-btn" id="nav-toggle" type="button" aria-label="menu" aria-controls="sidebar" aria-expanded="false">
+    <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+  </button>
+  <a class="topbar-title" href="index.html">海龟交易法则</a>
+  <a class="lang-pill" href="../en/lesson-09.html" hreflang="en">English</a>
+</header>
+
+<div class="nav-overlay" id="nav-overlay"></div>
+
+<aside class="sidebar" id="sidebar" aria-label="course navigation">
+  <button class="nav-close" id="nav-close" type="button" aria-label="close">×</button>
+  <a class="brand" href="index.html">
+    <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 40 40" width="30" height="30"><path d="M20 4c8.8 0 16 7.2 16 16s-7.2 16-16 16S4 28.8 4 20" fill="none" stroke="currentColor" stroke-width="2.4"/><path d="M20 11c5 0 9 4 9 9s-4 9-9 9" fill="none" stroke="currentColor" stroke-width="2.4"/><circle cx="20" cy="20" r="2.4" fill="currentColor"/></svg></span>
+    <span class="brand-text">
+      <span class="brand-title">海龟交易法则</span>
+      <span class="brand-sub">从零读懂趋势跟踪</span>
+    </span>
+  </a>
+  <nav class="nav">
+<p class="nav-group-title">开始</p>
+<a class="nav-link" href="index.html"><span class="nav-num">◎</span><span>课程首页</span></a>
+<div class="nav-group"><p class="nav-group-title">第一部分 · 故事与实验</p>
+<a class="nav-link" href="lesson-01.html"><span class="nav-num">01</span><span>一个持续十年的赌局</span></a>
+<a class="nav-link" href="lesson-02.html"><span class="nav-num">02</span><span>王子与数学家</span></a>
+<a class="nav-link" href="lesson-03.html"><span class="nav-num">03</span><span>一则广告，上千份简历</span></a>
+<a class="nav-link" href="lesson-04.html"><span class="nav-num">04</span><span>两周课堂</span></a>
+<a class="nav-link" href="lesson-05.html"><span class="nav-num">05</span><span>实验的结局</span></a>
+</div>
+<div class="nav-group"><p class="nav-group-title">第二部分 · 先活下来，再赚钱</p>
+<a class="nav-link" href="lesson-06.html"><span class="nav-num">06</span><span>期望值：你靠什么长期赚钱</span></a>
+<a class="nav-link" href="lesson-07.html"><span class="nav-num">07</span><span>破产风险：先活下来</span></a>
+<a class="nav-link" href="lesson-08.html"><span class="nav-num">08</span><span>无记忆交易：把情绪关在门外</span></a>
+</div>
+<div class="nav-group"><p class="nav-group-title">第三部分 · 海龟的规则</p>
+<a class="nav-link" href="lesson-09.html" aria-current="page"><span class="nav-num">09</span><span>N：市场的呼吸</span></a>
+<a class="nav-link" href="lesson-10.html"><span class="nav-num">10</span><span>单位：2% 规则</span></a>
+<a class="nav-link" href="lesson-11.html"><span class="nav-num">11</span><span>入场：系统一与系统二</span></a>
+<a class="nav-link" href="lesson-12.html"><span class="nav-num">12</span><span>止损、加仓与减仓</span></a>
+<a class="nav-link" href="lesson-13.html"><span class="nav-num">13</span><span>组合：相关性与净头寸</span></a>
+</div>
+<div class="nav-group"><p class="nav-group-title">第四部分 · 之后与今天</p>
+<a class="nav-link" href="lesson-14.html"><span class="nav-num">14</span><span>海龟之后</span></a>
+</div>
+<div class="nav-group"><p class="nav-group-title">附录 · 规则与自测</p>
+<a class="nav-link" href="appendix-a.html"><span class="nav-num">A</span><span>完整规则速查</span></a>
+<a class="nav-link" href="appendix-b.html"><span class="nav-num">B</span><span>练习与答案</span></a>
+</div>
+  </nav>
+  <div class="sidebar-foot">
+    <a class="back-home" href="https://chenmingyuan.site/works.html">← 返回作品集</a><br>
+    14 节课 · 2 个附录<br>仅供学习，不构成投资建议
+  </div>
+</aside>
+
+<div class="shell">
+  <main class="main">
+    <div class="column">
+<header class="page-hero">
+  <span class="hero-num" aria-hidden="true">09</span>
+  <p class="kicker">第三部分 · 第 09 课</p>
+  <h1>N——市场的呼吸</h1>
+  <p class="hero-meta">阅读约 5 分钟<span class="dot">·</span>迈克尔·科维尔《The Complete TurtleTrader》通识课</p>
+</header>
+
+      <article class="article" id="start">
+<blockquote>
+<p>本课目标：学会用真实波幅（True Range）计算 N，理解 N 为什么是仓位、止损和加仓的共同标尺。</p>
+</blockquote>
+<h2 id="一为什么需要一把尺子">一、为什么需要一把尺子<a class="anchor" href="#一为什么需要一把尺子" aria-label="section link">#</a></h2>
+<p>假设两个人各买一手玉米：</p>
+<ul>
+<li>甲在波动很小的年份买，玉米一天走 3 美分。</li>
+<li>乙在波动剧烈的年份买，玉米一天走 15 美分。</li>
+</ul>
+<p>同样“一手”，风险差五倍。如果按“手数”来管理风险，你根本不知道自己在冒多大险。</p>
+<p>海龟需要一把<strong>跨市场、跨时间都可比</strong>的尺子。他们用的尺子叫 <strong>N</strong>，也叫 <strong>ATR</strong>（Average True Range，平均真实波幅）。</p>
+<p>一句话定义：<strong>N 是这个市场一天“通常”走多远。</strong></p>
+<h2 id="二真实波幅一天到底走了多远">二、真实波幅：一天到底走了多远<a class="anchor" href="#二真实波幅一天到底走了多远" aria-label="section link">#</a></h2>
+<p>先算“真实波幅”（True Range，TR）。对某一天，取以下三个距离中的<strong>最大值</strong>：</p>
+<ol type="1">
+<li>今天的最高价 − 今天的最低价</li>
+<li>昨天的收盘价 与 今天的最高价 之间的距离（取绝对值）</li>
+<li>昨天的收盘价 与 今天的最低价 之间的距离（取绝对值）</li>
+</ol>
+<p>为什么要看昨天收盘？因为市场可能跳空。如果昨天收在 500，今天直接从 520 开盘、最高 524，那么“今天高 − 今天低”可能只有 4，但实际从昨天收盘算起，市场已经跳了 24。<strong>跳空也是波动，不能漏掉。</strong></p>
+<p>取最大值，再取绝对值，就得到这一天的 TR。</p>
+<h2 id="三n-是-20-天的平均">三、N 是 20 天的平均<a class="anchor" href="#三n-是-20-天的平均" aria-label="section link">#</a></h2>
+<p>单日 TR 太吵，海龟取<strong>最近 20 个交易日 TR 的平均值</strong>，这就是 N。</p>
+<p>用书中的堪萨斯城小麦（2006 年 9 月合约）做例子：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>日期</th>
+<th>最高</th>
+<th>最低</th>
+<th>收盘</th>
+<th>TR1（高−低）</th>
+<th>TR2（|昨收−高|）</th>
+<th>TR3（|昨收−低|）</th>
+<th>TR</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>07/03</td>
+<td>521.50</td>
+<td>511.25</td>
+<td>516.50</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>07/05</td>
+<td>524.00</td>
+<td>513.00</td>
+<td>521.50</td>
+<td>11.00</td>
+<td>7.50</td>
+<td>3.50</td>
+<td>11.00</td>
+</tr>
+<tr>
+<td>07/06</td>
+<td>523.50</td>
+<td>515.50</td>
+<td>518.00</td>
+<td>8.00</td>
+<td>2.00</td>
+<td>6.00</td>
+<td>8.00</td>
+</tr>
+<tr>
+<td>07/07</td>
+<td>515.00</td>
+<td>505.50</td>
+<td>506.00</td>
+<td>9.50</td>
+<td>3.00</td>
+<td>12.50</td>
+<td>12.50</td>
+</tr>
+<tr>
+<td>07/11</td>
+<td>527.50</td>
+<td>515.00</td>
+<td>524.00</td>
+<td>12.50</td>
+<td>16.50</td>
+<td>4.00</td>
+<td>16.50</td>
+</tr>
+<tr>
+<td>07/13</td>
+<td>514.00</td>
+<td>492.00</td>
+<td>493.00</td>
+<td>22.00</td>
+<td>4.50</td>
+<td>26.50</td>
+<td>26.50</td>
+</tr>
+</tbody>
+</table></div>
+<p>以 07/13 为例：</p>
+<ul>
+<li>TR1 = 514.00 − 492.00 = 22.00</li>
+<li>TR2 = |493.00 的前一日收盘 518.50 − 514.00| = 4.50</li>
+<li>TR3 = |518.50 − 492.00| = 26.50</li>
+<li>TR = 三者最大值 = <strong>26.50</strong></li>
+</ul>
+<p>把 20 个交易日的 TR 加起来：</p>
+<pre><code>11.00 + 8.00 + 12.50 + 7.00 + 16.50 + 12.00 + 26.50 + 9.00 + 14.50 + 7.50
++ 13.00 + 19.00 + 14.50 + 7.50 + 19.00 + 8.50 + 7.00 + 5.00 + 10.00 + 10.75
+= 238.75</code></pre>
+<pre><code>N = 238.75 ÷ 20 = 11.9375 ≈ 11.94</code></pre>
+<p>意思是：这段时间，堪萨斯城小麦一天“典型”波动约 <strong>11.94 美分</strong>。</p>
+<p>（书中给个人账户的小贴士提到也可以用 15 天平均；天数越短越敏感、越长越平滑。海龟课堂的标准是 20 天。）</p>
+<h2 id="四n-是价格也是钱">四、N 是价格，也是钱<a class="anchor" href="#四n-是价格也是钱" aria-label="section link">#</a></h2>
+<p>N 先是一个价格单位（美分、美元、点）。要变成“我会亏多少钱”，还得乘上合约的<strong>点值</strong>。</p>
+<p>以堪萨斯城小麦为例，一手合约 5,000 蒲式耳，报价单位是美分/蒲式耳，所以 1 美分 = 5,000 × 0.01 = <strong>50 美元</strong>。</p>
+<pre><code>1N 的美元价值 = 11.94 × 50 ≈ 597 美元
+2N ≈ 1,194 美元</code></pre>
+<p>再看玉米：如果 N = 7 美分，一手 5,000 蒲式耳，1 美分 = 50 美元：</p>
+<pre><code>1N = 7 × 50 = 350 美元
+2N = 700 美元</code></pre>
+<p><strong>同样是“一手”，小麦的 1N 是 597 美元，玉米是 350 美元。</strong> 这就是为什么不能按“手数”比较风险。</p>
+<h2 id="五海龟的行话用-n-说话">五、海龟的行话：用 N 说话<a class="anchor" href="#五海龟的行话用-n-说话" aria-label="section link">#</a></h2>
+<p>海龟不用“我押了 1000 美元”这种方式思考，他们用 N：</p>
+<blockquote>
+<p>我们不说“我下了一千美元的注”，我们说“我持了半个 N”。</p>
+</blockquote>
+<p>厄尔·基弗解释得很生动：如果你想着“我手里有 3400 万美元的债券”，钱的概念会进入你的“蜥蜴脑”，你会开始“天啊”地紧张。但如果你想的是“债券今天动了一个又四分之一个 N”，你就在看市场，而不是在看自己的身家。</p>
+<p>这套行话有三个好处：</p>
+<ul>
+<li><strong>可比</strong>：不同市场、不同合约，都用同一把尺子衡量。</li>
+<li><strong>脱敏</strong>：把美元金额转成波动单位，降低情绪干扰。</li>
+<li><strong>可计算</strong>：仓位、止损、加仓全都可以用 N 表达。</li>
+</ul>
+<p>海龟的日常也印证了这一点：每天早上，他们会拿到一个写着自己名字的信封，里面是持仓打印单，<strong>以及更新后的 N 值</strong>。复杂的计算由团队做好，海龟负责核对和执行。</p>
+<h2 id="六n-会变而且必须每天更新">六、N 会变，而且必须每天更新<a class="anchor" href="#六n-会变而且必须每天更新" aria-label="section link">#</a></h2>
+<p>N 不是常数。波动率会随市场情绪、新闻、季节变化。埃克哈特每天更新波动率估计，他说：</p>
+<blockquote>
+<p>这就是我的日常。一年里有两三次，我会在盘中做调整。</p>
+</blockquote>
+<p>这意味着：</p>
+<ul>
+<li><strong>同一个市场，不同时期的 N 可能差好几倍。</strong> 低波动时 N 小，高波动时 N 大。</li>
+<li><strong>N 小 → 同样风险下可以买更多合约；N 大 → 必须买更少。</strong> 这是下一课仓位计算的核心。</li>
+<li><strong>停止更新 N，等于用旧地图走新路。</strong></li>
+</ul>
+<h2 id="七n-的三种用途预告">七、N 的三种用途（预告）<a class="anchor" href="#七n-的三种用途预告" aria-label="section link">#</a></h2>
+<p>记住这三个用途，后面的课会逐一展开：</p>
+<ol type="1">
+<li><strong>定仓位</strong>：用 2% 权益 ÷（2N 的美元价值）算出该买几手。</li>
+<li><strong>定止损</strong>：入场价加减 2N，就是初始止损。</li>
+<li><strong>定加仓</strong>：每有利移动 1N，加一个单位。</li>
+</ol>
+<p>所以 N 不只是一个统计量，它是海龟系统的<strong>通用货币</strong>。</p>
+<h2 id="本课要点">本课要点<a class="anchor" href="#本课要点" aria-label="section link">#</a></h2>
+<ul>
+<li>N = 20 日平均真实波幅（ATR），衡量市场“一天通常走多远”。</li>
+<li>真实波幅取三个距离的最大值：今高−今低、|昨收−今高|、|昨收−今低|。</li>
+<li>堪萨斯城小麦示例：20 日 TR 合计 238.75，N = 11.94 美分。</li>
+<li>N 乘合约点值才是美元风险：小麦 1N ≈ 597 美元，玉米 1N = 350 美元。</li>
+<li>海龟用 N 作为通用语言，避免直接盯着美元金额产生情绪。</li>
+<li>N 每天变化，必须持续更新；N 决定仓位、止损和加仓。</li>
+</ul>
+<h2 id="自测">自测<a class="anchor" href="#自测" aria-label="section link">#</a></h2>
+<ol type="1">
+<li>某市场昨天收盘 100，今天最高 106、最低 97。今天的三个距离分别是多少？TR 是多少？</li>
+<li>某合约 1 个价格点 = 20 美元，N = 3.5 点。1N 的美元价值是多少？2N 呢？</li>
+<li>为什么两个 N 相同的市场，按“相同手数”交易，风险可能完全不同？</li>
+</ol>
+<details>
+<summary>参考答案</summary>
+<p><strong>1.</strong> TR1 = 106 − 97 = 9；TR2 = |100 − 106| = 6；TR3 = |100 − 97| = 3。TR = max(9, 6, 3) = 9。</p>
+<p><strong>2.</strong> 1N = 3.5 × 20 = 70 美元；2N = 140 美元。</p>
+<p><strong>3.</strong> 因为“一手”对应的合约规模（点值）不同。N 相同只说明价格波动幅度相同，但每点值多少钱不同，美元风险就不同；必须用 N × 点值来比较。</p>
+</details>
+
+      </article>
+<nav class="pager" aria-label="pager"><a class="prev" href="lesson-08.html"><span class="lbl">上一课</span><span class="ttl">无记忆交易：把情绪关在门外</span></a><a class="next" href="lesson-10.html"><span class="lbl">下一课</span><span class="ttl">单位：2% 规则</span></a></nav>
+      <footer class="page-foot">
+        <p>本课程基于迈克尔·科维尔《The Complete TurtleTrader》整理，用于知识学习，不构成任何投资建议。</p>
+        <p>© 2026 · 海龟交易法则通识课</p>
+      </footer>
+    </div>
+    <aside class="toc" aria-label="table of contents">
+      <p class="toc-title">本页目录</p>
+      <nav id="toc-list"></nav>
+    </aside>
+  </main>
+</div>
+
+<script src="../assets/site.js" defer></script>
+</body>
+</html>
