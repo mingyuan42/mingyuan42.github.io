@@ -1,0 +1,121 @@
+<!doctype html>
+<!-- page: lab.html -->
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>财富实验室 · 财富自由之路</title>
+<meta name="description" content="复利与定投模拟器、注意力账本、个人商业模式画布、成长率对比。左侧参数常驻，动一下右侧立刻重算，可导出 PNG 与 CSV。">
+<meta name="theme-color" content="#f3ebdd">
+<meta property="og:type" content="article">
+<meta property="og:title" content="财富实验室 · 财富自由之路">
+<meta property="og:description" content="复利与定投模拟器、注意力账本、个人商业模式画布、成长率对比。左侧参数常驻，动一下右侧立刻重算，可导出 PNG 与 CSV。">
+<meta property="og:site_name" content="财富自由之路">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23f3ebdd'/%3E%3Crect x='8' y='8' width='48' height='48' rx='6' fill='%23c3352b'/%3E%3Cpath d='M18 44c6 0 9-4 12-12s6-14 16-14' fill='none' stroke='%23f7e6c8' stroke-width='4' stroke-linecap='round'/%3E%3Ccircle cx='45' cy='19' r='3.4' fill='%23dda23a'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body data-page="lab" data-title="财富实验室" data-track="off">
+<a class="skip" href="#start">跳到正文</a>
+<div class="read-progress" id="read-progress" aria-hidden="true"></div>
+
+<header class="topbar">
+  <button class="topbar-btn" id="nav-toggle" type="button" aria-label="打开目录" aria-controls="sidebar" aria-expanded="false">
+    <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+  </button>
+  <a class="topbar-title" href="index.html">财富自由之路</a>
+  <span class="topbar-seal" aria-hidden="true">财</span>
+</header>
+
+<div class="nav-overlay" id="nav-overlay"></div>
+
+<aside class="sidebar" id="sidebar" aria-label="课程目录">
+  <button class="nav-close" id="nav-close" type="button" aria-label="关闭目录">×</button>
+  <a class="brand" href="index.html">
+    <span class="brand-seal" aria-hidden="true"><span>财富</span><span>自由</span></span>
+    <span class="brand-text">
+      <span class="brand-title">财富自由之路</span>
+      <span class="brand-sub">21 lessons · 4 tools</span>
+    </span>
+  </a>
+  <nav class="nav">
+<p class="nav-group-title">开始</p>
+<a class="nav-link" href="index.html"><span class="nav-num">◎</span><span>课程首页</span></a>
+<div class="nav-group"><p class="nav-group-title">第1部分 · 重新定义财富自由</p>
+<a class="nav-link" href="zh/lesson-01.html"><span class="nav-num">01</span><span>财富自由是什么</span></a>
+<a class="nav-link" href="zh/lesson-02.html"><span class="nav-num">02</span><span>三大坑与注意力</span></a>
+<a class="nav-link" href="zh/lesson-03.html"><span class="nav-num">03</span><span>付费与安全感</span></a>
+<a class="nav-link" href="zh/lesson-04.html"><span class="nav-num">04</span><span>活在未来 · 贵人</span></a>
+</div>
+<div class="nav-group"><p class="nav-group-title">第2部分 · 升级你的操作系统</p>
+<a class="nav-link" href="zh/lesson-05.html"><span class="nav-num">05</span><span>资本三要素</span></a>
+<a class="nav-link" href="zh/lesson-06.html"><span class="nav-num">06</span><span>多维竞争</span></a>
+<a class="nav-link" href="zh/lesson-07.html"><span class="nav-num">07</span><span>元认知能力</span></a>
+<a class="nav-link" href="zh/lesson-08.html"><span class="nav-num">08</span><span>万能钥匙</span></a>
+<a class="nav-link" href="zh/lesson-09.html"><span class="nav-num">09</span><span>你的世界是你选的</span></a>
+</div>
+<div class="nav-group"><p class="nav-group-title">第3部分 · 选择决定命运</p>
+<a class="nav-link" href="zh/lesson-10.html"><span class="nav-num">10</span><span>特立独行且正确</span></a>
+<a class="nav-link" href="zh/lesson-11.html"><span class="nav-num">11</span><span>刚需与避险</span></a>
+<a class="nav-link" href="zh/lesson-12.html"><span class="nav-num">12</span><span>选择的方法论</span></a>
+</div>
+<div class="nav-group"><p class="nav-group-title">第4部分 · 投资：先活下来</p>
+<a class="nav-link" href="zh/lesson-13.html"><span class="nav-num">13</span><span>资本量级与机会</span></a>
+<a class="nav-link" href="zh/lesson-14.html"><span class="nav-num">14</span><span>短期不可预测</span></a>
+<a class="nav-link" href="zh/lesson-15.html"><span class="nav-num">15</span><span>定投与长期</span></a>
+<a class="nav-link" href="zh/lesson-16.html"><span class="nav-num">16</span><span>周期与镜像世界</span></a>
+</div>
+<div class="nav-group"><p class="nav-group-title">第5部分 · 商业模式与成长</p>
+<a class="nav-link" href="zh/lesson-17.html"><span class="nav-num">17</span><span>时间买卖三模式</span></a>
+<a class="nav-link" href="zh/lesson-18.html"><span class="nav-num">18</span><span>写作与买时间</span></a>
+<a class="nav-link" href="zh/lesson-19.html"><span class="nav-num">19</span><span>成长率与操作系统</span></a>
+<a class="nav-link" href="zh/lesson-20.html"><span class="nav-num">20</span><span>重复 · 希望 · 践行</span></a>
+<a class="nav-link" href="zh/lesson-21.html"><span class="nav-num">21</span><span>一把刀与执行力</span></a>
+</div>
+<div class="nav-group"><p class="nav-group-title">动手工具</p>
+<a class="nav-link nav-tool" href="lab.html" aria-current="page"><span class="nav-num">◎</span><span>财富实验室</span></a>
+<a class="nav-link nav-tool" href="quiz.html"><span class="nav-num">?</span><span>自测 30 题</span></a>
+<a class="nav-link nav-tool" href="glossary.html"><span class="nav-num">≡</span><span>概念词典</span></a>
+<a class="nav-link nav-tool" href="plan.html"><span class="nav-num">✓</span><span>30 天践行</span></a>
+</div>
+  </nav>
+  <div class="sidebar-foot">
+    <a class="back-home" href="https://chenmingyuan.site/works.html">← 返回作品集</a><br>
+    已读 <span id="read-count">0</span> / 21 课<br>
+    李笑来 · 得到专栏第一季<br>仅供学习，不构成投资建议
+  </div>
+</aside>
+
+<div class="tool-shell">
+  <div class="tool-wrap">
+    <div class="tool-head" id="start">
+      <div>
+        <p class="kicker">TOOL 01 · WEALTH LAB</p>
+        <h1>财富实验室</h1>
+        <p>复利与定投模拟器、注意力账本、个人商业模式画布、成长率对比。左侧参数常驻，动一下右侧立刻重算，可导出 PNG 与 CSV。</p>
+      </div>
+      <div class="tool-head-actions">
+<a class="btn btn-ghost btn-sm" href="glossary.html">查概念</a><a class="btn btn-ghost btn-sm" href="plan.html">去践行</a>
+      </div>
+    </div>
+<div class="tabs" role="tablist" aria-label="切换"><button class="tab" type="button" role="tab" data-mod="compound" aria-selected="true">复利与定投</button><button class="tab" type="button" role="tab" data-mod="attention" aria-selected="false">注意力账本</button><button class="tab" type="button" role="tab" data-mod="model" aria-selected="false">商业模式画布</button><button class="tab" type="button" role="tab" data-mod="growth" aria-selected="false">成长率对比</button></div>
+<div class="lab-grid">
+  <aside class="rail" aria-label="参数控制区">
+    <h2 class="rail-title"><span id="rail-title-text">复利与定投</span><small>live</small></h2>
+    <div class="rail-controls" id="rail-controls"></div>
+  </aside>
+  <div id="lab-stage"></div>
+</div>
+<p class="mode-note" style="max-width:none">所有计算都在你的浏览器里完成，参数与账本只保存在本机 localStorage，不会上传。
+模型是教学用的简化演算：复利主线为确定性年化，随机路径经过漂移校正（终值相同、过程不同），波动带为 ±1σ 对数正态包络。
+真实市场不保证任何年化收益。</p>
+    <footer class="page-foot" style="margin-top:34px">
+      <p>本课程为李笑来《财富自由之路》（得到专栏第一季，2016-07-27 至 2017-07-28）的学习整理与转述，不是原文转载。书中出现的公司、价格、收益率与收入数字均为作者当年的个人记录，不构成任何投资建议。</p>
+      <p>© 2026 · 财富自由之路通识课 · chenmingyuan.site/wealth/</p>
+    </footer>
+  </div>
+</div>
+
+<script src="assets/site.js" defer></script>
+<script src="assets/lab.js" defer></script>
+</body>
+</html>
