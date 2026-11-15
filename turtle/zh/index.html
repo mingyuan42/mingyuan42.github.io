@@ -1,160 +1,27 @@
 <!doctype html>
-<!-- page: zh/index.html -->
 <html lang="zh-CN">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>《海龟交易法则》中英双语通识课</title>
-<meta name="description" content="以中英双语拆解《The Complete TurtleTrader》：海龟实验、趋势跟踪哲学、N 与单位、入场止损、组合风控与练习答案。">
-<meta name="theme-color" content="#08110f">
-<meta property="og:type" content="article">
-<meta property="og:title" content="《海龟交易法则》中英双语通识课">
-<meta property="og:description" content="以中英双语拆解《The Complete TurtleTrader》：海龟实验、趋势跟踪哲学、N 与单位、入场止损、组合风控与练习答案。">
-<meta property="og:site_name" content="《海龟交易法则》中英双语通识课">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2308110f'/%3E%3Cpath d='M32 12c11 0 20 9 20 20s-9 20-20 20S12 43 12 32' fill='none' stroke='%23e6b566' stroke-width='3'/%3E%3Cpath d='M32 20c6.6 0 12 5.4 12 12s-5.4 12-12 12' fill='none' stroke='%2363d2a4' stroke-width='3'/%3E%3C/svg%3E">
-<link rel="stylesheet" href="../assets/site.css">
+<title>页面已迁移 · The Complete TurtleTrader</title>
+<link rel="canonical" href="https://chenmingyuan.site/turtle.html">
+<meta http-equiv="refresh" content="0; url=/turtle.html">
+<meta name="robots" content="noindex, follow">
+<style>
+body{margin:0;min-height:100vh;display:grid;place-items:center;background:#f5efe2;color:#23201a;
+font-family:-apple-system,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;line-height:1.7}
+main{max-width:34rem;padding:2rem 1.5rem;text-align:center}
+a{color:#1c6b45}
+p{margin:.4rem 0 1rem}
+code{font-size:.86em;background:rgba(28,107,69,.08);padding:.1em .35em;border-radius:4px}
+</style>
 </head>
-<body data-page="index" data-lang="zh" data-title="从一则广告开始的实验">
-<a class="skip" href="#start">跳到正文</a>
-<div class="read-progress" id="read-progress" aria-hidden="true"></div>
-
-<header class="topbar">
-  <button class="topbar-btn" id="nav-toggle" type="button" aria-label="menu" aria-controls="sidebar" aria-expanded="false">
-    <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
-  </button>
-  <a class="topbar-title" href="index.html">海龟交易法则</a>
-  <a class="lang-pill" href="../en/index.html" hreflang="en">English</a>
-</header>
-
-<div class="nav-overlay" id="nav-overlay"></div>
-
-<aside class="sidebar" id="sidebar" aria-label="course navigation">
-  <button class="nav-close" id="nav-close" type="button" aria-label="close">×</button>
-  <a class="brand" href="index.html">
-    <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 40 40" width="30" height="30"><path d="M20 4c8.8 0 16 7.2 16 16s-7.2 16-16 16S4 28.8 4 20" fill="none" stroke="currentColor" stroke-width="2.4"/><path d="M20 11c5 0 9 4 9 9s-4 9-9 9" fill="none" stroke="currentColor" stroke-width="2.4"/><circle cx="20" cy="20" r="2.4" fill="currentColor"/></svg></span>
-    <span class="brand-text">
-      <span class="brand-title">海龟交易法则</span>
-      <span class="brand-sub">从零读懂趋势跟踪</span>
-    </span>
-  </a>
-  <nav class="nav">
-<p class="nav-group-title">开始</p>
-<a class="nav-link" href="index.html" aria-current="page"><span class="nav-num">◎</span><span>课程首页</span></a>
-<div class="nav-group"><p class="nav-group-title">第一部分 · 故事与实验</p>
-<a class="nav-link" href="lesson-01.html"><span class="nav-num">01</span><span>一个持续十年的赌局</span></a>
-<a class="nav-link" href="lesson-02.html"><span class="nav-num">02</span><span>王子与数学家</span></a>
-<a class="nav-link" href="lesson-03.html"><span class="nav-num">03</span><span>一则广告，上千份简历</span></a>
-<a class="nav-link" href="lesson-04.html"><span class="nav-num">04</span><span>两周课堂</span></a>
-<a class="nav-link" href="lesson-05.html"><span class="nav-num">05</span><span>实验的结局</span></a>
-</div>
-<div class="nav-group"><p class="nav-group-title">第二部分 · 先活下来，再赚钱</p>
-<a class="nav-link" href="lesson-06.html"><span class="nav-num">06</span><span>期望值：你靠什么长期赚钱</span></a>
-<a class="nav-link" href="lesson-07.html"><span class="nav-num">07</span><span>破产风险：先活下来</span></a>
-<a class="nav-link" href="lesson-08.html"><span class="nav-num">08</span><span>无记忆交易：把情绪关在门外</span></a>
-</div>
-<div class="nav-group"><p class="nav-group-title">第三部分 · 海龟的规则</p>
-<a class="nav-link" href="lesson-09.html"><span class="nav-num">09</span><span>N：市场的呼吸</span></a>
-<a class="nav-link" href="lesson-10.html"><span class="nav-num">10</span><span>单位：2% 规则</span></a>
-<a class="nav-link" href="lesson-11.html"><span class="nav-num">11</span><span>入场：系统一与系统二</span></a>
-<a class="nav-link" href="lesson-12.html"><span class="nav-num">12</span><span>止损、加仓与减仓</span></a>
-<a class="nav-link" href="lesson-13.html"><span class="nav-num">13</span><span>组合：相关性与净头寸</span></a>
-</div>
-<div class="nav-group"><p class="nav-group-title">第四部分 · 之后与今天</p>
-<a class="nav-link" href="lesson-14.html"><span class="nav-num">14</span><span>海龟之后</span></a>
-</div>
-<div class="nav-group"><p class="nav-group-title">附录 · 规则与自测</p>
-<a class="nav-link" href="appendix-a.html"><span class="nav-num">A</span><span>完整规则速查</span></a>
-<a class="nav-link" href="appendix-b.html"><span class="nav-num">B</span><span>练习与答案</span></a>
-</div>
-  </nav>
-  <div class="sidebar-foot">
-    <a class="back-home" href="https://chenmingyuan.site/works.html">← 返回作品集</a><br>
-    14 节课 · 2 个附录<br>仅供学习，不构成投资建议
-  </div>
-</aside>
-
-<div class="shell">
-  <main class="main">
-    <div class="column">
-<section class="home-hero">
-  <span class="hero-shell" aria-hidden="true"></span>
-  <p class="kicker">THE COMPLETE TURTLETRADER · 双语通识课</p>
-  <h1>把一场真实实验，<br>讲成一门能学会的手艺</h1>
-  <p class="lede">1983 年，芝加哥交易之王理查德·丹尼斯登报招人，用两周教会一群门外汉做趋势交易。这里把故事、哲学和整套规则拆成 14 节课与 2 个附录，中文与英文各自成册。</p>
-  <div class="cta-row">
-    <a class="btn btn-primary" href="lesson-01.html">从第一课开始 <span aria-hidden="true">→</span></a>
-    <a class="btn btn-ghost" href="#start">先看课程地图</a>
-  </div>
-  <a class="resume" id="resume" hidden href="lesson-01.html">继续上次：<span></span></a>
-  <div class="stats"><div class="stat"><b>14</b><span>节课</span></div><div class="stat"><b>2</b><span>个附录</span></div><div class="stat"><b>4</b><span>个部分</span></div><div class="stat"><b>0.1 万</b><span>字讲义</span></div></div>
-</section>
-
-      <article class="article" id="start">
-<p>1983 年秋天，芝加哥交易员理查德·丹尼斯在《华尔街日报》登了一则小广告：招聘商品期货交易员，<strong>不需要经验</strong>，公司将教授自己的交易方法。他和搭档威廉·埃克哈特已经争论了十年——交易能力到底能不能被教会？丹尼斯说能，埃克哈特说不能。于是他们决定用真人做实验。</p>
-<p>被选中的人被称为“海龟”。接下来五年，这群几乎没有交易经验的普通人，用丹尼斯的钱、丹尼斯的规则，在期货市场上赚到了以千万美元计的利润。实验结束后，有人成了管理数十亿美元的基金经理，有人悄然退场，也有人把规则写成书、卖成课程。</p>
-<p>这门课要做的，不是复述传奇，而是把传奇拆开：<strong>他们究竟被教了什么？为什么这些规则有效？一个今天一无所知的人，怎样真正学会它？</strong></p>
-<h2 id="这门课怎么用">这门课怎么用<a class="anchor" href="#这门课怎么用" aria-label="section link">#</a></h2>
-<p>课程按“故事 → 哲学 → 规则 → 之后”四部分展开，共 14 节课、2 个附录。每一课都有本课目标、完整讲解、要点清单和自测题；计算题在附录 B 给出逐步答案。</p>
-<ul>
-<li><strong>第一次读</strong>：按顺序读，不要跳。第 6–8 课是理解规则的前提，第 9–13 课才进入具体数字。</li>
-<li><strong>第二次读</strong>：只读每课末尾的“本课要点”，再回到没把握的段落。</li>
-<li><strong>动手</strong>：拿一张纸，跟着第 9–12 课把 N、合约数、止损价、加仓利润各算一遍。看懂和算对，是两件事。</li>
-<li><strong>别急着实盘</strong>：这是一门关于“一套方法如何运作”的课，不是收益承诺。真实市场里，执行规则比理解规则难得多。</li>
-</ul>
-<h2 id="课程地图">课程地图<a class="anchor" href="#课程地图" aria-label="section link">#</a></h2>
-<h3 id="第一部分--故事与实验">第一部分 · 故事与实验<a class="anchor" href="#第一部分--故事与实验" aria-label="section link">#</a></h3>
-<ol type="1">
-<li><a href="lesson-01.html">一个持续十年的赌局</a> — 培养还是天赋？一场用真人下注的争论。</li>
-<li><a href="lesson-02.html">王子与数学家</a> — 丹尼斯如何从跑单员变成“交易池王子”，埃克哈特又是谁。</li>
-<li><a href="lesson-03.html">一则广告，上千份简历</a> — 63 道判断题、五道问答题，以及他们真正想找的人。</li>
-<li><a href="lesson-04.html">两周课堂</a> — 第一堂课不讲赚钱，讲风险；五个问题与“无记忆交易”。</li>
-<li><a href="lesson-05.html">实验的结局</a> — 1986 年的减仓备忘录、1988 年的关闭，以及谁赢了争论。</li>
-</ol>
-<h3 id="第二部分--先活下来再赚钱">第二部分 · 先活下来，再赚钱<a class="anchor" href="#第二部分--先活下来再赚钱" aria-label="section link">#</a></h3>
-<ol start="6" type="1">
-<li><a href="lesson-06.html">期望值：你靠什么长期赚钱</a> — 胜率不重要，赔率才重要；用两个系统算给你看。</li>
-<li><a href="lesson-07.html">破产风险：先活下来</a> — 为什么每次只赌 2%，以及回撤时为什么要减仓。</li>
-<li><a href="lesson-08.html">无记忆交易：把情绪关在门外</a> — 钱只是记分牌；同一处境，必须做同一决定。</li>
-</ol>
-<h3 id="第三部分--海龟的规则">第三部分 · 海龟的规则<a class="anchor" href="#第三部分--海龟的规则" aria-label="section link">#</a></h3>
-<ol start="9" type="1">
-<li><a href="lesson-09.html">N：市场的呼吸</a> — 真实波幅、20 日均值，以及一个交易日的 11.94 从哪来。</li>
-<li><a href="lesson-10.html">单位：2% 规则</a> — 账户风险 ÷ 合约风险，玉米为什么只买 2 手。</li>
-<li><a href="lesson-11.html">入场：系统一与系统二</a> — 20 日突破、55 日突破、过滤器与保险绳。</li>
-<li><a href="lesson-12.html">止损、加仓与减仓</a> — 2N 硬止损、每 1N 加一个单位、回撤 10% 砍 20%。</li>
-<li><a href="lesson-13.html">组合：相关性与净头寸</a> — 四个“独立”市场可能只是一个；多空相抵怎么算。</li>
-</ol>
-<h3 id="第四部分--之后与今天">第四部分 · 之后与今天<a class="anchor" href="#第四部分--之后与今天" aria-label="section link">#</a></h3>
-<ol start="14" type="1">
-<li><a href="lesson-14.html">海龟之后</a> — 谁成了大师，谁消失了；丹尼斯的回归与再次失败。</li>
-</ol>
-<h3 id="附录">附录<a class="anchor" href="#附录" aria-label="section link">#</a></h3>
-<ul>
-<li><a href="appendix-a.html">附录 A · 完整规则速查</a> — 一页纸装下整套海龟规则与术语。</li>
-<li><a href="appendix-b.html">附录 B · 练习与答案</a> — 16 道计算与判断题，全部给出步骤。</li>
-</ul>
-<h2 id="三个提醒">三个提醒<a class="anchor" href="#三个提醒" aria-label="section link">#</a></h2>
-<p><strong>第一，规则不是圣杯。</strong> 海龟规则的核心不是“20 日”或“55 日”这两个数字，而是：顺势、分散、按波动率定仓位、亏损时缩小、盈利时加码。参数可以变，逻辑不能丢。</p>
-<p><strong>第二，故事里的成功有幸存者偏差。</strong> 我们记住了帕克和亚伯拉罕，却很少提起退场的人。第 14 课会专门谈这个问题。</p>
-<p><strong>第三，这是一份学习材料。</strong> 它不构成投资建议，也不承诺任何收益。期货与杠杆交易的亏损可能超过本金；如果你未来要实践，先用很小的资金、很长的纸面记录，确认自己能不能“按规则做”，再谈赚钱。</p>
-<blockquote>
-<p>本课程基于迈克尔·科维尔（Michael W. Covel）《The Complete TurtleTrader》整理，所有数字与案例均用于解释方法，不构成投资建议。</p>
-</blockquote>
-
-      </article>
-
-      <footer class="page-foot">
-        <p>本课程基于迈克尔·科维尔《The Complete TurtleTrader》整理，用于知识学习，不构成任何投资建议。</p>
-        <p>© 2026 · 海龟交易法则通识课</p>
-      </footer>
-    </div>
-    <aside class="toc" aria-label="table of contents">
-      <p class="toc-title">本页目录</p>
-      <nav id="toc-list"></nav>
-    </aside>
-  </main>
-</div>
-
-<script src="../assets/site.js" defer></script>
+<body>
+<main>
+<p>这一页已经搬到新地址：</p>
+<p><a href="/turtle.html"><code>/turtle.html</code></a></p>
+<p style="font-size:.82rem;color:#82776a">几秒后会自动跳转。</p>
+</main>
+<script>location.replace("/turtle.html" + location.hash);</script>
 </body>
 </html>

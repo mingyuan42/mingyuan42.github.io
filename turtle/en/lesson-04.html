@@ -1,185 +1,27 @@
 <!doctype html>
-<!-- page: en/lesson-04.html -->
 <html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Two Weeks in the Classroom · The Turtle Rules</title>
-<meta name="description" content="What you will learn: the first-principles framework of the Turtle course — the five questions, the comparison principle and memory-less trading — and why the class began with losing money.">
-<meta name="theme-color" content="#08110f">
-<meta property="og:type" content="article">
-<meta property="og:title" content="Two Weeks in the Classroom · The Turtle Rules">
-<meta property="og:description" content="What you will learn: the first-principles framework of the Turtle course — the five questions, the comparison principle and memory-less trading — and why the class began with losing money.">
-<meta property="og:site_name" content="The Complete TurtleTrader · A Bilingual Course">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2308110f'/%3E%3Cpath d='M32 12c11 0 20 9 20 20s-9 20-20 20S12 43 12 32' fill='none' stroke='%23e6b566' stroke-width='3'/%3E%3Cpath d='M32 20c6.6 0 12 5.4 12 12s-5.4 12-12 12' fill='none' stroke='%2363d2a4' stroke-width='3'/%3E%3C/svg%3E">
-<link rel="stylesheet" href="../assets/site.css">
+<title>This page has moved · The Complete TurtleTrader</title>
+<link rel="canonical" href="https://chenmingyuan.site/turtle/lesson-04.html">
+<meta http-equiv="refresh" content="0; url=/turtle/lesson-04.html">
+<meta name="robots" content="noindex, follow">
+<style>
+body{margin:0;min-height:100vh;display:grid;place-items:center;background:#f5efe2;color:#23201a;
+font-family:-apple-system,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;line-height:1.7}
+main{max-width:34rem;padding:2rem 1.5rem;text-align:center}
+a{color:#1c6b45}
+p{margin:.4rem 0 1rem}
+code{font-size:.86em;background:rgba(28,107,69,.08);padding:.1em .35em;border-radius:4px}
+</style>
 </head>
-<body data-page="lesson-04" data-lang="en" data-title="Two Weeks in the Classroom">
-<a class="skip" href="#start">Skip to content</a>
-<div class="read-progress" id="read-progress" aria-hidden="true"></div>
-
-<header class="topbar">
-  <button class="topbar-btn" id="nav-toggle" type="button" aria-label="menu" aria-controls="sidebar" aria-expanded="false">
-    <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
-  </button>
-  <a class="topbar-title" href="index.html">The Turtle Rules</a>
-  <a class="lang-pill" href="../zh/lesson-04.html" hreflang="zh">中文</a>
-</header>
-
-<div class="nav-overlay" id="nav-overlay"></div>
-
-<aside class="sidebar" id="sidebar" aria-label="course navigation">
-  <button class="nav-close" id="nav-close" type="button" aria-label="close">×</button>
-  <a class="brand" href="index.html">
-    <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 40 40" width="30" height="30"><path d="M20 4c8.8 0 16 7.2 16 16s-7.2 16-16 16S4 28.8 4 20" fill="none" stroke="currentColor" stroke-width="2.4"/><path d="M20 11c5 0 9 4 9 9s-4 9-9 9" fill="none" stroke="currentColor" stroke-width="2.4"/><circle cx="20" cy="20" r="2.4" fill="currentColor"/></svg></span>
-    <span class="brand-text">
-      <span class="brand-title">The Turtle Rules</span>
-      <span class="brand-sub">A beginner&#x27;s course in trend following</span>
-    </span>
-  </a>
-  <nav class="nav">
-<p class="nav-group-title">Start</p>
-<a class="nav-link" href="index.html"><span class="nav-num">◎</span><span>Course home</span></a>
-<div class="nav-group"><p class="nav-group-title">Part One · The Story and the Experiment</p>
-<a class="nav-link" href="lesson-01.html"><span class="nav-num">01</span><span>A Bet That Lasted a Decade</span></a>
-<a class="nav-link" href="lesson-02.html"><span class="nav-num">02</span><span>The Prince of the Pit and the Mathematician</span></a>
-<a class="nav-link" href="lesson-03.html"><span class="nav-num">03</span><span>One Ad, a Thousand Résumés</span></a>
-<a class="nav-link" href="lesson-04.html" aria-current="page"><span class="nav-num">04</span><span>Two Weeks in the Classroom</span></a>
-<a class="nav-link" href="lesson-05.html"><span class="nav-num">05</span><span>How the Experiment Ended</span></a>
-</div>
-<div class="nav-group"><p class="nav-group-title">Part Two · Survive First, Profit Second</p>
-<a class="nav-link" href="lesson-06.html"><span class="nav-num">06</span><span>Expectation: Where the Edge Comes From</span></a>
-<a class="nav-link" href="lesson-07.html"><span class="nav-num">07</span><span>Risk of Ruin: Survive First</span></a>
-<a class="nav-link" href="lesson-08.html"><span class="nav-num">08</span><span>Memoryless Trading: Keeping Emotion Out</span></a>
-</div>
-<div class="nav-group"><p class="nav-group-title">Part Three · The Turtle Rules</p>
-<a class="nav-link" href="lesson-09.html"><span class="nav-num">09</span><span>N: The Market&#x27;s Breath</span></a>
-<a class="nav-link" href="lesson-10.html"><span class="nav-num">10</span><span>Units: The 2% Rule</span></a>
-<a class="nav-link" href="lesson-11.html"><span class="nav-num">11</span><span>Entries: System One and System Two</span></a>
-<a class="nav-link" href="lesson-12.html"><span class="nav-num">12</span><span>Stops, Pyramiding, and Cutting Back</span></a>
-<a class="nav-link" href="lesson-13.html"><span class="nav-num">13</span><span>The Portfolio: Correlation and Netting</span></a>
-</div>
-<div class="nav-group"><p class="nav-group-title">Part Four · Aftermath and Today</p>
-<a class="nav-link" href="lesson-14.html"><span class="nav-num">14</span><span>After the Turtles</span></a>
-</div>
-<div class="nav-group"><p class="nav-group-title">Appendices · Rules and Self-Test</p>
-<a class="nav-link" href="appendix-a.html"><span class="nav-num">A</span><span>The Complete Rules at a Glance</span></a>
-<a class="nav-link" href="appendix-b.html"><span class="nav-num">B</span><span>Exercises and Answers</span></a>
-</div>
-  </nav>
-  <div class="sidebar-foot">
-    <a class="back-home" href="https://chenmingyuan.site/works.html">← Back to portfolio</a><br>
-    14 lessons · 2 appendices<br>For study only. Not investment advice.
-  </div>
-</aside>
-
-<div class="shell">
-  <main class="main">
-    <div class="column">
-<header class="page-hero">
-  <span class="hero-num" aria-hidden="true">04</span>
-  <p class="kicker">Part One · Lesson 04</p>
-  <h1>Two Weeks in the Classroom</h1>
-  <p class="hero-meta">About 6 min read<span class="dot">·</span>Based on Michael W. Covel&#x27;s The Complete TurtleTrader</p>
-</header>
-
-      <article class="article" id="start">
-<blockquote>
-<p>What you will learn: the first-principles framework of the Turtle course — the five questions, the comparison principle and memory-less trading — and why the class began with losing money.</p>
-</blockquote>
-<h2 id="1-a-surprise-on-day-one-risk-first">1. A surprise on day one: risk first<a class="anchor" href="#1-a-surprise-on-day-one-risk-first" aria-label="section link">#</a></h2>
-<p>January 1984, the Union League Club in Chicago. On the first day you could hear a pin drop. Everyone was waiting for Dennis to explain how to get rich.</p>
-<p>Dennis was not there. Eckhardt took the floor, and his first topic was <strong>managing risk</strong>.</p>
-<p>For a beginner this makes no sense. People come to learn what to buy and when; the teacher talks about what you do when you lose. But this is the foundation of the entire method: <strong>stay in the game first, talk about winning later.</strong></p>
-<h2 id="2-five-questions-to-answer-before-the-open">2. Five questions to answer before the open<a class="anchor" href="#2-five-questions-to-answer-before-the-open" aria-label="section link">#</a></h2>
-<p>Eckhardt compressed trading into five questions, with no room for negotiation:</p>
-<ol type="1">
-<li><strong>What is the state of the market?</strong> — The price. Not what it "should" be worth, but where it is trading right now.</li>
-<li><strong>What is the volatility of the market?</strong> — How much it typically moves in a day. The Turtles gave this number a name: <strong>N</strong>.</li>
-<li><strong>What is the equity being traded?</strong> — Not what you had last year or at the peak, but what is in the account <strong>now</strong>.</li>
-<li><strong>What is the system or trading orientation?</strong> — You must have a battle plan before the open. You cannot wake up and improvise: "It's at 500 — do I buy or sell?"</li>
-<li><strong>What is the risk aversion of the trader?</strong> — What percentage of the account you are willing to risk per trade.</li>
-</ol>
-<p>The first two are <strong>objective facts</strong>: the price is the price, N is N, everyone sees the same thing. The last three are <strong>present-tense decisions</strong>: how much I have, what rules I follow, how much I risk.</p>
-<p>Note what questions 3 and 5 share: they concern only <em>now</em>. Five years ago you had a million; today you have half a million. You cannot make decisions based on the million you used to have. <strong>You can only decide with the half million you have now.</strong></p>
-<h2 id="3-the-comparison-principle-you-are-not-special">3. The comparison principle: you are not special<a class="anchor" href="#3-the-comparison-principle-you-are-not-special" aria-label="section link">#</a></h2>
-<p>Eckhardt returned again and again to a thought experiment:</p>
-<blockquote>
-<p>Two traders with the same equity, the same system and the same risk aversion, facing exactly the same market situation. Whatever is optimal for one must be optimal for the other.</p>
-</blockquote>
-<p>It sounds trivial, but human nature runs the other way. Most people, facing the same situation, want to think a little harder, add a little twist. In mechanical trading, that "little twist" is a deviation from the rules — and deviation is risk.</p>
-<p>Eckhardt's point translates bluntly:</p>
-<blockquote>
-<p><strong>You are not special. You are not smarter than the market. So follow the rules. Who you are and how smart you are makes no difference.</strong></p>
-</blockquote>
-<p>Dennis put it more starkly: "To follow the good principles and not let fear, greed and hope interfere with your trading is tough. You're swimming upstream against human nature."</p>
-<h2 id="4-memory-less-trading">4. Memory-less trading<a class="anchor" href="#4-memory-less-trading" aria-label="section link">#</a></h2>
-<p>Eckhardt demanded that the Turtles trade <strong>without memory</strong>:</p>
-<blockquote>
-<p>You shouldn't care about how you got to the current state but rather about what you should do now. A trader who trades differentially because of swings in confidence is focusing on his or her own past rather than on current realities.</p>
-</blockquote>
-<p>This rule cuts off the classic forms of self-destruction:</p>
-<ul>
-<li>Last trade lost, so I skip this signal — <strong>letting an old wound veto a present signal</strong>.</li>
-<li>Last trade won, so I double up — <strong>mistaking luck for skill</strong>.</li>
-<li>Three good months, so "I've got the touch" — <strong>mistaking system edge for personal genius</strong>.</li>
-<li>The account fell from a million to half a million, but I still size as if I had a million — <strong>trading an account that no longer exists</strong>.</li>
-</ul>
-<p>Memory-less does not mean no learning. It means: <strong>when you evaluate a signal, leave the emotional ledger out of it.</strong> The system calculates; your job is to execute, not to narrate.</p>
-<h2 id="5-what-the-classroom-was-actually-like">5. What the classroom was actually like<a class="anchor" href="#5-what-the-classroom-was-actually-like" aria-label="section link">#</a></h2>
-<p>Legend has made those two weeks sound far more glamorous than they were:</p>
-<ul>
-<li>The venue was the Union League Club, an old-fashioned gentlemen's club. Jackets and ties at all times — including Dennis.</li>
-<li>Day one was Dale Dellutri on procedures and "housekeeping"; he was the Turtles' team mom.</li>
-<li>The main teacher was Eckhardt, not Dennis. <strong>Much of the meat and potatoes was Eckhardt's</strong>; Dennis supplied a stream of war stories.</li>
-<li>Another colleague, Robert Moss, taught order execution — what actually happens in the pit once your order arrives.</li>
-<li>The format was lecture and note-taking, with questions allowed but few asked at first.</li>
-<li>The following year's class was cut to one week.</li>
-</ul>
-<p>No motivational speeches, no "believe in yourself," no "follow your gut." Rules, arithmetic, examples, and "do it" over and over.</p>
-<h2 id="6-who-taught-what">6. Who taught what<a class="anchor" href="#6-who-taught-what" aria-label="section link">#</a></h2>
-<p>Michael Shannon's assessment is apt: much of the system development was not Dennis but Eckhardt; the two hatched it together.</p>
-<ul>
-<li><strong>Dennis</strong> had extraordinary intuition, seeing in an instant what something meant. Even Eckhardt marvelled at his ability to look at an idea and say, "Look what this means. It works."</li>
-<li><strong>Eckhardt</strong> was the mathematician, the master of probability, who turned intuition into testable, executable rules.</li>
-</ul>
-<p>One saw; the other proved. That combination was the real engine of the Turtle experiment.</p>
-<h2 id="key-points">Key points<a class="anchor" href="#key-points" aria-label="section link">#</a></h2>
-<ul>
-<li>The course began with risk, not profit: survive first.</li>
-<li>The five questions: market state, volatility (N), current equity, system, risk tolerance.</li>
-<li>The first two are objective facts; the last three are present decisions. History is irrelevant.</li>
-<li>Comparison principle: identical conditions demand identical decisions — you are not special.</li>
-<li>Memory-less trading: ignore how you got here; act on what is true now.</li>
-<li>The classroom was plain: rules, arithmetic, execution, no mystique.</li>
-</ul>
-<h2 id="self-test">Self-test<a class="anchor" href="#self-test" aria-label="section link">#</a></h2>
-<ol type="1">
-<li>Why must "how much I have" and "how much I risk" use present numbers rather than historical peaks?</li>
-<li>A trader has three profitable months and increases size, saying "I'm in great form." Analyse that with the memory-less principle.</li>
-<li>If the comparison principle were enforced strictly, how would it eliminate the excuse "this time is different"?</li>
-</ol>
-<details>
-<summary>Answers</summary>
-<p><strong>1.</strong> Position rules scale off current equity. Sizing off a past peak makes actual risk exceed planned risk: after a drawdown, the same market move produces a larger percentage loss.</p>
-<p><strong>2.</strong> He is treating recent results as evidence of ability, letting past profits enter a present decision. The signal is unchanged; only his mood has changed. Under memory-less trading, size follows equity and N, not "form."</p>
-<p><strong>3.</strong> It requires that identical equity, system, risk aversion and market situation produce identical decisions. Any claim that "this time is different" must name which of those four variables actually changed. If one did, the rules already produce a different answer without subjective judgment.</p>
-</details>
-
-      </article>
-<nav class="pager" aria-label="pager"><a class="prev" href="lesson-03.html"><span class="lbl">Previous</span><span class="ttl">One Ad, a Thousand Résumés</span></a><a class="next" href="lesson-05.html"><span class="lbl">Next</span><span class="ttl">How the Experiment Ended</span></a></nav>
-      <footer class="page-foot">
-        <p>This course is a study guide to Michael W. Covel&#x27;s The Complete TurtleTrader. It is for education only and is not investment advice.</p>
-        <p>© 2026 · The Turtle Rules</p>
-      </footer>
-    </div>
-    <aside class="toc" aria-label="table of contents">
-      <p class="toc-title">On this page</p>
-      <nav id="toc-list"></nav>
-    </aside>
-  </main>
-</div>
-
-<script src="../assets/site.js" defer></script>
+<body>
+<main>
+<p>This page now lives at:</p>
+<p><a href="/turtle/lesson-04.html"><code>/turtle/lesson-04.html</code></a></p>
+<p style="font-size:.82rem;color:#82776a">Redirecting in a moment.</p>
+</main>
+<script>location.replace("/turtle/lesson-04.html" + location.hash);</script>
 </body>
 </html>

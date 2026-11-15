@@ -1,154 +1,27 @@
 <!doctype html>
-<!-- page: en/lesson-02.html -->
 <html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>The Prince of the Pit and the Mathematician · The Turtle Rules</title>
-<meta name="description" content="What you will learn: where Dennis&#x27;s and Eckhardt&#x27;s abilities came from, and why a good method needs both an intuitive hypothesis and mathematical testing.">
-<meta name="theme-color" content="#08110f">
-<meta property="og:type" content="article">
-<meta property="og:title" content="The Prince of the Pit and the Mathematician · The Turtle Rules">
-<meta property="og:description" content="What you will learn: where Dennis&#x27;s and Eckhardt&#x27;s abilities came from, and why a good method needs both an intuitive hypothesis and mathematical testing.">
-<meta property="og:site_name" content="The Complete TurtleTrader · A Bilingual Course">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2308110f'/%3E%3Cpath d='M32 12c11 0 20 9 20 20s-9 20-20 20S12 43 12 32' fill='none' stroke='%23e6b566' stroke-width='3'/%3E%3Cpath d='M32 20c6.6 0 12 5.4 12 12s-5.4 12-12 12' fill='none' stroke='%2363d2a4' stroke-width='3'/%3E%3C/svg%3E">
-<link rel="stylesheet" href="../assets/site.css">
+<title>This page has moved · The Complete TurtleTrader</title>
+<link rel="canonical" href="https://chenmingyuan.site/turtle/lesson-02.html">
+<meta http-equiv="refresh" content="0; url=/turtle/lesson-02.html">
+<meta name="robots" content="noindex, follow">
+<style>
+body{margin:0;min-height:100vh;display:grid;place-items:center;background:#f5efe2;color:#23201a;
+font-family:-apple-system,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;line-height:1.7}
+main{max-width:34rem;padding:2rem 1.5rem;text-align:center}
+a{color:#1c6b45}
+p{margin:.4rem 0 1rem}
+code{font-size:.86em;background:rgba(28,107,69,.08);padding:.1em .35em;border-radius:4px}
+</style>
 </head>
-<body data-page="lesson-02" data-lang="en" data-title="The Prince of the Pit and the Mathematician">
-<a class="skip" href="#start">Skip to content</a>
-<div class="read-progress" id="read-progress" aria-hidden="true"></div>
-
-<header class="topbar">
-  <button class="topbar-btn" id="nav-toggle" type="button" aria-label="menu" aria-controls="sidebar" aria-expanded="false">
-    <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
-  </button>
-  <a class="topbar-title" href="index.html">The Turtle Rules</a>
-  <a class="lang-pill" href="../zh/lesson-02.html" hreflang="zh">中文</a>
-</header>
-
-<div class="nav-overlay" id="nav-overlay"></div>
-
-<aside class="sidebar" id="sidebar" aria-label="course navigation">
-  <button class="nav-close" id="nav-close" type="button" aria-label="close">×</button>
-  <a class="brand" href="index.html">
-    <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 40 40" width="30" height="30"><path d="M20 4c8.8 0 16 7.2 16 16s-7.2 16-16 16S4 28.8 4 20" fill="none" stroke="currentColor" stroke-width="2.4"/><path d="M20 11c5 0 9 4 9 9s-4 9-9 9" fill="none" stroke="currentColor" stroke-width="2.4"/><circle cx="20" cy="20" r="2.4" fill="currentColor"/></svg></span>
-    <span class="brand-text">
-      <span class="brand-title">The Turtle Rules</span>
-      <span class="brand-sub">A beginner&#x27;s course in trend following</span>
-    </span>
-  </a>
-  <nav class="nav">
-<p class="nav-group-title">Start</p>
-<a class="nav-link" href="index.html"><span class="nav-num">◎</span><span>Course home</span></a>
-<div class="nav-group"><p class="nav-group-title">Part One · The Story and the Experiment</p>
-<a class="nav-link" href="lesson-01.html"><span class="nav-num">01</span><span>A Bet That Lasted a Decade</span></a>
-<a class="nav-link" href="lesson-02.html" aria-current="page"><span class="nav-num">02</span><span>The Prince of the Pit and the Mathematician</span></a>
-<a class="nav-link" href="lesson-03.html"><span class="nav-num">03</span><span>One Ad, a Thousand Résumés</span></a>
-<a class="nav-link" href="lesson-04.html"><span class="nav-num">04</span><span>Two Weeks in the Classroom</span></a>
-<a class="nav-link" href="lesson-05.html"><span class="nav-num">05</span><span>How the Experiment Ended</span></a>
-</div>
-<div class="nav-group"><p class="nav-group-title">Part Two · Survive First, Profit Second</p>
-<a class="nav-link" href="lesson-06.html"><span class="nav-num">06</span><span>Expectation: Where the Edge Comes From</span></a>
-<a class="nav-link" href="lesson-07.html"><span class="nav-num">07</span><span>Risk of Ruin: Survive First</span></a>
-<a class="nav-link" href="lesson-08.html"><span class="nav-num">08</span><span>Memoryless Trading: Keeping Emotion Out</span></a>
-</div>
-<div class="nav-group"><p class="nav-group-title">Part Three · The Turtle Rules</p>
-<a class="nav-link" href="lesson-09.html"><span class="nav-num">09</span><span>N: The Market&#x27;s Breath</span></a>
-<a class="nav-link" href="lesson-10.html"><span class="nav-num">10</span><span>Units: The 2% Rule</span></a>
-<a class="nav-link" href="lesson-11.html"><span class="nav-num">11</span><span>Entries: System One and System Two</span></a>
-<a class="nav-link" href="lesson-12.html"><span class="nav-num">12</span><span>Stops, Pyramiding, and Cutting Back</span></a>
-<a class="nav-link" href="lesson-13.html"><span class="nav-num">13</span><span>The Portfolio: Correlation and Netting</span></a>
-</div>
-<div class="nav-group"><p class="nav-group-title">Part Four · Aftermath and Today</p>
-<a class="nav-link" href="lesson-14.html"><span class="nav-num">14</span><span>After the Turtles</span></a>
-</div>
-<div class="nav-group"><p class="nav-group-title">Appendices · Rules and Self-Test</p>
-<a class="nav-link" href="appendix-a.html"><span class="nav-num">A</span><span>The Complete Rules at a Glance</span></a>
-<a class="nav-link" href="appendix-b.html"><span class="nav-num">B</span><span>Exercises and Answers</span></a>
-</div>
-  </nav>
-  <div class="sidebar-foot">
-    <a class="back-home" href="https://chenmingyuan.site/works.html">← Back to portfolio</a><br>
-    14 lessons · 2 appendices<br>For study only. Not investment advice.
-  </div>
-</aside>
-
-<div class="shell">
-  <main class="main">
-    <div class="column">
-<header class="page-hero">
-  <span class="hero-num" aria-hidden="true">02</span>
-  <p class="kicker">Part One · Lesson 02</p>
-  <h1>The Prince of the Pit and the Mathematician</h1>
-  <p class="hero-meta">About 6 min read<span class="dot">·</span>Based on Michael W. Covel&#x27;s The Complete TurtleTrader</p>
-</header>
-
-      <article class="article" id="start">
-<blockquote>
-<p>What you will learn: where Dennis's and Eckhardt's abilities came from, and why a good method needs both an intuitive hypothesis and mathematical testing.</p>
-</blockquote>
-<h2 id="1-from-runner-to-prince-of-the-pit">1. From runner to "Prince of the Pit"<a class="anchor" href="#1-from-runner-to-prince-of-the-pit" aria-label="section link">#</a></h2>
-<p>Richard Dennis was not born with a silver spoon. He grew up in an Irish-Catholic family on Chicago's South Side; his father worked for the city, and his grandfather had lost the family's stock-market money in the Depression. As a teenager Dennis was introverted, wore thick glasses, and his first stock pick — ten shares of a $3 phonograph company — went to zero.</p>
-<p>But he had an instinct for odds and rarely lost at poker. At seventeen he took a summer job as a runner at the Chicago Mercantile Exchange for $1.60 an hour. The floor was a mob of hundreds of shouting traders, closer to indoor tackle football than to an auction. He wanted in, but floor traders had to be twenty-one, so he talked his father into trading for him while he signalled from the sidelines.</p>
-<p>Eventually he bought a seat on the MidAm exchange with money borrowed from his parents. His actual trading stake was $100, earned by his brother delivering pizzas. Years later he described his early method as "having no idea whatsoever":</p>
-<blockquote>
-<p>For four years, I was just taking edges. If someone was giving me a quarter-cent edge to buy an oat contract, I didn't think he knew anything either. I just knew I was getting a quarter-cent edge, and at the end of the day the edges would approximately equal my profit. I tried to be like the house in the casino.</p>
-</blockquote>
-<p>This is the first key to Turtle trading: <strong>do not predict the outcome of any single bet. Make sure each bet is slightly favourable, then let repetition work.</strong></p>
-<p>By early 1973, at twenty-four, Dennis had made $100,000. In 1974 he turned a soybean rally into $500,000 and became a millionaire at twenty-five. By 1983, at thirty-seven, he was worth hundreds of millions. In 1986 alone he made $80 million — about $147 million in later dollars — placing him alongside Soros and Milken among Wall Street's top earners. That same year he was down $10 million in a single day and kept trading.</p>
-<p>He rejected the label "gambler." He called himself an empiricist through and through, admiring Hume, Locke and Russell: <strong>don't tell me, prove it.</strong> That British-empiricist temperament became the Turtle experiment itself: stop arguing about whether trading can be taught; hire people, teach them, and look at the results.</p>
-<h2 id="2-eckhardt-the-real-mathematician">2. Eckhardt: the real mathematician<a class="anchor" href="#2-eckhardt-the-real-mathematician" aria-label="section link">#</a></h2>
-<p>If Dennis was intuition in the pit, William Eckhardt was probability at the blackboard. The two met at St. Laurence Catholic High School in Chicago, where they became friends largely because they were seated in alphabetical order. Eckhardt went on to earn a master's in mathematics at the University of Chicago and spent four years in doctoral research in mathematical logic.</p>
-<p>In the 1970s Eckhardt was, in a sense, an early student of Dennis. He later said he was pursuing trading intellectually more than financially. But he soon became the mathematical force behind system development. Many Turtles said plainly: the systems were not Dennis's alone; Eckhardt was the one who turned intuition into testable rules.</p>
-<p>The partnership was symbiotic. Dennis could see in an instant what an observation meant; Eckhardt could formalise it, calculate the probabilities and stress-test it. Dennis saw; Eckhardt proved.</p>
-<h2 id="3-november-1-1978-a-lesson-in-emotional-fortitude">3. November 1, 1978: a lesson in emotional fortitude<a class="anchor" href="#3-november-1-1978-a-lesson-in-emotional-fortitude" aria-label="section link">#</a></h2>
-<p>Eckhardt told a story he never forgot. On the morning of November 1, 1978, the Carter administration raised rates and intervened in currency markets to defend a sinking dollar. Dennis and Eckhardt were heavily long gold, foreign currencies and grains. The markets collapsed on the open. Gold opened below its limit, so they could not exit.</p>
-<p>The only liquid position was silver. Eckhardt froze at the controls, his mind blank. Dennis asked calmly, "What should we do?" — then shorted silver himself. Seconds later silver went limit down too. The short was a large winner and offset the gold disaster.</p>
-<p>Eckhardt called it Dennis's best trade ever, because it was made under maximum duress. They lost roughly $2 million that day and nearly went under. That near-death experience pushed them to computer-test every piece of conventional trading wisdom they had absorbed.</p>
-<p>There is an arithmetic point easy to miss: $2 million sounds enormous, but on a $100 million account it is 2%. What Dennis and Eckhardt taught the Turtles was <strong>proportional thinking</strong>: not "how many dollars did I lose?" but "what percentage of capital did I lose?"</p>
-<h2 id="4-two-abilities-both-necessary">4. Two abilities, both necessary<a class="anchor" href="#4-two-abilities-both-necessary" aria-label="section link">#</a></h2>
-<p>Dennis's story invites a false lesson: be bold, bet big, get rich. The truth is the opposite. Early on he lost $1,000 of a $4,000 stake in two hours, then spent three days recovering emotionally. He called it the best thing that ever happened to him: <strong>you have to go through failure mentally before you can survive it in reality.</strong></p>
-<p>Eckhardt's story invites a different false lesson: be good at maths and you will make money. Also wrong. He saw many brilliant people trade badly. His summary:</p>
-<blockquote>
-<p>Some outstanding traders are quite intelligent, but a few aren't. Many outstandingly intelligent people are horrible traders. Average intelligence is enough. Beyond that, emotional makeup is more important. This is not rocket science. However, it's much easier to learn what you should do in trading than to do it.</p>
-</blockquote>
-<p>The Turtle classroom therefore had to solve two problems: <strong>a tested rule set (mathematics) and the emotional capacity to execute it (psychology).</strong> The first can be written down. The second can only be practised.</p>
-<h2 id="key-points">Key points<a class="anchor" href="#key-points" aria-label="section link">#</a></h2>
-<ul>
-<li>Dennis rose from runner, poker player and floor "edge-taker"; his skill was probabilistic betting, not forecasting.</li>
-<li>His philosophy was empirical: authority means nothing without evidence and testing.</li>
-<li>Eckhardt, the mathematician, converted Dennis's intuition into calculable, testable systems.</li>
-<li>The 1978 silver trade shows that execution under extreme pressure matters as much as the rules.</li>
-<li>Measure losses as a percentage of capital: $2 million on $100 million is the same as $1,000 on $50,000.</li>
-<li>Intelligence has a threshold; beyond it, temperament and discipline matter more.</li>
-</ul>
-<h2 id="self-test">Self-test<a class="anchor" href="#self-test" aria-label="section link">#</a></h2>
-<ol type="1">
-<li>What did Dennis mean when he called his first system "having no idea whatsoever"?</li>
-<li>Why was the 1978 silver trade called his best trade ever?</li>
-<li>Eckhardt said "average intelligence is enough." What does that imply for learning the Turtle rules?</li>
-</ol>
-<details>
-<summary>Answers</summary>
-<p><strong>1.</strong> He was not forecasting direction; he kept taking small favourable edges and let repetition produce the profit. The edge was in bet structure and risk control, not in being right.</p>
-<p><strong>2.</strong> It was executed at the moment of maximum stress, when the account was nearly wiped out; it showed the priority of survival and the ability to act against the crowd.</p>
-<p><strong>3.</strong> The method does not require genius, only arithmetic and probabilistic reasoning. The hard part is emotional control and consistent execution, not complex formulas.</p>
-</details>
-
-      </article>
-<nav class="pager" aria-label="pager"><a class="prev" href="lesson-01.html"><span class="lbl">Previous</span><span class="ttl">A Bet That Lasted a Decade</span></a><a class="next" href="lesson-03.html"><span class="lbl">Next</span><span class="ttl">One Ad, a Thousand Résumés</span></a></nav>
-      <footer class="page-foot">
-        <p>This course is a study guide to Michael W. Covel&#x27;s The Complete TurtleTrader. It is for education only and is not investment advice.</p>
-        <p>© 2026 · The Turtle Rules</p>
-      </footer>
-    </div>
-    <aside class="toc" aria-label="table of contents">
-      <p class="toc-title">On this page</p>
-      <nav id="toc-list"></nav>
-    </aside>
-  </main>
-</div>
-
-<script src="../assets/site.js" defer></script>
+<body>
+<main>
+<p>This page now lives at:</p>
+<p><a href="/turtle/lesson-02.html"><code>/turtle/lesson-02.html</code></a></p>
+<p style="font-size:.82rem;color:#82776a">Redirecting in a moment.</p>
+</main>
+<script>location.replace("/turtle/lesson-02.html" + location.hash);</script>
 </body>
 </html>

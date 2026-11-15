@@ -1,243 +1,27 @@
 <!doctype html>
-<!-- page: en/appendix-b.html -->
 <html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Exercises and Answers · The Turtle Rules</title>
-<meta name="description" content="Exercises and Answers · Based on Michael W. Covel&#x27;s The Complete TurtleTrader">
-<meta name="theme-color" content="#08110f">
-<meta property="og:type" content="article">
-<meta property="og:title" content="Exercises and Answers · The Turtle Rules">
-<meta property="og:description" content="Exercises and Answers · Based on Michael W. Covel&#x27;s The Complete TurtleTrader">
-<meta property="og:site_name" content="The Complete TurtleTrader · A Bilingual Course">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2308110f'/%3E%3Cpath d='M32 12c11 0 20 9 20 20s-9 20-20 20S12 43 12 32' fill='none' stroke='%23e6b566' stroke-width='3'/%3E%3Cpath d='M32 20c6.6 0 12 5.4 12 12s-5.4 12-12 12' fill='none' stroke='%2363d2a4' stroke-width='3'/%3E%3C/svg%3E">
-<link rel="stylesheet" href="../assets/site.css">
+<title>This page has moved · The Complete TurtleTrader</title>
+<link rel="canonical" href="https://chenmingyuan.site/turtle/appendix-b.html">
+<meta http-equiv="refresh" content="0; url=/turtle/appendix-b.html">
+<meta name="robots" content="noindex, follow">
+<style>
+body{margin:0;min-height:100vh;display:grid;place-items:center;background:#f5efe2;color:#23201a;
+font-family:-apple-system,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;line-height:1.7}
+main{max-width:34rem;padding:2rem 1.5rem;text-align:center}
+a{color:#1c6b45}
+p{margin:.4rem 0 1rem}
+code{font-size:.86em;background:rgba(28,107,69,.08);padding:.1em .35em;border-radius:4px}
+</style>
 </head>
-<body data-page="appendix-b" data-lang="en" data-title="Exercises and Answers">
-<a class="skip" href="#start">Skip to content</a>
-<div class="read-progress" id="read-progress" aria-hidden="true"></div>
-
-<header class="topbar">
-  <button class="topbar-btn" id="nav-toggle" type="button" aria-label="menu" aria-controls="sidebar" aria-expanded="false">
-    <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
-  </button>
-  <a class="topbar-title" href="index.html">The Turtle Rules</a>
-  <a class="lang-pill" href="../zh/appendix-b.html" hreflang="zh">中文</a>
-</header>
-
-<div class="nav-overlay" id="nav-overlay"></div>
-
-<aside class="sidebar" id="sidebar" aria-label="course navigation">
-  <button class="nav-close" id="nav-close" type="button" aria-label="close">×</button>
-  <a class="brand" href="index.html">
-    <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 40 40" width="30" height="30"><path d="M20 4c8.8 0 16 7.2 16 16s-7.2 16-16 16S4 28.8 4 20" fill="none" stroke="currentColor" stroke-width="2.4"/><path d="M20 11c5 0 9 4 9 9s-4 9-9 9" fill="none" stroke="currentColor" stroke-width="2.4"/><circle cx="20" cy="20" r="2.4" fill="currentColor"/></svg></span>
-    <span class="brand-text">
-      <span class="brand-title">The Turtle Rules</span>
-      <span class="brand-sub">A beginner&#x27;s course in trend following</span>
-    </span>
-  </a>
-  <nav class="nav">
-<p class="nav-group-title">Start</p>
-<a class="nav-link" href="index.html"><span class="nav-num">◎</span><span>Course home</span></a>
-<div class="nav-group"><p class="nav-group-title">Part One · The Story and the Experiment</p>
-<a class="nav-link" href="lesson-01.html"><span class="nav-num">01</span><span>A Bet That Lasted a Decade</span></a>
-<a class="nav-link" href="lesson-02.html"><span class="nav-num">02</span><span>The Prince of the Pit and the Mathematician</span></a>
-<a class="nav-link" href="lesson-03.html"><span class="nav-num">03</span><span>One Ad, a Thousand Résumés</span></a>
-<a class="nav-link" href="lesson-04.html"><span class="nav-num">04</span><span>Two Weeks in the Classroom</span></a>
-<a class="nav-link" href="lesson-05.html"><span class="nav-num">05</span><span>How the Experiment Ended</span></a>
-</div>
-<div class="nav-group"><p class="nav-group-title">Part Two · Survive First, Profit Second</p>
-<a class="nav-link" href="lesson-06.html"><span class="nav-num">06</span><span>Expectation: Where the Edge Comes From</span></a>
-<a class="nav-link" href="lesson-07.html"><span class="nav-num">07</span><span>Risk of Ruin: Survive First</span></a>
-<a class="nav-link" href="lesson-08.html"><span class="nav-num">08</span><span>Memoryless Trading: Keeping Emotion Out</span></a>
-</div>
-<div class="nav-group"><p class="nav-group-title">Part Three · The Turtle Rules</p>
-<a class="nav-link" href="lesson-09.html"><span class="nav-num">09</span><span>N: The Market&#x27;s Breath</span></a>
-<a class="nav-link" href="lesson-10.html"><span class="nav-num">10</span><span>Units: The 2% Rule</span></a>
-<a class="nav-link" href="lesson-11.html"><span class="nav-num">11</span><span>Entries: System One and System Two</span></a>
-<a class="nav-link" href="lesson-12.html"><span class="nav-num">12</span><span>Stops, Pyramiding, and Cutting Back</span></a>
-<a class="nav-link" href="lesson-13.html"><span class="nav-num">13</span><span>The Portfolio: Correlation and Netting</span></a>
-</div>
-<div class="nav-group"><p class="nav-group-title">Part Four · Aftermath and Today</p>
-<a class="nav-link" href="lesson-14.html"><span class="nav-num">14</span><span>After the Turtles</span></a>
-</div>
-<div class="nav-group"><p class="nav-group-title">Appendices · Rules and Self-Test</p>
-<a class="nav-link" href="appendix-a.html"><span class="nav-num">A</span><span>The Complete Rules at a Glance</span></a>
-<a class="nav-link" href="appendix-b.html" aria-current="page"><span class="nav-num">B</span><span>Exercises and Answers</span></a>
-</div>
-  </nav>
-  <div class="sidebar-foot">
-    <a class="back-home" href="https://chenmingyuan.site/works.html">← Back to portfolio</a><br>
-    14 lessons · 2 appendices<br>For study only. Not investment advice.
-  </div>
-</aside>
-
-<div class="shell">
-  <main class="main">
-    <div class="column">
-<header class="page-hero">
-  <span class="hero-num" aria-hidden="true">B</span>
-  <p class="kicker">Appendices · Rules and Self-Test</p>
-  <h1>Exercises and Answers</h1>
-  <p class="hero-meta">About 6 min read<span class="dot">·</span>Based on Michael W. Covel&#x27;s The Complete TurtleTrader</p>
-</header>
-
-      <article class="article" id="start">
-<blockquote>
-<p>Eighteen problems covering volatility, sizing, stops, pyramiding, expectation, portfolio construction and judgement. Try them first, then check the answers.</p>
-</blockquote>
-<h2 id="part-1-n-and-position-sizing">Part 1: N and position sizing<a class="anchor" href="#part-1-n-and-position-sizing" aria-label="section link">#</a></h2>
-<h3 id="problem-1">Problem 1<a class="anchor" href="#problem-1" aria-label="section link">#</a></h3>
-<p>A market closed at 50 yesterday; today's high is 56 and low is 47. What is today's true range?</p>
-<details>
-<summary>Answer</summary>
-<p>TR1 = 56 − 47 = 9; TR2 = |50 − 56| = 6; TR3 = |50 − 47| = 3. TR = max(9, 6, 3) = <strong>9</strong>.</p>
-</details>
-
-<h3 id="problem-2">Problem 2<a class="anchor" href="#problem-2" aria-label="section link">#</a></h3>
-<p>The last 20 daily TRs sum to 240. What is N?</p>
-<details>
-<summary>Answer</summary>
-<p>N = 240 ÷ 20 = <strong>12</strong>.</p>
-</details>
-
-<h3 id="problem-3">Problem 3<a class="anchor" href="#problem-3" aria-label="section link">#</a></h3>
-<p>Corn has N = 12 cents; one contract is 5,000 bushels and 1 cent = $50. What are 1N and 2N in dollars?</p>
-<details>
-<summary>Answer</summary>
-<p>1N = 12 × 50 = <strong>$600</strong>; 2N = 600 × 2 = <strong>$1,200</strong>.</p>
-</details>
-
-<h3 id="problem-4">Problem 4<a class="anchor" href="#problem-4" aria-label="section link">#</a></h3>
-<p>Equity is $120,000, risk per trade 2%, and the 2N dollar risk is $600. How many contracts?</p>
-<details>
-<summary>Answer</summary>
-<p>Allowed risk = 120,000 × 2% = 2,400; 2,400 ÷ 600 = 4, so <strong>4 contracts</strong>.</p>
-</details>
-
-<h3 id="problem-5">Problem 5<a class="anchor" href="#problem-5" aria-label="section link">#</a></h3>
-<p>Equity $60,000, risk 2%, a market with 1N = $800, using a 2N stop. What is the contract count, and what should you do?</p>
-<details>
-<summary>Answer</summary>
-<p>Allowed risk = 1,200; 2N = 1,600; 1,200 ÷ 1,600 = 0.75, rounded down to <strong>0 contracts</strong>. The market is too volatile to fit even one contract inside the 2% budget; the correct action is to <strong>skip the trade</strong>.</p>
-</details>
-
-<h2 id="part-2-stops-and-pyramiding">Part 2: Stops and pyramiding<a class="anchor" href="#part-2-stops-and-pyramiding" aria-label="section link">#</a></h2>
-<h3 id="problem-6">Problem 6<a class="anchor" href="#problem-6" aria-label="section link">#</a></h3>
-<p>Long entry at 50 with N = 1.5. Where is the 2N hard stop?</p>
-<details>
-<summary>Answer</summary>
-<p>2N = 3, so the stop is 50 − 3 = <strong>47</strong>.</p>
-</details>
-
-<h3 id="problem-7">Problem 7<a class="anchor" href="#problem-7" aria-label="section link">#</a></h3>
-<p>Same trade: N = 1.5, long entry at 50. At which prices can you add, and how many units in total?</p>
-<details>
-<summary>Answer</summary>
-<p>Every 1N = 1.5: adds at 51.5, 53, 54.5 and 56. With the first unit that is <strong>5 units</strong> (four adds); no more after 56.</p>
-</details>
-
-<h3 id="problem-8">Problem 8<a class="anchor" href="#problem-8" aria-label="section link">#</a></h3>
-<p>A third unit was added at 53 (N still 1.5). Where should every stop now sit?</p>
-<details>
-<summary>Answer</summary>
-<p>At the newest unit's 2N stop: 53 − 3 = <strong>50</strong>. Units entered at 50, 51.5 and 53 all move their stops to 50.</p>
-</details>
-
-<h3 id="problem-9">Problem 9<a class="anchor" href="#problem-9" aria-label="section link">#</a></h3>
-<p>N = 1; five units enter at 100, 101, 102, 103 and 104; all stops sit at 102; each point is worth $500. If everything is stopped out, what is the net result?</p>
-<details>
-<summary>Answer</summary>
-<p>Unit by unit: 100→102 = +2 pts; 101→102 = +1; 102→102 = 0; 103→102 = −1; 104→102 = −2. Net <strong>0 points = $0</strong>. With stops ratcheting upward, a fully loaded five-unit position can have a worst case of merely breaking even.</p>
-</details>
-
-<h3 id="problem-10">Problem 10<a class="anchor" href="#problem-10" aria-label="section link">#</a></h3>
-<p>Unit risk is 2% and the account is 30% below its peak. Under the Turtle rule, what is unit risk now?</p>
-<details>
-<summary>Answer</summary>
-<p>Cut 20% per 10% drawdown; 30% crosses two full tiers (10% and 20%): 2% × 0.8 × 0.8 = <strong>1.28%</strong>. It only falls to 1.024% at a 40% drawdown.</p>
-</details>
-
-<h2 id="part-3-expectation-and-risk-of-ruin">Part 3: Expectation and risk of ruin<a class="anchor" href="#part-3-expectation-and-risk-of-ruin" aria-label="section link">#</a></h2>
-<h3 id="problem-11">Problem 11<a class="anchor" href="#problem-11" aria-label="section link">#</a></h3>
-<p>A system wins 40% of the time, average winner 1,000, average loser 300. What is its expectation?</p>
-<details>
-<summary>Answer</summary>
-<p>E = 0.40 × 1,000 − 0.60 × 300 = 400 − 180 = <strong>$220 per trade</strong>.</p>
-</details>
-
-<h3 id="problem-12">Problem 12<a class="anchor" href="#problem-12" aria-label="section link">#</a></h3>
-<p>Average winner 600, average loser 450. What is the break-even win rate?</p>
-<details>
-<summary>Answer</summary>
-<p>450 ÷ (600 + 450) = 450 ÷ 1,050 ≈ <strong>42.9%</strong>. Above that, the system is profitable over time.</p>
-</details>
-
-<h3 id="problem-13">Problem 13<a class="anchor" href="#problem-13" aria-label="section link">#</a></h3>
-<p>A method wins 90% of the time, making $40 on a win and losing $600 on a loss. What is its expectation, and what do you conclude?</p>
-<details>
-<summary>Answer</summary>
-<p>E = 0.90 × 40 − 0.10 × 600 = 36 − 60 = <strong>−$24 per trade</strong>. High accuracy masks negative expectation: it loses over time, and one big loss gives back many small wins.</p>
-</details>
-
-<h2 id="part-4-portfolio-and-judgement">Part 4: Portfolio and judgement<a class="anchor" href="#part-4-portfolio-and-judgement" aria-label="section link">#</a></h2>
-<h3 id="problem-14">Problem 14<a class="anchor" href="#problem-14" aria-label="section link">#</a></h3>
-<p>A portfolio holds 7 long units and 4 short units. What is net risk under the Turtle formula?</p>
-<details>
-<summary>Answer</summary>
-<p>7 − (4 ÷ 2) = <strong>5 units</strong>.</p>
-</details>
-
-<h3 id="problem-15">Problem 15<a class="anchor" href="#problem-15" aria-label="section link">#</a></h3>
-<p>A portfolio holds 3 long units and 8 short units. What is net risk?</p>
-<details>
-<summary>Answer</summary>
-<p>8 − (3 ÷ 2) = <strong>6.5 units</strong>.</p>
-</details>
-
-<h3 id="problem-16">Problem 16<a class="anchor" href="#problem-16" aria-label="section link">#</a></h3>
-<p>A portfolio holds: Dow long 1, S&amp;P long 1, gold long 1, silver long 1, yen short 1. Compute net units and explain what that number ignores.</p>
-<details>
-<summary>Answer</summary>
-<p>Formula: 4 − (1 ÷ 2) = <strong>3.5 units</strong>. But it ignores correlation: the Dow and S&P are one risk source, gold and silver are another. So the true independent sources are only <strong>three</strong> (equity, metals, short yen), and diversification is far weaker than "five markets" suggests. Net units and correlation judgement must be used together.</p>
-</details>
-
-<h3 id="problem-17">Problem 17<a class="anchor" href="#problem-17" aria-label="section link">#</a></h3>
-<p>The last S1 20-day breakout was not traded but would theoretically have won. A new 20-day breakout appears. What do you do? If the move continues, do you still get a chance?</p>
-<details>
-<summary>Answer</summary>
-<p><strong>Skip it</strong> — the filter counts theoretical winners regardless of whether you traded. If the move continues, S2's 55-day breakout provides a second entry; that is the purpose of the fail-safe.</p>
-</details>
-
-<h3 id="problem-18">Problem 18<a class="anchor" href="#problem-18" aria-label="section link">#</a></h3>
-<p>System A looks spectacular in backtest but collapses when 17/9 is changed to 18/10. System B uses 20/10 and 55/20 and performs similarly under small parameter changes. Which should you trust, and why?</p>
-<details>
-<summary>Answer</summary>
-<p>Trust <strong>B</strong>. A performance collapse from a one-day parameter change means the returns depend on a very narrow range — almost certainly overfitting to history, which will break in live conditions. B demonstrates <strong>robustness</strong>: similar results under nearby parameters, which is more likely to reflect real market structure rather than noise.</p>
-</details>
-
-<h2 id="scoring-guide">Scoring guide<a class="anchor" href="#scoring-guide" aria-label="section link">#</a></h2>
-<ul>
-<li>14–18 correct: you have the core arithmetic; start paper trading.</li>
-<li>10–13 correct: revisit Lessons 9–13, focusing on N, sizing and pyramiding.</li>
-<li>Below 10: do not rush into live markets. Copy the rules in Appendix A by hand and walk through ten historical trades manually.</li>
-</ul>
-
-      </article>
-<nav class="pager" aria-label="pager"><a class="prev" href="appendix-a.html"><span class="lbl">Previous page</span><span class="ttl">The Complete Rules at a Glance</span></a></nav>
-      <footer class="page-foot">
-        <p>This course is a study guide to Michael W. Covel&#x27;s The Complete TurtleTrader. It is for education only and is not investment advice.</p>
-        <p>© 2026 · The Turtle Rules</p>
-      </footer>
-    </div>
-    <aside class="toc" aria-label="table of contents">
-      <p class="toc-title">On this page</p>
-      <nav id="toc-list"></nav>
-    </aside>
-  </main>
-</div>
-
-<script src="../assets/site.js" defer></script>
+<body>
+<main>
+<p>This page now lives at:</p>
+<p><a href="/turtle/appendix-b.html"><code>/turtle/appendix-b.html</code></a></p>
+<p style="font-size:.82rem;color:#82776a">Redirecting in a moment.</p>
+</main>
+<script>location.replace("/turtle/appendix-b.html" + location.hash);</script>
 </body>
 </html>

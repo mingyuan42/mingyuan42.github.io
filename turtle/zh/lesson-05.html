@@ -1,176 +1,27 @@
 <!doctype html>
-<!-- page: zh/lesson-05.html -->
 <html lang="zh-CN">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>实验的结局 · 海龟交易法则</title>
-<meta name="description" content="本课目标：看清海龟实验如何提前结束，理解“理论上算出的风险”和“真实发生的风险”之间可以差多远，以及大师为什么会败给自己教出来的学生。">
-<meta name="theme-color" content="#08110f">
-<meta property="og:type" content="article">
-<meta property="og:title" content="实验的结局 · 海龟交易法则">
-<meta property="og:description" content="本课目标：看清海龟实验如何提前结束，理解“理论上算出的风险”和“真实发生的风险”之间可以差多远，以及大师为什么会败给自己教出来的学生。">
-<meta property="og:site_name" content="《海龟交易法则》中英双语通识课">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2308110f'/%3E%3Cpath d='M32 12c11 0 20 9 20 20s-9 20-20 20S12 43 12 32' fill='none' stroke='%23e6b566' stroke-width='3'/%3E%3Cpath d='M32 20c6.6 0 12 5.4 12 12s-5.4 12-12 12' fill='none' stroke='%2363d2a4' stroke-width='3'/%3E%3C/svg%3E">
-<link rel="stylesheet" href="../assets/site.css">
+<title>页面已迁移 · The Complete TurtleTrader</title>
+<link rel="canonical" href="https://chenmingyuan.site/turtle/lesson-05.html">
+<meta http-equiv="refresh" content="0; url=/turtle/lesson-05.html">
+<meta name="robots" content="noindex, follow">
+<style>
+body{margin:0;min-height:100vh;display:grid;place-items:center;background:#f5efe2;color:#23201a;
+font-family:-apple-system,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;line-height:1.7}
+main{max-width:34rem;padding:2rem 1.5rem;text-align:center}
+a{color:#1c6b45}
+p{margin:.4rem 0 1rem}
+code{font-size:.86em;background:rgba(28,107,69,.08);padding:.1em .35em;border-radius:4px}
+</style>
 </head>
-<body data-page="lesson-05" data-lang="zh" data-title="实验的结局">
-<a class="skip" href="#start">跳到正文</a>
-<div class="read-progress" id="read-progress" aria-hidden="true"></div>
-
-<header class="topbar">
-  <button class="topbar-btn" id="nav-toggle" type="button" aria-label="menu" aria-controls="sidebar" aria-expanded="false">
-    <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
-  </button>
-  <a class="topbar-title" href="index.html">海龟交易法则</a>
-  <a class="lang-pill" href="../en/lesson-05.html" hreflang="en">English</a>
-</header>
-
-<div class="nav-overlay" id="nav-overlay"></div>
-
-<aside class="sidebar" id="sidebar" aria-label="course navigation">
-  <button class="nav-close" id="nav-close" type="button" aria-label="close">×</button>
-  <a class="brand" href="index.html">
-    <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 40 40" width="30" height="30"><path d="M20 4c8.8 0 16 7.2 16 16s-7.2 16-16 16S4 28.8 4 20" fill="none" stroke="currentColor" stroke-width="2.4"/><path d="M20 11c5 0 9 4 9 9s-4 9-9 9" fill="none" stroke="currentColor" stroke-width="2.4"/><circle cx="20" cy="20" r="2.4" fill="currentColor"/></svg></span>
-    <span class="brand-text">
-      <span class="brand-title">海龟交易法则</span>
-      <span class="brand-sub">从零读懂趋势跟踪</span>
-    </span>
-  </a>
-  <nav class="nav">
-<p class="nav-group-title">开始</p>
-<a class="nav-link" href="index.html"><span class="nav-num">◎</span><span>课程首页</span></a>
-<div class="nav-group"><p class="nav-group-title">第一部分 · 故事与实验</p>
-<a class="nav-link" href="lesson-01.html"><span class="nav-num">01</span><span>一个持续十年的赌局</span></a>
-<a class="nav-link" href="lesson-02.html"><span class="nav-num">02</span><span>王子与数学家</span></a>
-<a class="nav-link" href="lesson-03.html"><span class="nav-num">03</span><span>一则广告，上千份简历</span></a>
-<a class="nav-link" href="lesson-04.html"><span class="nav-num">04</span><span>两周课堂</span></a>
-<a class="nav-link" href="lesson-05.html" aria-current="page"><span class="nav-num">05</span><span>实验的结局</span></a>
-</div>
-<div class="nav-group"><p class="nav-group-title">第二部分 · 先活下来，再赚钱</p>
-<a class="nav-link" href="lesson-06.html"><span class="nav-num">06</span><span>期望值：你靠什么长期赚钱</span></a>
-<a class="nav-link" href="lesson-07.html"><span class="nav-num">07</span><span>破产风险：先活下来</span></a>
-<a class="nav-link" href="lesson-08.html"><span class="nav-num">08</span><span>无记忆交易：把情绪关在门外</span></a>
-</div>
-<div class="nav-group"><p class="nav-group-title">第三部分 · 海龟的规则</p>
-<a class="nav-link" href="lesson-09.html"><span class="nav-num">09</span><span>N：市场的呼吸</span></a>
-<a class="nav-link" href="lesson-10.html"><span class="nav-num">10</span><span>单位：2% 规则</span></a>
-<a class="nav-link" href="lesson-11.html"><span class="nav-num">11</span><span>入场：系统一与系统二</span></a>
-<a class="nav-link" href="lesson-12.html"><span class="nav-num">12</span><span>止损、加仓与减仓</span></a>
-<a class="nav-link" href="lesson-13.html"><span class="nav-num">13</span><span>组合：相关性与净头寸</span></a>
-</div>
-<div class="nav-group"><p class="nav-group-title">第四部分 · 之后与今天</p>
-<a class="nav-link" href="lesson-14.html"><span class="nav-num">14</span><span>海龟之后</span></a>
-</div>
-<div class="nav-group"><p class="nav-group-title">附录 · 规则与自测</p>
-<a class="nav-link" href="appendix-a.html"><span class="nav-num">A</span><span>完整规则速查</span></a>
-<a class="nav-link" href="appendix-b.html"><span class="nav-num">B</span><span>练习与答案</span></a>
-</div>
-  </nav>
-  <div class="sidebar-foot">
-    <a class="back-home" href="https://chenmingyuan.site/works.html">← 返回作品集</a><br>
-    14 节课 · 2 个附录<br>仅供学习，不构成投资建议
-  </div>
-</aside>
-
-<div class="shell">
-  <main class="main">
-    <div class="column">
-<header class="page-hero">
-  <span class="hero-num" aria-hidden="true">05</span>
-  <p class="kicker">第一部分 · 第 05 课</p>
-  <h1>实验的结局</h1>
-  <p class="hero-meta">阅读约 6 分钟<span class="dot">·</span>迈克尔·科维尔《The Complete TurtleTrader》通识课</p>
-</header>
-
-      <article class="article" id="start">
-<blockquote>
-<p>本课目标：看清海龟实验如何提前结束，理解“理论上算出的风险”和“真实发生的风险”之间可以差多远，以及大师为什么会败给自己教出来的学生。</p>
-</blockquote>
-<h2 id="一等趋势的日子里有人在做事">一、等趋势的日子里，有人在做事<a class="anchor" href="#一等趋势的日子里有人在做事" aria-label="section link">#</a></h2>
-<p>海龟们的日常，很大一部分是“等”。等一个突破，等趋势走出来，等止损被触发。多数人在这段时间看体育版、打乒乓。</p>
-<p>第二期的四个人没有。汤姆·香克斯（Tom Shanks）、保罗·拉巴尔、厄尔·基弗、伊里·“乔治”·斯沃博达（Jiri Svoboda）组成了一个小组，想验证自己每天执行的规则到底对不对——不是质疑，而是<strong>用数据检验</strong>。</p>
-<p>他们花了差不多一年，用最早的苹果电脑搭出一个系统测试平台，把 S1 和 S2 两套系统合并起来回测。</p>
-<h2 id="二结论老师算错了一倍">二、结论：老师算错了一倍<a class="anchor" href="#二结论老师算错了一倍" aria-label="section link">#</a></h2>
-<p>结果让整个项目震动。</p>
-<p>按丹尼斯和埃克哈特的设想，两套系统合并后，最坏情况下的回撤大约是 <strong>50%</strong>。但回测显示，实际最坏回撤接近 <strong>80%</strong>。</p>
-<p>原因是：当 S1 和 S2 同时给出入场信号时，两组仓位会叠加，风险不是相加那么温和，而是在最糟糕的时刻集中爆发。拉巴尔凭直觉就锁定了这一点。</p>
-<p>研究小组把这个结论告诉德卢特里。据说德卢特里以前常对海龟半开玩笑地说：“你们要是真研究出什么，拿来给我们看。”他大概没想过真会发生。</p>
-<p>丹尼斯和埃克哈特的第一反应，是那句所有行业老手都会说的话：“我们懂这个洞穴，我们比任何人都懂。”以他们的战绩，这么想太正常了。</p>
-<p>但研究小组的结论很硬：<strong>他们错了一倍。</strong> 注意这里的“错了一倍”不是“错了 100 倍”，而是实际下的注是以为的两倍——丹尼斯自己在备忘录里写的是“你们一直在按我们以为的两倍规模交易”。</p>
-<h2 id="三1986-年-4-月-23-日的备忘录">三、1986 年 4 月 23 日的备忘录<a class="anchor" href="#三1986-年-4-月-23-日的备忘录" aria-label="section link">#</a></h2>
-<p>德卢特里先下令：所有人把仓位规模<strong>削减 50%</strong>。随后是丹尼斯的正式备忘录，日期 1986 年 4 月 23 日：</p>
-<blockquote>
-<p>真实世界的回撤远远超过理论预期值，这迫使我们必须重新评估“ theory 与事实”在“该做多大”这个问题上的联系。看起来我们误读了理论数据，以至于你们一直在按我们以为的两倍规模交易。好消息是，整个项目期间都是如此——你们的利润翻倍了，代价是风险也翻倍了。我们真是命大。</p>
-</blockquote>
-<p>这段话值得逐句咀嚼：</p>
-<ul>
-<li><strong>“真实回撤远超理论预期”</strong>：模型没说谎，是模型被误读了。</li>
-<li><strong>“按两倍规模交易”</strong>：这不是小数点点错，而是风险预算整体翻倍。</li>
-<li><strong>“利润翻倍，风险也翻倍”</strong>：他们不是“侥幸赚了钱”，而是<strong>一直在承担双倍风险</strong>，只是赶上了好行情。</li>
-<li><strong>“我们真是命大”</strong>：一个管理上亿美元的人，用这四个字总结自己的风险控制。</li>
-</ul>
-<p>执行上很简单：原来当 100 万美元用的账户，现在当 50 万美元用。规则一个字没改，只是杠杆降了一半。</p>
-<h2 id="四减仓之后学生开始赢老师">四、减仓之后：学生开始赢老师<a class="anchor" href="#四减仓之后学生开始赢老师" aria-label="section link">#</a></h2>
-<p>更尴尬的事情发生了：砍掉一半仓位后，海龟们<strong>照样赚钱</strong>，而且作为一个群体，这段时间的表现超过了丹尼斯本人。</p>
-<p>原因可能有很多：他们被训练出了好习惯；他们更严格地照规则做；丹尼斯还带着交易池时代的旧习气——香农说，丹尼斯不会发火，但会对成交滑点（skid）变得异常挑剔，那种在意在场上很重要，在场外就没那么重要了。</p>
-<p>丹尼斯自己也隐约感到不对劲，他说过一句后来被证明像预言的话：</p>
-<blockquote>
-<p>我骨子里其实是个逆势者，这对一个机械趋势跟随者来说，大概不是好事。</p>
-</blockquote>
-<h2 id="五1988传真机上的句号">五、1988：传真机上的句号<a class="anchor" href="#五1988传真机上的句号" aria-label="section link">#</a></h2>
-<p>1988 年初，海龟项目被突然叫停。丹尼斯发了一份传真：项目结束。</p>
-<p>背景是一连串坏消息：</p>
-<ul>
-<li>他替迈克尔·米尔肯的德雷塞尔·伯纳姆·兰伯特（Drexel Burnham Lambert）管理两只公开基金，亏损严重，随后关闭。</li>
-<li>1987 年 10 月股灾，他的基金 9 月 −15.29%、10 月 −13.79%。</li>
-<li>1988 年 4 月，他的公开基金单月 <strong>−55.49%</strong>。</li>
-<li>同期他父亲去世。有海龟把停课归因于“家庭原因”。</li>
-</ul>
-<p>而同一个月，海龟们普遍只亏了 10%–12%。<strong>同一个市场，老师亏掉一半，学生亏掉一成。</strong></p>
-<p>迪马里亚回忆那天的错愕：“突然就结束了，就这么快。周一早上他们进来说，‘到周五，我们就结束了。’我心想，哦，得去找份工作了。”</p>
-<p>关于为什么停，官方从未定义。有人说是德雷塞尔崩盘的连带后果，有人说是个人原因，丹尼斯自己的说法是：他退休了，要全职投入政治理念。</p>
-<h2 id="六这一课真正的教训">六、这一课真正的教训<a class="anchor" href="#六这一课真正的教训" aria-label="section link">#</a></h2>
-<p><strong>第一，风险预算会算错，而且错得很自然。</strong> 两套系统单独看都合理，合并起来却在同一时刻放大仓位。这是组合层面的风险，不是单笔交易的风险。任何多策略、多信号的系统，都必须问一句：<strong>它们会不会同时亮灯？</strong></p>
-<p><strong>第二，回测不是装饰，是保险。</strong> 四个“学生”花一年搭测试平台，推翻了两位大师的假设。这不是叛逆，这是工程纪律。</p>
-<p><strong>第三，大师也会被自己的强项反噬。</strong> 丹尼斯的直觉让他在交易池里封神，但直觉也让他相信“我们懂这个洞穴”。当证据出现时，第一反应是防御，而不是更新。</p>
-<p><strong>第四，回撤是需要被管理的预期，不只是数字。</strong> 丹尼斯怪客户“不理解我的风格、一回撤就失去信心”。这句话有一半道理，但也暴露了问题：<strong>如果你不提前告诉别人可能亏多少，你就没有资格怪别人恐慌。</strong></p>
-<p>一个 −55.49% 的月份是什么概念？从剩下一半的净值回到原点，需要上涨约 <strong>124.6%</strong>（1 ÷ 0.4451 − 1）。这就是为什么风险管理里，“避免大亏”永远比“追求大赚”优先。</p>
-<h2 id="本课要点">本课要点<a class="anchor" href="#本课要点" aria-label="section link">#</a></h2>
-<ul>
-<li>四名海龟自建回测平台，发现 S1 与 S2 同时入场时风险叠加，实际最坏回撤约 80%，而非预期的 50%。</li>
-<li>丹尼斯 1986 年 4 月 23 日备忘录：仓位整体减半，因为一直在按两倍规模交易。</li>
-<li>减仓后海龟仍持续盈利，群体表现一度超过丹尼斯。</li>
-<li>1988 年初项目以一份传真结束；丹尼斯 1988 年 4 月单月亏损 55.49%，海龟同期约 −10%~−12%。</li>
-<li>教训：组合相关性、回测验证、警惕强项反噬、提前沟通回撤预期。</li>
-</ul>
-<h2 id="自测">自测<a class="anchor" href="#自测" aria-label="section link">#</a></h2>
-<ol type="1">
-<li>为什么“S1 和 S2 各自都合理”仍然可能导致 80% 的回撤？</li>
-<li>丹尼斯说“利润翻倍，风险也翻倍，我们真是命大”。这句话里“命大”具体指什么？</li>
-<li>一个月亏 55.49% 后，需要多大的涨幅才能回本？这个数字说明了什么？</li>
-</ol>
-<details>
-<summary>参考答案</summary>
-<p><strong>1.</strong> 因为两套系统可能在同一时刻对同一市场给出同方向信号，仓位叠加，风险在最不利的时点集中。单系统风险合格，不等于组合风险合格。</p>
-<p><strong>2.</strong> 指他们在承担双倍风险的情况下，恰好遇上了有利行情，所以没有先被回撤打死。赚钱的结果掩盖了风险控制上的错误，这是运气而非能力。</p>
-<p><strong>3.</strong> 剩余净值 44.51%，需上涨 1/0.4451 − 1 ≈ 124.6%。说明亏损与回本不对称：跌得越深，恢复所需收益越呈非线性放大，所以控制回撤优先于追求收益。</p>
-</details>
-
-      </article>
-<nav class="pager" aria-label="pager"><a class="prev" href="lesson-04.html"><span class="lbl">上一课</span><span class="ttl">两周课堂</span></a><a class="next" href="lesson-06.html"><span class="lbl">下一课</span><span class="ttl">期望值：你靠什么长期赚钱</span></a></nav>
-      <footer class="page-foot">
-        <p>本课程基于迈克尔·科维尔《The Complete TurtleTrader》整理，用于知识学习，不构成任何投资建议。</p>
-        <p>© 2026 · 海龟交易法则通识课</p>
-      </footer>
-    </div>
-    <aside class="toc" aria-label="table of contents">
-      <p class="toc-title">本页目录</p>
-      <nav id="toc-list"></nav>
-    </aside>
-  </main>
-</div>
-
-<script src="../assets/site.js" defer></script>
+<body>
+<main>
+<p>这一页已经搬到新地址：</p>
+<p><a href="/turtle/lesson-05.html"><code>/turtle/lesson-05.html</code></a></p>
+<p style="font-size:.82rem;color:#82776a">几秒后会自动跳转。</p>
+</main>
+<script>location.replace("/turtle/lesson-05.html" + location.hash);</script>
 </body>
 </html>

@@ -1,0 +1,981 @@
+<!DOCTYPE html><html lang="zh-CN" data-site-locale="zh" data-site-prefix><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>短期不可预测 · 贪婪来自无知 · 「早」不是关键 · 财富自由之路 · Christopher</title><meta name="description" content="短期不可预测 · 贪婪来自无知 · 「早」不是关键 — 本课目标：用概率常识把「预测」这件事彻底拆清楚——为什么短期股价预测等于抛硬币、为什么长期反而容易；建立「复合年化 15%」这个及格线，学会区分「长期价值」与「诱惑」；最后拆掉「我要是早知道就好了」这个幻觉，同时堵住它变成的新借口。 财富自由之路第 14 课。"><meta name="author" content="Christopher"><meta name="generator" content="Astro v7.4.11"><link rel="canonical" href="https://chenmingyuan.site/wealth/lesson-14.html"><link rel="alternate" hreflang="zh-CN" href="https://chenmingyuan.site/wealth/lesson-14.html"><link rel="alternate" hreflang="en" href="https://chenmingyuan.site/en/wealth/lesson-14.html"><link rel="alternate" hreflang="fr" href="https://chenmingyuan.site/fr/wealth/lesson-14.html"><link rel="alternate" hreflang="es" href="https://chenmingyuan.site/es/wealth/lesson-14.html"><link rel="alternate" hreflang="ja" href="https://chenmingyuan.site/ja/wealth/lesson-14.html"><link rel="alternate" hreflang="ko" href="https://chenmingyuan.site/ko/wealth/lesson-14.html"><link rel="alternate" hreflang="x-default" href="https://chenmingyuan.site/wealth/lesson-14.html"><link rel="icon" type="image/svg+xml" href="/favicon.svg"><link rel="alternate" type="application/rss+xml" title="Christopher · 博客与作品集" href="/rss.xml"><meta property="og:type" content="website"><meta property="og:site_name" content="Christopher · 博客与作品集"><meta property="og:title" content="短期不可预测 · 贪婪来自无知 · 「早」不是关键 · 财富自由之路 · Christopher"><meta property="og:description" content="短期不可预测 · 贪婪来自无知 · 「早」不是关键 — 本课目标：用概率常识把「预测」这件事彻底拆清楚——为什么短期股价预测等于抛硬币、为什么长期反而容易；建立「复合年化 15%」这个及格线，学会区分「长期价值」与「诱惑」；最后拆掉「我要是早知道就好了」这个幻觉，同时堵住它变成的新借口。 财富自由之路第 14 课。"><meta property="og:url" content="https://chenmingyuan.site/wealth/lesson-14.html"><meta property="og:image" content="https://chenmingyuan.site/media/wealth-hero.jpg"><meta property="og:locale" content="zh_CN"><meta property="og:locale:alternate" content="en_US"><meta property="og:locale:alternate" content="fr_FR"><meta property="og:locale:alternate" content="es_ES"><meta property="og:locale:alternate" content="ja_JP"><meta property="og:locale:alternate" content="ko_KR"><meta name="twitter:card" content="summary_large_image"><script>
+			(function () {
+				try {
+					var t = localStorage.getItem("cb-theme");
+					if (t !== "light" && t !== "dark") {
+						t = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+					}
+					document.documentElement.dataset.theme = t;
+				} catch (e) {}
+			})();
+		</script><link rel="stylesheet" href="/_astro/Base.Dl12XRs9.css"><link rel="stylesheet" href="/_astro/CourseRuntime.0hGXms6l.css"></head><body><script type="application/json" id="site-i18n-dict">{}</script><script>
+			(function () {
+				var dict = {};
+				try {
+					var el = document.getElementById("site-i18n-dict");
+					if (el) dict = JSON.parse(el.textContent || "{}");
+				} catch (e) {}
+				window.__SITE_I18N__ = dict;
+				// 浏览器脚本统一入口：文案查表 + 语言前缀（不要用模板插值，is:inline 脚本不处理）
+				window.__SITE_TR__ = function (text) {
+					if (typeof text !== "string" || !text) return text;
+					var hit = dict[text] || dict[text.trim()];
+					if (hit) return hit;
+					// 数字前缀兜底：`${N} 节课` 求值成 "10 节课" 后查 "{n} 节课" 通配键
+					var m = text.match(/^(\d+(?:\.\d+)?)((?:\s*\S.*)?)$/s);
+					if (m && m[2]) {
+						var g = "{n}" + m[2];
+						var h2 = dict[g] || dict[g.trim()];
+						if (h2) return h2.replace("{n}", m[1]);
+					}
+					return text;
+				};
+				window.__SITE_PREFIX__ = document.documentElement.dataset.sitePrefix || "";
+			})();
+		</script><a class="skip-link" href="#main">跳到主要内容</a><div class="read-progress" aria-hidden="true"></div><header class="topbar"><div class="topbar-inner"><a class="brand" href="/" aria-label="返回首页"><span class="brand-mark" aria-hidden="true">C—</span><span class="brand-text"><span class="brand-name">Christopher</span><span class="brand-sub">博客与作品集</span></span></a><nav aria-label="主导航"><ul class="nav-links"><li><a href="/">首页</a></li><li><a href="/blog.html">博客</a></li><li><a href="/works.html">作品集</a></li><li><a href="/leeks.html">韭菜园</a></li><li><a href="/richdad.html">两条路</a></li><li><a href="/turtle.html">海龟课</a></li><li><a href="/wealth.html" aria-current="page">财富课</a></li><li><a href="/about.html">关于</a></li></ul></nav><details class="lang-switch" id="lang-switch"><summary aria-label="切换语言" title="切换语言"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M3 12h18M12 3c2.4 2.6 3.6 5.6 3.6 9s-1.2 6.4-3.6 9c-2.4-2.6-3.6-5.6-3.6-9S9.6 5.6 12 3Z"></path></svg><span class="lang-current">中</span></summary><div class="lang-menu" role="menu"><a href="/wealth/lesson-14.html" hreflang="zh-CN" lang="zh-CN" aria-current="true" role="menuitem"><span class="lang-short">中</span><span>中文</span></a><a href="/en/wealth/lesson-14.html" hreflang="en" lang="en" role="menuitem"><span class="lang-short">EN</span><span>English</span></a><a href="/fr/wealth/lesson-14.html" hreflang="fr" lang="fr" role="menuitem"><span class="lang-short">FR</span><span>Français</span></a><a href="/es/wealth/lesson-14.html" hreflang="es" lang="es" role="menuitem"><span class="lang-short">ES</span><span>Español</span></a><a href="/ja/wealth/lesson-14.html" hreflang="ja" lang="ja" role="menuitem"><span class="lang-short">日</span><span>日本語</span></a><a href="/ko/wealth/lesson-14.html" hreflang="ko" lang="ko" role="menuitem"><span class="lang-short">한</span><span>한국어</span></a></div></details><a class="icon-btn" href="/search.html" aria-label="搜索" title="搜索"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-3.8-3.8"></path></svg></a><button class="icon-btn theme-toggle" type="button" aria-label="切换深浅色主题" aria-pressed="false"><svg class="i-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"></path></svg><svg class="i-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true" style="display:none"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2m0 16v2M4.9 4.9l1.4 1.4m11.4 11.4 1.4 1.4M2 12h2m16 0h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path></svg></button><button class="icon-btn nav-toggle" type="button" aria-label="打开菜单" aria-expanded="false" aria-controls="drawer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"></path></svg></button></div></header><div class="drawer" id="drawer" aria-hidden="true"><div class="drawer-head"><span class="brand"><span class="brand-mark" aria-hidden="true">C—</span><span class="brand-text"><span class="brand-name">Christopher</span><span class="brand-sub">博客与作品集</span></span></span><button class="icon-btn drawer-close" type="button" aria-label="关闭菜单"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"></path></svg></button></div><nav aria-label="移动端导航"><a href="/">首页<span class="idx">01</span></a><a href="/blog.html">博客<span class="idx">02</span></a><a href="/works.html">作品集<span class="idx">03</span></a><a href="/leeks.html">韭菜园<span class="idx">04</span></a><a href="/richdad.html">两条路<span class="idx">05</span></a><a href="/turtle.html">海龟课<span class="idx">06</span></a><a href="/wealth.html" aria-current="page">财富课<span class="idx">07</span></a><a href="/about.html">关于<span class="idx">08</span></a><a href="/search.html">搜索<span class="idx">09</span></a></nav><div class="drawer-langs" aria-label="切换语言"><a href="/wealth/lesson-14.html" hreflang="zh-CN" lang="zh-CN" aria-current="true">中文</a><a href="/en/wealth/lesson-14.html" hreflang="en" lang="en">English</a><a href="/fr/wealth/lesson-14.html" hreflang="fr" lang="fr">Français</a><a href="/es/wealth/lesson-14.html" hreflang="es" lang="es">Español</a><a href="/ja/wealth/lesson-14.html" hreflang="ja" lang="ja">日本語</a><a href="/ko/wealth/lesson-14.html" hreflang="ko" lang="ko">한국어</a></div><p class="drawer-foot">把读懂的东西，亲手做一遍。</p></div><main id="main"><div class="course course--wealth" data-course="wealth" data-lang="zh" data-total="21" data-title-zh="短期不可预测 · 贪婪来自无知 · 「早」不是关键 · 财富自由之路 · Christopher" data-title-en="短期不可预测 · 贪婪来自无知 · 「早」不是关键 · The Road to Financial Freedom · Christopher"><div class="course-toolbar"><div class="course-toolbar-inner"><nav class="course-crumbs" aria-label="课程导航"><a href="/wealth.html"><span data-as="span" class="course-bi course-bi--inline"><span data-l="zh" lang="zh-CN">财富自由之路</span><span data-l="en" lang="en">The Road to Financial Freedom</span></span></a><span class="sep" aria-hidden="true">/</span><a href="/wealth/lesson-01.html" aria-current="page">课时</a><a href="/wealth/lab.html">财富实验室</a><a href="/wealth/quiz.html">自测 30 题</a><a href="/wealth/glossary.html">概念词典</a><a href="/wealth/plan.html">30 天践行</a></nav><span class="course-mini" title="本机学习进度"><span data-course-count>0 / 21</span><span class="course-mini-track"><i data-course-mini></i></span></span></div></div><div class="course-inner"><div class="course-lesson-layout"><div class="course-lesson-main"><header class="course-lesson-head"><div class="eyebrow"><span class="course-lesson-num">LESSON 14</span><span class="course-tag"><span data-as="span" class="course-bi course-bi--inline"><span data-l="zh" lang="zh-CN">第4部分 · 投资：先活下来</span><span data-l="en" lang="en">第4部分 · 投资：先活下来</span></span></span><span class="course-tag">约 31 分钟</span><span class="course-tag">14 / 21</span></div><h1><span data-as="span" class="course-bi"><span data-l="zh" lang="zh-CN">短期不可预测 · 贪婪来自无知 · 「早」不是关键</span><span data-l="en" lang="en">短期不可预测 · 贪婪来自无知 · 「早」不是关键</span></span></h1></header><div class="course-prose course-html" data-l="zh"><blockquote>
+<p>本课目标：用概率常识把「预测」这件事彻底拆清楚——为什么短期股价预测等于抛硬币、为什么长期反而容易；建立「复合年化 15%」这个及格线，学会区分「长期价值」与「诱惑」；最后拆掉「我要是早知道就好了」这个幻觉，同时堵住它变成的新借口。</p>
+<p>对应原书：第 25 篇《你能准确预测股票？》（2017-01-20）、第 26 篇《贪婪与诱惑》（2017-01-27）、第 27 篇《「先发优势」？》（2017-02-03）</p>
+<p>本课涉及的所有收益率数字、公司与标的都是原书当年的记录与举例，<strong>不构成投资建议</strong>。</p>
+</blockquote>
+<h2 id="一问题的质量决定答案的质量">一、问题的质量决定答案的质量<a class="anchor" href="#一问题的质量决定答案的质量" aria-label="本节链接">#</a></h2>
+<p>先看一个「缜密思考」的最基本示例。有人问：</p>
+<blockquote>
+<p>甲：请问，股票价格的变动是否可以准确预测？<br />
+乙：请事先定义「准确」。</p>
+</blockquote>
+<p>这一问不是挑刺，而是三个必须补的限定：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>词</th>
+<th>缺什么</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>准确</strong></td>
+<td>缺程度定义</td>
+<td>究竟做到什么程度才算准确？51% 算不算？</td>
+</tr>
+<tr>
+<td><strong>是否</strong></td>
+<td>缺中间态</td>
+<td>这世间绝大多数问题，就算简单，也没简单到只用「是/否」就能完整回答。所以最直接最正确的答案往往是「不一定」或「不知道」——因为无论「是」还是「否」都是错的</td>
+</tr>
+<tr>
+<td><strong>预测</strong></td>
+<td>缺主语</td>
+<td><strong>谁来预测</strong>？人与人的预测能力差异巨大；如果信息完整度决定预测质量，那么有些人拥有的信息完整度比另一些人高出许多个量级</td>
+</tr>
+</tbody>
+</table></div>
+<p>在不擅长思考的人眼里这叫「鸡蛋里挑骨头」；另一些人不这么想，他们只是<strong>习惯了认真仔细</strong>。</p>
+<p>有读者留言说「简单的事情靠直觉，复杂的事情靠思考」。但你得先回答：什么是简单？什么是复杂？加减乘除对成年人一点都不复杂，对孩子可能是天大的难题。</p>
+<blockquote>
+<p>一件事情的复杂程度，不光取决于这件事本身，还取决于<strong>到底谁来做</strong>。</p>
+</blockquote>
+<p>有些事情只有对「神」来说才是简单的，比如：<strong>预测短期的股价波动</strong>。运用概率知识了解真实难度后，早早避开能力范围之外的事，显然是明智的选择。</p>
+<h2 id="二五分钟后的涨跌准确率无穷趋近-12">二、五分钟后的涨跌：准确率无穷趋近 1/2<a class="anchor" href="#二五分钟后的涨跌准确率无穷趋近-12" aria-label="本节链接">#</a></h2>
+<p>现在问：Google 现价 xxx 美元，五分钟之后是涨还是跌？你的准确率大概多少？</p>
+<p>无论你基于感觉还是基于读过的理论（概率论、随机漫步理论……），<strong>无论你是谁，准确率大概都无穷趋近于 1/2</strong>。</p>
+<p>1/2 的意思就是「你实际上根本猜不准」，正确与否完全靠运气。</p>
+<h3 id="准确率的价值刻度">准确率的价值刻度<a class="anchor" href="#准确率的价值刻度" aria-label="本节链接">#</a></h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>准确率</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>≤ 50%</td>
+<td>无意义，<strong>还不如抛硬币去决定</strong></td>
+</tr>
+<tr>
+<td>51%</td>
+<td>只要是<strong>确定地</strong>高于 50%，长期来看也一定很赚钱</td>
+</tr>
+<tr>
+<td>60% 以上</td>
+<td>10 次至少 6 次准，那就一直预测下去，不仅预测还要用钱去「赌」，长期一定赚很多</td>
+</tr>
+<tr>
+<td>99%</td>
+<td>根本不需要高到这个地步</td>
+</tr>
+</tbody>
+</table></div>
+<p>可事实是：对「5 分钟后价格比现在高还是低」这个判断，几乎可以肯定，无论用什么方法策略，长期准确率只能是 1/2。这个结论早就被实践无穷次验证过了。</p>
+<h3 id="违背直觉的独立事件">违背直觉的独立事件<a class="anchor" href="#违背直觉的独立事件" aria-label="本节链接">#</a></h3>
+<p>这很违背直觉，正如：<strong>你抛硬币已经连续 32 次正面，下一次是正面的概率依然是 1/2</strong>——因为抛硬币是「独立事件」。</p>
+<p>对没有概率常识的人，是无法理解为什么第 33 次还是 1/2 的。</p>
+<blockquote>
+<p>正是在这些常识上的认知差别，注定了一部分人做的是<strong>赌博</strong>，而另一部分人做的则是<strong>投资</strong>。而且时间越长，相对的差距就越大。</p>
+</blockquote>
+<p>这也是为什么作者鼓励大家学很多在外界看来「没必要」的基础知识——为的是提升对世界的认识。<strong>只有清晰地认识这个世界，才有可能做出对的选择。</strong></p>
+<h3 id="案例二元期权股市版的猜大小">案例：二元期权，股市版的「猜大小」<a class="anchor" href="#案例二元期权股市版的猜大小" aria-label="本节链接">#</a></h3>
+<p>有一种所谓「投资品类」叫<strong>二元期权</strong>（Binary Option），很多国家早已禁止其经营。它本质上就是股市版的赌场游戏「猜大小」：</p>
+<pre><code>给你一个实时价格（股票 / 股指 / 黄金 / 期货……）
+让你预测 1 分钟（或 5、10、15 分钟）后的涨跌
+买涨或买跌：猜对 → 连本带利 180%；猜错 → 全赔</code></pre>
+<p>「猜对拿回 180%」意味着<strong>赌场抽水 20%</strong>。于是这种设定要求预测准确率<strong>至少超过 70%</strong> 才可能长期稳定赚钱。而前面已经证明短期准确率只有 50%——所以这么多年过去，从来没有任何人在这种品类里赚到过钱，都是很快输光。</p>
+<p>直观算一遍：拿 10 元开始猜，平均每次被抽水 2 元，10 次之后输光。实际上很多人第一次就输光；也有人第一次猜对拿到 18 元，然后连续两次猜错（押 10 元、押 8 元）也输光。把所有赌徒数据集结起来当作一个大赌徒看，<strong>平均「猜」5 次之后就会输光</strong>。</p>
+<p>赌场里「赌资」和「总投注金额」是两个概念（有时赢有时输，总投注金额远大于赌资）：</p>
+<pre><code>总投注金额 ≈ 赌资 ÷ 抽水比例 × [1 + (预测准确率 − 1/2)]</code></pre>
+<p>所以总投注金额越接近「赌资 ÷ 抽水比例」，就说明准确率越趋近 1/2。而把这些年所有二元期权「投资者」（其实是赌徒）的战绩归结到一起，他们的总投注金额基本上就等于「赌资 ÷ 抽水比例」——<strong>结论：预测几分钟后的价格，无论用什么手段、什么理论，最终都无意义，准确率顶多 1/2。</strong></p>
+<p>注意反复出现的「<strong>总体上</strong>」：不是说没有任何人赚到钱，而是说总体上所有人都输了。统计数据显示，即便其中一部分人「赢了钱」也相当有限，都在偏差允许范围内，<strong>根本没有出现任何「离群值」</strong>（Outlier，指与普遍数据模型偏差极大的样本）。</p>
+<h3 id="统计概率最基础的赚钱思维工具没有之一">统计概率：最基础的赚钱思维工具（没有「之一」）<a class="anchor" href="#统计概率最基础的赚钱思维工具没有之一" aria-label="本节链接">#</a></h3>
+<blockquote>
+<p>统计概率知识，是最基础的「赚钱思维工具」（没有「之一」）。任何希望自己将来进入投资领域的人，都应该补上这个基础。</p>
+</blockquote>
+<p>这是大学基础课程，只不过绝大多数人没从觉悟上理解它有多重要，于是这一辈子就好像<strong>别人带着完善装备下海潜水，你赤身裸体直接跳进去</strong>——看起来也不是不行，可就是处处吃亏，却又永远不自知。</p>
+<p>「麻烦您推荐一本书呗？」作者的两条回答：</p>
+<ol type="1">
+<li>大学里的课本就已经很好；</li>
+<li><strong>挑书这事儿一定要自己做</strong>，不要找别人推荐书籍，因为那样会让自己的「挑书能力」永远差、越来越差——「用进废退」是哪儿哪儿都适用的道理。</li>
+</ol>
+<p>很多人以「大学学的知识没用」为由给不努力找借口，结果错过了在最好的时期学这门重要课程。即便某些内容不能直接应用，你也可以通过这段学习经历打磨学习能力。</p>
+<blockquote>
+<p>这个世界所有的知识，都是我们认知这个世界最重要的武器。你的武器库里武器越多，面对这个世界的时候就会变得更加从容。</p>
+</blockquote>
+<h2 id="三随机漫步短期是理论长期反而容易">三、随机漫步：短期是理论，长期反而容易<a class="anchor" href="#三随机漫步短期是理论长期反而容易" aria-label="本节链接">#</a></h2>
+<p>金融学里有个<strong>随机漫步假说</strong>（Random walk hypothesis）：股票市场的价格是随机漫步模式，因此无法被预测。</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>年份</th>
+<th>人物 / 事件</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1863</td>
+<td>法国人朱利·荷纽（Jules Regnault）在书中提到这个假说</td>
+</tr>
+<tr>
+<td>1900</td>
+<td>法国数学家路易·巴舍利耶（Louis Bachelier）在博士论文中讨论</td>
+</tr>
+<tr>
+<td>1973</td>
+<td>普林斯顿的伯顿·墨尔基尔（Burton Malkiel）出版《漫步华尔街》，此说广为人知</td>
+</tr>
+</tbody>
+</table></div>
+<p>一百多年过去，「随机漫步」后面跟着的词依然是「假说」而不是「理论」——争议太大。支持者做过各种实验：让参议员用飞镖扎财经报纸选出 20 支股票组成组合，若干年后发现表现与股市整体相若，不逊于「专家」推荐，甚至比相当数量的专家更出色；更夸张的版本里不是参议员而是猩猩，选的是被猩猩撕碎的报纸碎片里名称依然完整的那 20 支股票。</p>
+<p>但这并不能让另一群人信服。原因很朴素：</p>
+<blockquote>
+<p>一切跟概率相关的推论都很难被普遍理解接受——因为要看的是「长期总体的结果」，但眼前能见到的只有「此时此刻的某些特定案例」。</p>
+</blockquote>
+<h3 id="作者的关键修正争议点在时间期限">作者的关键修正：争议点在「时间期限」<a class="anchor" href="#作者的关键修正争议点在时间期限" aria-label="本节链接">#</a></h3>
+<p>如果把描述改成下面三句，争议很可能几乎没有：</p>
+<ol type="1">
+<li><strong>短期价格预测是不可能的；</strong></li>
+<li><strong>长期价格预测是很可能的；</strong></li>
+<li><strong>预测时间期限越长，预测难度越低。</strong></li>
+</ol>
+<p>于是有了那句合格投资者不能忘记的话：</p>
+<blockquote>
+<p><strong>不要短期期望过高，长期期望过低。</strong></p>
+</blockquote>
+<p>大多数人失败的原因就在这里：短期不可能预测，他们却抱着过高期望，必将导致过度失望甚至注定的失望；长期虽然能预测，却很少有人对它抱有合理的高期望。最终——</p>
+<blockquote>
+<p><strong>丢了西瓜，也没捡起芝麻。</strong></p>
+</blockquote>
+<p>长期为什么容易？因为「基本面」就放在那里：</p>
+<ul>
+<li>股价最终体现的是<strong>企业价值的增长</strong>；</li>
+<li>世界一直在进步，经济一直在发展，这是大前提；</li>
+<li>有些企业就是能做到与世界共同进步、与经济共同发展……当然也有相当数量的企业根本做不到。</li>
+</ul>
+<p>于是出现一个「诡异的结论」：</p>
+<blockquote>
+<p>预测某些股票的价格变动，短期根本不可能，长期却很容易，越是远期越是容易预测得更准确。</p>
+</blockquote>
+<p>（作者举例说，如果去「赌」Google 五年后的股价一定比今天高很多，胜算非常大，几乎没人愿意跟他对赌。<strong>这是 2017 年的个人推理示例，不是对任何标的的判断或建议。</strong>）</p>
+<h3 id="赌徒谬误与两个惊人数据">赌徒谬误与两个惊人数据<a class="anchor" href="#赌徒谬误与两个惊人数据" aria-label="本节链接">#</a></h3>
+<p><strong>赌徒谬误</strong>（Gambler's Fallacy）：绝大多数赌徒倾向于相信之前的下注结果对当前下注有影响。赌徒之所以是赌徒，其实就是知识欠缺——无力理解和接受「独立事件」这个概念。</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>统计</th>
+<th>数据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>真正不受赌徒谬误影响的人（无论学没学过概率论）</td>
+<td>低于总人口的 <strong>20%</strong>，即至少 80% 的人或多或少受影响</td>
+</tr>
+<tr>
+<td>看不出「若 P 则 Q；现在 Q 出现了，所以 P 一定发生了」这个逻辑谬误的人</td>
+<td><strong>70%</strong>（Eysenck and Keane, 2000）</td>
+</tr>
+</tbody>
+</table></div>
+<p>所以：若你能理解并<strong>理性地接受</strong>随机漫步理论，弄不好已经刷掉了 80% 的对手；若你进一步厘清它的适用范围——<strong>不是长期，而是短期</strong>——那你又刷掉了剩下对手的至少一半，很可能已经是个「优秀」选手了。</p>
+<h3 id="清晰理解还不够还要理性接受">清晰理解还不够，还要理性接受<a class="anchor" href="#清晰理解还不够还要理性接受" aria-label="本节链接">#</a></h3>
+<p>我们总听人说「知易行难」，现代版说法是「懂得很多大道理，却依然过不好今生」。但关键问题不在于「行难」，而在于<strong>你是否真正认识到相应的知识和概念</strong>：</p>
+<blockquote>
+<p><strong>所有不能改变行为的概念和知识，基本等同于无用。</strong></p>
+</blockquote>
+<p>比如很多人嘴上说「努力很重要」，但内心并不真正认可，于是结果不如意时就拿出「我努力过」当安慰。又比如很多人惋惜错过的机会，说「我当初也知道」——其实他们并不知道，只是在结果出来后回头找个借口。<strong>如果当初真从骨子里认同那是个机会，他们早就抓住了。</strong></p>
+<p>这也解释了上一课那条奇怪的规定：「每个月更新一下数据」，背后的原理是——</p>
+<blockquote>
+<p><strong>从一开始就要习惯于避开「短期思考」。</strong></p>
+</blockquote>
+<p>思考常常是不由自主的。对不必要的事情一旦开始思考还停不下来，我们就会「不由自主」地无力把注意力放到应该思考的重点上。这需要很久才能习惯成自然，起码一年——但一年之内能做到已经非常快非常划算了。</p>
+<p>最后送一句作者的纠正：</p>
+<blockquote>
+<p>把「知识就是力量，时间就是金钱」纠正为：<strong>知识就是金钱，时间就是力量。</strong></p>
+</blockquote>
+<p>因为这样说更准确，而且大多数人既不知道知识根本就是金钱，也不知道时间的力量有多巨大、该多么敬畏它。</p>
+<h2 id="四贪婪想要原本并不属于自己的东西">四、贪婪：想要原本并不属于自己的东西<a class="anchor" href="#四贪婪想要原本并不属于自己的东西" aria-label="本节链接">#</a></h2>
+<blockquote>
+<p><strong>贪婪就是想要原本并不属于自己的东西。</strong></p>
+</blockquote>
+<p>天主教七宗罪里贪婪是其一；但仔细看剩下六个，会发现它们全都源自贪婪：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>罪</th>
+<th>为什么源自贪婪</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>傲慢</td>
+<td>假装（或假装到相信）自己拥有其实并不属于自己的高高在上的权利</td>
+</tr>
+<tr>
+<td>嫉妒</td>
+<td>想要自己尚不具备的东西，却发现别人已经有了</td>
+</tr>
+<tr>
+<td>愤怒</td>
+<td>自己不具备解决问题的能力，想要那能力却没有</td>
+</tr>
+<tr>
+<td>怠惰</td>
+<td>明明要用劳动去交换，却想张口就来、伸手即得</td>
+</tr>
+<tr>
+<td>暴食</td>
+<td>古时物质困乏，「使劲多吃的那一部分」其实是从别人那里抢来的</td>
+</tr>
+<tr>
+<td>色欲</td>
+<td>对方不配合时就不是属于自己的，然而依然想要</td>
+</tr>
+</tbody>
+</table></div>
+<p>（作者说自己没有宗教信仰，但不排斥阅读各种经文——从远古文字里能看到很多有意义的观察与启发性智慧。）</p>
+<p><strong>先确定边界</strong>：以上讨论的限定语是「<strong>在投资领域里</strong>」。</p>
+<blockquote>
+<p>这世界很少有「放之四海皆准」的道理或原则，大多数道理都有适用范围。不要轻易混淆边界，否则任何讨论都会以混乱告终。</p>
+</blockquote>
+<h3 id="最可怕的情况贪婪来自无知">最可怕的情况：贪婪来自无知<a class="anchor" href="#最可怕的情况贪婪来自无知" aria-label="本节链接">#</a></h3>
+<blockquote>
+<p>很多人的贪婪来自于无知。他们想要并不属于他们的东西时，很可能并不知道那是贪婪，并不知道那东西原本并不属于他们，而是理所当然地以为他们「原本就应该」拥有它。</p>
+</blockquote>
+<p>例子：<strong>借钱不愿意给利息，就是一种贪婪。</strong></p>
+<ul>
+<li>首先，利息就应该属于放贷者；</li>
+<li>其次，金钱在时间流动的过程中就会产生利息，所以理论上来讲这世界就没有「没有利息的钱」，哪怕在特定环境中可能是「负利息」；</li>
+<li>所以「不愿意支付利息」= 想要实际上属于别人的钱 = 极度贪婪。</li>
+</ul>
+<p>历史上犹太人因为更早更坚定地明白金钱与时间的关系，不仅收利息还收复利，因此长期被其他种族憎恨，甚至不止一次遭到迫害。冷静看待这个历史现象就会发现：这种「贪婪」来自无知，很多时候并非故意，甚至整个社会都一并无知——<strong>很多人就算是蠢，也是学出来的傻、教出来的笨，而不是天生如此。</strong></p>
+<blockquote>
+<p>贪婪真的并不一定是「犯罪」，因为常常并非故意；但贪婪最终肯定是「遭罪」，因为无知之下贪婪的人都很被动，都不知道怎么回事儿，就已经在不得不承受那恶果了。</p>
+</blockquote>
+<h3 id="回报率的量级常识">回报率的量级常识<a class="anchor" href="#回报率的量级常识" aria-label="本节链接">#</a></h3>
+<p>关于投资回报率，同样的无知在重演。2011–2015 年中国民间借贷互联网化（P2P）非常火爆，当有平台给出年化 25% 收益时，实际上说明已经危机遍地了。</p>
+<p>对照：大银行一年期整存整取存款利率这几年大约 1.75% 左右。为什么银行给不高？因为一个基本原理：</p>
+<blockquote>
+<p><strong>资本金额越大，获取同样收益率的难度越高。</strong></p>
+</blockquote>
+<p>用 100 元赚 10 元易如反掌；用 100 亿赚 10 亿，难度天壤之别。银行资本量级太大，所以能给出的利息高不到哪里去（银行也要把钱借出去赚利差）。</p>
+<p>民间借贷的利率警戒线：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>年化利率</th>
+<th>判断</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>15% 以上</td>
+<td>已经开始存在很高的系统风险</td>
+</tr>
+<tr>
+<td>25% 以上</td>
+<td>基本上两年内（8 个季度周期）<strong>必然崩盘</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p>为什么 25% 以上必然崩盘？因为民间借贷一出现高利率就会产生「<strong>资金集结效应</strong>」——大量资金集结后需要找到能支撑它、且真能年化复合 25% 以上的项目。可整个国家的 GDP 增长率平均下来才是个位数百分点，到哪里去找这样的项目？</p>
+<p>国内「民间借贷重灾区」连年不断，说明绝大多数人根本不知道 15% 以上的投资回报率「很可能原本就不属于自己」，于是无知无畏。</p>
+<h3 id="顶级投资者的战绩与及格线-15">顶级投资者的战绩与「及格线 15%」<a class="anchor" href="#顶级投资者的战绩与及格线-15" aria-label="本节链接">#</a></h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>投资者</th>
+<th>机构 / 基金</th>
+<th>区间</th>
+<th>复合年化</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>巴菲特</td>
+<td>伯克希尔-哈撒韦</td>
+<td>截至 2007 年的 43 年</td>
+<td><strong>21.1%</strong></td>
+</tr>
+<tr>
+<td>西蒙斯</td>
+<td>文艺复兴科技「大奖章」</td>
+<td>1988 成立起连续 30 年</td>
+<td><strong>34%</strong></td>
+</tr>
+<tr>
+<td>格林布雷</td>
+<td>哥谭基金</td>
+<td>1985–2005 共 20 年</td>
+<td><strong>40%</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p>这都是「神一样」的存在。那及格水准呢？巴菲特给出的参考标准很中肯：</p>
+<blockquote>
+<p>我必须确保买到的是在长期至少获得 <strong>15%</strong> 复合年化收益率的股票。</p>
+</blockquote>
+<p>而且这还是在对行业对企业有深刻研究与认知的前提下——<strong>有知有畏，才能有滋有味。</strong></p>
+<p>格林布雷的类比值得牢记：</p>
+<blockquote>
+<p><strong>买股票但不知道究竟买了什么，就如同手持火把穿过一个炸药工厂。你可能活下来，但你仍然是个傻子。</strong></p>
+</blockquote>
+<p>请特别注意措辞：<strong>复合年化回报率</strong>。绝大多数人只懂讨论「回报率」，不是「年化回报率」，更不是「复合年化回报率」。一旦讨论复合年化，我们讨论的不是一年两年，而是好多年，一般十年以上，甚至二三十年。</p>
+<h3 id="诱惑的定义不是长期价值的东西">诱惑的定义：不是长期价值的东西<a class="anchor" href="#诱惑的定义不是长期价值的东西" aria-label="本节链接">#</a></h3>
+<p>确实有一部分冷静的投资者关注价值。但与他们之中大多数人所认为的不同，「价值」并不排在第一位——「<strong>长期</strong>」应该先排上，然后再加上「价值」，即「<strong>长期价值</strong>」，这才是我们要追求的东西。</p>
+<blockquote>
+<p><strong>什么是诱惑？有价值，或者起码看起来有价值，但不是「长期价值」。</strong></p>
+<p>换言之，一切不属于「长期价值」的东西，都可以算作是「诱惑」。</p>
+</blockquote>
+<p>这是一个看到之后过去至少十年才能真正深刻领悟的道理。是不是「多么痛的领悟」，要看你在看到的那一瞬间能否彻底深入地吸收接受。</p>
+<p>请把目标牢牢记住：<strong>至少长期年化复合增长 15%</strong>（限定：在投资领域之中）。</p>
+<p>一旦目标如此，「入眼」的东西就不一样了，能看到的好像是另外一个世界：很多此前你会不由自主关注的东西好像突然彻底消失，另外一些东西好像突然冒出来。</p>
+<h3 id="k-线为什么新手都会盯着它">K 线：为什么新手都会盯着它<a class="anchor" href="#k-线为什么新手都会盯着它" aria-label="本节链接">#</a></h3>
+<p>绝大多数人终生只是「短期投资者」。他们不强求自己关注长期，理直气壮地接受各种诱惑，于是关注的是「另外一个世界」：盯 K 线图、四处打探消息——<strong>自己没有分析能力却又想要分析结果，这就是贪婪</strong>。</p>
+<p>每个人进入股票市场后都会看一段时间 K 线图，因为：</p>
+<ol type="1">
+<li>刚开始啥都不懂，实在没什么别的可看；</li>
+<li>K 线图很刺激人性，总让你感觉「所见即所得」。</li>
+</ol>
+<p>看着历史波段，几乎没有新手脑子里没闪过这个念头：「我要是在这里（高点）卖掉，然后在这里（低点）再买回来，哇，一定多赚很多！」</p>
+<blockquote>
+<p>这是彻头彻尾的幻觉，因为那只是<strong>市场历史数据记录</strong>，而不是幻想者未来可能的实际经历。</p>
+</blockquote>
+<p>等你真的身在其中就知道：从自己身临其境的视角望过去，<strong>每时每刻的价格都既看起来像最高点，又看起来像最低点</strong>。而且一旦开始关注 K 线，基本上很难思考长期——「活在当下」的感觉和冲动太强烈，大脑分分秒秒被各种直觉刺激，根本想不起来自己面对的是「漫步中的随机」，分分钟把自己变成赌客却又好不自知。</p>
+<h3 id="怎么对付贪婪与诱惑">怎么对付贪婪与诱惑<a class="anchor" href="#怎么对付贪婪与诱惑" aria-label="本节链接">#</a></h3>
+<ul>
+<li>判断是否被<strong>诱惑</strong>：相对简单——先去看那价值<strong>是否足够长期</strong>。</li>
+<li>判断是否<strong>贪婪</strong>：说起来简单，实际很难，因为很多贪婪来自无知，在当时当刻自己没办法知道，甚至别人告诉你了，你也会因为不理解而继续保留那「无知的贪婪」。</li>
+</ul>
+<p>办法只有一个：</p>
+<blockquote>
+<p><strong>摆脱无知——每天进步一点点，每天更有知一点点。</strong></p>
+</blockquote>
+<p>每次回头看自己的贪婪，就多了一点「对付贪婪的经验」；看到别人贪婪、尤其是看到别人因贪婪付出代价时，更要珍惜学习机会——我们应该感谢那些在我们犯错之前犯错的人，是他们让我们看到了后果。</p>
+<h3 id="一句让人解脱的类比">一句让人解脱的类比<a class="anchor" href="#一句让人解脱的类比" aria-label="本节链接">#</a></h3>
+<p>巴菲特的师父格雷厄姆有个极度精彩的类比：</p>
+<blockquote>
+<p><strong>股票市场短期是个投票机，长期是个称重机。</strong></p>
+</blockquote>
+<p>作者的解脱感来自这里：短期既然只是投票机，那就让别人投票好了，反正投票者络绎不绝，用不着自己去投、更不用反复投票；长期既然是称重机，称重也不用我干，我只需要做一件事——<strong>想尽一切办法找到以后最重的那个「胖子」</strong>。找胖子很简单，就看谁「越吃越多」。</p>
+<p>最后一句接近玩笑，但也不完全是玩笑，只是把事情过分简单化了。真正让人解脱的是：<strong>学会「如何找到未来的胖子」这事儿应该是有把握有机会学会的；学会了，我再想要，就不是贪婪了——因为我有本事要，这样的东西应该属于我。</strong></p>
+<h2 id="五我要是早知道就好了一个必须拆掉的幻觉">五、「我要是早知道就好了」：一个必须拆掉的幻觉<a class="anchor" href="#五我要是早知道就好了一个必须拆掉的幻觉" aria-label="本节链接">#</a></h2>
+<p>「我咋才知道呢？」「我要是早知道就好了！」——所有人都有过这念头，但很少有人认真反思它意味着什么。</p>
+<h3 id="知识也有利息而且语言里根本没有这个词">知识也有「利息」，而且语言里根本没有这个词<a class="anchor" href="#知识也有利息而且语言里根本没有这个词" aria-label="本节链接">#</a></h3>
+<p>上一节说钱天然有利息。那知识呢？答案是肯定的：<strong>知识同样天然有「利息」</strong>。</p>
+<p>可你能领会今天人们对此无知的程度有多大吗？这样想就明白了：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>概念</th>
+<th>语言里有没有对应的「利息」词</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>钱</td>
+<td>有——「利息」</td>
+</tr>
+<tr>
+<td>知识</td>
+<td><strong>根！本！没！有！</strong></td>
+</tr>
+</tbody>
+</table></div>
+<blockquote>
+<p>当一个民族的文化里没有某个概念对应的词汇时，你是无法让他理解相应意思的。</p>
+</blockquote>
+<p>这也是为什么这个专栏每次都花一周来厘清一个概念——即便语言到位了，对某些概念还是有很严重的认知偏差。</p>
+<p>而且知识和金钱一样，除了能产生利息，同样可以产生「<strong>负利息</strong>」：</p>
+<blockquote>
+<p>当你脑子里的概念不够清晰、甚至干脆是错误的时候，你的知识体系就已经开始产生相应的「负利息」了。等某一天你突然发现时，可能已经因为欠下太多「债」而自暴自弃、破罐破摔了。</p>
+</blockquote>
+<p>对比一下人们对两者的态度：对钱，人类史上一直憎恨收利息的人（「借钱就借呗，你竟然还邪恶地收利息」——贪婪而无知的人总是理直气壮地指责对方贪婪）；对知识，态度竟然更狠：</p>
+<pre><code>你要给我！
+你必须给我！因为知识是全人类的！
+你不仅要给我，还要免费！</code></pre>
+<p>既然免费，当然就谈不上什么利息。（顺带一个语言现象：英语国家里无数人自顾自地把「自由」理解为「免费」，反正都是一个词 free。）</p>
+<p>大部分知识（比如会计算、会精确算概率）不能直接用来赚钱，但确实有一些知识直接有商业价值——并且<strong>越先知道越受益</strong>（前提是用行动去支撑知识的结论）。这就是「<strong>知识的时间价值</strong>」，就好像利息是钱的时间价值。</p>
+<h3 id="早不是核心价值作者亲身的六点复盘">「早」不是核心价值：作者亲身的六点复盘<a class="anchor" href="#早不是核心价值作者亲身的六点复盘" aria-label="本节链接">#</a></h3>
+<p>2017 年 1 月初比特币价格又到历史新高约 1200 美元（几乎相当于 1 盎司黄金），作者手机里一夜之间充满「早知道买点就好了……唉！晚了！」。不到一周，三天内价格从人民币 8888 元跌到 5400 元——历史上发生过无数遍的事情又在多少人身上重演。</p>
+<p>关键认识：</p>
+<blockquote>
+<p><strong>「正确的价值」往往在它没被大多数人发现时才是最大的。</strong></p>
+</blockquote>
+<p>「我要是早一点知道」想表达的价值，是<strong>过去到现在</strong>所体现的。而这样的「正确」没多大意义，因为这是已经实实在在发生、并且所有人都知道的事。关键问题在于：<strong>从现在到未来，这种价值是否会一直保持甚至继续增多</strong>。如果你没有能力判断它未来的走势，其实现在的你和当年的你并没有两样。</p>
+<blockquote>
+<p>有一些所谓的先发优势并不属于我们，即便再给一次机会，多半也都会错过。认清自己的能力，知道哪些机会可以把握、哪些机会重来一次也不属于自己，这样才会避免不必要的懊恼和自责。</p>
+</blockquote>
+<p>很多人说「李笑来你真幸运，接触比特币那么早」。事实是：比特币诞生于 2009 年，他 2011 年春节前后才知道；而那时也有很多人跟 2017 年的人一样在慨叹「我知道得太晚了！去年这时候几乎白送，现在竟然超过 1 美元了！太贵了！」</p>
+<p>若「早知道」就算幸运，那至少有十多万人比他更幸运——2010 年比特币历史上第一次实物交易交割，有人用 25,000 个比特币买了一张披萨饼；后来再没听说那位收了两万五千个比特币的兄弟的消息，说明最终他并没留住。</p>
+<p>作者说自己真正的幸运有六条（这是一份极好的「机会属于谁」检查表）：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>真正的幸运</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>回头看那当然是机会，可当时没人能确定那是机会，但他<strong>莫名其妙地相信了</strong>（他坦承是边买边研究，其后多年一直研究，且总有不算彻底明白的地方）</td>
+</tr>
+<tr>
+<td>2</td>
+<td>基于过往知识与经验，他基本上能通过挣扎比较深入地理解那个机会（百分制自评 75 分以上），乃至于还算不上「拿着火把穿过火药厂」</td>
+</tr>
+<tr>
+<td>3</td>
+<td>那时候他<strong>恰如其分地「富」</strong>——没穷到十几万美元都拿不出来的地步</td>
+</tr>
+<tr>
+<td>4</td>
+<td>那时候他<strong>恰如其分地「穷」</strong>——没富到亿万资产，否则断然不会对一个总市值不过几千万美元的「股票」感兴趣。2011 年他跟很多高人讨论过，高人瞬间就明白原理和意义，但都只表示「哇！有意思！」之后一个都不买——不是因为笨，而是因为那时它还是个特别小的资产</td>
+</tr>
+<tr>
+<td>5</td>
+<td>（承上）机会的大小与你的资本量级要匹配</td>
+</tr>
+<tr>
+<td>6</td>
+<td><strong>最大的幸运</strong>：2011 年随后的几年里他一直在成长，以越来越快的速度成长，乃至于终于有一天「那实在是太大的变化」出现时，他竟然有能力「使劲拼一拼居然撑得住」（hold 得住）</td>
+</tr>
+</tbody>
+</table></div>
+<p>所以：</p>
+<blockquote>
+<p><strong>「早」本身根本不是核心价值</strong>，因为我们要追求的是长期增长、长期年化复合增长率。</p>
+</blockquote>
+<p>2011 年初很多人在 Twitter 上讨论 Bitcoin；到 2013 年两次暴涨（后面跟着两次暴跌）不过两年，有多少人在那之后继续持有？少之又少。转眼三年到 2016 年底大行情再次「貌似」启动时，少之又少的持有者里又有多少被「洗出去」了？绝大多数。这是天下所有交易市场天天发生的事。</p>
+<h3 id="知识利率与金钱利率的根本区别">知识利率与金钱利率的根本区别<a class="anchor" href="#知识利率与金钱利率的根本区别" aria-label="本节链接">#</a></h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th></th>
+<th>金钱</th>
+<th>知识</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>利率</td>
+<td>在本金和利率固定时，时间越长利息越多</td>
+<td><strong>利率并不固定，取决于你自己</strong></td>
+</tr>
+<tr>
+<td>早出发的意义</td>
+<td>有明显的先发优势</td>
+<td>即便出发早也未必先到；<strong>出发后的增长率以及相应的持续时间才是关键</strong></td>
+</tr>
+<tr>
+<td>负值风险</td>
+<td>特定环境可能负利息</td>
+<td>能力和知识不足时产生的是「负利率」，此时投入越多损失越多</td>
+</tr>
+</tbody>
+</table></div>
+<p>想明白这一点，就不用再纠结自己是不是出发得足够「早」。</p>
+<h3 id="为什么想想容易做到难上加难">为什么「想想」容易、「做到」难上加难<a class="anchor" href="#为什么想想容易做到难上加难" aria-label="本节链接">#</a></h3>
+<p>回顾历史时一切都是确定的，所以对没有能力展望未来的人，幻觉自然产生：「如果我那么做，我一定会有这样的结果！」事实很残酷：即便他们曾经有机会那么做，后面的结果很可能依然不会出现。</p>
+<p>展望未来时没有任何事情是「理所当然」的，哪怕一丝丝不确定都可能以几何级数放大恐惧。还有另一个因素：<strong>每个判断和决策所涉及的金额越大，越影响判断</strong>。</p>
+<p>类比：斯诺克国际联赛选手在家练习时随随便便就能打出满贯，可到了 16 强阶段之后很少有选手能打出满贯——因为涉及的奖金太高、荣誉太大，形成了无形的巨大压力（too much at stake）。</p>
+<blockquote>
+<p>在这个领域里，一切「自以为是的自高自大」都只不过是「还没走到那个地步」而已。</p>
+</blockquote>
+<h3 id="数据一级市场并不比二级市场更赚">数据：一级市场并不比二级市场更赚<a class="anchor" href="#数据一级市场并不比二级市场更赚" aria-label="本节链接">#</a></h3>
+<p>风险投资投的是创业公司「早期」（上市前）阶段；股票市场常被称为「二级市场」。那「一级市场」收益是不是普遍更高？<strong>并非如此。</strong></p>
+<p>根据 Cambridge Associates 的统计（书中引用）：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>事实</th>
+<th>数据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>美国 VC 行业中夺取整个行业回报的机构比例</td>
+<td>约 <strong>3%</strong> 的机构拿走了 <strong>95%</strong> 的回报，且头部 3% 长期组成变化不大</td>
+</tr>
+<tr>
+<td>去掉表现最好的前 29 个基金后</td>
+<td>剩下 500 多个基金累计投资 <strong>1600 亿美元</strong>，最后只拿回 <strong>850 亿美元</strong></td>
+</tr>
+<tr>
+<td>换算</td>
+<td>接近 <strong>95%</strong> 的 VC 机构十年长期业绩其实是「亏掉一半多的钱」</td>
+</tr>
+</tbody>
+</table></div>
+<p>假设（仅仅是假设）那些投资者在 2012 年直接把那 1600 亿美元换成 Facebook 股票并一直持有从不交易，到 2015 年（三年后）涨幅大约是 <strong>301.33%</strong>。所以问题不是「他们为什么不那么做」，而是：</p>
+<blockquote>
+<p>「等到 Facebook 已经上市了之后再投资它，晚吗？」答案明显是：<strong>一点儿也不晚。</strong></p>
+</blockquote>
+<p>还有个明显差异：Facebook 早期是普通人能遇到且有机会投资的吗？显然不是，那是彼得·蒂尔（们）的机会，他们的基金长期属于前 3% 里的前三名。**那样的机会我们普通人竟然想要，就是实际上的贪婪。**而 Facebook 上市后普通人都可以买了，若是我们没买，那只能是我们自己的问题。</p>
+<h3 id="手里有个锤子看啥都像钉子">手里有个锤子，看啥都像钉子<a class="anchor" href="#手里有个锤子看啥都像钉子" aria-label="本节链接">#</a></h3>
+<blockquote>
+<p>很多时候人们懂了一个道理之后，就妄想把它应用到任何地方——手里有个锤子看着啥都觉得那是个钉子。</p>
+</blockquote>
+<p>有多少人听说并理解了「先发优势」之后，就认为什么事都必须有先发优势才行，全然忘了「先发优势」只不过是「优势」的一种，并且有些时候「<strong>后发优势</strong>」可能更厉害。</p>
+<p>作者的亲身例子：2016 年底他要求开发团队做一个「收费讲座工具」，两周后做出来（微信服务号「一块听听」），上线一个月内付费用户累计 29 万人、日活 3.2 万、累计交易额 303 万元人民币。但刚开始技术团队集体反对：「已经有太多类似工具了！我们根本没有先发优势！」他问他们知道的最早同类产品是哪个，等他们答完，他告诉他们还有个更早的同类 APP，当时已经解散三个多月了。</p>
+<blockquote>
+<p><strong>先发可能是优势，也可能是劣势——可能恰恰因为太早了才乃至于没熬到明天。</strong></p>
+</blockquote>
+<p>结论：</p>
+<blockquote>
+<p>早不早根本不重要，关键在于<strong>对不对</strong>；事实上更关键的点在于，<strong>是否是长期对</strong>。</p>
+</blockquote>
+<h3 id="最后一个必须堵住的漏洞">最后一个必须堵住的漏洞<a class="anchor" href="#最后一个必须堵住的漏洞" aria-label="本节链接">#</a></h3>
+<blockquote>
+<p><strong>「早」不是关键因素，但你不能永远不出发。</strong></p>
+</blockquote>
+<p>这一课稍不留神就会成为「找借口」者的新弹药：「既然早出发不一定有优势，那我就一拖再拖、永不践行。」一定会有人以此为不作为开脱。</p>
+<p>所以：不论任何事情，只要开始做就会有相应的回报。「先发优势」未必是决定性因素，但<strong>如果你永远不出发，其实也就谈不上任何「优势」了</strong>——甚至是劣势。</p>
+<p>学英语、锻炼身体、打磨元认知能力，这些都是非常重要的「正确的事情」。在这方面的投入永远不算晚，也一定会在一段时间之后有所收获。</p>
+<h2 id="本课要点">本课要点<a class="anchor" href="#本课要点" aria-label="本节链接">#</a></h2>
+<ul>
+<li>问题的质量决定答案的质量：「准确」要定义程度、「是否」漏掉中间态、「预测」要问谁来预测。</li>
+<li>一件事的复杂程度不只取决于事情本身，还取决于谁来做。</li>
+<li>短期（分钟级）价格预测准确率无穷趋近 1/2，等于抛硬币；准确率必须确定地高于 50% 才有意义，60% 以上长期就很赚，不需要 99%。</li>
+<li>独立事件：连续 32 次正面后，第 33 次仍是 1/2。不懂这条的人做赌博，懂的人做投资，时间越长差距越大。</li>
+<li>二元期权抽水 20%，需要 70% 以上准确率才能长期赚钱——所以总体上所有人输光；总投注金额 ≈ 赌资÷抽水比例×[1+(准确率−1/2)]，实测数据无离群值。</li>
+<li>统计概率是最基础的赚钱思维工具（没有「之一」）；挑书能力要自己练，别让人推荐。</li>
+<li>随机漫步：短期应视为「理论」，长期反而容易预测，期限越长越容易——因为股价最终体现企业价值增长。</li>
+<li>不要短期期望过高、长期期望过低，否则丢了西瓜也没捡起芝麻。</li>
+<li>赌徒谬误影响 80% 以上的人；70% 的人看不出「肯定后件」的逻辑谬误。理解并理性接受随机漫步 + 厘清适用期限，已刷掉绝大多数对手。</li>
+<li>所有不能改变行为的概念和知识基本等同于无用；「我当初也知道」多半是事后借口。</li>
+<li>每月只更新一次数据 = 从一开始就习惯避开短期思考。知识就是金钱，时间就是力量。</li>
+<li>贪婪 = 想要原本并不属于自己的东西；七宗罪其余六条都可归源于它。讨论前先确定边界（在投资领域里）。</li>
+<li>最可怕的是无知型贪婪：借钱不愿付息就是想要属于别人的钱。</li>
+<li>资本金额越大，获取同样收益率越难；民间借贷 15% 以上高系统风险，25% 以上基本两年内必然崩盘（资金集结效应 vs GDP 个位数增长）。</li>
+<li>顶级战绩：巴菲特 43 年 21.1%、西蒙斯 30 年 34%、格林布雷 20 年 40%；及格线是<strong>长期复合年化 15%</strong>。</li>
+<li>买股票不知道买了什么 = 手持火把穿过炸药工厂，活下来也仍是傻子。</li>
+<li>追求的是「长期价值」；诱惑 = 有价值或看起来有价值但不是长期价值的一切。</li>
+<li>K 线幻觉：历史高低点不是你的未来经历；身在其中时每时每刻都既像最高点又像最低点。</li>
+<li>格雷厄姆：市场短期是投票机，长期是称重机——你只需学会找到未来最重的那个胖子；有本事要，就不是贪婪。</li>
+<li>知识也有利息，也有负利息（模糊或错误的概念每天在产生负利息），而语言里根本没有对应词汇。</li>
+<li>「早」不是核心价值：增长率与持续时间才是；知识利率由你自己决定，可能是负的。</li>
+<li>作者的真正幸运是「相信 + 75 分理解 + 恰如其分地富 + 恰如其分地穷 + 持续成长到能 hold 住」。</li>
+<li>一级市场并不更赚：3% 的 VC 拿走 95% 回报，其余 95% 十年亏掉一半多；上市后买 Facebook 三年约 301% 一点也不晚。</li>
+<li>先发优势只是优势的一种，太早可能没熬到明天；关键是对不对、是否长期对。</li>
+<li>但「早不是关键」绝不能变成拖延的借口——永远不出发就谈不上任何优势。</li>
+</ul>
+<h2 id="自测">自测<a class="anchor" href="#自测" aria-label="本节链接">#</a></h2>
+<ol type="1">
+<li>「股票价格能否准确预测」这个问题缺哪三个限定？</li>
+<li>为什么说一件事的复杂程度还取决于「谁来做」？举一个只有对神才简单的事。</li>
+<li>五分钟后的涨跌预测准确率是多少？准确率至少要到多少才有意义？</li>
+<li>连续 32 次正面后第 33 次正面的概率是多少？为什么？这个概念叫什么？</li>
+<li>二元期权的抽水比例是多少？由此推出需要多少准确率才能长期赚钱？结论是什么？</li>
+<li>写出「总投注金额」的近似公式，并说明它如何被用来证明准确率只有 1/2。</li>
+<li>随机漫步假说的三句无争议版本是什么？由此得出哪句投资箴言？</li>
+<li>长期价格为什么反而容易预测？三条基本面理由是什么？</li>
+<li>赌徒谬误影响多少人？另一个 70% 的逻辑谬误是什么？</li>
+<li>「所有不能改变行为的概念和知识基本等同于无用」——用「我当初也知道」这个例子解释它。</li>
+<li>给贪婪下定义，并说明为什么其余六宗罪都源自它（举两例）。</li>
+<li>为什么「借钱不愿意给利息」是贪婪？</li>
+<li>民间借贷利率的两条警戒线是什么？25% 以上为什么基本两年内崩盘？</li>
+<li>三位顶级投资者的复合年化各是多少？及格线是多少？为什么必须强调「复合年化」？</li>
+<li>诱惑的定义是什么？为什么「长期」要排在「价值」前面？</li>
+<li>K 线图给新手的幻觉是什么？为什么身在其中时每刻价格都像最高点又像最低点？</li>
+<li>格雷厄姆的投票机/称重机类比让作者解脱在哪里？</li>
+<li>知识的「负利息」指什么？为什么语言里没有对应词汇是个大问题？</li>
+<li>知识利率与金钱利率的根本区别是什么？由此得出「早」为什么不关键？</li>
+<li>作者真正的幸运有哪几条？其中最大的一条是什么？</li>
+<li>VC 行业的 3%/95% 数据说明什么？Facebook 上市后买入三年涨幅约多少？</li>
+<li>「一块听听」的例子说明先发优势可能是什么？本课最后必须堵住的借口是什么？</li>
+</ol>
+<details>
+<summary>参考答案
+
+<ol type="1">
+<li>① 「准确」缺程度定义；② 「是否」缺中间态（绝大多数问题不能只用是/否完整回答，正确答案常是「不一定」）；③ 「预测」缺主语——谁来预测，因为人的预测能力与信息完整度差异可达许多量级。</li>
+<li>因为同一件事对不同能力的人难度完全不同：加减乘除对成年人简单，对孩子是天大的难题。只有对「神」才简单的事，比如预测短期股价波动。</li>
+<li>无穷趋近 1/2，即完全靠运气。准确率必须超过 1/2 才有意义（否则不如抛硬币）；确定地达到 51% 长期就很赚，60% 以上更是如此，根本不需要 99%。</li>
+<li>依然是 1/2，因为抛硬币是「独立事件」，此前结果不影响下一次。</li>
+<li>猜对连本带利 180%，相当于抽水 20%，因此需要准确率至少超过 70% 才可能长期稳定赚钱。而短期准确率只有 50%，所以从来没人在这类品类里赚到钱，总体上所有人都很快输光（把所有赌徒合并看，平均猜 5 次就输光）。</li>
+<li>总投注金额 ≈ 赌资 ÷ 抽水比例 × [1 + (预测准确率 − 1/2)]。当总投注金额基本等于「赌资÷抽水比例」时，说明括号里的修正项为 0，即准确率 = 1/2。实测所有二元期权参与者的汇总数据正是如此，且没有离群值。</li>
+<li>① 短期价格预测是不可能的；② 长期价格预测是很可能的；③ 预测时间期限越长，预测难度越低。箴言：不要短期期望过高，长期期望过低。</li>
+<li>因为基本面摆在那里：股价最终体现企业价值的增长；世界一直在进步、经济一直在发展是大前提；有些企业确实能与世界共同进步（也有相当数量做不到）。</li>
+<li>至少 80% 的人或多或少受赌徒谬误影响（真正不受影响的低于 20%）。另一个是「肯定后件」谬误：若 P 则 Q，现在 Q 出现了，就断定 P 一定发生了——70% 的人看不出来（Eysenck and Keane, 2000）。</li>
+<li>很多人惋惜错过的机会说「我当初也知道」，但如果真从骨子里认同那是机会，早就行动抓住了。他们只是在结果出来后回头找借口——这个「知道」没有改变任何行为，所以等同于无用。</li>
+<li>贪婪就是想要原本并不属于自己的东西。例如嫉妒=想要自己尚不具备而别人已有的东西；怠惰=明明要用劳动交换却想伸手即得；傲慢=假装拥有并不属于自己的权利；愤怒=想要自己没有的解决问题能力。</li>
+<li>因为利息本来就属于放贷者，金钱在时间流动中必然产生利息（世上没有「没有利息的钱」）。不愿支付利息就是想要实际上属于别人的钱，所以是极度贪婪——而且这种贪婪往往来自无知而非故意。</li>
+<li>15% 以上已存在很高的系统风险；25% 以上基本两年内（8 个季度周期）必然崩盘。因为高利率产生资金集结效应，大量资金集结后必须找到能支撑其规模且年化复合 25% 以上的项目，而整个国家 GDP 增速平均只有个位数百分点，找不到。</li>
+<li>巴菲特伯克希尔截至 2007 年的 43 年 21.1%；西蒙斯大奖章 30 年 34%；格林布雷哥谭基金 20 年 40%。及格线是长期至少 15%。必须强调「复合年化」，因为它讨论的是十年以上甚至二三十年的长期复合增长，而不是一年两年的单期回报率。</li>
+<li>诱惑 = 有价值或起码看起来有价值，但不是「长期价值」的一切东西。因为我们要追求的是长期年化复合增长，「长期」是先决条件，只有加上长期，价值才是我们要的那种价值。</li>
+<li>幻觉是「我要是在这个高点卖掉、在那个低点买回来，一定多赚很多」——但那只是市场历史数据记录，不是你未来可能的实际经历。真身处其中时，从自己的视角看每时每刻的价格都既像最高点又像最低点，而且盯 K 线会让你被「活在当下」的直觉刺激，很难思考长期。</li>
+<li>短期是投票机 → 让别人去投票，自己不必反复投票；长期是称重机 → 称重也不用自己干，只需想办法找到以后最重的那个「胖子」。而「学会找到未来的胖子」是有把握学得会的；学会之后再有本事去要，就不是贪婪，因为那东西应该属于自己。</li>
+<li>指脑子里模糊不清甚至错误的概念与知识，它们每天在给你的知识体系产生负债；等你发现时可能已欠债太多而破罐破摔。语言里没有对应词汇，就无法让人理解相应意思——这正是专栏每周厘清一个概念的原因。</li>
+<li>金钱在本金与利率固定时，时间越长利息越多，所以早出发有明显优势；知识的利率不固定、由你自己决定，能力不足时甚至是负利率，投入越多损失越多。所以即便出发早也未必先到，关键是出发后的增长率与持续时间。</li>
+<li>① 当时没人确定那是机会但他相信了；② 靠过往知识经验挣扎着理解到 75 分以上，不算持火把穿火药厂；③ 恰如其分地富（拿得出十几万美元）；④ 恰如其分地穷（没富到亿万资产，否则看不上这么小的资产）；⑤ 机会大小与资本量级匹配；⑥ 最大的幸运是随后几年持续加速成长，以至于巨大变化来临时有能力 hold 住。</li>
+<li>说明「一级市场更赚」是错觉：约 3% 的 VC 拿走 95% 的行业回报，去掉前 29 只基金后，剩下 500 多只基金投 1600 亿只收回 850 亿，即约 95% 的机构十年亏掉一半多。假设 2012 年买入 Facebook 并持有到 2015 年，涨幅约 301.33%——上市后买入一点也不晚。</li>
+<li>说明先发可能是优势也可能是劣势——更早的同类产品已经解散，恰恰因为太早没熬到明天。必须堵住的借口是：「既然早出发不一定有优势，那我就一拖再拖、永不践行。」早不是关键，但永远不出发就谈不上任何优势，甚至是劣势。</li>
+</ol>
+</details></div><div class="course-done" data-course-done-bar data-n="14" data-done="0"><p data-course-done-text><span data-as="span" class="course-bi"><span data-l="zh" lang="zh-CN">读完了就标记一下，课程首页的进度条会记住。</span><span data-l="en" lang="en">Mark it when you finish — the progress bar on the course home remembers.</span></span></p><button class="course-btn course-btn--solid" type="button" data-course-done-toggle><span data-as="span" class="course-bi course-bi--inline"><span data-l="zh" lang="zh-CN">标记学完 ✓</span><span data-l="en" lang="en">Mark as done ✓</span></span></button></div><nav class="course-pager" aria-label="上一课 / 下一课"><a href="/wealth/lesson-13.html"><span class="dir">← LESSON 13</span><span class="ttl"><span data-as="span" class="course-bi"><span data-l="zh" lang="zh-CN">尊重资本量级的差异 · 机会就在眼前 · 今天就能开始投资</span><span data-l="en" lang="en">尊重资本量级的差异 · 机会就在眼前 · 今天就能开始投资</span></span></span></a><a class="next" href="/wealth/lesson-15.html"><span class="dir">LESSON 15 →</span><span class="ttl"><span data-as="span" class="course-bi"><span data-l="zh" lang="zh-CN">永远不要押上全部 · 定投策略 · 「长期」到底有多长</span><span data-l="en" lang="en">永远不要押上全部 · 定投策略 · 「长期」到底有多长</span></span></span></a></nav></div><aside class="course-side"><div class="course-side-card course-toc"><h4>本页目录</h4><ul class="course-side-list"><li><a href="#一问题的质量决定答案的质量"><span>一、问题的质量决定答案的质量</span></a></li><li><a href="#二五分钟后的涨跌准确率无穷趋近-12"><span>二、五分钟后的涨跌：准确率无穷趋近 1/2</span></a></li><li><a href="#三随机漫步短期是理论长期反而容易"><span>三、随机漫步：短期是理论，长期反而容易</span></a></li><li><a href="#四贪婪想要原本并不属于自己的东西"><span>四、贪婪：想要原本并不属于自己的东西</span></a></li><li><a href="#五我要是早知道就好了一个必须拆掉的幻觉"><span>五、「我要是早知道就好了」：一个必须拆掉的幻觉</span></a></li><li><a href="#本课要点"><span>本课要点</span></a></li><li><a href="#自测"><span>自测</span></a></li></ul></div><div class="course-side-card"><h4>全部课时</h4><ul class="course-side-list"><li><a href="/wealth/lesson-01.html"><span class="n">01</span><span><span data-as="span" class="course-bi course-bi--inline"><span data-l="zh" lang="zh-CN">财富自由到底是什么</span><span data-l="en" lang="en">财富自由到底是什么</span></span></span><span class="tick" data-course-side-tick data-n="1" hidden>✓</span></a></li><li><a href="/wealth/lesson-02.html"><span class="n">02</span><span><span data-as="span" class="course-bi course-bi--inline"><span data-l="zh" lang="zh-CN">三大坑，与你最宝贵的财富</span><span data-l="en" lang="en">三大坑，与你最宝贵的财富</span></span></span><span class="tick" data-course-side-tick data-n="2" hidden>✓</span></a></li><li><a href="/wealth/lesson-03.html"><span class="n">03</span><span><span data-as="span" class="course-bi course-bi--inline"><span data-l="zh" lang="zh-CN">付费就是捡便宜，安全感是最重的枷锁</span><span data-l="en" lang="en">付费就是捡便宜，安全感是最重的枷锁</span></span></span><span class="tick" data-course-side-tick data-n="3" hidden>✓</span></a></li><li><a href="/wealth/lesson-04.html"><span class="n">04</span><span><span data-as="span" class="course-bi course-bi--inline"><span data-l="zh" lang="zh-CN">活在未来，并成为别人的贵人</span><span data-l="en" lang="en">活在未来，并成为别人的贵人</span></span></span><span class="tick" data-course-side-tick data-n="4" hidden>✓</span></a></li><li><a href="/wealth/lesson-05.html"><span class="n">05</span><span><span data-as="span" class="course-bi course-bi--inline"><span data-l="zh" lang="zh-CN">资本三要素，以及「落后」的真实刻度</span><span data-l="en" lang="en">资本三要素，以及「落后」的真实刻度</span></span></span><span class="tick" data-course-side-tick data-n="5" hidden>✓</span></a></li><li><a href="/wealth/lesson-06.html"><span class="n">06</span><span><span data-as="span" class="course-bi course-bi--inline"><span data-l="zh" lang="zh-CN">多维竞争：从平庸走向卓越的最佳策略</span><span data-l="en" lang="en">多维竞争：从平庸走向卓越的最佳策略</span></span></span><span class="tick" data-course-side-tick data-n="6" hidden>✓</span></a></li><li><a href="/wealth/lesson-07.html"><span class="n">07</span><span><span data-as="span" class="course-bi course-bi--inline"><span data-l="zh" lang="zh-CN">元认知能力：最重要的能力，与三种训练法</span><span data-l="en" lang="en">元认知能力：最重要的能力，与三种训练法</span></span></span><span class="tick" data-course-side-tick data-n="7" hidden>✓</span></a></li><li><a href="/wealth/lesson-08.html"><span class="n">08</span><span><span data-as="span" class="course-bi course-bi--inline"><span data-l="zh" lang="zh-CN">万能钥匙：钥匙一定在别处；以及删掉「坚持」和「毅力」</span><span data-l="en" lang="en">万能钥匙：钥匙一定在别处；以及删掉「坚持」和「毅力」</span></span></span><span class="tick" data-course-side-tick data-n="8" hidden>✓</span></a></li><li><a href="/wealth/lesson-09.html"><span class="n">09</span><span><span data-as="span" class="course-bi course-bi--inline"><span data-l="zh" lang="zh-CN">你的世界是你选的：错过、自证预言、抱怨、看见别人的好</span><span data-l="en" lang="en">你的世界是你选的：错过、自证预言、抱怨、看见别人的好</span></span></span><span class="tick" data-course-side-tick data-n="9" hidden>✓</span></a></li><li><a href="/wealth/lesson-10.html"><span class="n">10</span><span><span data-as="span" class="course-bi course-bi--inline"><span data-l="zh" lang="zh-CN">特立独行且正确 · 价值观决定命运 · 刚需驱动一切</span><span data-l="en" lang="en">特立独行且正确 · 价值观决定命运 · 刚需驱动一切</span></span></span><span class="tick" data-course-side-tick data-n="10" hidden>✓</span></a></li><li><a href="/wealth/lesson-11.html"><span class="n">11</span><span><span data-as="span" class="course-bi course-bi--inline"><span data-l="zh" lang="zh-CN">主动选择刚需，投资的刚需是避险</span><span data-l="en" lang="en">主动选择刚需，投资的刚需是避险</span></span></span><span class="tick" data-course-side-tick data-n="11" hidden>✓</span></a></li><li><a href="/wealth/lesson-12.html"><span class="n">12</span><span><span data-as="span" class="course-bi course-bi--inline"><span data-l="zh" lang="zh-CN">选择的方法论：添加必要的条件，并把它们写成原则</span><span data-l="en" lang="en">选择的方法论：添加必要的条件，并把它们写成原则</span></span></span><span class="tick" data-course-side-tick data-n="12" hidden>✓</span></a></li><li><a href="/wealth/lesson-13.html"><span class="n">13</span><span><span data-as="span" class="course-bi course-bi--inline"><span data-l="zh" lang="zh-CN">尊重资本量级的差异 · 机会就在眼前 · 今天就能开始投资</span><span data-l="en" lang="en">尊重资本量级的差异 · 机会就在眼前 · 今天就能开始投资</span></span></span><span class="tick" data-course-side-tick data-n="13" hidden>✓</span></a></li><li><a href="/wealth/lesson-14.html" aria-current="page"><span class="n">14</span><span><span data-as="span" class="course-bi course-bi--inline"><span data-l="zh" lang="zh-CN">短期不可预测 · 贪婪来自无知 · 「早」不是关键</span><span data-l="en" lang="en">短期不可预测 · 贪婪来自无知 · 「早」不是关键</span></span></span><span class="tick" data-course-side-tick data-n="14" hidden>✓</span></a></li><li><a href="/wealth/lesson-15.html"><span class="n">15</span><span><span data-as="span" class="course-bi course-bi--inline"><span data-l="zh" lang="zh-CN">永远不要押上全部 · 定投策略 · 「长期」到底有多长</span><span data-l="en" lang="en">永远不要押上全部 · 定投策略 · 「长期」到底有多长</span></span></span><span class="tick" data-course-side-tick data-n="15" hidden>✓</span></a></li><li><a href="/wealth/lesson-16.html"><span class="n">16</span><span><span data-as="span" class="course-bi course-bi--inline"><span data-l="zh" lang="zh-CN">周期与趋势判断 · 镜像世界：技能与运气的两侧</span><span data-l="en" lang="en">周期与趋势判断 · 镜像世界：技能与运气的两侧</span></span></span><span class="tick" data-course-side-tick data-n="16" hidden>✓</span></a></li><li><a href="/wealth/lesson-17.html"><span class="n">17</span><span><span data-as="span" class="course-bi course-bi--inline"><span data-l="zh" lang="zh-CN">时间买卖：从「双倍收入」到「同一份时间卖很多次」</span><span data-l="en" lang="en">时间买卖：从「双倍收入」到「同一份时间卖很多次」</span></span></span><span class="tick" data-course-side-tick data-n="17" hidden>✓</span></a></li><li><a href="/wealth/lesson-18.html"><span class="n">18</span><span><span data-as="span" class="course-bi course-bi--inline"><span data-l="zh" lang="zh-CN">写作：普通人最容易上手的杠杆 · 第三种个人商业模式：买时间</span><span data-l="en" lang="en">写作：普通人最容易上手的杠杆 · 第三种个人商业模式：买时间</span></span></span><span class="tick" data-course-side-tick data-n="18" hidden>✓</span></a></li><li><a href="/wealth/lesson-19.html"><span class="n">19</span><span><span data-as="span" class="course-bi course-bi--inline"><span data-l="zh" lang="zh-CN">成长率 · 知识 · 智商 · 速成：装一台会自己升级的操作系统</span><span data-l="en" lang="en">成长率 · 知识 · 智商 · 速成：装一台会自己升级的操作系统</span></span></span><span class="tick" data-course-side-tick data-n="19" hidden>✓</span></a></li><li><a href="/wealth/lesson-20.html"><span class="n">20</span><span><span data-as="span" class="course-bi course-bi--inline"><span data-l="zh" lang="zh-CN">重复 · 希望 · 默默进化 · 践行 · 学习能力</span><span data-l="en" lang="en">重复 · 希望 · 默默进化 · 践行 · 学习能力</span></span></span><span class="tick" data-course-side-tick data-n="20" hidden>✓</span></a></li><li><a href="/wealth/lesson-21.html"><span class="n">21</span><span><span data-as="span" class="course-bi course-bi--inline"><span data-l="zh" lang="zh-CN">一把刀 · 提问的智慧 · 执行力：三驾马车与最后一个物种</span><span data-l="en" lang="en">一把刀 · 提问的智慧 · 执行力：三驾马车与最后一个物种</span></span></span><span class="tick" data-course-side-tick data-n="21" hidden>✓</span></a></li></ul></div><div class="course-side-card"><h4>动手工具</h4><ul class="course-side-list"><li><a href="/wealth/lab.html"><span class="n">◎</span><span><span data-as="span" class="course-bi course-bi--inline"><span data-l="zh" lang="zh-CN">财富实验室</span><span data-l="en" lang="en">Wealth lab</span></span></span></a></li><li><a href="/wealth/quiz.html"><span class="n">?</span><span><span data-as="span" class="course-bi course-bi--inline"><span data-l="zh" lang="zh-CN">自测 30 题</span><span data-l="en" lang="en">30-question quiz</span></span></span></a></li><li><a href="/wealth/glossary.html"><span class="n">≡</span><span><span data-as="span" class="course-bi course-bi--inline"><span data-l="zh" lang="zh-CN">概念词典</span><span data-l="en" lang="en">Glossary</span></span></span></a></li><li><a href="/wealth/plan.html"><span class="n">✓</span><span><span data-as="span" class="course-bi course-bi--inline"><span data-l="zh" lang="zh-CN">30 天践行</span><span data-l="en" lang="en">30-day plan</span></span></span></a></li></ul></div></aside></div><div class="course-inner"><p class="course-note"><span data-as="span" class="course-bi"><span data-l="zh" lang="zh-CN">本课程是对原书的整理、转述与延伸练习，不是原文转载。书中出现的公司名、价格、收益率与个人收入数字，全部是作者 2016–2017 年的个人记录，不构成任何投资建议，也不代表未来收益。</span><span data-l="en" lang="en">This course reorganises and retells the original book; it is not a reprint. Companies, prices, returns and income figures are the author&#39;s own records from 2016–2017. Nothing here is investment advice or a promise of future returns.</span></span></p><footer class="course-foot"><nav class="course-foot-nav" aria-label="课程入口"><a href="/wealth.html">课程首页</a><a href="/leeks.html"><span data-as="span" class="course-bi course-bi--inline"><span data-l="zh" lang="zh-CN">韭菜的自我修养</span><span data-l="en" lang="en">The Self-Cultivation of Leeks</span></span></a><a href="/richdad.html"><span data-as="span" class="course-bi course-bi--inline"><span data-l="zh" lang="zh-CN">富爸爸穷爸爸</span><span data-l="en" lang="en">Rich Dad Poor Dad</span></span></a><a href="/turtle.html"><span data-as="span" class="course-bi course-bi--inline"><span data-l="zh" lang="zh-CN">海龟交易法则</span><span data-l="en" lang="en">The Complete TurtleTrader</span></span></a><a href="/works.html">作品集</a></nav><p>© 2026 · Christopher · <span data-as="span" class="course-bi course-bi--inline"><span data-l="zh" lang="zh-CN">财富自由之路</span><span data-l="en" lang="en">The Road to Financial Freedom</span></span></p></footer></div></div><script>
+	(function () {
+		var root = document.querySelector(".course");
+		if (!root) return;
+
+		var slug = root.dataset.course || "course";
+		var LANGS = ["zh", "en", "both"];
+		var buttons = Array.prototype.slice.call(root.querySelectorAll("[data-course-lang-btn]"));
+		var total = Number(root.dataset.total || root.querySelectorAll("[data-course-dot]").length || 0);
+
+		function ls(key, fallback) {
+			try {
+				var v = localStorage.getItem(key);
+				return v === null ? fallback : v;
+			} catch (e) {
+				return fallback;
+			}
+		}
+		function setLs(key, value) {
+			try {
+				localStorage.setItem(key, value);
+			} catch (e) {}
+		}
+		function readJson(key, fallback) {
+			try {
+				var raw = localStorage.getItem(key);
+				return raw ? JSON.parse(raw) : fallback;
+			} catch (e) {
+				return fallback;
+			}
+		}
+		function writeJson(key, value) {
+			try {
+				localStorage.setItem(key, JSON.stringify(value));
+			} catch (e) {}
+		}
+		function tr(text) {
+			return typeof window.__SITE_TR__ === "function" ? window.__SITE_TR__(text) : text;
+		}
+		function setBi(el, zh, en) {
+			var z = el.querySelector('[data-l="zh"]');
+			var e = el.querySelector('[data-l="en"]');
+			if (z && e) {
+				z.textContent = tr(zh);
+				e.textContent = en;
+			} else {
+				el.textContent = tr(zh);
+			}
+		}
+
+		/* ---------- 语言 ---------- */
+		function applyLang(lang) {
+			if (LANGS.indexOf(lang) === -1) lang = buttons.length ? "both" : "zh";
+			root.setAttribute("data-lang", lang);
+			if (root.classList.contains("lk")) root.setAttribute("data-lk-lang", lang);
+			if (root.classList.contains("rd")) root.setAttribute("data-rd-lang", lang);
+			if (slug === "leeks") setLs("lk-lang", lang);
+			if (slug === "richdad") setLs("rd-lang", lang);
+			buttons.forEach(function (b) {
+				b.setAttribute("aria-pressed", String(b.dataset.lang === lang));
+			});
+			var zh = root.dataset.titleZh;
+			var en = root.dataset.titleEn;
+			if (zh && en) document.title = lang === "en" ? en : zh;
+		}
+
+		var savedLang = ls("course-lang", null);
+		if (!savedLang) {
+			var legacyLang = ls("lk-lang", null) || ls("rd-lang", null) || ls("turtle-lang", null);
+			if (legacyLang && LANGS.indexOf(legacyLang) !== -1) {
+				savedLang = legacyLang;
+				setLs("course-lang", legacyLang);
+			}
+		}
+		applyLang(savedLang || (buttons.length ? "both" : "zh"));
+
+		buttons.forEach(function (b) {
+			b.addEventListener("click", function () {
+				var lang = b.dataset.lang || "both";
+				applyLang(lang);
+				setLs("course-lang", lang);
+			});
+		});
+
+		/* ---------- 学习进度 ---------- */
+		var doneKey = "course-done:" + slug;
+		var stored = readJson(doneKey, null);
+		var set = new Set();
+		if (Array.isArray(stored)) {
+			stored.forEach(function (n) {
+				if (Number.isInteger(n) && n > 0) set.add(n);
+			});
+		} else {
+			["lk-done", "rd-done", "turtle-progress", "wealth-read"].forEach(function (key) {
+				var legacy = readJson(key, null);
+				if (Array.isArray(legacy)) {
+					legacy.forEach(function (n) {
+						if (Number.isInteger(n) && n > 0) set.add(n);
+					});
+				}
+			});
+			if (set.size) writeJson(doneKey, Array.from(set));
+		}
+
+		function render() {
+			root.querySelectorAll("[data-course-dot]").forEach(function (el) {
+				el.setAttribute("data-done", set.has(Number(el.dataset.n)) ? "1" : "0");
+			});
+			root.querySelectorAll("[data-course-card]").forEach(function (el) {
+				var n = Number(el.dataset.n);
+				var on = set.has(n);
+				el.setAttribute("data-done", on ? "1" : "0");
+				var badge = el.querySelector("[data-course-card-done]");
+				if (badge) badge.hidden = !on;
+			});
+			root.querySelectorAll("[data-course-side-tick]").forEach(function (el) {
+				el.hidden = !set.has(Number(el.dataset.n));
+			});
+			root.querySelectorAll("[data-course-count]").forEach(function (el) {
+				el.textContent = set.size + " / " + total;
+			});
+			var pct = total > 0 ? Math.round((set.size / total) * 100) : 0;
+			root.querySelectorAll("[data-course-mini]").forEach(function (el) {
+				el.style.width = pct + "%";
+			});
+
+			var bar = root.querySelector("[data-course-done-bar]");
+			if (bar) {
+				var n = Number(bar.dataset.n);
+				var on = set.has(n);
+				bar.setAttribute("data-done", on ? "1" : "0");
+				var text = bar.querySelector("[data-course-done-text]");
+				if (text) {
+					setBi(
+						text,
+						on ? "这一课已经学完，课程进度已记住。" : "读完了就标记一下，课程首页的进度条会记住。",
+						on ? "Lesson complete — progress saved." : "Mark it when you finish — the progress bar remembers."
+					);
+				}
+				var btn = bar.querySelector("[data-course-done-toggle]");
+				if (btn) setBi(btn, on ? "取消标记" : "标记学完 ✓", on ? "Undo" : "Mark as done ✓");
+			}
+		}
+
+		var toggle = root.querySelector("[data-course-done-toggle]");
+		if (toggle) {
+			toggle.addEventListener("click", function () {
+				var bar = root.querySelector("[data-course-done-bar]");
+				var n = Number(bar && bar.dataset.n);
+				if (!n) return;
+				if (set.has(n)) set.delete(n);
+				else set.add(n);
+				writeJson(doneKey, Array.from(set).sort(function (a, b) { return a - b; }));
+				render();
+			});
+		}
+
+		var reset = root.querySelector("[data-course-reset]");
+		if (reset) {
+			var armed = false;
+			var timer = 0;
+			function disarm() {
+				armed = false;
+				window.clearTimeout(timer);
+				reset.removeAttribute("data-armed");
+				setBi(reset, "清空学习进度", "Reset progress");
+			}
+			reset.addEventListener("click", function () {
+				if (!armed) {
+					armed = true;
+					reset.setAttribute("data-armed", "1");
+					setBi(reset, "再点一次确认清空", "Click again to confirm");
+					timer = window.setTimeout(disarm, 4000);
+					return;
+				}
+				set = new Set();
+				writeJson(doneKey, []);
+				render();
+				disarm();
+				setBi(reset, "已清空 ✓", "Cleared ✓");
+				timer = window.setTimeout(disarm, 1800);
+			});
+		}
+
+		render();
+
+		/* ---------- 目录高亮 ---------- */
+		var tocLinks = Array.prototype.slice.call(root.querySelectorAll('.course-toc a[href^="#"]'));
+		if (tocLinks.length) {
+			var heads = tocLinks
+				.map(function (a) {
+					var id = decodeURIComponent(a.getAttribute("href").slice(1));
+					var el = document.getElementById(id);
+					return el ? { id: id, el: el, link: a } : null;
+				})
+				.filter(Boolean);
+			var ticking = false;
+			function spy() {
+				ticking = false;
+				var current = null;
+				heads.forEach(function (h) {
+					if (h.el.getBoundingClientRect().top <= 160) current = h;
+				});
+				heads.forEach(function (h) {
+					h.link.classList.toggle("active", current === h);
+				});
+			}
+			window.addEventListener(
+				"scroll",
+				function () {
+					if (ticking) return;
+					ticking = true;
+					window.requestAnimationFrame(spy);
+				},
+				{ passive: true }
+			);
+			spy();
+		}
+	})();
+</script></div></main><footer class="footer"><div class="wrap"><div class="footer-grid"><div class="footer-brand"><a class="brand" href="/"><span class="brand-mark" aria-hidden="true">C—</span><span class="brand-text"><span class="brand-name">Christopher</span><span class="brand-sub">博客与作品集</span></span></a><p>把读懂的东西，亲手做一遍。这里记录课程创作、投资思考与十年践行的点点滴滴。</p></div><div><h4>站点</h4><ul><li><a href="/">首页</a></li><li><a href="/blog.html">博客</a></li><li><a href="/works.html">作品集</a></li><li><a href="/leeks.html">韭菜园双语课</a></li><li><a href="/richdad.html">两条路 · 富爸爸双语课</a></li><li><a href="/about.html">关于</a></li><li><a href="/search.html">搜索</a></li><li><a href="/rss.xml">RSS 订阅</a></li></ul></div><div><h4>在线作品</h4><ul><li><a href="https://taleb-for-kids-vkkc4zaaicr.qoder.website" target="_blank" rel="noopener noreferrer">跟塔勒布学「不怕不确定」 ↗</a></li><li><a href="https://dynamic-hedging-course-vkkc4zaaicr.qoder.website" target="_blank" rel="noopener noreferrer">动态对冲 · 小学生也能懂 ↗</a></li><li><a href="https://trading-path-7lx5x6ji8nx.qoder.zone" target="_blank" rel="noopener noreferrer">跟陈凯学「交易之路」 ↗</a></li><li><a href="https://trading-for-a-living-7lx5x6ji8nx.qoder.zone" target="_blank" rel="noopener noreferrer">跟埃尔德学交易（以交易为生+卖出的艺术） ↗</a></li></ul></div></div><div class="footer-bottom"><span>© 2026 Christopher <span class="dash">—</span> 西安</span><span>EmDash CMS 驱动 · Astro 构建 · 静态发布</span></div></div></footer><script>
+			(function () {
+				var root = document.documentElement;
+
+				/* 主题切换 */
+				var themeBtn = document.querySelector(".theme-toggle");
+				function paintTheme() {
+					var dark = root.dataset.theme === "dark";
+					if (!themeBtn) return;
+					themeBtn.setAttribute("aria-pressed", String(dark));
+					themeBtn.querySelector(".i-moon").style.display = dark ? "none" : "";
+					themeBtn.querySelector(".i-sun").style.display = dark ? "" : "none";
+				}
+				paintTheme();
+				if (themeBtn) {
+					themeBtn.addEventListener("click", function () {
+						var next = root.dataset.theme === "dark" ? "light" : "dark";
+						root.dataset.theme = next;
+						try { localStorage.setItem("cb-theme", next); } catch (e) {}
+						paintTheme();
+					});
+				}
+
+				/* 语言下拉：点击外部关闭 */
+				var langSwitch = document.getElementById("lang-switch");
+				if (langSwitch) {
+					langSwitch.addEventListener("click", function (e) {
+						if (e.target.closest("a")) langSwitch.open = false;
+					});
+					document.addEventListener("click", function (e) {
+						if (!langSwitch.contains(e.target)) langSwitch.open = false;
+					});
+				}
+
+				/* 移动端抽屉 */
+				var drawer = document.getElementById("drawer");
+				var openBtn = document.querySelector(".nav-toggle");
+				var closeBtn = document.querySelector(".drawer-close");
+				function setDrawer(open) {
+					if (!drawer) return;
+					drawer.classList.toggle("open", open);
+					drawer.setAttribute("aria-hidden", String(!open));
+					if (openBtn) openBtn.setAttribute("aria-expanded", String(open));
+					document.body.style.overflow = open ? "hidden" : "";
+				}
+				if (openBtn) openBtn.addEventListener("click", function () { setDrawer(true); });
+				if (closeBtn) closeBtn.addEventListener("click", function () { setDrawer(false); });
+				if (drawer) {
+					drawer.querySelectorAll("a").forEach(function (a) {
+						a.addEventListener("click", function () { setDrawer(false); });
+					});
+				}
+				document.addEventListener("keydown", function (e) {
+					if (e.key === "Escape") setDrawer(false);
+				});
+
+				/* 入场动画 */
+				var reveals = document.querySelectorAll(".reveal");
+				if ("IntersectionObserver" in window && reveals.length) {
+					var io = new IntersectionObserver(
+						function (entries) {
+							entries.forEach(function (en) {
+								if (en.isIntersecting) { en.target.classList.add("in"); io.unobserve(en.target); }
+							});
+						},
+						{ threshold: 0.12, rootMargin: "0px 0px -6% 0px" }
+					);
+					reveals.forEach(function (el) { io.observe(el); });
+				} else {
+					reveals.forEach(function (el) { el.classList.add("in"); });
+				}
+
+				/* 阅读进度 */
+				var bar = document.querySelector(".read-progress");
+				function progress() {
+					if (!bar) return;
+					var h = document.documentElement;
+					var max = h.scrollHeight - h.clientHeight;
+					bar.style.width = max > 0 ? (h.scrollTop / max) * 100 + "%" : "0";
+				}
+				window.addEventListener("scroll", progress, { passive: true });
+				progress();
+
+				/* 目录高亮 */
+				var tocLinks = Array.prototype.slice.call(document.querySelectorAll(".toc a[href^='#']"));
+				if (tocLinks.length && "IntersectionObserver" in window) {
+					var map = {};
+					tocLinks.forEach(function (a) {
+						var id = decodeURIComponent(a.getAttribute("href").slice(1));
+						map[id] = a;
+					});
+					var heads = Array.prototype.slice.call(document.querySelectorAll(".prose h2[id], .prose h3[id]"));
+					var current = null;
+					function activate(id) {
+						if (current === id) return;
+						current = id;
+						tocLinks.forEach(function (a) { a.classList.remove("active"); });
+						if (map[id]) map[id].classList.add("active");
+					}
+					var to = new IntersectionObserver(
+						function (entries) {
+							entries.forEach(function (en) { if (en.isIntersecting) activate(en.target.id); });
+						},
+						{ rootMargin: "-80px 0px -70% 0px", threshold: 0 }
+					);
+					heads.forEach(function (h) { to.observe(h); });
+				}
+			})();
+		</script></body></html>

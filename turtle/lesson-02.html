@@ -1,0 +1,460 @@
+<!DOCTYPE html><html lang="zh-CN" data-site-locale="zh" data-site-prefix><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>王子与数学家 · 海龟交易法则 · Christopher</title><meta name="description" content="王子与数学家 — 本课目标：看懂丹尼斯和埃克哈特各自的能力从哪来，以及为什么一套好方法必须同时需要“直觉的假设”和“数学的检验”。 海龟交易法则双语课，中文与 English 两个版本。"><meta name="author" content="Christopher"><meta name="generator" content="Astro v7.4.11"><link rel="canonical" href="https://chenmingyuan.site/turtle/lesson-02.html"><link rel="alternate" hreflang="zh-CN" href="https://chenmingyuan.site/turtle/lesson-02.html"><link rel="alternate" hreflang="en" href="https://chenmingyuan.site/en/turtle/lesson-02.html"><link rel="alternate" hreflang="fr" href="https://chenmingyuan.site/fr/turtle/lesson-02.html"><link rel="alternate" hreflang="es" href="https://chenmingyuan.site/es/turtle/lesson-02.html"><link rel="alternate" hreflang="ja" href="https://chenmingyuan.site/ja/turtle/lesson-02.html"><link rel="alternate" hreflang="ko" href="https://chenmingyuan.site/ko/turtle/lesson-02.html"><link rel="alternate" hreflang="x-default" href="https://chenmingyuan.site/turtle/lesson-02.html"><link rel="icon" type="image/svg+xml" href="/favicon.svg"><link rel="alternate" type="application/rss+xml" title="Christopher · 博客与作品集" href="/rss.xml"><meta property="og:type" content="website"><meta property="og:site_name" content="Christopher · 博客与作品集"><meta property="og:title" content="王子与数学家 · 海龟交易法则 · Christopher"><meta property="og:description" content="王子与数学家 — 本课目标：看懂丹尼斯和埃克哈特各自的能力从哪来，以及为什么一套好方法必须同时需要“直觉的假设”和“数学的检验”。 海龟交易法则双语课，中文与 English 两个版本。"><meta property="og:url" content="https://chenmingyuan.site/turtle/lesson-02.html"><meta property="og:image" content="https://chenmingyuan.site/media/turtle-hero.jpg"><meta property="og:locale" content="zh_CN"><meta property="og:locale:alternate" content="en_US"><meta property="og:locale:alternate" content="fr_FR"><meta property="og:locale:alternate" content="es_ES"><meta property="og:locale:alternate" content="ja_JP"><meta property="og:locale:alternate" content="ko_KR"><meta name="twitter:card" content="summary_large_image"><script>
+			(function () {
+				try {
+					var t = localStorage.getItem("cb-theme");
+					if (t !== "light" && t !== "dark") {
+						t = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+					}
+					document.documentElement.dataset.theme = t;
+				} catch (e) {}
+			})();
+		</script><link rel="stylesheet" href="/_astro/Base.Dl12XRs9.css"><link rel="stylesheet" href="/_astro/CourseRuntime.0hGXms6l.css"></head><body><script type="application/json" id="site-i18n-dict">{}</script><script>
+			(function () {
+				var dict = {};
+				try {
+					var el = document.getElementById("site-i18n-dict");
+					if (el) dict = JSON.parse(el.textContent || "{}");
+				} catch (e) {}
+				window.__SITE_I18N__ = dict;
+				// 浏览器脚本统一入口：文案查表 + 语言前缀（不要用模板插值，is:inline 脚本不处理）
+				window.__SITE_TR__ = function (text) {
+					if (typeof text !== "string" || !text) return text;
+					var hit = dict[text] || dict[text.trim()];
+					if (hit) return hit;
+					// 数字前缀兜底：`${N} 节课` 求值成 "10 节课" 后查 "{n} 节课" 通配键
+					var m = text.match(/^(\d+(?:\.\d+)?)((?:\s*\S.*)?)$/s);
+					if (m && m[2]) {
+						var g = "{n}" + m[2];
+						var h2 = dict[g] || dict[g.trim()];
+						if (h2) return h2.replace("{n}", m[1]);
+					}
+					return text;
+				};
+				window.__SITE_PREFIX__ = document.documentElement.dataset.sitePrefix || "";
+			})();
+		</script><a class="skip-link" href="#main">跳到主要内容</a><div class="read-progress" aria-hidden="true"></div><header class="topbar"><div class="topbar-inner"><a class="brand" href="/" aria-label="返回首页"><span class="brand-mark" aria-hidden="true">C—</span><span class="brand-text"><span class="brand-name">Christopher</span><span class="brand-sub">博客与作品集</span></span></a><nav aria-label="主导航"><ul class="nav-links"><li><a href="/">首页</a></li><li><a href="/blog.html">博客</a></li><li><a href="/works.html">作品集</a></li><li><a href="/leeks.html">韭菜园</a></li><li><a href="/richdad.html">两条路</a></li><li><a href="/turtle.html" aria-current="page">海龟课</a></li><li><a href="/wealth.html">财富课</a></li><li><a href="/about.html">关于</a></li></ul></nav><details class="lang-switch" id="lang-switch"><summary aria-label="切换语言" title="切换语言"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M3 12h18M12 3c2.4 2.6 3.6 5.6 3.6 9s-1.2 6.4-3.6 9c-2.4-2.6-3.6-5.6-3.6-9S9.6 5.6 12 3Z"></path></svg><span class="lang-current">中</span></summary><div class="lang-menu" role="menu"><a href="/turtle/lesson-02.html" hreflang="zh-CN" lang="zh-CN" aria-current="true" role="menuitem"><span class="lang-short">中</span><span>中文</span></a><a href="/en/turtle/lesson-02.html" hreflang="en" lang="en" role="menuitem"><span class="lang-short">EN</span><span>English</span></a><a href="/fr/turtle/lesson-02.html" hreflang="fr" lang="fr" role="menuitem"><span class="lang-short">FR</span><span>Français</span></a><a href="/es/turtle/lesson-02.html" hreflang="es" lang="es" role="menuitem"><span class="lang-short">ES</span><span>Español</span></a><a href="/ja/turtle/lesson-02.html" hreflang="ja" lang="ja" role="menuitem"><span class="lang-short">日</span><span>日本語</span></a><a href="/ko/turtle/lesson-02.html" hreflang="ko" lang="ko" role="menuitem"><span class="lang-short">한</span><span>한국어</span></a></div></details><a class="icon-btn" href="/search.html" aria-label="搜索" title="搜索"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-3.8-3.8"></path></svg></a><button class="icon-btn theme-toggle" type="button" aria-label="切换深浅色主题" aria-pressed="false"><svg class="i-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"></path></svg><svg class="i-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true" style="display:none"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2m0 16v2M4.9 4.9l1.4 1.4m11.4 11.4 1.4 1.4M2 12h2m16 0h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path></svg></button><button class="icon-btn nav-toggle" type="button" aria-label="打开菜单" aria-expanded="false" aria-controls="drawer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"></path></svg></button></div></header><div class="drawer" id="drawer" aria-hidden="true"><div class="drawer-head"><span class="brand"><span class="brand-mark" aria-hidden="true">C—</span><span class="brand-text"><span class="brand-name">Christopher</span><span class="brand-sub">博客与作品集</span></span></span><button class="icon-btn drawer-close" type="button" aria-label="关闭菜单"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"></path></svg></button></div><nav aria-label="移动端导航"><a href="/">首页<span class="idx">01</span></a><a href="/blog.html">博客<span class="idx">02</span></a><a href="/works.html">作品集<span class="idx">03</span></a><a href="/leeks.html">韭菜园<span class="idx">04</span></a><a href="/richdad.html">两条路<span class="idx">05</span></a><a href="/turtle.html" aria-current="page">海龟课<span class="idx">06</span></a><a href="/wealth.html">财富课<span class="idx">07</span></a><a href="/about.html">关于<span class="idx">08</span></a><a href="/search.html">搜索<span class="idx">09</span></a></nav><div class="drawer-langs" aria-label="切换语言"><a href="/turtle/lesson-02.html" hreflang="zh-CN" lang="zh-CN" aria-current="true">中文</a><a href="/en/turtle/lesson-02.html" hreflang="en" lang="en">English</a><a href="/fr/turtle/lesson-02.html" hreflang="fr" lang="fr">Français</a><a href="/es/turtle/lesson-02.html" hreflang="es" lang="es">Español</a><a href="/ja/turtle/lesson-02.html" hreflang="ja" lang="ja">日本語</a><a href="/ko/turtle/lesson-02.html" hreflang="ko" lang="ko">한국어</a></div><p class="drawer-foot">把读懂的东西，亲手做一遍。</p></div><main id="main"><div class="course course--turtle" data-course="turtle" data-lang="both" data-total="16" data-title-zh="王子与数学家 · 海龟交易法则 · Christopher" data-title-en="The Prince of the Pit and the Mathematician · The Complete TurtleTrader · Christopher"><div class="course-toolbar"><div class="course-toolbar-inner"><nav class="course-crumbs" aria-label="课程导航"><a href="/turtle.html"><span data-as="span" class="course-bi course-bi--inline"><span data-l="zh" lang="zh-CN">海龟交易法则</span><span data-l="en" lang="en">The Complete TurtleTrader</span></span></a><span class="sep" aria-hidden="true">/</span><a href="/turtle/lesson-01.html" aria-current="page">课时</a></nav><div class="course-lang" role="group" aria-label="语言"><button type="button" data-course-lang-btn data-lang="zh" aria-pressed="false">中</button><button type="button" data-course-lang-btn data-lang="en" aria-pressed="false">EN</button><button type="button" data-course-lang-btn data-lang="both" aria-pressed="true">对照</button></div><span class="course-mini" title="本机学习进度"><span data-course-count>0 / 16</span><span class="course-mini-track"><i data-course-mini></i></span></span></div></div><div class="course-inner"><div class="course-lesson-layout"><div class="course-lesson-main"><header class="course-lesson-head"><div class="eyebrow"><span class="course-lesson-num">LESSON 02</span><span class="course-tag"><span data-as="span" class="course-bi course-bi--inline"><span data-l="zh" lang="zh-CN">第一部分 · 故事与实验</span><span data-l="en" lang="en">第一部分 · 故事与实验</span></span></span><span class="course-tag">约 5 分钟</span><span class="course-tag">2 / 16</span></div><h1><span data-as="span" class="course-bi"><span data-l="zh" lang="zh-CN">王子与数学家</span><span data-l="en" lang="en">The Prince of the Pit and the Mathematician</span></span></h1></header><div class="course-prose course-html" data-l="zh"><blockquote>
+<p>本课目标：看懂丹尼斯和埃克哈特各自的能力从哪来，以及为什么一套好方法必须同时需要“直觉的假设”和“数学的检验”。</p>
+</blockquote>
+<h2 id="一从跑单员到交易池王子">一、从跑单员到“交易池王子”<a class="anchor" href="#一从跑单员到交易池王子" aria-label="section link">#</a></h2>
+<p>理查德·丹尼斯不是含着金汤匙出生的。他成长于芝加哥南区一个爱尔兰天主教家庭，父亲在市政府工作，祖父在大萧条中把股票账户输光。少年丹尼斯内向、戴厚眼镜，第一次买股票就买了一家倒闭的留声机公司。</p>
+<p>但他对赔率有天生的敏感，打扑克很少输。十七岁那年，他在芝加哥商业交易所找到一份暑期跑单员的工作，时薪 1.6 美元。交易池里几百个人又吼又推，像一场室内橄榄球。他想下场，可场内交易员必须年满二十一岁——于是他让父亲替他下单，自己在场边打手势指挥。</p>
+<p>后来他用父母借来的钱买下 MidAm 交易所的一个席位，真正的交易本金只有 100 美元，是哥哥送披萨攒下的。多年后他回忆起步阶段，说自己当时的系统叫“完全不知道自己在干什么”：</p>
+<blockquote>
+<p>头四年，我只是在捡“边缘”。如果有人愿意让给我四分之一美分的优势去买燕麦，我并不觉得他懂什么。我只知道我有优势；一天下来，这些优势加起来大约就是我的利润。我想做赌场里的“庄家”。</p>
+</blockquote>
+<p>这段话是理解海龟方法的第一把钥匙：<strong>不预测单笔输赢，只保证每一次下注都略微有利于自己，然后让次数站在你这边。</strong></p>
+<p>1973 年初，二十四岁的丹尼斯赚到第一个十万美元；1974 年靠大豆行情赚了五十万，二十五岁成为百万富翁。到 1983 年，三十七岁的他已经拥有数亿美元。1986 年他一年赚了八千万美元——按后来的美元价值约一亿四千七百万——与索罗斯、米尔肯同列华尔街收入榜首。同年他也曾在一天内亏掉一千万美元，然后继续交易。</p>
+<p>他从不认为自己是赌徒。他称自己是“彻头彻尾的经验主义者”，崇拜休谟、洛克、罗素：<strong>别跟我讲道理，证明给我看。</strong> 这种英国经验主义的气质，后来直接变成了海龟实验：不要争论交易能不能教，招人来教，看结果。</p>
+<h2 id="二埃克哈特真正的数学家">二、埃克哈特：真正的数学家<a class="anchor" href="#二埃克哈特真正的数学家" aria-label="section link">#</a></h2>
+<p>如果说丹尼斯是“交易池里的直觉”，威廉·埃克哈特就是“黑板前的概率”。两人是芝加哥圣劳伦斯高中的同学，因为按字母顺序排座位而熟识。埃克哈特后来拿到芝加哥大学数学硕士学位，又做了四年数理逻辑博士研究。</p>
+<p>在 1970 年代，埃克哈特原本是向丹尼斯学习的人。他后来回忆，自己起初更像是在“智识上研究交易”，而不是一心赚钱。但很快，他成了系统开发中真正的数学力量。许多海龟都说：<strong>系统不是丹尼斯一个人想出来的，埃克哈特负责把直觉变成可检验的规则。</strong></p>
+<p>两人的分工像一对搭档：丹尼斯能在瞬间看到一个市场观察的含义，埃克哈特能把它写成公式、算出概率、做压力测试。丹尼斯负责“看见”，埃克哈特负责“证明”。</p>
+<h2 id="三1978-年-11-月-1-日情绪韧性的一课">三、1978 年 11 月 1 日：情绪韧性的一课<a class="anchor" href="#三1978-年-11-月-1-日情绪韧性的一课" aria-label="section link">#</a></h2>
+<p>埃克哈特讲过一段他永远忘不了的经历。1978 年 11 月 1 日早晨，卡特政府为挽救疲软的美元加息并干预汇市。丹尼斯和埃克哈特当时持有大量黄金、外汇和谷物的多头。市场开盘即崩盘，黄金直接跌破跌停板，根本卖不出去。</p>
+<p>他们唯一还能动的仓位是白银。埃克哈特坐在报价机前，脑子一片空白，手僵住了。丹尼斯平静地问：“我们该怎么办？”然后自己动手，把白银全部做空。几秒钟后，白银也跌停——这笔空单成了大赢家，抵消了黄金的灾难。</p>
+<p>埃克哈特说，以他的标准，这是丹尼斯一生最好的一笔交易，因为“那是在最大压力下做出的决定”。那一天他们亏了大约两百万美元，几乎被市场抬走。但也正是这次濒临破产，让他们开始用计算机逐一检验所有“理所当然”的交易观念。</p>
+<p>这里有一个容易被忽略的算术：两百万美元听起来是天文数字，但如果账户规模是一亿美元，它就是 2%。丹尼斯和埃克哈特教海龟的，正是这种<strong>按比例思考</strong>的能力：不要问“亏了多少钱”，要问“亏了本金的百分之几”。</p>
+<h2 id="四两种能力缺一不可">四、两种能力，缺一不可<a class="anchor" href="#四两种能力缺一不可" aria-label="section link">#</a></h2>
+<p>丹尼斯的故事容易让人产生一种错觉：只要胆子大、敢下注，就能成功。事实相反。他早期也曾在两小时内把四千美元本金亏掉一千，花了三天才从情绪里走出来。他说那是他遇到过最好的事——<strong>你必须先在心理上经历过失败，才可能在真失败时不崩掉。</strong></p>
+<p>埃克哈特的故事则容易让人走向另一个错觉：只要数学好，就能赚钱。也不对。他见过许多聪明人交易得很糟。他后来总结：</p>
+<blockquote>
+<p>有些杰出的交易员相当聪明，但也有一些并不聪明；许多极其聪明的人却是糟糕的交易员。平均智力就够了，超过这个门槛之后，情绪构成更重要。这不是火箭科学。难的不是学会该做什么，而是真的去做。</p>
+</blockquote>
+<p>这就是海龟课堂要解决的两件事：<strong>一套经过检验的规则（数学），以及执行规则的情绪能力（心理）。</strong> 前者可以写下来，后者只能练出来。</p>
+<h2 id="本课要点">本课要点<a class="anchor" href="#本课要点" aria-label="section link">#</a></h2>
+<ul>
+<li>丹尼斯从跑单员、扑克玩家和场内“捡边缘”起家，核心能力是把交易看成概率与赔率，而不是预测。</li>
+<li>他的哲学根源是英国经验主义：不迷信权威，要求证据和检验。</li>
+<li>埃克哈特是数学家和概率专家，把丹尼斯的直觉转化为可计算、可测试的系统。</li>
+<li>1978 年白银交易说明：极端压力下的执行力，和规则本身同样重要。</li>
+<li>亏钱要按本金比例看；2% 的亏损在大小账户上是同一件事。</li>
+<li>智力有门槛，但过了门槛后，情绪与纪律比聪明更重要。</li>
+</ul>
+<h2 id="自测">自测<a class="anchor" href="#自测" aria-label="section link">#</a></h2>
+<ol type="1">
+<li>丹尼斯说他的第一个系统叫“完全不知道自己在干什么”，这句话的真正含义是什么？</li>
+<li>为什么 1978 年的白银交易被视为他“最好的一笔交易”？</li>
+<li>埃克哈特认为“平均智力就够了”，这句话对学习海龟规则意味着什么？</li>
+</ol>
+<details>
+<summary>参考答案</summary>
+<p><strong>1.</strong> 他并不预测方向，而是不断寻找略有利的赔率，靠大量重复让优势累积；重点在风险管理与下注结构，不在“看对”。</p>
+<p><strong>2.</strong> 因为它在几乎全军覆没、情绪冻结的时刻完成了逆向操作，救了整个账户；它体现的是压力下的执行力和对生存的优先考虑。</p>
+<p><strong>3.</strong> 学习这套方法不需要天才智商，需要的是理解概率、算术和执行纪律；难点在情绪控制与持续照做，而不在复杂公式。</p>
+</details></div><div class="course-prose course-html" data-l="en" lang="en"><blockquote>
+<p>What you will learn: where Dennis's and Eckhardt's abilities came from, and why a good method needs both an intuitive hypothesis and mathematical testing.</p>
+</blockquote>
+<h2 id="1-from-runner-to-prince-of-the-pit">1. From runner to "Prince of the Pit"<a class="anchor" href="#1-from-runner-to-prince-of-the-pit" aria-label="section link">#</a></h2>
+<p>Richard Dennis was not born with a silver spoon. He grew up in an Irish-Catholic family on Chicago's South Side; his father worked for the city, and his grandfather had lost the family's stock-market money in the Depression. As a teenager Dennis was introverted, wore thick glasses, and his first stock pick — ten shares of a $3 phonograph company — went to zero.</p>
+<p>But he had an instinct for odds and rarely lost at poker. At seventeen he took a summer job as a runner at the Chicago Mercantile Exchange for $1.60 an hour. The floor was a mob of hundreds of shouting traders, closer to indoor tackle football than to an auction. He wanted in, but floor traders had to be twenty-one, so he talked his father into trading for him while he signalled from the sidelines.</p>
+<p>Eventually he bought a seat on the MidAm exchange with money borrowed from his parents. His actual trading stake was $100, earned by his brother delivering pizzas. Years later he described his early method as "having no idea whatsoever":</p>
+<blockquote>
+<p>For four years, I was just taking edges. If someone was giving me a quarter-cent edge to buy an oat contract, I didn't think he knew anything either. I just knew I was getting a quarter-cent edge, and at the end of the day the edges would approximately equal my profit. I tried to be like the house in the casino.</p>
+</blockquote>
+<p>This is the first key to Turtle trading: <strong>do not predict the outcome of any single bet. Make sure each bet is slightly favourable, then let repetition work.</strong></p>
+<p>By early 1973, at twenty-four, Dennis had made $100,000. In 1974 he turned a soybean rally into $500,000 and became a millionaire at twenty-five. By 1983, at thirty-seven, he was worth hundreds of millions. In 1986 alone he made $80 million — about $147 million in later dollars — placing him alongside Soros and Milken among Wall Street's top earners. That same year he was down $10 million in a single day and kept trading.</p>
+<p>He rejected the label "gambler." He called himself an empiricist through and through, admiring Hume, Locke and Russell: <strong>don't tell me, prove it.</strong> That British-empiricist temperament became the Turtle experiment itself: stop arguing about whether trading can be taught; hire people, teach them, and look at the results.</p>
+<h2 id="2-eckhardt-the-real-mathematician">2. Eckhardt: the real mathematician<a class="anchor" href="#2-eckhardt-the-real-mathematician" aria-label="section link">#</a></h2>
+<p>If Dennis was intuition in the pit, William Eckhardt was probability at the blackboard. The two met at St. Laurence Catholic High School in Chicago, where they became friends largely because they were seated in alphabetical order. Eckhardt went on to earn a master's in mathematics at the University of Chicago and spent four years in doctoral research in mathematical logic.</p>
+<p>In the 1970s Eckhardt was, in a sense, an early student of Dennis. He later said he was pursuing trading intellectually more than financially. But he soon became the mathematical force behind system development. Many Turtles said plainly: the systems were not Dennis's alone; Eckhardt was the one who turned intuition into testable rules.</p>
+<p>The partnership was symbiotic. Dennis could see in an instant what an observation meant; Eckhardt could formalise it, calculate the probabilities and stress-test it. Dennis saw; Eckhardt proved.</p>
+<h2 id="3-november-1-1978-a-lesson-in-emotional-fortitude">3. November 1, 1978: a lesson in emotional fortitude<a class="anchor" href="#3-november-1-1978-a-lesson-in-emotional-fortitude" aria-label="section link">#</a></h2>
+<p>Eckhardt told a story he never forgot. On the morning of November 1, 1978, the Carter administration raised rates and intervened in currency markets to defend a sinking dollar. Dennis and Eckhardt were heavily long gold, foreign currencies and grains. The markets collapsed on the open. Gold opened below its limit, so they could not exit.</p>
+<p>The only liquid position was silver. Eckhardt froze at the controls, his mind blank. Dennis asked calmly, "What should we do?" — then shorted silver himself. Seconds later silver went limit down too. The short was a large winner and offset the gold disaster.</p>
+<p>Eckhardt called it Dennis's best trade ever, because it was made under maximum duress. They lost roughly $2 million that day and nearly went under. That near-death experience pushed them to computer-test every piece of conventional trading wisdom they had absorbed.</p>
+<p>There is an arithmetic point easy to miss: $2 million sounds enormous, but on a $100 million account it is 2%. What Dennis and Eckhardt taught the Turtles was <strong>proportional thinking</strong>: not "how many dollars did I lose?" but "what percentage of capital did I lose?"</p>
+<h2 id="4-two-abilities-both-necessary">4. Two abilities, both necessary<a class="anchor" href="#4-two-abilities-both-necessary" aria-label="section link">#</a></h2>
+<p>Dennis's story invites a false lesson: be bold, bet big, get rich. The truth is the opposite. Early on he lost $1,000 of a $4,000 stake in two hours, then spent three days recovering emotionally. He called it the best thing that ever happened to him: <strong>you have to go through failure mentally before you can survive it in reality.</strong></p>
+<p>Eckhardt's story invites a different false lesson: be good at maths and you will make money. Also wrong. He saw many brilliant people trade badly. His summary:</p>
+<blockquote>
+<p>Some outstanding traders are quite intelligent, but a few aren't. Many outstandingly intelligent people are horrible traders. Average intelligence is enough. Beyond that, emotional makeup is more important. This is not rocket science. However, it's much easier to learn what you should do in trading than to do it.</p>
+</blockquote>
+<p>The Turtle classroom therefore had to solve two problems: <strong>a tested rule set (mathematics) and the emotional capacity to execute it (psychology).</strong> The first can be written down. The second can only be practised.</p>
+<h2 id="key-points">Key points<a class="anchor" href="#key-points" aria-label="section link">#</a></h2>
+<ul>
+<li>Dennis rose from runner, poker player and floor "edge-taker"; his skill was probabilistic betting, not forecasting.</li>
+<li>His philosophy was empirical: authority means nothing without evidence and testing.</li>
+<li>Eckhardt, the mathematician, converted Dennis's intuition into calculable, testable systems.</li>
+<li>The 1978 silver trade shows that execution under extreme pressure matters as much as the rules.</li>
+<li>Measure losses as a percentage of capital: $2 million on $100 million is the same as $1,000 on $50,000.</li>
+<li>Intelligence has a threshold; beyond it, temperament and discipline matter more.</li>
+</ul>
+<h2 id="self-test">Self-test<a class="anchor" href="#self-test" aria-label="section link">#</a></h2>
+<ol type="1">
+<li>What did Dennis mean when he called his first system "having no idea whatsoever"?</li>
+<li>Why was the 1978 silver trade called his best trade ever?</li>
+<li>Eckhardt said "average intelligence is enough." What does that imply for learning the Turtle rules?</li>
+</ol>
+<details>
+<summary>Answers</summary>
+<p><strong>1.</strong> He was not forecasting direction; he kept taking small favourable edges and let repetition produce the profit. The edge was in bet structure and risk control, not in being right.</p>
+<p><strong>2.</strong> It was executed at the moment of maximum stress, when the account was nearly wiped out; it showed the priority of survival and the ability to act against the crowd.</p>
+<p><strong>3.</strong> The method does not require genius, only arithmetic and probabilistic reasoning. The hard part is emotional control and consistent execution, not complex formulas.</p>
+</details></div><div class="course-done" data-course-done-bar data-n="2" data-done="0"><p data-course-done-text><span data-as="span" class="course-bi"><span data-l="zh" lang="zh-CN">读完了就标记一下，课程首页的进度条会记住。</span><span data-l="en" lang="en">Mark it when you finish — the progress bar on the course home remembers.</span></span></p><button class="course-btn course-btn--solid" type="button" data-course-done-toggle><span data-as="span" class="course-bi course-bi--inline"><span data-l="zh" lang="zh-CN">标记学完 ✓</span><span data-l="en" lang="en">Mark as done ✓</span></span></button></div><nav class="course-pager" aria-label="上一课 / 下一课"><a href="/turtle/lesson-01.html"><span class="dir">← LESSON 01</span><span class="ttl"><span data-as="span" class="course-bi"><span data-l="zh" lang="zh-CN">一个持续十年的赌局</span><span data-l="en" lang="en">A Bet That Lasted a Decade</span></span></span></a><a class="next" href="/turtle/lesson-03.html"><span class="dir">LESSON 03 →</span><span class="ttl"><span data-as="span" class="course-bi"><span data-l="zh" lang="zh-CN">一则广告，上千份简历</span><span data-l="en" lang="en">One Ad, a Thousand Résumés</span></span></span></a></nav></div><aside class="course-side"><div class="course-side-card course-toc"><h4>本页目录</h4><ul class="course-side-list"><li><a href="#一从跑单员到交易池王子"><span>一、从跑单员到“交易池王子”</span></a></li><li><a href="#二埃克哈特真正的数学家"><span>二、埃克哈特：真正的数学家</span></a></li><li><a href="#三1978-年-11-月-1-日情绪韧性的一课"><span>三、1978 年 11 月 1 日：情绪韧性的一课</span></a></li><li><a href="#四两种能力缺一不可"><span>四、两种能力，缺一不可</span></a></li><li><a href="#本课要点"><span>本课要点</span></a></li><li><a href="#自测"><span>自测</span></a></li></ul></div><div class="course-side-card"><h4>全部课时</h4><ul class="course-side-list"><li><a href="/turtle/lesson-01.html"><span class="n">01</span><span><span data-as="span" class="course-bi course-bi--inline"><span data-l="zh" lang="zh-CN">一个持续十年的赌局</span><span data-l="en" lang="en">A Bet That Lasted a Decade</span></span></span><span class="tick" data-course-side-tick data-n="1" hidden>✓</span></a></li><li><a href="/turtle/lesson-02.html" aria-current="page"><span class="n">02</span><span><span data-as="span" class="course-bi course-bi--inline"><span data-l="zh" lang="zh-CN">王子与数学家</span><span data-l="en" lang="en">The Prince of the Pit and the Mathematician</span></span></span><span class="tick" data-course-side-tick data-n="2" hidden>✓</span></a></li><li><a href="/turtle/lesson-03.html"><span class="n">03</span><span><span data-as="span" class="course-bi course-bi--inline"><span data-l="zh" lang="zh-CN">一则广告，上千份简历</span><span data-l="en" lang="en">One Ad, a Thousand Résumés</span></span></span><span class="tick" data-course-side-tick data-n="3" hidden>✓</span></a></li><li><a href="/turtle/lesson-04.html"><span class="n">04</span><span><span data-as="span" class="course-bi course-bi--inline"><span data-l="zh" lang="zh-CN">两周课堂</span><span data-l="en" lang="en">Two Weeks in the Classroom</span></span></span><span class="tick" data-course-side-tick data-n="4" hidden>✓</span></a></li><li><a href="/turtle/lesson-05.html"><span class="n">05</span><span><span data-as="span" class="course-bi course-bi--inline"><span data-l="zh" lang="zh-CN">实验的结局</span><span data-l="en" lang="en">How the Experiment Ended</span></span></span><span class="tick" data-course-side-tick data-n="5" hidden>✓</span></a></li><li><a href="/turtle/lesson-06.html"><span class="n">06</span><span><span data-as="span" class="course-bi course-bi--inline"><span data-l="zh" lang="zh-CN">期望值</span><span data-l="en" lang="en">Expectation</span></span></span><span class="tick" data-course-side-tick data-n="6" hidden>✓</span></a></li><li><a href="/turtle/lesson-07.html"><span class="n">07</span><span><span data-as="span" class="course-bi course-bi--inline"><span data-l="zh" lang="zh-CN">破产风险——你会活着，还是死掉？</span><span data-l="en" lang="en">Risk of Ruin — Will You Live or Die?</span></span></span><span class="tick" data-course-side-tick data-n="7" hidden>✓</span></a></li><li><a href="/turtle/lesson-08.html"><span class="n">08</span><span><span data-as="span" class="course-bi course-bi--inline"><span data-l="zh" lang="zh-CN">钱没有记忆</span><span data-l="en" lang="en">Money Has No Memory</span></span></span><span class="tick" data-course-side-tick data-n="8" hidden>✓</span></a></li><li><a href="/turtle/lesson-09.html"><span class="n">09</span><span><span data-as="span" class="course-bi course-bi--inline"><span data-l="zh" lang="zh-CN">N——市场的呼吸</span><span data-l="en" lang="en">N — The Market&amp;#x27;s Breath</span></span></span><span class="tick" data-course-side-tick data-n="9" hidden>✓</span></a></li><li><a href="/turtle/lesson-10.html"><span class="n">10</span><span><span data-as="span" class="course-bi course-bi--inline"><span data-l="zh" lang="zh-CN">单位——一笔该做多大</span><span data-l="en" lang="en">Units — How Big Is One Bet?</span></span></span><span class="tick" data-course-side-tick data-n="10" hidden>✓</span></a></li><li><a href="/turtle/lesson-11.html"><span class="n">11</span><span><span data-as="span" class="course-bi course-bi--inline"><span data-l="zh" lang="zh-CN">入场——只跟价格走</span><span data-l="en" lang="en">Entries — Follow Price Only</span></span></span><span class="tick" data-course-side-tick data-n="11" hidden>✓</span></a></li><li><a href="/turtle/lesson-12.html"><span class="n">12</span><span><span data-as="span" class="course-bi course-bi--inline"><span data-l="zh" lang="zh-CN">止损、加仓与减仓</span><span data-l="en" lang="en">Stops, Pyramiding and Cutting Back</span></span></span><span class="tick" data-course-side-tick data-n="12" hidden>✓</span></a></li><li><a href="/turtle/lesson-13.html"><span class="n">13</span><span><span data-as="span" class="course-bi course-bi--inline"><span data-l="zh" lang="zh-CN">组合——把赌注分散到很多张桌子上</span><span data-l="en" lang="en">The Portfolio — Spread Your Bets Across Many Tables</span></span></span><span class="tick" data-course-side-tick data-n="13" hidden>✓</span></a></li><li><a href="/turtle/lesson-14.html"><span class="n">14</span><span><span data-as="span" class="course-bi course-bi--inline"><span data-l="zh" lang="zh-CN">海龟之后</span><span data-l="en" lang="en">After the Turtles</span></span></span><span class="tick" data-course-side-tick data-n="14" hidden>✓</span></a></li><li><a href="/turtle/appendix-a.html"><span class="n">A</span><span><span data-as="span" class="course-bi course-bi--inline"><span data-l="zh" lang="zh-CN">完整规则速查</span><span data-l="en" lang="en">The Complete Rules at a Glance</span></span></span><span class="tick" data-course-side-tick data-n="15" hidden>✓</span></a></li><li><a href="/turtle/appendix-b.html"><span class="n">B</span><span><span data-as="span" class="course-bi course-bi--inline"><span data-l="zh" lang="zh-CN">练习与答案</span><span data-l="en" lang="en">Exercises and Answers</span></span></span><span class="tick" data-course-side-tick data-n="16" hidden>✓</span></a></li></ul></div></aside></div><div class="course-inner"><p class="course-note"><span data-as="span" class="course-bi"><span data-l="zh" lang="zh-CN">本课程是读书笔记式的通识课，不构成任何投资建议。书里的规则写在几十年前的美国期货市场，今天的市场、费用与监管都不同；学的是思维方式，不是可以照搬的买卖信号。</span><span data-l="en" lang="en">This is a reading course, not investment advice. The rules were written for the American futures market decades ago; markets, costs and regulation differ today. Learn the thinking, not a signal to copy.</span></span></p><footer class="course-foot"><nav class="course-foot-nav" aria-label="课程入口"><a href="/turtle.html">课程首页</a><a href="/leeks.html"><span data-as="span" class="course-bi course-bi--inline"><span data-l="zh" lang="zh-CN">韭菜的自我修养</span><span data-l="en" lang="en">The Self-Cultivation of Leeks</span></span></a><a href="/richdad.html"><span data-as="span" class="course-bi course-bi--inline"><span data-l="zh" lang="zh-CN">富爸爸穷爸爸</span><span data-l="en" lang="en">Rich Dad Poor Dad</span></span></a><a href="/wealth.html"><span data-as="span" class="course-bi course-bi--inline"><span data-l="zh" lang="zh-CN">财富自由之路</span><span data-l="en" lang="en">The Road to Financial Freedom</span></span></a><a href="/works.html">作品集</a></nav><p>© 2026 · Christopher · <span data-as="span" class="course-bi course-bi--inline"><span data-l="zh" lang="zh-CN">海龟交易法则</span><span data-l="en" lang="en">The Complete TurtleTrader</span></span></p></footer></div></div><script>
+	(function () {
+		var root = document.querySelector(".course");
+		if (!root) return;
+
+		var slug = root.dataset.course || "course";
+		var LANGS = ["zh", "en", "both"];
+		var buttons = Array.prototype.slice.call(root.querySelectorAll("[data-course-lang-btn]"));
+		var total = Number(root.dataset.total || root.querySelectorAll("[data-course-dot]").length || 0);
+
+		function ls(key, fallback) {
+			try {
+				var v = localStorage.getItem(key);
+				return v === null ? fallback : v;
+			} catch (e) {
+				return fallback;
+			}
+		}
+		function setLs(key, value) {
+			try {
+				localStorage.setItem(key, value);
+			} catch (e) {}
+		}
+		function readJson(key, fallback) {
+			try {
+				var raw = localStorage.getItem(key);
+				return raw ? JSON.parse(raw) : fallback;
+			} catch (e) {
+				return fallback;
+			}
+		}
+		function writeJson(key, value) {
+			try {
+				localStorage.setItem(key, JSON.stringify(value));
+			} catch (e) {}
+		}
+		function tr(text) {
+			return typeof window.__SITE_TR__ === "function" ? window.__SITE_TR__(text) : text;
+		}
+		function setBi(el, zh, en) {
+			var z = el.querySelector('[data-l="zh"]');
+			var e = el.querySelector('[data-l="en"]');
+			if (z && e) {
+				z.textContent = tr(zh);
+				e.textContent = en;
+			} else {
+				el.textContent = tr(zh);
+			}
+		}
+
+		/* ---------- 语言 ---------- */
+		function applyLang(lang) {
+			if (LANGS.indexOf(lang) === -1) lang = buttons.length ? "both" : "zh";
+			root.setAttribute("data-lang", lang);
+			if (root.classList.contains("lk")) root.setAttribute("data-lk-lang", lang);
+			if (root.classList.contains("rd")) root.setAttribute("data-rd-lang", lang);
+			if (slug === "leeks") setLs("lk-lang", lang);
+			if (slug === "richdad") setLs("rd-lang", lang);
+			buttons.forEach(function (b) {
+				b.setAttribute("aria-pressed", String(b.dataset.lang === lang));
+			});
+			var zh = root.dataset.titleZh;
+			var en = root.dataset.titleEn;
+			if (zh && en) document.title = lang === "en" ? en : zh;
+		}
+
+		var savedLang = ls("course-lang", null);
+		if (!savedLang) {
+			var legacyLang = ls("lk-lang", null) || ls("rd-lang", null) || ls("turtle-lang", null);
+			if (legacyLang && LANGS.indexOf(legacyLang) !== -1) {
+				savedLang = legacyLang;
+				setLs("course-lang", legacyLang);
+			}
+		}
+		applyLang(savedLang || (buttons.length ? "both" : "zh"));
+
+		buttons.forEach(function (b) {
+			b.addEventListener("click", function () {
+				var lang = b.dataset.lang || "both";
+				applyLang(lang);
+				setLs("course-lang", lang);
+			});
+		});
+
+		/* ---------- 学习进度 ---------- */
+		var doneKey = "course-done:" + slug;
+		var stored = readJson(doneKey, null);
+		var set = new Set();
+		if (Array.isArray(stored)) {
+			stored.forEach(function (n) {
+				if (Number.isInteger(n) && n > 0) set.add(n);
+			});
+		} else {
+			["lk-done", "rd-done", "turtle-progress", "wealth-read"].forEach(function (key) {
+				var legacy = readJson(key, null);
+				if (Array.isArray(legacy)) {
+					legacy.forEach(function (n) {
+						if (Number.isInteger(n) && n > 0) set.add(n);
+					});
+				}
+			});
+			if (set.size) writeJson(doneKey, Array.from(set));
+		}
+
+		function render() {
+			root.querySelectorAll("[data-course-dot]").forEach(function (el) {
+				el.setAttribute("data-done", set.has(Number(el.dataset.n)) ? "1" : "0");
+			});
+			root.querySelectorAll("[data-course-card]").forEach(function (el) {
+				var n = Number(el.dataset.n);
+				var on = set.has(n);
+				el.setAttribute("data-done", on ? "1" : "0");
+				var badge = el.querySelector("[data-course-card-done]");
+				if (badge) badge.hidden = !on;
+			});
+			root.querySelectorAll("[data-course-side-tick]").forEach(function (el) {
+				el.hidden = !set.has(Number(el.dataset.n));
+			});
+			root.querySelectorAll("[data-course-count]").forEach(function (el) {
+				el.textContent = set.size + " / " + total;
+			});
+			var pct = total > 0 ? Math.round((set.size / total) * 100) : 0;
+			root.querySelectorAll("[data-course-mini]").forEach(function (el) {
+				el.style.width = pct + "%";
+			});
+
+			var bar = root.querySelector("[data-course-done-bar]");
+			if (bar) {
+				var n = Number(bar.dataset.n);
+				var on = set.has(n);
+				bar.setAttribute("data-done", on ? "1" : "0");
+				var text = bar.querySelector("[data-course-done-text]");
+				if (text) {
+					setBi(
+						text,
+						on ? "这一课已经学完，课程进度已记住。" : "读完了就标记一下，课程首页的进度条会记住。",
+						on ? "Lesson complete — progress saved." : "Mark it when you finish — the progress bar remembers."
+					);
+				}
+				var btn = bar.querySelector("[data-course-done-toggle]");
+				if (btn) setBi(btn, on ? "取消标记" : "标记学完 ✓", on ? "Undo" : "Mark as done ✓");
+			}
+		}
+
+		var toggle = root.querySelector("[data-course-done-toggle]");
+		if (toggle) {
+			toggle.addEventListener("click", function () {
+				var bar = root.querySelector("[data-course-done-bar]");
+				var n = Number(bar && bar.dataset.n);
+				if (!n) return;
+				if (set.has(n)) set.delete(n);
+				else set.add(n);
+				writeJson(doneKey, Array.from(set).sort(function (a, b) { return a - b; }));
+				render();
+			});
+		}
+
+		var reset = root.querySelector("[data-course-reset]");
+		if (reset) {
+			var armed = false;
+			var timer = 0;
+			function disarm() {
+				armed = false;
+				window.clearTimeout(timer);
+				reset.removeAttribute("data-armed");
+				setBi(reset, "清空学习进度", "Reset progress");
+			}
+			reset.addEventListener("click", function () {
+				if (!armed) {
+					armed = true;
+					reset.setAttribute("data-armed", "1");
+					setBi(reset, "再点一次确认清空", "Click again to confirm");
+					timer = window.setTimeout(disarm, 4000);
+					return;
+				}
+				set = new Set();
+				writeJson(doneKey, []);
+				render();
+				disarm();
+				setBi(reset, "已清空 ✓", "Cleared ✓");
+				timer = window.setTimeout(disarm, 1800);
+			});
+		}
+
+		render();
+
+		/* ---------- 目录高亮 ---------- */
+		var tocLinks = Array.prototype.slice.call(root.querySelectorAll('.course-toc a[href^="#"]'));
+		if (tocLinks.length) {
+			var heads = tocLinks
+				.map(function (a) {
+					var id = decodeURIComponent(a.getAttribute("href").slice(1));
+					var el = document.getElementById(id);
+					return el ? { id: id, el: el, link: a } : null;
+				})
+				.filter(Boolean);
+			var ticking = false;
+			function spy() {
+				ticking = false;
+				var current = null;
+				heads.forEach(function (h) {
+					if (h.el.getBoundingClientRect().top <= 160) current = h;
+				});
+				heads.forEach(function (h) {
+					h.link.classList.toggle("active", current === h);
+				});
+			}
+			window.addEventListener(
+				"scroll",
+				function () {
+					if (ticking) return;
+					ticking = true;
+					window.requestAnimationFrame(spy);
+				},
+				{ passive: true }
+			);
+			spy();
+		}
+	})();
+</script></div></main><footer class="footer"><div class="wrap"><div class="footer-grid"><div class="footer-brand"><a class="brand" href="/"><span class="brand-mark" aria-hidden="true">C—</span><span class="brand-text"><span class="brand-name">Christopher</span><span class="brand-sub">博客与作品集</span></span></a><p>把读懂的东西，亲手做一遍。这里记录课程创作、投资思考与十年践行的点点滴滴。</p></div><div><h4>站点</h4><ul><li><a href="/">首页</a></li><li><a href="/blog.html">博客</a></li><li><a href="/works.html">作品集</a></li><li><a href="/leeks.html">韭菜园双语课</a></li><li><a href="/richdad.html">两条路 · 富爸爸双语课</a></li><li><a href="/about.html">关于</a></li><li><a href="/search.html">搜索</a></li><li><a href="/rss.xml">RSS 订阅</a></li></ul></div><div><h4>在线作品</h4><ul><li><a href="https://taleb-for-kids-vkkc4zaaicr.qoder.website" target="_blank" rel="noopener noreferrer">跟塔勒布学「不怕不确定」 ↗</a></li><li><a href="https://dynamic-hedging-course-vkkc4zaaicr.qoder.website" target="_blank" rel="noopener noreferrer">动态对冲 · 小学生也能懂 ↗</a></li><li><a href="https://trading-path-7lx5x6ji8nx.qoder.zone" target="_blank" rel="noopener noreferrer">跟陈凯学「交易之路」 ↗</a></li><li><a href="https://trading-for-a-living-7lx5x6ji8nx.qoder.zone" target="_blank" rel="noopener noreferrer">跟埃尔德学交易（以交易为生+卖出的艺术） ↗</a></li></ul></div></div><div class="footer-bottom"><span>© 2026 Christopher <span class="dash">—</span> 西安</span><span>EmDash CMS 驱动 · Astro 构建 · 静态发布</span></div></div></footer><script>
+			(function () {
+				var root = document.documentElement;
+
+				/* 主题切换 */
+				var themeBtn = document.querySelector(".theme-toggle");
+				function paintTheme() {
+					var dark = root.dataset.theme === "dark";
+					if (!themeBtn) return;
+					themeBtn.setAttribute("aria-pressed", String(dark));
+					themeBtn.querySelector(".i-moon").style.display = dark ? "none" : "";
+					themeBtn.querySelector(".i-sun").style.display = dark ? "" : "none";
+				}
+				paintTheme();
+				if (themeBtn) {
+					themeBtn.addEventListener("click", function () {
+						var next = root.dataset.theme === "dark" ? "light" : "dark";
+						root.dataset.theme = next;
+						try { localStorage.setItem("cb-theme", next); } catch (e) {}
+						paintTheme();
+					});
+				}
+
+				/* 语言下拉：点击外部关闭 */
+				var langSwitch = document.getElementById("lang-switch");
+				if (langSwitch) {
+					langSwitch.addEventListener("click", function (e) {
+						if (e.target.closest("a")) langSwitch.open = false;
+					});
+					document.addEventListener("click", function (e) {
+						if (!langSwitch.contains(e.target)) langSwitch.open = false;
+					});
+				}
+
+				/* 移动端抽屉 */
+				var drawer = document.getElementById("drawer");
+				var openBtn = document.querySelector(".nav-toggle");
+				var closeBtn = document.querySelector(".drawer-close");
+				function setDrawer(open) {
+					if (!drawer) return;
+					drawer.classList.toggle("open", open);
+					drawer.setAttribute("aria-hidden", String(!open));
+					if (openBtn) openBtn.setAttribute("aria-expanded", String(open));
+					document.body.style.overflow = open ? "hidden" : "";
+				}
+				if (openBtn) openBtn.addEventListener("click", function () { setDrawer(true); });
+				if (closeBtn) closeBtn.addEventListener("click", function () { setDrawer(false); });
+				if (drawer) {
+					drawer.querySelectorAll("a").forEach(function (a) {
+						a.addEventListener("click", function () { setDrawer(false); });
+					});
+				}
+				document.addEventListener("keydown", function (e) {
+					if (e.key === "Escape") setDrawer(false);
+				});
+
+				/* 入场动画 */
+				var reveals = document.querySelectorAll(".reveal");
+				if ("IntersectionObserver" in window && reveals.length) {
+					var io = new IntersectionObserver(
+						function (entries) {
+							entries.forEach(function (en) {
+								if (en.isIntersecting) { en.target.classList.add("in"); io.unobserve(en.target); }
+							});
+						},
+						{ threshold: 0.12, rootMargin: "0px 0px -6% 0px" }
+					);
+					reveals.forEach(function (el) { io.observe(el); });
+				} else {
+					reveals.forEach(function (el) { el.classList.add("in"); });
+				}
+
+				/* 阅读进度 */
+				var bar = document.querySelector(".read-progress");
+				function progress() {
+					if (!bar) return;
+					var h = document.documentElement;
+					var max = h.scrollHeight - h.clientHeight;
+					bar.style.width = max > 0 ? (h.scrollTop / max) * 100 + "%" : "0";
+				}
+				window.addEventListener("scroll", progress, { passive: true });
+				progress();
+
+				/* 目录高亮 */
+				var tocLinks = Array.prototype.slice.call(document.querySelectorAll(".toc a[href^='#']"));
+				if (tocLinks.length && "IntersectionObserver" in window) {
+					var map = {};
+					tocLinks.forEach(function (a) {
+						var id = decodeURIComponent(a.getAttribute("href").slice(1));
+						map[id] = a;
+					});
+					var heads = Array.prototype.slice.call(document.querySelectorAll(".prose h2[id], .prose h3[id]"));
+					var current = null;
+					function activate(id) {
+						if (current === id) return;
+						current = id;
+						tocLinks.forEach(function (a) { a.classList.remove("active"); });
+						if (map[id]) map[id].classList.add("active");
+					}
+					var to = new IntersectionObserver(
+						function (entries) {
+							entries.forEach(function (en) { if (en.isIntersecting) activate(en.target.id); });
+						},
+						{ rootMargin: "-80px 0px -70% 0px", threshold: 0 }
+					);
+					heads.forEach(function (h) { to.observe(h); });
+				}
+			})();
+		</script></body></html>

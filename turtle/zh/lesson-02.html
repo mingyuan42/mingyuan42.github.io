@@ -1,154 +1,27 @@
 <!doctype html>
-<!-- page: zh/lesson-02.html -->
 <html lang="zh-CN">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>王子与数学家 · 海龟交易法则</title>
-<meta name="description" content="本课目标：看懂丹尼斯和埃克哈特各自的能力从哪来，以及为什么一套好方法必须同时需要“直觉的假设”和“数学的检验”。">
-<meta name="theme-color" content="#08110f">
-<meta property="og:type" content="article">
-<meta property="og:title" content="王子与数学家 · 海龟交易法则">
-<meta property="og:description" content="本课目标：看懂丹尼斯和埃克哈特各自的能力从哪来，以及为什么一套好方法必须同时需要“直觉的假设”和“数学的检验”。">
-<meta property="og:site_name" content="《海龟交易法则》中英双语通识课">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2308110f'/%3E%3Cpath d='M32 12c11 0 20 9 20 20s-9 20-20 20S12 43 12 32' fill='none' stroke='%23e6b566' stroke-width='3'/%3E%3Cpath d='M32 20c6.6 0 12 5.4 12 12s-5.4 12-12 12' fill='none' stroke='%2363d2a4' stroke-width='3'/%3E%3C/svg%3E">
-<link rel="stylesheet" href="../assets/site.css">
+<title>页面已迁移 · The Complete TurtleTrader</title>
+<link rel="canonical" href="https://chenmingyuan.site/turtle/lesson-02.html">
+<meta http-equiv="refresh" content="0; url=/turtle/lesson-02.html">
+<meta name="robots" content="noindex, follow">
+<style>
+body{margin:0;min-height:100vh;display:grid;place-items:center;background:#f5efe2;color:#23201a;
+font-family:-apple-system,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;line-height:1.7}
+main{max-width:34rem;padding:2rem 1.5rem;text-align:center}
+a{color:#1c6b45}
+p{margin:.4rem 0 1rem}
+code{font-size:.86em;background:rgba(28,107,69,.08);padding:.1em .35em;border-radius:4px}
+</style>
 </head>
-<body data-page="lesson-02" data-lang="zh" data-title="王子与数学家">
-<a class="skip" href="#start">跳到正文</a>
-<div class="read-progress" id="read-progress" aria-hidden="true"></div>
-
-<header class="topbar">
-  <button class="topbar-btn" id="nav-toggle" type="button" aria-label="menu" aria-controls="sidebar" aria-expanded="false">
-    <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
-  </button>
-  <a class="topbar-title" href="index.html">海龟交易法则</a>
-  <a class="lang-pill" href="../en/lesson-02.html" hreflang="en">English</a>
-</header>
-
-<div class="nav-overlay" id="nav-overlay"></div>
-
-<aside class="sidebar" id="sidebar" aria-label="course navigation">
-  <button class="nav-close" id="nav-close" type="button" aria-label="close">×</button>
-  <a class="brand" href="index.html">
-    <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 40 40" width="30" height="30"><path d="M20 4c8.8 0 16 7.2 16 16s-7.2 16-16 16S4 28.8 4 20" fill="none" stroke="currentColor" stroke-width="2.4"/><path d="M20 11c5 0 9 4 9 9s-4 9-9 9" fill="none" stroke="currentColor" stroke-width="2.4"/><circle cx="20" cy="20" r="2.4" fill="currentColor"/></svg></span>
-    <span class="brand-text">
-      <span class="brand-title">海龟交易法则</span>
-      <span class="brand-sub">从零读懂趋势跟踪</span>
-    </span>
-  </a>
-  <nav class="nav">
-<p class="nav-group-title">开始</p>
-<a class="nav-link" href="index.html"><span class="nav-num">◎</span><span>课程首页</span></a>
-<div class="nav-group"><p class="nav-group-title">第一部分 · 故事与实验</p>
-<a class="nav-link" href="lesson-01.html"><span class="nav-num">01</span><span>一个持续十年的赌局</span></a>
-<a class="nav-link" href="lesson-02.html" aria-current="page"><span class="nav-num">02</span><span>王子与数学家</span></a>
-<a class="nav-link" href="lesson-03.html"><span class="nav-num">03</span><span>一则广告，上千份简历</span></a>
-<a class="nav-link" href="lesson-04.html"><span class="nav-num">04</span><span>两周课堂</span></a>
-<a class="nav-link" href="lesson-05.html"><span class="nav-num">05</span><span>实验的结局</span></a>
-</div>
-<div class="nav-group"><p class="nav-group-title">第二部分 · 先活下来，再赚钱</p>
-<a class="nav-link" href="lesson-06.html"><span class="nav-num">06</span><span>期望值：你靠什么长期赚钱</span></a>
-<a class="nav-link" href="lesson-07.html"><span class="nav-num">07</span><span>破产风险：先活下来</span></a>
-<a class="nav-link" href="lesson-08.html"><span class="nav-num">08</span><span>无记忆交易：把情绪关在门外</span></a>
-</div>
-<div class="nav-group"><p class="nav-group-title">第三部分 · 海龟的规则</p>
-<a class="nav-link" href="lesson-09.html"><span class="nav-num">09</span><span>N：市场的呼吸</span></a>
-<a class="nav-link" href="lesson-10.html"><span class="nav-num">10</span><span>单位：2% 规则</span></a>
-<a class="nav-link" href="lesson-11.html"><span class="nav-num">11</span><span>入场：系统一与系统二</span></a>
-<a class="nav-link" href="lesson-12.html"><span class="nav-num">12</span><span>止损、加仓与减仓</span></a>
-<a class="nav-link" href="lesson-13.html"><span class="nav-num">13</span><span>组合：相关性与净头寸</span></a>
-</div>
-<div class="nav-group"><p class="nav-group-title">第四部分 · 之后与今天</p>
-<a class="nav-link" href="lesson-14.html"><span class="nav-num">14</span><span>海龟之后</span></a>
-</div>
-<div class="nav-group"><p class="nav-group-title">附录 · 规则与自测</p>
-<a class="nav-link" href="appendix-a.html"><span class="nav-num">A</span><span>完整规则速查</span></a>
-<a class="nav-link" href="appendix-b.html"><span class="nav-num">B</span><span>练习与答案</span></a>
-</div>
-  </nav>
-  <div class="sidebar-foot">
-    <a class="back-home" href="https://chenmingyuan.site/works.html">← 返回作品集</a><br>
-    14 节课 · 2 个附录<br>仅供学习，不构成投资建议
-  </div>
-</aside>
-
-<div class="shell">
-  <main class="main">
-    <div class="column">
-<header class="page-hero">
-  <span class="hero-num" aria-hidden="true">02</span>
-  <p class="kicker">第一部分 · 第 02 课</p>
-  <h1>王子与数学家</h1>
-  <p class="hero-meta">阅读约 5 分钟<span class="dot">·</span>迈克尔·科维尔《The Complete TurtleTrader》通识课</p>
-</header>
-
-      <article class="article" id="start">
-<blockquote>
-<p>本课目标：看懂丹尼斯和埃克哈特各自的能力从哪来，以及为什么一套好方法必须同时需要“直觉的假设”和“数学的检验”。</p>
-</blockquote>
-<h2 id="一从跑单员到交易池王子">一、从跑单员到“交易池王子”<a class="anchor" href="#一从跑单员到交易池王子" aria-label="section link">#</a></h2>
-<p>理查德·丹尼斯不是含着金汤匙出生的。他成长于芝加哥南区一个爱尔兰天主教家庭，父亲在市政府工作，祖父在大萧条中把股票账户输光。少年丹尼斯内向、戴厚眼镜，第一次买股票就买了一家倒闭的留声机公司。</p>
-<p>但他对赔率有天生的敏感，打扑克很少输。十七岁那年，他在芝加哥商业交易所找到一份暑期跑单员的工作，时薪 1.6 美元。交易池里几百个人又吼又推，像一场室内橄榄球。他想下场，可场内交易员必须年满二十一岁——于是他让父亲替他下单，自己在场边打手势指挥。</p>
-<p>后来他用父母借来的钱买下 MidAm 交易所的一个席位，真正的交易本金只有 100 美元，是哥哥送披萨攒下的。多年后他回忆起步阶段，说自己当时的系统叫“完全不知道自己在干什么”：</p>
-<blockquote>
-<p>头四年，我只是在捡“边缘”。如果有人愿意让给我四分之一美分的优势去买燕麦，我并不觉得他懂什么。我只知道我有优势；一天下来，这些优势加起来大约就是我的利润。我想做赌场里的“庄家”。</p>
-</blockquote>
-<p>这段话是理解海龟方法的第一把钥匙：<strong>不预测单笔输赢，只保证每一次下注都略微有利于自己，然后让次数站在你这边。</strong></p>
-<p>1973 年初，二十四岁的丹尼斯赚到第一个十万美元；1974 年靠大豆行情赚了五十万，二十五岁成为百万富翁。到 1983 年，三十七岁的他已经拥有数亿美元。1986 年他一年赚了八千万美元——按后来的美元价值约一亿四千七百万——与索罗斯、米尔肯同列华尔街收入榜首。同年他也曾在一天内亏掉一千万美元，然后继续交易。</p>
-<p>他从不认为自己是赌徒。他称自己是“彻头彻尾的经验主义者”，崇拜休谟、洛克、罗素：<strong>别跟我讲道理，证明给我看。</strong> 这种英国经验主义的气质，后来直接变成了海龟实验：不要争论交易能不能教，招人来教，看结果。</p>
-<h2 id="二埃克哈特真正的数学家">二、埃克哈特：真正的数学家<a class="anchor" href="#二埃克哈特真正的数学家" aria-label="section link">#</a></h2>
-<p>如果说丹尼斯是“交易池里的直觉”，威廉·埃克哈特就是“黑板前的概率”。两人是芝加哥圣劳伦斯高中的同学，因为按字母顺序排座位而熟识。埃克哈特后来拿到芝加哥大学数学硕士学位，又做了四年数理逻辑博士研究。</p>
-<p>在 1970 年代，埃克哈特原本是向丹尼斯学习的人。他后来回忆，自己起初更像是在“智识上研究交易”，而不是一心赚钱。但很快，他成了系统开发中真正的数学力量。许多海龟都说：<strong>系统不是丹尼斯一个人想出来的，埃克哈特负责把直觉变成可检验的规则。</strong></p>
-<p>两人的分工像一对搭档：丹尼斯能在瞬间看到一个市场观察的含义，埃克哈特能把它写成公式、算出概率、做压力测试。丹尼斯负责“看见”，埃克哈特负责“证明”。</p>
-<h2 id="三1978-年-11-月-1-日情绪韧性的一课">三、1978 年 11 月 1 日：情绪韧性的一课<a class="anchor" href="#三1978-年-11-月-1-日情绪韧性的一课" aria-label="section link">#</a></h2>
-<p>埃克哈特讲过一段他永远忘不了的经历。1978 年 11 月 1 日早晨，卡特政府为挽救疲软的美元加息并干预汇市。丹尼斯和埃克哈特当时持有大量黄金、外汇和谷物的多头。市场开盘即崩盘，黄金直接跌破跌停板，根本卖不出去。</p>
-<p>他们唯一还能动的仓位是白银。埃克哈特坐在报价机前，脑子一片空白，手僵住了。丹尼斯平静地问：“我们该怎么办？”然后自己动手，把白银全部做空。几秒钟后，白银也跌停——这笔空单成了大赢家，抵消了黄金的灾难。</p>
-<p>埃克哈特说，以他的标准，这是丹尼斯一生最好的一笔交易，因为“那是在最大压力下做出的决定”。那一天他们亏了大约两百万美元，几乎被市场抬走。但也正是这次濒临破产，让他们开始用计算机逐一检验所有“理所当然”的交易观念。</p>
-<p>这里有一个容易被忽略的算术：两百万美元听起来是天文数字，但如果账户规模是一亿美元，它就是 2%。丹尼斯和埃克哈特教海龟的，正是这种<strong>按比例思考</strong>的能力：不要问“亏了多少钱”，要问“亏了本金的百分之几”。</p>
-<h2 id="四两种能力缺一不可">四、两种能力，缺一不可<a class="anchor" href="#四两种能力缺一不可" aria-label="section link">#</a></h2>
-<p>丹尼斯的故事容易让人产生一种错觉：只要胆子大、敢下注，就能成功。事实相反。他早期也曾在两小时内把四千美元本金亏掉一千，花了三天才从情绪里走出来。他说那是他遇到过最好的事——<strong>你必须先在心理上经历过失败，才可能在真失败时不崩掉。</strong></p>
-<p>埃克哈特的故事则容易让人走向另一个错觉：只要数学好，就能赚钱。也不对。他见过许多聪明人交易得很糟。他后来总结：</p>
-<blockquote>
-<p>有些杰出的交易员相当聪明，但也有一些并不聪明；许多极其聪明的人却是糟糕的交易员。平均智力就够了，超过这个门槛之后，情绪构成更重要。这不是火箭科学。难的不是学会该做什么，而是真的去做。</p>
-</blockquote>
-<p>这就是海龟课堂要解决的两件事：<strong>一套经过检验的规则（数学），以及执行规则的情绪能力（心理）。</strong> 前者可以写下来，后者只能练出来。</p>
-<h2 id="本课要点">本课要点<a class="anchor" href="#本课要点" aria-label="section link">#</a></h2>
-<ul>
-<li>丹尼斯从跑单员、扑克玩家和场内“捡边缘”起家，核心能力是把交易看成概率与赔率，而不是预测。</li>
-<li>他的哲学根源是英国经验主义：不迷信权威，要求证据和检验。</li>
-<li>埃克哈特是数学家和概率专家，把丹尼斯的直觉转化为可计算、可测试的系统。</li>
-<li>1978 年白银交易说明：极端压力下的执行力，和规则本身同样重要。</li>
-<li>亏钱要按本金比例看；2% 的亏损在大小账户上是同一件事。</li>
-<li>智力有门槛，但过了门槛后，情绪与纪律比聪明更重要。</li>
-</ul>
-<h2 id="自测">自测<a class="anchor" href="#自测" aria-label="section link">#</a></h2>
-<ol type="1">
-<li>丹尼斯说他的第一个系统叫“完全不知道自己在干什么”，这句话的真正含义是什么？</li>
-<li>为什么 1978 年的白银交易被视为他“最好的一笔交易”？</li>
-<li>埃克哈特认为“平均智力就够了”，这句话对学习海龟规则意味着什么？</li>
-</ol>
-<details>
-<summary>参考答案</summary>
-<p><strong>1.</strong> 他并不预测方向，而是不断寻找略有利的赔率，靠大量重复让优势累积；重点在风险管理与下注结构，不在“看对”。</p>
-<p><strong>2.</strong> 因为它在几乎全军覆没、情绪冻结的时刻完成了逆向操作，救了整个账户；它体现的是压力下的执行力和对生存的优先考虑。</p>
-<p><strong>3.</strong> 学习这套方法不需要天才智商，需要的是理解概率、算术和执行纪律；难点在情绪控制与持续照做，而不在复杂公式。</p>
-</details>
-
-      </article>
-<nav class="pager" aria-label="pager"><a class="prev" href="lesson-01.html"><span class="lbl">上一课</span><span class="ttl">一个持续十年的赌局</span></a><a class="next" href="lesson-03.html"><span class="lbl">下一课</span><span class="ttl">一则广告，上千份简历</span></a></nav>
-      <footer class="page-foot">
-        <p>本课程基于迈克尔·科维尔《The Complete TurtleTrader》整理，用于知识学习，不构成任何投资建议。</p>
-        <p>© 2026 · 海龟交易法则通识课</p>
-      </footer>
-    </div>
-    <aside class="toc" aria-label="table of contents">
-      <p class="toc-title">本页目录</p>
-      <nav id="toc-list"></nav>
-    </aside>
-  </main>
-</div>
-
-<script src="../assets/site.js" defer></script>
+<body>
+<main>
+<p>这一页已经搬到新地址：</p>
+<p><a href="/turtle/lesson-02.html"><code>/turtle/lesson-02.html</code></a></p>
+<p style="font-size:.82rem;color:#82776a">几秒后会自动跳转。</p>
+</main>
+<script>location.replace("/turtle/lesson-02.html" + location.hash);</script>
 </body>
 </html>

@@ -1,233 +1,27 @@
 <!doctype html>
-<!-- page: zh/lesson-06.html -->
 <html lang="zh-CN">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>期望值 · 海龟交易法则</title>
-<meta name="description" content="本课目标：学会用一条公式判断一套交易方法长期能不能赚钱，并理解为什么“胜率 90%”可能是个陷阱。">
-<meta name="theme-color" content="#08110f">
-<meta property="og:type" content="article">
-<meta property="og:title" content="期望值 · 海龟交易法则">
-<meta property="og:description" content="本课目标：学会用一条公式判断一套交易方法长期能不能赚钱，并理解为什么“胜率 90%”可能是个陷阱。">
-<meta property="og:site_name" content="《海龟交易法则》中英双语通识课">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2308110f'/%3E%3Cpath d='M32 12c11 0 20 9 20 20s-9 20-20 20S12 43 12 32' fill='none' stroke='%23e6b566' stroke-width='3'/%3E%3Cpath d='M32 20c6.6 0 12 5.4 12 12s-5.4 12-12 12' fill='none' stroke='%2363d2a4' stroke-width='3'/%3E%3C/svg%3E">
-<link rel="stylesheet" href="../assets/site.css">
+<title>页面已迁移 · The Complete TurtleTrader</title>
+<link rel="canonical" href="https://chenmingyuan.site/turtle/lesson-06.html">
+<meta http-equiv="refresh" content="0; url=/turtle/lesson-06.html">
+<meta name="robots" content="noindex, follow">
+<style>
+body{margin:0;min-height:100vh;display:grid;place-items:center;background:#f5efe2;color:#23201a;
+font-family:-apple-system,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;line-height:1.7}
+main{max-width:34rem;padding:2rem 1.5rem;text-align:center}
+a{color:#1c6b45}
+p{margin:.4rem 0 1rem}
+code{font-size:.86em;background:rgba(28,107,69,.08);padding:.1em .35em;border-radius:4px}
+</style>
 </head>
-<body data-page="lesson-06" data-lang="zh" data-title="期望值">
-<a class="skip" href="#start">跳到正文</a>
-<div class="read-progress" id="read-progress" aria-hidden="true"></div>
-
-<header class="topbar">
-  <button class="topbar-btn" id="nav-toggle" type="button" aria-label="menu" aria-controls="sidebar" aria-expanded="false">
-    <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
-  </button>
-  <a class="topbar-title" href="index.html">海龟交易法则</a>
-  <a class="lang-pill" href="../en/lesson-06.html" hreflang="en">English</a>
-</header>
-
-<div class="nav-overlay" id="nav-overlay"></div>
-
-<aside class="sidebar" id="sidebar" aria-label="course navigation">
-  <button class="nav-close" id="nav-close" type="button" aria-label="close">×</button>
-  <a class="brand" href="index.html">
-    <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 40 40" width="30" height="30"><path d="M20 4c8.8 0 16 7.2 16 16s-7.2 16-16 16S4 28.8 4 20" fill="none" stroke="currentColor" stroke-width="2.4"/><path d="M20 11c5 0 9 4 9 9s-4 9-9 9" fill="none" stroke="currentColor" stroke-width="2.4"/><circle cx="20" cy="20" r="2.4" fill="currentColor"/></svg></span>
-    <span class="brand-text">
-      <span class="brand-title">海龟交易法则</span>
-      <span class="brand-sub">从零读懂趋势跟踪</span>
-    </span>
-  </a>
-  <nav class="nav">
-<p class="nav-group-title">开始</p>
-<a class="nav-link" href="index.html"><span class="nav-num">◎</span><span>课程首页</span></a>
-<div class="nav-group"><p class="nav-group-title">第一部分 · 故事与实验</p>
-<a class="nav-link" href="lesson-01.html"><span class="nav-num">01</span><span>一个持续十年的赌局</span></a>
-<a class="nav-link" href="lesson-02.html"><span class="nav-num">02</span><span>王子与数学家</span></a>
-<a class="nav-link" href="lesson-03.html"><span class="nav-num">03</span><span>一则广告，上千份简历</span></a>
-<a class="nav-link" href="lesson-04.html"><span class="nav-num">04</span><span>两周课堂</span></a>
-<a class="nav-link" href="lesson-05.html"><span class="nav-num">05</span><span>实验的结局</span></a>
-</div>
-<div class="nav-group"><p class="nav-group-title">第二部分 · 先活下来，再赚钱</p>
-<a class="nav-link" href="lesson-06.html" aria-current="page"><span class="nav-num">06</span><span>期望值：你靠什么长期赚钱</span></a>
-<a class="nav-link" href="lesson-07.html"><span class="nav-num">07</span><span>破产风险：先活下来</span></a>
-<a class="nav-link" href="lesson-08.html"><span class="nav-num">08</span><span>无记忆交易：把情绪关在门外</span></a>
-</div>
-<div class="nav-group"><p class="nav-group-title">第三部分 · 海龟的规则</p>
-<a class="nav-link" href="lesson-09.html"><span class="nav-num">09</span><span>N：市场的呼吸</span></a>
-<a class="nav-link" href="lesson-10.html"><span class="nav-num">10</span><span>单位：2% 规则</span></a>
-<a class="nav-link" href="lesson-11.html"><span class="nav-num">11</span><span>入场：系统一与系统二</span></a>
-<a class="nav-link" href="lesson-12.html"><span class="nav-num">12</span><span>止损、加仓与减仓</span></a>
-<a class="nav-link" href="lesson-13.html"><span class="nav-num">13</span><span>组合：相关性与净头寸</span></a>
-</div>
-<div class="nav-group"><p class="nav-group-title">第四部分 · 之后与今天</p>
-<a class="nav-link" href="lesson-14.html"><span class="nav-num">14</span><span>海龟之后</span></a>
-</div>
-<div class="nav-group"><p class="nav-group-title">附录 · 规则与自测</p>
-<a class="nav-link" href="appendix-a.html"><span class="nav-num">A</span><span>完整规则速查</span></a>
-<a class="nav-link" href="appendix-b.html"><span class="nav-num">B</span><span>练习与答案</span></a>
-</div>
-  </nav>
-  <div class="sidebar-foot">
-    <a class="back-home" href="https://chenmingyuan.site/works.html">← 返回作品集</a><br>
-    14 节课 · 2 个附录<br>仅供学习，不构成投资建议
-  </div>
-</aside>
-
-<div class="shell">
-  <main class="main">
-    <div class="column">
-<header class="page-hero">
-  <span class="hero-num" aria-hidden="true">06</span>
-  <p class="kicker">第二部分 · 第 06 课</p>
-  <h1>期望值</h1>
-  <p class="hero-meta">阅读约 5 分钟<span class="dot">·</span>迈克尔·科维尔《The Complete TurtleTrader》通识课</p>
-</header>
-
-      <article class="article" id="start">
-<blockquote>
-<p>本课目标：学会用一条公式判断一套交易方法长期能不能赚钱，并理解为什么“胜率 90%”可能是个陷阱。</p>
-</blockquote>
-<h2 id="一先问一个正确的问题">一、先问一个正确的问题<a class="anchor" href="#一先问一个正确的问题" aria-label="section link">#</a></h2>
-<p>大多数新手问的是：“这套方法准不准？”</p>
-<p>海龟被训练去问另一个问题：</p>
-<blockquote>
-<p><strong>长期来看，我每做一笔交易，平均能赚多少？</strong></p>
-</blockquote>
-<p>用赌场的说法，这叫<strong>优势</strong>（edge）。赌场不关心下一把谁赢，它只关心每下注一百块，长期能留下几块钱。丹尼斯一直想让自己的交易“像庄家一样”。</p>
-<h2 id="二一条公式">二、一条公式<a class="anchor" href="#二一条公式" aria-label="section link">#</a></h2>
-<p>期望值（Expectation，E）的公式非常朴素：</p>
-<pre><code>E = (胜率 × 平均盈利) − (败率 × 平均亏损)</code></pre>
-<p>其中：</p>
-<ul>
-<li>胜率 PW：盈利交易占的比例</li>
-<li>平均盈利 AW：赚钱时平均赚多少</li>
-<li>败率 PL：亏损交易占的比例（= 1 − 胜率）</li>
-<li>平均亏损 AL：亏钱时平均亏多少（取正数）</li>
-</ul>
-<h3 id="例一">例一<a class="anchor" href="#例一" aria-label="section link">#</a></h3>
-<p>一套系统胜率 50%，平均盈利 500 美元，平均亏损 350 美元：</p>
-<pre><code>E = (0.50 × 500) − (0.50 × 350)
-  = 250 − 175
-  = 75 美元/笔</code></pre>
-<p>长期看，每做一笔交易，平均赚 75 美元。</p>
-<h3 id="例二">例二<a class="anchor" href="#例二" aria-label="section link">#</a></h3>
-<p>另一套系统只有 40% 的胜率，但平均盈利 1000 美元，平均亏损仍是 350 美元：</p>
-<pre><code>E = (0.40 × 1000) − (0.60 × 350)
-  = 400 − 210
-  = 190 美元/笔</code></pre>
-<p><strong>第二套系统的期望值是第一套的 2.5 倍，尽管它的胜率低了 10 个百分点。</strong></p>
-<p>这就是海龟反复强调的一句话：<strong>准确率什么都不是。</strong>（Percent accuracy means nothing.）</p>
-<h2 id="三盈亏平衡胜率">三、盈亏平衡胜率<a class="anchor" href="#三盈亏平衡胜率" aria-label="section link">#</a></h2>
-<p>给定平均盈利和平均亏损，就能算出“至少要赢多少比例才不亏”：</p>
-<pre><code>盈亏平衡胜率 = 平均亏损 ÷ (平均盈利 + 平均亏损)</code></pre>
-<ul>
-<li>第一套：350 ÷ (500 + 350) = 41.2%。只要胜率高于 41.2%，长期就赚钱。</li>
-<li>第二套：350 ÷ (1000 + 350) = 25.9%。只要胜率高于 25.9%，长期就赚钱。</li>
-</ul>
-<p>反过来看：一个声称“90% 胜率”的系统，如果每次只赚 10 块、亏的时候亏 200 块，它的期望值是：</p>
-<pre><code>0.9 × 10 − 0.1 × 200 = 9 − 20 = −11 美元/笔</code></pre>
-<p><strong>赢九次，亏一次，长期还是亏。</strong> 高胜率很容易让人感觉良好，也很容易让人在小赢中积累、在一记大亏中归零。</p>
-<h2 id="四棒球类比">四、棒球类比<a class="anchor" href="#四棒球类比" aria-label="section link">#</a></h2>
-<p>丹尼斯用棒球解释这件事：</p>
-<blockquote>
-<p>普通击球手的打击率大概 .280，普通交易系统的胜率大概 35%。</p>
-</blockquote>
-<p>关键不在“打中几次”，而在<strong>打中时是安打还是本垒打</strong>。一个 .280 的击球手，如果全是本垒打，价值远高于一个 .320 但只打一垒安打的人。</p>
-<p>趋势跟踪系统的结构就是这样：<strong>大多数交易是小亏，少数交易是大赚。</strong> 你可能做十笔，亏七笔小钱，赚三笔大钱，最后整体为正。所以：</p>
-<ul>
-<li>连续亏损是系统的正常呼吸，不是系统坏了。</li>
-<li>判断系统好坏，不能看最近五笔，要看几百笔的统计。</li>
-<li>如果你要求“每笔都赚”，你会在结构上排除掉所有趋势系统。</li>
-</ul>
-<h2 id="五用真实数据算一遍">五、用真实数据算一遍<a class="anchor" href="#五用真实数据算一遍" aria-label="section link">#</a></h2>
-<p>书中统计了七位海龟风格交易者从成立到 2006 年 8 月的月度数据。以莉兹·谢瓦尔为例：</p>
-<ul>
-<li>平均盈利月份：+12.45%</li>
-<li>平均亏损月份：−6.64%</li>
-<li>盈利月份占比：49.62%</li>
-</ul>
-<pre><code>E = (0.4962 × 12.45) − (0.5038 × 6.64)
-  = 6.18 − 3.35
-  ≈ 2.83%/月</code></pre>
-<p>她的胜率连一半都不到（49.62%），但每月期望值约 +2.83%。同期股票指数呢？</p>
-<div class="table-wrap"><table>
-<thead>
-<tr>
-<th>市场</th>
-<th>平均盈利月</th>
-<th>平均亏损月</th>
-<th>盈利月占比</th>
-<th>期望值</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>道琼斯</td>
-<td>3.87%</td>
-<td>−3.85%</td>
-<td>58.09%</td>
-<td>0.63%</td>
-</tr>
-<tr>
-<td>纳斯达克</td>
-<td>4.98%</td>
-<td>−4.61%</td>
-<td>57.75%</td>
-<td>0.93%</td>
-</tr>
-<tr>
-<td>标普 500</td>
-<td>3.83%</td>
-<td>−3.92%</td>
-<td>58.37%</td>
-<td>0.60%</td>
-</tr>
-</tbody>
-</table></div>
-<p>指数的胜率更高（接近 58%），期望值却低得多。原因只有一个：<strong>海龟们的盈利月份，比亏损月份大得多。</strong></p>
-<p>这就是趋势跟踪的全部秘密：不追求赢的次数，追求赢的幅度。</p>
-<h2 id="六期望值和风险管理是两件事">六、期望值和风险管理是两件事<a class="anchor" href="#六期望值和风险管理是两件事" aria-label="section link">#</a></h2>
-<p>期望值告诉你“这套方法长期有没有优势”；它不告诉你“你会不会在中途死掉”。</p>
-<p>一个正期望的系统，如果你每笔下注太大，仍然可能在等到优势兑现之前就破产——那是下一课的内容。埃克哈特的总结很精炼：</p>
-<blockquote>
-<p><strong>重要的是限制组合风险，交易本身会照顾好自己。</strong></p>
-</blockquote>
-<h2 id="本课要点">本课要点<a class="anchor" href="#本课要点" aria-label="section link">#</a></h2>
-<ul>
-<li>期望值 E =（胜率 × 平均盈利）−（败率 × 平均亏损），衡量长期每笔平均收益。</li>
-<li>胜率低不一定差：40% 胜率、赔率 1000:350 的系统，期望值可以是 50% 胜率、500:350 系统的 2.5 倍。</li>
-<li>盈亏平衡胜率 = 平均亏损 ÷（平均盈利 + 平均亏损）。</li>
-<li>高胜率 + 小赢大亏 = 负期望；这是散户最常见的死法。</li>
-<li>趋势系统的常态是“多数小亏、少数大赚”，连续亏损不代表系统失效。</li>
-<li>期望值解决“能不能赚”，风险管理解决“能不能活到那天”。</li>
-</ul>
-<h2 id="自测">自测<a class="anchor" href="#自测" aria-label="section link">#</a></h2>
-<ol type="1">
-<li>一套系统胜率 35%，平均盈利 1200 元，平均亏损 400 元。它的期望值是多少？盈亏平衡胜率是多少？</li>
-<li>“我这个方法一个月只亏两次，胜率 90%。”你需要再问哪两个数字，才能判断它是否值得做？</li>
-<li>为什么用最近十笔交易的盈亏来判断系统好坏，在统计上是无效的？</li>
-</ol>
-<details>
-<summary>参考答案</summary>
-<p><strong>1.</strong> E = 0.35 × 1200 − 0.65 × 400 = 420 − 260 = 160 元/笔。盈亏平衡胜率 = 400 ÷ (1200 + 400) = 25%。胜率 35% 明显高于 25%，长期为正。</p>
-<p><strong>2.</strong> 平均盈利和平均亏损。若每次赚 50 元、亏 800 元，则 E = 0.9 × 50 − 0.1 × 800 = 45 − 80 = −35 元/笔，长期必亏。</p>
-<p><strong>3.</strong> 趋势系统的收益高度集中在少数大交易上，十笔样本很可能完全不含那几笔决定性的盈利，方差极大，无法代表长期分布。</p>
-</details>
-
-      </article>
-<nav class="pager" aria-label="pager"><a class="prev" href="lesson-05.html"><span class="lbl">上一课</span><span class="ttl">实验的结局</span></a><a class="next" href="lesson-07.html"><span class="lbl">下一课</span><span class="ttl">破产风险：先活下来</span></a></nav>
-      <footer class="page-foot">
-        <p>本课程基于迈克尔·科维尔《The Complete TurtleTrader》整理，用于知识学习，不构成任何投资建议。</p>
-        <p>© 2026 · 海龟交易法则通识课</p>
-      </footer>
-    </div>
-    <aside class="toc" aria-label="table of contents">
-      <p class="toc-title">本页目录</p>
-      <nav id="toc-list"></nav>
-    </aside>
-  </main>
-</div>
-
-<script src="../assets/site.js" defer></script>
+<body>
+<main>
+<p>这一页已经搬到新地址：</p>
+<p><a href="/turtle/lesson-06.html"><code>/turtle/lesson-06.html</code></a></p>
+<p style="font-size:.82rem;color:#82776a">几秒后会自动跳转。</p>
+</main>
+<script>location.replace("/turtle/lesson-06.html" + location.hash);</script>
 </body>
 </html>

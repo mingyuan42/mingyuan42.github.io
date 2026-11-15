@@ -6,7 +6,7 @@
     <atom:link href="https://chenmingyuan.site/en/rss.xml" rel="self" type="application/rss+xml"/>
     <language>en-US</language>
     <description>Christopher&apos;s personal blog and portfolio: eight book courses that start from zero, including Li Xiaolai&apos;s The Road to Financial Freedom and The Turtle Traders&apos; Rules, plus notes on Taleb, investing notes and a ten-year record of practice. Powered by EmDash CMS.</description>
-    <lastBuildDate>Sun, 15 Nov 2026 09:53:26 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 15 Nov 2026 11:03:38 GMT</lastBuildDate>
     <item>
       <title>He calculated every variable — except how much his conscience could bear</title>
       <link>https://chenmingyuan.site/en/blog/betrayal-conscience-load.html</link>
@@ -61,7 +61,7 @@
       <link>https://chenmingyuan.site/en/blog/dynamic-hedging-as-insurance.html</link>
       <guid isPermaLink="true">https://chenmingyuan.site/en/blog/dynamic-hedging-as-insurance.html</guid>
       <pubDate>Sun, 11 Oct 2026 16:20:00 GMT</pubDate>
-      <description>A 460-page trader&apos;s manual that is really about the craft of manufacturing insurance: options are the policies, the Greeks are the dashboard, and dynamic hedging is adjusting your position day by day so volatility doesn&apos;t bite you.</description>
+      <description>The 460-page trader&apos;s manual is actually about the craft of creating insurance: options are insurance policies, Greek letters are the dashboard, and dynamic hedging is about adjusting positions daily to avoid being bitten by volatility.</description>
     </item>
     <item>
       <title>Turning Taleb&apos;s Incerto series into 12 lessons for children</title>

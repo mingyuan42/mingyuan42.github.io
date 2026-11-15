@@ -1,112 +1,367 @@
-<!doctype html>
-<!-- page: plan.html -->
-<html lang="zh-CN">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>30 天践行清单 · 财富自由之路</title>
-<meta name="description" content="5 个阶段、30 天、90 项任务，合计 975 分钟。每天 20–45 分钟，勾选状态保存在你自己的浏览器里，可导出 Markdown。">
-<meta name="theme-color" content="#f3ebdd">
-<meta property="og:type" content="article">
-<meta property="og:title" content="30 天践行清单 · 财富自由之路">
-<meta property="og:description" content="5 个阶段、30 天、90 项任务，合计 975 分钟。每天 20–45 分钟，勾选状态保存在你自己的浏览器里，可导出 Markdown。">
-<meta property="og:site_name" content="财富自由之路">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23f3ebdd'/%3E%3Crect x='8' y='8' width='48' height='48' rx='6' fill='%23c3352b'/%3E%3Cpath d='M18 44c6 0 9-4 12-12s6-14 16-14' fill='none' stroke='%23f7e6c8' stroke-width='4' stroke-linecap='round'/%3E%3Ccircle cx='45' cy='19' r='3.4' fill='%23dda23a'/%3E%3C/svg%3E">
-<link rel="stylesheet" href="assets/site.css">
-</head>
-<body data-page="plan" data-title="30 天践行清单" data-track="off">
-<a class="skip" href="#start">跳到正文</a>
-<div class="read-progress" id="read-progress" aria-hidden="true"></div>
-
-<header class="topbar">
-  <button class="topbar-btn" id="nav-toggle" type="button" aria-label="打开目录" aria-controls="sidebar" aria-expanded="false">
-    <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
-  </button>
-  <a class="topbar-title" href="index.html">财富自由之路</a>
-  <span class="topbar-seal" aria-hidden="true">财</span>
-</header>
-
-<div class="nav-overlay" id="nav-overlay"></div>
-
-<aside class="sidebar" id="sidebar" aria-label="课程目录">
-  <button class="nav-close" id="nav-close" type="button" aria-label="关闭目录">×</button>
-  <a class="brand" href="index.html">
-    <span class="brand-seal" aria-hidden="true"><span>财富</span><span>自由</span></span>
-    <span class="brand-text">
-      <span class="brand-title">财富自由之路</span>
-      <span class="brand-sub">21 lessons · 4 tools</span>
-    </span>
-  </a>
-  <nav class="nav">
-<p class="nav-group-title">开始</p>
-<a class="nav-link" href="index.html"><span class="nav-num">◎</span><span>课程首页</span></a>
-<div class="nav-group"><p class="nav-group-title">第1部分 · 重新定义财富自由</p>
-<a class="nav-link" href="zh/lesson-01.html"><span class="nav-num">01</span><span>财富自由是什么</span></a>
-<a class="nav-link" href="zh/lesson-02.html"><span class="nav-num">02</span><span>三大坑与注意力</span></a>
-<a class="nav-link" href="zh/lesson-03.html"><span class="nav-num">03</span><span>付费与安全感</span></a>
-<a class="nav-link" href="zh/lesson-04.html"><span class="nav-num">04</span><span>活在未来 · 贵人</span></a>
-</div>
-<div class="nav-group"><p class="nav-group-title">第2部分 · 升级你的操作系统</p>
-<a class="nav-link" href="zh/lesson-05.html"><span class="nav-num">05</span><span>资本三要素</span></a>
-<a class="nav-link" href="zh/lesson-06.html"><span class="nav-num">06</span><span>多维竞争</span></a>
-<a class="nav-link" href="zh/lesson-07.html"><span class="nav-num">07</span><span>元认知能力</span></a>
-<a class="nav-link" href="zh/lesson-08.html"><span class="nav-num">08</span><span>万能钥匙</span></a>
-<a class="nav-link" href="zh/lesson-09.html"><span class="nav-num">09</span><span>你的世界是你选的</span></a>
-</div>
-<div class="nav-group"><p class="nav-group-title">第3部分 · 选择决定命运</p>
-<a class="nav-link" href="zh/lesson-10.html"><span class="nav-num">10</span><span>特立独行且正确</span></a>
-<a class="nav-link" href="zh/lesson-11.html"><span class="nav-num">11</span><span>刚需与避险</span></a>
-<a class="nav-link" href="zh/lesson-12.html"><span class="nav-num">12</span><span>选择的方法论</span></a>
-</div>
-<div class="nav-group"><p class="nav-group-title">第4部分 · 投资：先活下来</p>
-<a class="nav-link" href="zh/lesson-13.html"><span class="nav-num">13</span><span>资本量级与机会</span></a>
-<a class="nav-link" href="zh/lesson-14.html"><span class="nav-num">14</span><span>短期不可预测</span></a>
-<a class="nav-link" href="zh/lesson-15.html"><span class="nav-num">15</span><span>定投与长期</span></a>
-<a class="nav-link" href="zh/lesson-16.html"><span class="nav-num">16</span><span>周期与镜像世界</span></a>
-</div>
-<div class="nav-group"><p class="nav-group-title">第5部分 · 商业模式与成长</p>
-<a class="nav-link" href="zh/lesson-17.html"><span class="nav-num">17</span><span>时间买卖三模式</span></a>
-<a class="nav-link" href="zh/lesson-18.html"><span class="nav-num">18</span><span>写作与买时间</span></a>
-<a class="nav-link" href="zh/lesson-19.html"><span class="nav-num">19</span><span>成长率与操作系统</span></a>
-<a class="nav-link" href="zh/lesson-20.html"><span class="nav-num">20</span><span>重复 · 希望 · 践行</span></a>
-<a class="nav-link" href="zh/lesson-21.html"><span class="nav-num">21</span><span>一把刀与执行力</span></a>
-</div>
-<div class="nav-group"><p class="nav-group-title">动手工具</p>
-<a class="nav-link nav-tool" href="lab.html"><span class="nav-num">◎</span><span>财富实验室</span></a>
-<a class="nav-link nav-tool" href="quiz.html"><span class="nav-num">?</span><span>自测 30 题</span></a>
-<a class="nav-link nav-tool" href="glossary.html"><span class="nav-num">≡</span><span>概念词典</span></a>
-<a class="nav-link nav-tool" href="plan.html" aria-current="page"><span class="nav-num">✓</span><span>30 天践行</span></a>
-</div>
-  </nav>
-  <div class="sidebar-foot">
-    <a class="back-home" href="https://chenmingyuan.site/works.html">← 返回作品集</a><br>
-    已读 <span id="read-count">0</span> / 21 课<br>
-    李笑来 · 得到专栏第一季<br>仅供学习，不构成投资建议
-  </div>
-</aside>
-
-<div class="tool-shell">
-  <div class="tool-wrap">
-    <div class="tool-head" id="start">
-      <div>
-        <p class="kicker">TOOL 04 · 30-DAY PLAN</p>
-        <h1>30 天践行清单</h1>
-        <p>5 个阶段、30 天、90 项任务，合计 975 分钟。每天 20–45 分钟，勾选状态保存在你自己的浏览器里，可导出 Markdown。</p>
-      </div>
-      <div class="tool-head-actions">
-<button class="btn btn-primary btn-sm" id="plan-jump" type="button">继续未完成的一天</button><button class="btn btn-gold btn-sm" id="plan-export" type="button">导出 Markdown</button><button class="btn btn-ghost btn-sm" id="plan-reset" type="button">清空勾选</button>
-      </div>
-    </div>
+<!DOCTYPE html><html lang="zh-CN" data-site-locale="zh" data-site-prefix><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>30 天践行 · 财富自由之路 · Christopher</title><meta name="description" content="90 项可勾选的任务，把 21 节课的概念变成每天 20–45 分钟的动作，进度保存在本机。"><meta name="author" content="Christopher"><meta name="generator" content="Astro v7.4.11"><link rel="canonical" href="https://chenmingyuan.site/wealth/plan.html"><link rel="alternate" hreflang="zh-CN" href="https://chenmingyuan.site/wealth/plan.html"><link rel="alternate" hreflang="en" href="https://chenmingyuan.site/en/wealth/plan.html"><link rel="alternate" hreflang="fr" href="https://chenmingyuan.site/fr/wealth/plan.html"><link rel="alternate" hreflang="es" href="https://chenmingyuan.site/es/wealth/plan.html"><link rel="alternate" hreflang="ja" href="https://chenmingyuan.site/ja/wealth/plan.html"><link rel="alternate" hreflang="ko" href="https://chenmingyuan.site/ko/wealth/plan.html"><link rel="alternate" hreflang="x-default" href="https://chenmingyuan.site/wealth/plan.html"><link rel="icon" type="image/svg+xml" href="/favicon.svg"><link rel="alternate" type="application/rss+xml" title="Christopher · 博客与作品集" href="/rss.xml"><meta property="og:type" content="website"><meta property="og:site_name" content="Christopher · 博客与作品集"><meta property="og:title" content="30 天践行 · 财富自由之路 · Christopher"><meta property="og:description" content="90 项可勾选的任务，把 21 节课的概念变成每天 20–45 分钟的动作，进度保存在本机。"><meta property="og:url" content="https://chenmingyuan.site/wealth/plan.html"><meta property="og:image" content="https://chenmingyuan.site/media/hero.png"><meta property="og:locale" content="zh_CN"><meta property="og:locale:alternate" content="en_US"><meta property="og:locale:alternate" content="fr_FR"><meta property="og:locale:alternate" content="es_ES"><meta property="og:locale:alternate" content="ja_JP"><meta property="og:locale:alternate" content="ko_KR"><meta name="twitter:card" content="summary_large_image"><script>
+			(function () {
+				try {
+					var t = localStorage.getItem("cb-theme");
+					if (t !== "light" && t !== "dark") {
+						t = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+					}
+					document.documentElement.dataset.theme = t;
+				} catch (e) {}
+			})();
+		</script><link rel="stylesheet" href="/_astro/Base.Dl12XRs9.css"><link rel="stylesheet" href="/_astro/CourseRuntime.0hGXms6l.css"><link rel="stylesheet" href="/_astro/wealth-tools.Dlgsd6d8.css"></head><body><script type="application/json" id="site-i18n-dict">{}</script><script>
+			(function () {
+				var dict = {};
+				try {
+					var el = document.getElementById("site-i18n-dict");
+					if (el) dict = JSON.parse(el.textContent || "{}");
+				} catch (e) {}
+				window.__SITE_I18N__ = dict;
+				// 浏览器脚本统一入口：文案查表 + 语言前缀（不要用模板插值，is:inline 脚本不处理）
+				window.__SITE_TR__ = function (text) {
+					if (typeof text !== "string" || !text) return text;
+					var hit = dict[text] || dict[text.trim()];
+					if (hit) return hit;
+					// 数字前缀兜底：`${N} 节课` 求值成 "10 节课" 后查 "{n} 节课" 通配键
+					var m = text.match(/^(\d+(?:\.\d+)?)((?:\s*\S.*)?)$/s);
+					if (m && m[2]) {
+						var g = "{n}" + m[2];
+						var h2 = dict[g] || dict[g.trim()];
+						if (h2) return h2.replace("{n}", m[1]);
+					}
+					return text;
+				};
+				window.__SITE_PREFIX__ = document.documentElement.dataset.sitePrefix || "";
+			})();
+		</script><a class="skip-link" href="#main">跳到主要内容</a><div class="read-progress" aria-hidden="true"></div><header class="topbar"><div class="topbar-inner"><a class="brand" href="/" aria-label="返回首页"><span class="brand-mark" aria-hidden="true">C—</span><span class="brand-text"><span class="brand-name">Christopher</span><span class="brand-sub">博客与作品集</span></span></a><nav aria-label="主导航"><ul class="nav-links"><li><a href="/">首页</a></li><li><a href="/blog.html">博客</a></li><li><a href="/works.html">作品集</a></li><li><a href="/leeks.html">韭菜园</a></li><li><a href="/richdad.html">两条路</a></li><li><a href="/turtle.html">海龟课</a></li><li><a href="/wealth.html" aria-current="page">财富课</a></li><li><a href="/about.html">关于</a></li></ul></nav><details class="lang-switch" id="lang-switch"><summary aria-label="切换语言" title="切换语言"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M3 12h18M12 3c2.4 2.6 3.6 5.6 3.6 9s-1.2 6.4-3.6 9c-2.4-2.6-3.6-5.6-3.6-9S9.6 5.6 12 3Z"></path></svg><span class="lang-current">中</span></summary><div class="lang-menu" role="menu"><a href="/wealth/plan.html" hreflang="zh-CN" lang="zh-CN" aria-current="true" role="menuitem"><span class="lang-short">中</span><span>中文</span></a><a href="/en/wealth/plan.html" hreflang="en" lang="en" role="menuitem"><span class="lang-short">EN</span><span>English</span></a><a href="/fr/wealth/plan.html" hreflang="fr" lang="fr" role="menuitem"><span class="lang-short">FR</span><span>Français</span></a><a href="/es/wealth/plan.html" hreflang="es" lang="es" role="menuitem"><span class="lang-short">ES</span><span>Español</span></a><a href="/ja/wealth/plan.html" hreflang="ja" lang="ja" role="menuitem"><span class="lang-short">日</span><span>日本語</span></a><a href="/ko/wealth/plan.html" hreflang="ko" lang="ko" role="menuitem"><span class="lang-short">한</span><span>한국어</span></a></div></details><a class="icon-btn" href="/search.html" aria-label="搜索" title="搜索"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-3.8-3.8"></path></svg></a><button class="icon-btn theme-toggle" type="button" aria-label="切换深浅色主题" aria-pressed="false"><svg class="i-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"></path></svg><svg class="i-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true" style="display:none"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2m0 16v2M4.9 4.9l1.4 1.4m11.4 11.4 1.4 1.4M2 12h2m16 0h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path></svg></button><button class="icon-btn nav-toggle" type="button" aria-label="打开菜单" aria-expanded="false" aria-controls="drawer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"></path></svg></button></div></header><div class="drawer" id="drawer" aria-hidden="true"><div class="drawer-head"><span class="brand"><span class="brand-mark" aria-hidden="true">C—</span><span class="brand-text"><span class="brand-name">Christopher</span><span class="brand-sub">博客与作品集</span></span></span><button class="icon-btn drawer-close" type="button" aria-label="关闭菜单"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"></path></svg></button></div><nav aria-label="移动端导航"><a href="/">首页<span class="idx">01</span></a><a href="/blog.html">博客<span class="idx">02</span></a><a href="/works.html">作品集<span class="idx">03</span></a><a href="/leeks.html">韭菜园<span class="idx">04</span></a><a href="/richdad.html">两条路<span class="idx">05</span></a><a href="/turtle.html">海龟课<span class="idx">06</span></a><a href="/wealth.html" aria-current="page">财富课<span class="idx">07</span></a><a href="/about.html">关于<span class="idx">08</span></a><a href="/search.html">搜索<span class="idx">09</span></a></nav><div class="drawer-langs" aria-label="切换语言"><a href="/wealth/plan.html" hreflang="zh-CN" lang="zh-CN" aria-current="true">中文</a><a href="/en/wealth/plan.html" hreflang="en" lang="en">English</a><a href="/fr/wealth/plan.html" hreflang="fr" lang="fr">Français</a><a href="/es/wealth/plan.html" hreflang="es" lang="es">Español</a><a href="/ja/wealth/plan.html" hreflang="ja" lang="ja">日本語</a><a href="/ko/wealth/plan.html" hreflang="ko" lang="ko">한국어</a></div><p class="drawer-foot">把读懂的东西，亲手做一遍。</p></div><main id="main"><div class="course course--wealth" data-course="wealth" data-lang="zh" data-total="21"><div class="course-toolbar"><div class="course-toolbar-inner"><nav class="course-crumbs" aria-label="课程导航"><a href="/wealth.html"><span data-as="span" class="course-bi course-bi--inline"><span data-l="zh" lang="zh-CN">财富自由之路</span><span data-l="en" lang="en">The Road to Financial Freedom</span></span></a><span class="sep" aria-hidden="true">/</span><a href="/wealth/lesson-01.html">课时</a><a href="/wealth/lab.html">财富实验室</a><a href="/wealth/quiz.html">自测 30 题</a><a href="/wealth/glossary.html">概念词典</a><a href="/wealth/plan.html" aria-current="page">30 天践行</a></nav><span class="course-mini" title="本机学习进度"><span data-course-count>0 / 21</span><span class="course-mini-track"><i data-course-mini></i></span></span></div></div><div class="course-inner"><header class="course-tool-head"><div class="eyebrow"><span class="course-lesson-num">TOOL 04</span><span class="course-tag"><span data-as="span" class="course-bi course-bi--inline"><span data-l="zh" lang="zh-CN">财富自由之路</span><span data-l="en" lang="en">The Road to Financial Freedom</span></span></span></div><h1><span data-as="span" class="course-bi"><span data-l="zh" lang="zh-CN">30 天践行</span><span data-l="en" lang="en">30-day plan</span></span></h1><p><span data-as="span" class="course-bi"><span data-l="zh" lang="zh-CN">90 项可勾选的任务，把概念变成每天 20–45 分钟的动作。</span><span data-l="en" lang="en">90 tickable tasks that turn ideas into 20–45 minutes a day.</span></span></p></header><div class="course-widget"><div class="wealth-tool"><div class="tool-wrap">
+    
 <div class="tabs" role="tablist" aria-label="切换"><button class="tab" type="button" role="tab" data-phase="all" aria-selected="true">全部 30 天</button><button class="tab" type="button" role="tab" data-phase="1" aria-selected="false">重新定义财富自由</button><button class="tab" type="button" role="tab" data-phase="2" aria-selected="false">升级你的操作系统</button><button class="tab" type="button" role="tab" data-phase="3" aria-selected="false">选择决定命运</button><button class="tab" type="button" role="tab" data-phase="4" aria-selected="false">投资：先活下来</button><button class="tab" type="button" role="tab" data-phase="5" aria-selected="false">商业模式与成长</button></div>
 <div id="plan-root"></div>
-    <footer class="page-foot" style="margin-top:34px">
-      <p>本课程为李笑来《财富自由之路》（得到专栏第一季，2016-07-27 至 2017-07-28）的学习整理与转述，不是原文转载。书中出现的公司、价格、收益率与收入数字均为作者当年的个人记录，不构成任何投资建议。</p>
-      <p>© 2026 · 财富自由之路通识课 · chenmingyuan.site/wealth/</p>
-    </footer>
-  </div>
-</div>
-<script type="application/json" id="plan-data">{"meta":{"title":"30 天践行清单","note":"每天 20–45 分钟，先做到，再做好。勾选状态只保存在你自己的浏览器里。","minutesPerDay":"20–45 分钟"},"phases":[{"id":1,"name":"看清现状","range":[1,6],"desc":"先看见自己的注意力去了哪里，再谈改变。","color":"vermilion"},{"id":2,"name":"升级操作系统","range":[7,13],"desc":"装上元认知，把「坚持」换成「意义」。","color":"gold"},{"id":3,"name":"学会选择","range":[14,19],"desc":"亮出那把刀，把判断写成可复用的原则。","color":"indigo"},{"id":4,"name":"投资：先活下来","range":[20,25],"desc":"只做功课与规则，不追求收益。不构成投资建议。","color":"jade"},{"id":5,"name":"商业模式与生产","range":[26,30],"desc":"从卖一次时间，走向卖很多次。","color":"plum"}],"days":[{"day":1,"phase":1,"lesson":1,"title":"写下你自己的「财富自由」定义","why":"目标必须是你自己的状态描述，而不是一个从别处抄来的数字。","tasks":[{"id":"d1a","text":"算出你当前的「生活必需月开销」，精确到百元","min":10},{"id":"d1b","text":"用一句话写下：对我而言，财富自由意味着 ______","min":5},{"id":"d1c","text":"写下三个可以在一年内验证的里程碑","min":10}]},{"day":2,"phase":1,"lesson":2,"title":"开一本注意力账本","why":"多数人第一次记录都会发现：用在正事上的时间远比想象中少。","tasks":[{"id":"d2a","text":"在财富实验室的「注意力账本」里记录今天的全部时间块","min":15},{"id":"d2b","text":"标出属于三大坑（凑热闹 / 随大流 / 操别人的心）的条目","min":5},{"id":"d2c","text":"计算：今天真正用于成长的分钟数是多少？","min":5}]},{"day":3,"phase":1,"lesson":2,"title":"关掉一个坑","why":"一次性戒掉三个坑不现实，先关掉最费神的那一个。","tasks":[{"id":"d3a","text":"选出昨天占用注意力最多的那一个坑","min":5},{"id":"d3b","text":"做一个物理层面的改动（关推送 / 退群 / 卸载 / 设时段）","min":10},{"id":"d3c","text":"把省出来的时间安排给一件具体的成长任务","min":10}]},{"day":4,"phase":1,"lesson":3,"title":"做一次「付费就是捡便宜」的实验","why":"把「注意力 > 时间 > 金钱」从口号变成一次真实交易。","tasks":[{"id":"d4a","text":"找出一件你正在用大量时间硬扛的事","min":5},{"id":"d4b","text":"估算你的时薪，比较「自己扛」与「花钱解决」的总成本","min":10},{"id":"d4c","text":"如果划算就真的买下来，并当天用起来","min":15}]},{"day":5,"phase":1,"lesson":3,"title":"识别你的安全感枷锁","why":"追求百分之百的安全感，等于把自己关进监狱。","tasks":[{"id":"d5a","text":"写下三件「一直想做但因为不确定而没做」的事","min":10},{"id":"d5b","text":"对其中一件写出最坏结果，并判断它是否可恢复","min":10},{"id":"d5c","text":"如果可恢复，今天就迈出最小的一步","min":10}]},{"day":6,"phase":1,"lesson":4,"title":"写一份三年预测，并按它生活","why":"活在未来 = 预测 → 笃信 → 提前行动。","tasks":[{"id":"d6a","text":"对你所在行业写下一个三年后的判断，并列出三条依据","min":15},{"id":"d6b","text":"写下「如果这个判断成立，我今天就该做的事」","min":10},{"id":"d6c","text":"第一周复盘：本周注意力总账与上周相比变化如何？","min":10}]},{"day":7,"phase":2,"lesson":5,"title":"盘点你的资本三要素","why":"金额、期限、智慧，缺哪一条就补哪一条。","tasks":[{"id":"d7a","text":"列出所有可动用资金，标注每一笔的真实可用期限","min":15},{"id":"d7b","text":"诚实评估：三要素里你最缺的是哪一个？","min":5},{"id":"d7c","text":"为最缺的那一项写一个 90 天补齐计划","min":15}]},{"day":8,"phase":2,"lesson":6,"title":"画出你的维度乘法表","why":"单维做到顶尖极难，两三个 80 分相乘就足够稀缺。","tasks":[{"id":"d8a","text":"列出你现有的 3–5 个技能维度，各自打分（0–100）","min":10},{"id":"d8b","text":"找出一个与现有维度能产生乘法效应的新维度","min":10},{"id":"d8c","text":"为这个新维度找到它的最少必要知识清单","min":15}]},{"day":9,"phase":2,"lesson":7,"title":"第一次坐享","why":"察觉走神并拉回注意力，这个动作本身就是元认知的一次举重。","tasks":[{"id":"d9a","text":"安静坐 10 分钟，注意力放在呼吸上，走神就温和拉回","min":10},{"id":"d9b","text":"记录：大约走神了几次？拉回时的感受是什么？","min":5},{"id":"d9c","text":"把坐享固定到每天的同一个时间点","min":5}]},{"day":10,"phase":2,"lesson":7,"title":"开一本反思日志","why":"没有记录就没有反馈，没有反馈的判断力不会成长。","tasks":[{"id":"d10a","text":"回顾今天一个决策，写下「我当时怎么想的、依据是什么」","min":10},{"id":"d10b","text":"追问：有没有更好的选项？我漏掉了什么条件？","min":10},{"id":"d10c","text":"写下一条下次可以直接执行的改进","min":5}]},{"day":11,"phase":2,"lesson":8,"title":"为一件事赋予重大意义","why":"需要动用毅力，说明意义还没到位。","tasks":[{"id":"d11a","text":"选一件你总是半途而废的事","min":5},{"id":"d11b","text":"为它写出至少五条对你个人成立的意义（不许喊口号）","min":20},{"id":"d11c","text":"把其中最有分量的一条设成手机锁屏或桌面便签","min":5}]},{"day":12,"phase":2,"lesson":8,"title":"在锁孔之外找一次钥匙","why":"解决不了的问题，答案往往不在问题里面。","tasks":[{"id":"d12a","text":"写下一个你反复用力却毫无进展的问题","min":5},{"id":"d12b","text":"强制列出三个「不在问题内部」的解法（换维度 / 换模式 / 换环境）","min":15},{"id":"d12c","text":"挑一个今天就试，记录结果","min":15}]},{"day":13,"phase":2,"lesson":9,"title":"戒抱怨 + 看见别人的好","why":"抱怨让你停止寻找可改变的部分；看见别人的好，你才学得到。","tasks":[{"id":"d13a","text":"今天每察觉一次抱怨，就改写成一个「我能做什么」","min":10},{"id":"d13b","text":"找出三个人各自的一个真实优点，并明确告诉对方","min":15},{"id":"d13c","text":"第二周复盘：坐享做了几次？反思日志写了几条？","min":10}]},{"day":14,"phase":3,"lesson":10,"title":"写出你的价值观排序表","why":"价值观是遇到冲突时真正使用的排序，不是口号。","tasks":[{"id":"d14a","text":"写下 8 个你在意的东西（成长、收入、健康、家庭、自由……）","min":10},{"id":"d14b","text":"两两比较，排出严格顺序，写成不等号链","min":15},{"id":"d14c","text":"检查上周的三个时间开销，是否与这张表一致","min":10}]},{"day":15,"phase":3,"lesson":21,"title":"亮出那把刀","why":"反复问「什么更重要」，直到逼出「什么最重要」。","tasks":[{"id":"d15a","text":"选一个正在纠结的决定","min":5},{"id":"d15b","text":"连续追问五轮「什么更重要？」，把每一轮答案写下来","min":15},{"id":"d15c","text":"按最后那个「最重要」做出决定，并记录时间","min":10}]},{"day":16,"phase":3,"lesson":11,"title":"把「应该」改造成刚需","why":"「我应该」是外部要求，刚需是内部驱动。","tasks":[{"id":"d16a","text":"列出一件你「应该做」却一直没做的事","min":5},{"id":"d16b","text":"设计三个机制让它变成刚需：意义、反馈、身份绑定","min":15},{"id":"d16c","text":"今天先完成最小的一次，并给自己一个可见的反馈","min":15}]},{"day":17,"phase":3,"lesson":12,"title":"为一个反复出现的选择添加条件","why":"选择困难大多是条件缺失，而不是选项太多。","tasks":[{"id":"d17a","text":"找出一类你反复纠结的选择（接不接活、买不买、要不要参加）","min":5},{"id":"d17b","text":"写出 3–5 条必要条件，标出哪些是一票否决","min":15},{"id":"d17c","text":"用这套条件重新处理一个当前待决事项","min":10}]},{"day":18,"phase":3,"lesson":12,"title":"写下你的前三条原则","why":"原则让你不必每次重新消耗注意力。","tasks":[{"id":"d18a","text":"把昨天的条件固化成一条可执行原则（如果…就…）","min":10},{"id":"d18b","text":"再补两条你已经在遵守、但从没写下来的原则","min":10},{"id":"d18c","text":"把三条原则放到一个每次决策都能看到的地方","min":5}]},{"day":19,"phase":3,"lesson":12,"title":"建立决策日志","why":"只记结果不记理由，等于没有反馈。","tasks":[{"id":"d19a","text":"为今天的一个决定写下：选项 / 条件 / 依据 / 预期结果","min":15},{"id":"d19b","text":"设定一个回看日期（一个月或三个月后）","min":5},{"id":"d19c","text":"第三周复盘：价值观排序表有没有需要修订的地方？","min":10}]},{"day":20,"phase":4,"lesson":13,"title":"划出你的闲钱边界","why":"钱的期限决定你能否熬过下跌。以下为学习活动，不构成投资建议。","tasks":[{"id":"d20a","text":"列出未来 24 个月所有确定的大额支出","min":15},{"id":"d20b","text":"算出真正的闲钱上限：全部损失也不影响生活的那部分","min":10},{"id":"d20c","text":"写下你的应急缓冲金额（建议 6–12 个月开销）","min":5}]},{"day":21,"phase":4,"lesson":11,"title":"写一份避险清单","why":"投资的刚需是避险：先保证不出局。","tasks":[{"id":"d21a","text":"写下三条你绝不触碰的红线（杠杆、借钱、看不懂的标的…）","min":10},{"id":"d21b","text":"为每条红线写出它曾经或可能造成的最坏后果","min":10},{"id":"d21c","text":"写下单一标的的仓位上限，并说明理由","min":10}]},{"day":22,"phase":4,"lesson":14,"title":"在钱打出去之前做功课","why":"钱一旦打出去，情绪就会接管大脑。","tasks":[{"id":"d22a","text":"选一个你想了解的标的，写出它长期成长性的三条依据","min":20},{"id":"d22b","text":"写出三条「如果发生什么，说明我判断错了」","min":10},{"id":"d22c","text":"如果依据不足，就明确写下「暂不参与」","min":5}]},{"day":23,"phase":4,"lesson":15,"title":"在实验室里跑一遍复利与定投","why":"把抽象的年化换算成可感的年数与曲线。","tasks":[{"id":"d23a","text":"在财富实验室里用你的真实参数跑一次模拟，导出结果","min":15},{"id":"d23b","text":"把波动率调到 40%，观察最大回撤，问自己能否承受","min":10},{"id":"d23c","text":"写下一条你自己的定投规则（金额 / 频率 / 期限 / 停止条件）","min":10}]},{"day":24,"phase":4,"lesson":15,"title":"定义你的「长期」","why":"长期至少是两个大周期，不是一个模糊的形容词。","tasks":[{"id":"d24a","text":"写下你能承诺的最短持有期限，并说明凭什么能承诺","min":10},{"id":"d24b","text":"写下在下跌 30% 时你会做什么、不会做什么","min":10},{"id":"d24c","text":"用 72 法则算出你的目标年化对应的翻倍年数","min":5}]},{"day":25,"phase":4,"lesson":16,"title":"识别你所在的镜像世界","why":"同一件事在两套价值观里意义相反。","tasks":[{"id":"d25a","text":"写下一件「别人觉得苦、你却觉得有意思」的事","min":10},{"id":"d25b","text":"再写下一件「你觉得苦、别人却兴致盎然」的事","min":10},{"id":"d25c","text":"第四周复盘：这个月的判断有没有被情绪接管的时刻？","min":10}]},{"day":26,"phase":5,"lesson":17,"title":"算出你的真实时薪","why":"你的价格由稀缺性决定，而不是由辛苦程度决定。","tasks":[{"id":"d26a","text":"用月收入除以真实投入小时数（含通勤与加班）算出时薪","min":10},{"id":"d26b","text":"在商业模式画布里比较三种模式的年收入结构","min":15},{"id":"d26c","text":"写下一条能在半年内提高时薪的具体动作","min":10}]},{"day":27,"phase":5,"lesson":18,"title":"做一次「同一份时间卖很多次」的最小实验","why":"杠杆不是金融专属，作品就是普通人的杠杆。","tasks":[{"id":"d27a","text":"把你会的一件事写成一份可交付的文档 / 模板 / 教程","min":30},{"id":"d27b","text":"把它交给至少一个真实的人使用","min":10},{"id":"d27c","text":"记录对方的反馈，作为下一次改进的输入","min":5}]},{"day":28,"phase":5,"lesson":18,"title":"发出你的第一篇公开写作","why":"写作本身就是想清楚的过程，不必等想清楚再写。","tasks":[{"id":"d28a","text":"选一个你这 28 天里真正想明白的问题","min":5},{"id":"d28b","text":"写 800–1500 字，包含一个你自己的真实例子","min":30},{"id":"d28c","text":"公开发布，并把链接存进事件日志","min":10}]},{"day":29,"phase":5,"lesson":19,"title":"测量你的成长率","why":"比现在的位置更重要的是斜率。","tasks":[{"id":"d29a","text":"在成长率对比工具里画出你和一个更快的人的曲线","min":10},{"id":"d29b","text":"写出这 30 天里你「今天能做、上月做不到」的三件事","min":15},{"id":"d29c","text":"找出一个能让成长率本身提高的机制（反馈 / 战友 / 复盘）","min":10}]},{"day":30,"phase":5,"lesson":21,"title":"结业：把学习变成生产","why":"告知 → 内化 → 生产，三环节缺一不可。","tasks":[{"id":"d30a","text":"做完 30 题自测，把错题对应的课重读一遍","min":25},{"id":"d30b","text":"写一份 30 天总结：做到了什么、没做到什么、为什么","min":20},{"id":"d30c","text":"导出这份清单，制定下一个 30 天只保留三件事的计划","min":15}]}]}</script>
-<script src="assets/site.js" defer></script>
-<script src="assets/plan.js" defer></script>
-</body>
-</html>
+    
+  </div></div></div><div class="course-inner"><p class="course-note"><span data-as="span" class="course-bi"><span data-l="zh" lang="zh-CN">本课程是对原书的整理、转述与延伸练习，不是原文转载。书中出现的公司名、价格、收益率与个人收入数字，全部是作者 2016–2017 年的个人记录，不构成任何投资建议，也不代表未来收益。</span><span data-l="en" lang="en">This course reorganises and retells the original book; it is not a reprint. Companies, prices, returns and income figures are the author&#39;s own records from 2016–2017. Nothing here is investment advice or a promise of future returns.</span></span></p><footer class="course-foot"><nav class="course-foot-nav" aria-label="课程入口"><a href="/wealth.html">课程首页</a><a href="/leeks.html"><span data-as="span" class="course-bi course-bi--inline"><span data-l="zh" lang="zh-CN">韭菜的自我修养</span><span data-l="en" lang="en">The Self-Cultivation of Leeks</span></span></a><a href="/richdad.html"><span data-as="span" class="course-bi course-bi--inline"><span data-l="zh" lang="zh-CN">富爸爸穷爸爸</span><span data-l="en" lang="en">Rich Dad Poor Dad</span></span></a><a href="/turtle.html"><span data-as="span" class="course-bi course-bi--inline"><span data-l="zh" lang="zh-CN">海龟交易法则</span><span data-l="en" lang="en">The Complete TurtleTrader</span></span></a><a href="/works.html">作品集</a></nav><p>© 2026 · Christopher · <span data-as="span" class="course-bi course-bi--inline"><span data-l="zh" lang="zh-CN">财富自由之路</span><span data-l="en" lang="en">The Road to Financial Freedom</span></span></p></footer></div></div><script>
+	(function () {
+		var root = document.querySelector(".course");
+		if (!root) return;
+
+		var slug = root.dataset.course || "course";
+		var LANGS = ["zh", "en", "both"];
+		var buttons = Array.prototype.slice.call(root.querySelectorAll("[data-course-lang-btn]"));
+		var total = Number(root.dataset.total || root.querySelectorAll("[data-course-dot]").length || 0);
+
+		function ls(key, fallback) {
+			try {
+				var v = localStorage.getItem(key);
+				return v === null ? fallback : v;
+			} catch (e) {
+				return fallback;
+			}
+		}
+		function setLs(key, value) {
+			try {
+				localStorage.setItem(key, value);
+			} catch (e) {}
+		}
+		function readJson(key, fallback) {
+			try {
+				var raw = localStorage.getItem(key);
+				return raw ? JSON.parse(raw) : fallback;
+			} catch (e) {
+				return fallback;
+			}
+		}
+		function writeJson(key, value) {
+			try {
+				localStorage.setItem(key, JSON.stringify(value));
+			} catch (e) {}
+		}
+		function tr(text) {
+			return typeof window.__SITE_TR__ === "function" ? window.__SITE_TR__(text) : text;
+		}
+		function setBi(el, zh, en) {
+			var z = el.querySelector('[data-l="zh"]');
+			var e = el.querySelector('[data-l="en"]');
+			if (z && e) {
+				z.textContent = tr(zh);
+				e.textContent = en;
+			} else {
+				el.textContent = tr(zh);
+			}
+		}
+
+		/* ---------- 语言 ---------- */
+		function applyLang(lang) {
+			if (LANGS.indexOf(lang) === -1) lang = buttons.length ? "both" : "zh";
+			root.setAttribute("data-lang", lang);
+			if (root.classList.contains("lk")) root.setAttribute("data-lk-lang", lang);
+			if (root.classList.contains("rd")) root.setAttribute("data-rd-lang", lang);
+			if (slug === "leeks") setLs("lk-lang", lang);
+			if (slug === "richdad") setLs("rd-lang", lang);
+			buttons.forEach(function (b) {
+				b.setAttribute("aria-pressed", String(b.dataset.lang === lang));
+			});
+			var zh = root.dataset.titleZh;
+			var en = root.dataset.titleEn;
+			if (zh && en) document.title = lang === "en" ? en : zh;
+		}
+
+		var savedLang = ls("course-lang", null);
+		if (!savedLang) {
+			var legacyLang = ls("lk-lang", null) || ls("rd-lang", null) || ls("turtle-lang", null);
+			if (legacyLang && LANGS.indexOf(legacyLang) !== -1) {
+				savedLang = legacyLang;
+				setLs("course-lang", legacyLang);
+			}
+		}
+		applyLang(savedLang || (buttons.length ? "both" : "zh"));
+
+		buttons.forEach(function (b) {
+			b.addEventListener("click", function () {
+				var lang = b.dataset.lang || "both";
+				applyLang(lang);
+				setLs("course-lang", lang);
+			});
+		});
+
+		/* ---------- 学习进度 ---------- */
+		var doneKey = "course-done:" + slug;
+		var stored = readJson(doneKey, null);
+		var set = new Set();
+		if (Array.isArray(stored)) {
+			stored.forEach(function (n) {
+				if (Number.isInteger(n) && n > 0) set.add(n);
+			});
+		} else {
+			["lk-done", "rd-done", "turtle-progress", "wealth-read"].forEach(function (key) {
+				var legacy = readJson(key, null);
+				if (Array.isArray(legacy)) {
+					legacy.forEach(function (n) {
+						if (Number.isInteger(n) && n > 0) set.add(n);
+					});
+				}
+			});
+			if (set.size) writeJson(doneKey, Array.from(set));
+		}
+
+		function render() {
+			root.querySelectorAll("[data-course-dot]").forEach(function (el) {
+				el.setAttribute("data-done", set.has(Number(el.dataset.n)) ? "1" : "0");
+			});
+			root.querySelectorAll("[data-course-card]").forEach(function (el) {
+				var n = Number(el.dataset.n);
+				var on = set.has(n);
+				el.setAttribute("data-done", on ? "1" : "0");
+				var badge = el.querySelector("[data-course-card-done]");
+				if (badge) badge.hidden = !on;
+			});
+			root.querySelectorAll("[data-course-side-tick]").forEach(function (el) {
+				el.hidden = !set.has(Number(el.dataset.n));
+			});
+			root.querySelectorAll("[data-course-count]").forEach(function (el) {
+				el.textContent = set.size + " / " + total;
+			});
+			var pct = total > 0 ? Math.round((set.size / total) * 100) : 0;
+			root.querySelectorAll("[data-course-mini]").forEach(function (el) {
+				el.style.width = pct + "%";
+			});
+
+			var bar = root.querySelector("[data-course-done-bar]");
+			if (bar) {
+				var n = Number(bar.dataset.n);
+				var on = set.has(n);
+				bar.setAttribute("data-done", on ? "1" : "0");
+				var text = bar.querySelector("[data-course-done-text]");
+				if (text) {
+					setBi(
+						text,
+						on ? "这一课已经学完，课程进度已记住。" : "读完了就标记一下，课程首页的进度条会记住。",
+						on ? "Lesson complete — progress saved." : "Mark it when you finish — the progress bar remembers."
+					);
+				}
+				var btn = bar.querySelector("[data-course-done-toggle]");
+				if (btn) setBi(btn, on ? "取消标记" : "标记学完 ✓", on ? "Undo" : "Mark as done ✓");
+			}
+		}
+
+		var toggle = root.querySelector("[data-course-done-toggle]");
+		if (toggle) {
+			toggle.addEventListener("click", function () {
+				var bar = root.querySelector("[data-course-done-bar]");
+				var n = Number(bar && bar.dataset.n);
+				if (!n) return;
+				if (set.has(n)) set.delete(n);
+				else set.add(n);
+				writeJson(doneKey, Array.from(set).sort(function (a, b) { return a - b; }));
+				render();
+			});
+		}
+
+		var reset = root.querySelector("[data-course-reset]");
+		if (reset) {
+			var armed = false;
+			var timer = 0;
+			function disarm() {
+				armed = false;
+				window.clearTimeout(timer);
+				reset.removeAttribute("data-armed");
+				setBi(reset, "清空学习进度", "Reset progress");
+			}
+			reset.addEventListener("click", function () {
+				if (!armed) {
+					armed = true;
+					reset.setAttribute("data-armed", "1");
+					setBi(reset, "再点一次确认清空", "Click again to confirm");
+					timer = window.setTimeout(disarm, 4000);
+					return;
+				}
+				set = new Set();
+				writeJson(doneKey, []);
+				render();
+				disarm();
+				setBi(reset, "已清空 ✓", "Cleared ✓");
+				timer = window.setTimeout(disarm, 1800);
+			});
+		}
+
+		render();
+
+		/* ---------- 目录高亮 ---------- */
+		var tocLinks = Array.prototype.slice.call(root.querySelectorAll('.course-toc a[href^="#"]'));
+		if (tocLinks.length) {
+			var heads = tocLinks
+				.map(function (a) {
+					var id = decodeURIComponent(a.getAttribute("href").slice(1));
+					var el = document.getElementById(id);
+					return el ? { id: id, el: el, link: a } : null;
+				})
+				.filter(Boolean);
+			var ticking = false;
+			function spy() {
+				ticking = false;
+				var current = null;
+				heads.forEach(function (h) {
+					if (h.el.getBoundingClientRect().top <= 160) current = h;
+				});
+				heads.forEach(function (h) {
+					h.link.classList.toggle("active", current === h);
+				});
+			}
+			window.addEventListener(
+				"scroll",
+				function () {
+					if (ticking) return;
+					ticking = true;
+					window.requestAnimationFrame(spy);
+				},
+				{ passive: true }
+			);
+			spy();
+		}
+	})();
+</script></div><script defer src="/course-assets/wealth/api.js"></script><script defer src="/course-assets/wealth/plan.js"></script></main><footer class="footer"><div class="wrap"><div class="footer-grid"><div class="footer-brand"><a class="brand" href="/"><span class="brand-mark" aria-hidden="true">C—</span><span class="brand-text"><span class="brand-name">Christopher</span><span class="brand-sub">博客与作品集</span></span></a><p>把读懂的东西，亲手做一遍。这里记录课程创作、投资思考与十年践行的点点滴滴。</p></div><div><h4>站点</h4><ul><li><a href="/">首页</a></li><li><a href="/blog.html">博客</a></li><li><a href="/works.html">作品集</a></li><li><a href="/leeks.html">韭菜园双语课</a></li><li><a href="/richdad.html">两条路 · 富爸爸双语课</a></li><li><a href="/about.html">关于</a></li><li><a href="/search.html">搜索</a></li><li><a href="/rss.xml">RSS 订阅</a></li></ul></div><div><h4>在线作品</h4><ul><li><a href="https://taleb-for-kids-vkkc4zaaicr.qoder.website" target="_blank" rel="noopener noreferrer">跟塔勒布学「不怕不确定」 ↗</a></li><li><a href="https://dynamic-hedging-course-vkkc4zaaicr.qoder.website" target="_blank" rel="noopener noreferrer">动态对冲 · 小学生也能懂 ↗</a></li><li><a href="https://trading-path-7lx5x6ji8nx.qoder.zone" target="_blank" rel="noopener noreferrer">跟陈凯学「交易之路」 ↗</a></li><li><a href="https://trading-for-a-living-7lx5x6ji8nx.qoder.zone" target="_blank" rel="noopener noreferrer">跟埃尔德学交易（以交易为生+卖出的艺术） ↗</a></li></ul></div></div><div class="footer-bottom"><span>© 2026 Christopher <span class="dash">—</span> 西安</span><span>EmDash CMS 驱动 · Astro 构建 · 静态发布</span></div></div></footer><script>
+			(function () {
+				var root = document.documentElement;
+
+				/* 主题切换 */
+				var themeBtn = document.querySelector(".theme-toggle");
+				function paintTheme() {
+					var dark = root.dataset.theme === "dark";
+					if (!themeBtn) return;
+					themeBtn.setAttribute("aria-pressed", String(dark));
+					themeBtn.querySelector(".i-moon").style.display = dark ? "none" : "";
+					themeBtn.querySelector(".i-sun").style.display = dark ? "" : "none";
+				}
+				paintTheme();
+				if (themeBtn) {
+					themeBtn.addEventListener("click", function () {
+						var next = root.dataset.theme === "dark" ? "light" : "dark";
+						root.dataset.theme = next;
+						try { localStorage.setItem("cb-theme", next); } catch (e) {}
+						paintTheme();
+					});
+				}
+
+				/* 语言下拉：点击外部关闭 */
+				var langSwitch = document.getElementById("lang-switch");
+				if (langSwitch) {
+					langSwitch.addEventListener("click", function (e) {
+						if (e.target.closest("a")) langSwitch.open = false;
+					});
+					document.addEventListener("click", function (e) {
+						if (!langSwitch.contains(e.target)) langSwitch.open = false;
+					});
+				}
+
+				/* 移动端抽屉 */
+				var drawer = document.getElementById("drawer");
+				var openBtn = document.querySelector(".nav-toggle");
+				var closeBtn = document.querySelector(".drawer-close");
+				function setDrawer(open) {
+					if (!drawer) return;
+					drawer.classList.toggle("open", open);
+					drawer.setAttribute("aria-hidden", String(!open));
+					if (openBtn) openBtn.setAttribute("aria-expanded", String(open));
+					document.body.style.overflow = open ? "hidden" : "";
+				}
+				if (openBtn) openBtn.addEventListener("click", function () { setDrawer(true); });
+				if (closeBtn) closeBtn.addEventListener("click", function () { setDrawer(false); });
+				if (drawer) {
+					drawer.querySelectorAll("a").forEach(function (a) {
+						a.addEventListener("click", function () { setDrawer(false); });
+					});
+				}
+				document.addEventListener("keydown", function (e) {
+					if (e.key === "Escape") setDrawer(false);
+				});
+
+				/* 入场动画 */
+				var reveals = document.querySelectorAll(".reveal");
+				if ("IntersectionObserver" in window && reveals.length) {
+					var io = new IntersectionObserver(
+						function (entries) {
+							entries.forEach(function (en) {
+								if (en.isIntersecting) { en.target.classList.add("in"); io.unobserve(en.target); }
+							});
+						},
+						{ threshold: 0.12, rootMargin: "0px 0px -6% 0px" }
+					);
+					reveals.forEach(function (el) { io.observe(el); });
+				} else {
+					reveals.forEach(function (el) { el.classList.add("in"); });
+				}
+
+				/* 阅读进度 */
+				var bar = document.querySelector(".read-progress");
+				function progress() {
+					if (!bar) return;
+					var h = document.documentElement;
+					var max = h.scrollHeight - h.clientHeight;
+					bar.style.width = max > 0 ? (h.scrollTop / max) * 100 + "%" : "0";
+				}
+				window.addEventListener("scroll", progress, { passive: true });
+				progress();
+
+				/* 目录高亮 */
+				var tocLinks = Array.prototype.slice.call(document.querySelectorAll(".toc a[href^='#']"));
+				if (tocLinks.length && "IntersectionObserver" in window) {
+					var map = {};
+					tocLinks.forEach(function (a) {
+						var id = decodeURIComponent(a.getAttribute("href").slice(1));
+						map[id] = a;
+					});
+					var heads = Array.prototype.slice.call(document.querySelectorAll(".prose h2[id], .prose h3[id]"));
+					var current = null;
+					function activate(id) {
+						if (current === id) return;
+						current = id;
+						tocLinks.forEach(function (a) { a.classList.remove("active"); });
+						if (map[id]) map[id].classList.add("active");
+					}
+					var to = new IntersectionObserver(
+						function (entries) {
+							entries.forEach(function (en) { if (en.isIntersecting) activate(en.target.id); });
+						},
+						{ rootMargin: "-80px 0px -70% 0px", threshold: 0 }
+					);
+					heads.forEach(function (h) { to.observe(h); });
+				}
+			})();
+		</script></body></html>

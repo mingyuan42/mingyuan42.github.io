@@ -1,0 +1,674 @@
+<!DOCTYPE html><html lang="zh-CN" data-site-locale="zh" data-site-prefix><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>单位——一笔该做多大 · 海龟交易法则 · Christopher</title><meta name="description" content="单位——一笔该做多大 — 本课目标：掌握海龟的仓位公式，能对任意市场算出该做几手，并理解为什么“向下取整”和“单位上限”不是可选项。 海龟交易法则双语课，中文与 English 两个版本。"><meta name="author" content="Christopher"><meta name="generator" content="Astro v7.4.11"><link rel="canonical" href="https://chenmingyuan.site/turtle/lesson-10.html"><link rel="alternate" hreflang="zh-CN" href="https://chenmingyuan.site/turtle/lesson-10.html"><link rel="alternate" hreflang="en" href="https://chenmingyuan.site/en/turtle/lesson-10.html"><link rel="alternate" hreflang="fr" href="https://chenmingyuan.site/fr/turtle/lesson-10.html"><link rel="alternate" hreflang="es" href="https://chenmingyuan.site/es/turtle/lesson-10.html"><link rel="alternate" hreflang="ja" href="https://chenmingyuan.site/ja/turtle/lesson-10.html"><link rel="alternate" hreflang="ko" href="https://chenmingyuan.site/ko/turtle/lesson-10.html"><link rel="alternate" hreflang="x-default" href="https://chenmingyuan.site/turtle/lesson-10.html"><link rel="icon" type="image/svg+xml" href="/favicon.svg"><link rel="alternate" type="application/rss+xml" title="Christopher · 博客与作品集" href="/rss.xml"><meta property="og:type" content="website"><meta property="og:site_name" content="Christopher · 博客与作品集"><meta property="og:title" content="单位——一笔该做多大 · 海龟交易法则 · Christopher"><meta property="og:description" content="单位——一笔该做多大 — 本课目标：掌握海龟的仓位公式，能对任意市场算出该做几手，并理解为什么“向下取整”和“单位上限”不是可选项。 海龟交易法则双语课，中文与 English 两个版本。"><meta property="og:url" content="https://chenmingyuan.site/turtle/lesson-10.html"><meta property="og:image" content="https://chenmingyuan.site/media/turtle-hero.jpg"><meta property="og:locale" content="zh_CN"><meta property="og:locale:alternate" content="en_US"><meta property="og:locale:alternate" content="fr_FR"><meta property="og:locale:alternate" content="es_ES"><meta property="og:locale:alternate" content="ja_JP"><meta property="og:locale:alternate" content="ko_KR"><meta name="twitter:card" content="summary_large_image"><script>
+			(function () {
+				try {
+					var t = localStorage.getItem("cb-theme");
+					if (t !== "light" && t !== "dark") {
+						t = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+					}
+					document.documentElement.dataset.theme = t;
+				} catch (e) {}
+			})();
+		</script><link rel="stylesheet" href="/_astro/Base.Dl12XRs9.css"><link rel="stylesheet" href="/_astro/CourseRuntime.0hGXms6l.css"></head><body><script type="application/json" id="site-i18n-dict">{}</script><script>
+			(function () {
+				var dict = {};
+				try {
+					var el = document.getElementById("site-i18n-dict");
+					if (el) dict = JSON.parse(el.textContent || "{}");
+				} catch (e) {}
+				window.__SITE_I18N__ = dict;
+				// 浏览器脚本统一入口：文案查表 + 语言前缀（不要用模板插值，is:inline 脚本不处理）
+				window.__SITE_TR__ = function (text) {
+					if (typeof text !== "string" || !text) return text;
+					var hit = dict[text] || dict[text.trim()];
+					if (hit) return hit;
+					// 数字前缀兜底：`${N} 节课` 求值成 "10 节课" 后查 "{n} 节课" 通配键
+					var m = text.match(/^(\d+(?:\.\d+)?)((?:\s*\S.*)?)$/s);
+					if (m && m[2]) {
+						var g = "{n}" + m[2];
+						var h2 = dict[g] || dict[g.trim()];
+						if (h2) return h2.replace("{n}", m[1]);
+					}
+					return text;
+				};
+				window.__SITE_PREFIX__ = document.documentElement.dataset.sitePrefix || "";
+			})();
+		</script><a class="skip-link" href="#main">跳到主要内容</a><div class="read-progress" aria-hidden="true"></div><header class="topbar"><div class="topbar-inner"><a class="brand" href="/" aria-label="返回首页"><span class="brand-mark" aria-hidden="true">C—</span><span class="brand-text"><span class="brand-name">Christopher</span><span class="brand-sub">博客与作品集</span></span></a><nav aria-label="主导航"><ul class="nav-links"><li><a href="/">首页</a></li><li><a href="/blog.html">博客</a></li><li><a href="/works.html">作品集</a></li><li><a href="/leeks.html">韭菜园</a></li><li><a href="/richdad.html">两条路</a></li><li><a href="/turtle.html" aria-current="page">海龟课</a></li><li><a href="/wealth.html">财富课</a></li><li><a href="/about.html">关于</a></li></ul></nav><details class="lang-switch" id="lang-switch"><summary aria-label="切换语言" title="切换语言"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M3 12h18M12 3c2.4 2.6 3.6 5.6 3.6 9s-1.2 6.4-3.6 9c-2.4-2.6-3.6-5.6-3.6-9S9.6 5.6 12 3Z"></path></svg><span class="lang-current">中</span></summary><div class="lang-menu" role="menu"><a href="/turtle/lesson-10.html" hreflang="zh-CN" lang="zh-CN" aria-current="true" role="menuitem"><span class="lang-short">中</span><span>中文</span></a><a href="/en/turtle/lesson-10.html" hreflang="en" lang="en" role="menuitem"><span class="lang-short">EN</span><span>English</span></a><a href="/fr/turtle/lesson-10.html" hreflang="fr" lang="fr" role="menuitem"><span class="lang-short">FR</span><span>Français</span></a><a href="/es/turtle/lesson-10.html" hreflang="es" lang="es" role="menuitem"><span class="lang-short">ES</span><span>Español</span></a><a href="/ja/turtle/lesson-10.html" hreflang="ja" lang="ja" role="menuitem"><span class="lang-short">日</span><span>日本語</span></a><a href="/ko/turtle/lesson-10.html" hreflang="ko" lang="ko" role="menuitem"><span class="lang-short">한</span><span>한국어</span></a></div></details><a class="icon-btn" href="/search.html" aria-label="搜索" title="搜索"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-3.8-3.8"></path></svg></a><button class="icon-btn theme-toggle" type="button" aria-label="切换深浅色主题" aria-pressed="false"><svg class="i-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"></path></svg><svg class="i-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true" style="display:none"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2m0 16v2M4.9 4.9l1.4 1.4m11.4 11.4 1.4 1.4M2 12h2m16 0h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path></svg></button><button class="icon-btn nav-toggle" type="button" aria-label="打开菜单" aria-expanded="false" aria-controls="drawer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"></path></svg></button></div></header><div class="drawer" id="drawer" aria-hidden="true"><div class="drawer-head"><span class="brand"><span class="brand-mark" aria-hidden="true">C—</span><span class="brand-text"><span class="brand-name">Christopher</span><span class="brand-sub">博客与作品集</span></span></span><button class="icon-btn drawer-close" type="button" aria-label="关闭菜单"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"></path></svg></button></div><nav aria-label="移动端导航"><a href="/">首页<span class="idx">01</span></a><a href="/blog.html">博客<span class="idx">02</span></a><a href="/works.html">作品集<span class="idx">03</span></a><a href="/leeks.html">韭菜园<span class="idx">04</span></a><a href="/richdad.html">两条路<span class="idx">05</span></a><a href="/turtle.html" aria-current="page">海龟课<span class="idx">06</span></a><a href="/wealth.html">财富课<span class="idx">07</span></a><a href="/about.html">关于<span class="idx">08</span></a><a href="/search.html">搜索<span class="idx">09</span></a></nav><div class="drawer-langs" aria-label="切换语言"><a href="/turtle/lesson-10.html" hreflang="zh-CN" lang="zh-CN" aria-current="true">中文</a><a href="/en/turtle/lesson-10.html" hreflang="en" lang="en">English</a><a href="/fr/turtle/lesson-10.html" hreflang="fr" lang="fr">Français</a><a href="/es/turtle/lesson-10.html" hreflang="es" lang="es">Español</a><a href="/ja/turtle/lesson-10.html" hreflang="ja" lang="ja">日本語</a><a href="/ko/turtle/lesson-10.html" hreflang="ko" lang="ko">한국어</a></div><p class="drawer-foot">把读懂的东西，亲手做一遍。</p></div><main id="main"><div class="course course--turtle" data-course="turtle" data-lang="both" data-total="16" data-title-zh="单位——一笔该做多大 · 海龟交易法则 · Christopher" data-title-en="Units — How Big Is One Bet? · The Complete TurtleTrader · Christopher"><div class="course-toolbar"><div class="course-toolbar-inner"><nav class="course-crumbs" aria-label="课程导航"><a href="/turtle.html"><span data-as="span" class="course-bi course-bi--inline"><span data-l="zh" lang="zh-CN">海龟交易法则</span><span data-l="en" lang="en">The Complete TurtleTrader</span></span></a><span class="sep" aria-hidden="true">/</span><a href="/turtle/lesson-01.html" aria-current="page">课时</a></nav><div class="course-lang" role="group" aria-label="语言"><button type="button" data-course-lang-btn data-lang="zh" aria-pressed="false">中</button><button type="button" data-course-lang-btn data-lang="en" aria-pressed="false">EN</button><button type="button" data-course-lang-btn data-lang="both" aria-pressed="true">对照</button></div><span class="course-mini" title="本机学习进度"><span data-course-count>0 / 16</span><span class="course-mini-track"><i data-course-mini></i></span></span></div></div><div class="course-inner"><div class="course-lesson-layout"><div class="course-lesson-main"><header class="course-lesson-head"><div class="eyebrow"><span class="course-lesson-num">LESSON 10</span><span class="course-tag"><span data-as="span" class="course-bi course-bi--inline"><span data-l="zh" lang="zh-CN">第三部分 · 海龟的规则</span><span data-l="en" lang="en">第三部分 · 海龟的规则</span></span></span><span class="course-tag">约 5 分钟</span><span class="course-tag">10 / 16</span></div><h1><span data-as="span" class="course-bi"><span data-l="zh" lang="zh-CN">单位——一笔该做多大</span><span data-l="en" lang="en">Units — How Big Is One Bet?</span></span></h1></header><div class="course-prose course-html" data-l="zh"><blockquote>
+<p>本课目标：掌握海龟的仓位公式，能对任意市场算出该做几手，并理解为什么“向下取整”和“单位上限”不是可选项。</p>
+</blockquote>
+<h2 id="一单位2-的另一个名字">一、单位：2% 的另一个名字<a class="anchor" href="#一单位2-的另一个名字" aria-label="section link">#</a></h2>
+<p>海龟把“每笔交易愿意承担的风险”固定为账户权益的 <strong>2%</strong>，并把这么多风险称为<strong>一个单位</strong>（one unit）。</p>
+<ul>
+<li>10 万美元账户，1 个单位 = 2,000 美元风险。</li>
+<li>20 万美元账户，1 个单位 = 4,000 美元风险。</li>
+</ul>
+<p>注意：<strong>单位不是一个固定的手数，而是一个固定的金额风险。</strong> 同样 2,000 美元的风险，在玉米上可能是 2 手，在日元上可能是 1 手，在债券上可能是 0 手。</p>
+<p>这就是海龟能用两周培训去交易几十个完全不懂的市场的原因：<strong>他们不交易“玉米”或“黄金”，他们交易“单位”。</strong></p>
+<h2 id="二公式">二、公式<a class="anchor" href="#二公式" aria-label="section link">#</a></h2>
+<pre><code>合约数 = (账户权益 × 单笔风险%) ÷ (止损距离对应的美元风险)</code></pre>
+<p>海龟的止损距离是 <strong>2N</strong>，所以：</p>
+<pre><code>合约数 = (权益 × 2%) ÷ (2N 的美元价值)</code></pre>
+<p>最后<strong>向下取整</strong>（2.67 → 2，1.40 → 1）。</p>
+<h2 id="三玉米完整算例">三、玉米完整算例<a class="anchor" href="#三玉米完整算例" aria-label="section link">#</a></h2>
+<p>条件：</p>
+<ul>
+<li>账户权益：100,000 美元</li>
+<li>单笔风险：2%</li>
+<li>玉米 N = 7 美分</li>
+<li>玉米合约：5,000 蒲式耳，1 美分 = 50 美元</li>
+</ul>
+<p>第一步，算 1N 的美元价值：</p>
+<pre><code>1N = 7 美分 × 50 美元/美分 = 350 美元</code></pre>
+<p>第二步，算 2N 止损的美元风险：</p>
+<pre><code>2N = 350 × 2 = 700 美元</code></pre>
+<p>第三步，算账户允许的风险：</p>
+<pre><code>100,000 × 2% = 2,000 美元</code></pre>
+<p>第四步，相除并向下取整：</p>
+<pre><code>2,000 ÷ 700 = 2.857… → 2 手</code></pre>
+<p>结论：<strong>这个突破信号出现时，买 2 手玉米。</strong></p>
+<p>不是 2.857 手，也不是四舍五入到 3 手。期货不能买小数手，而且<strong>向上取整会直接突破 2% 的风险预算</strong>。</p>
+<h2 id="四同一套算法换市场">四、同一套算法，换市场<a class="anchor" href="#四同一套算法换市场" aria-label="section link">#</a></h2>
+<p>书中的对照表（每行的账户风险不同，重点看算法）：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>市场</th>
+<th>1N 美元</th>
+<th>2N 美元</th>
+<th>账户风险</th>
+<th>应做手数</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>玉米</td>
+<td>350</td>
+<td>700</td>
+<td>2,000</td>
+<td>2.0</td>
+</tr>
+<tr>
+<td>瘦肉猪</td>
+<td>420</td>
+<td>840</td>
+<td>3,000</td>
+<td>3.0</td>
+</tr>
+<tr>
+<td>日元</td>
+<td>725</td>
+<td>1,500</td>
+<td>1,875</td>
+<td>1.0</td>
+</tr>
+<tr>
+<td>十年期国债</td>
+<td>525</td>
+<td>1,050</td>
+<td>2,000</td>
+<td>1.0</td>
+</tr>
+</tbody>
+</table></div>
+<p>再看两个完整练习：</p>
+<p><strong>例一：瑞士法郎</strong></p>
+<ul>
+<li>权益 150,000，风险 1.5%</li>
+<li>1N = 800 美元，2N = 1,600 美元</li>
+<li>可承受风险 = 150,000 × 1.5% = 2,250 美元</li>
+<li>2,250 ÷ 1,600 = 1.40 → <strong>1 手</strong></li>
+</ul>
+<p><strong>例二：迷你玉米</strong></p>
+<ul>
+<li>权益 25,000，风险 2%</li>
+<li>1N = 70 美元，止损用 3N = 210 美元</li>
+<li>可承受风险 = 25,000 × 2% = 500 美元</li>
+<li>500 ÷ 210 = 2.38 → <strong>2 手</strong></li>
+</ul>
+<p>注意例二用的是 3N 止损。规则可以调整，但<strong>一旦定了，就必须用同一个止损距离去反推仓位</strong>，否则风险预算就是假的。</p>
+<h2 id="五为什么必须向下取整">五、为什么必须向下取整<a class="anchor" href="#五为什么必须向下取整" aria-label="section link">#</a></h2>
+<p>因为风险预算是<strong>上限</strong>，不是目标。</p>
+<ul>
+<li>2.67 手向上取整成 3 手，实际 2N 风险变成 2,100 美元，超过 2,000 美元的预算 5%。看起来不多，但连续几十笔都超一点，就是系统性超支。</li>
+<li>向下取整到 2 手，实际风险 1,400 美元，只有 1.4%。<strong>少赚一点，但活着。</strong></li>
+</ul>
+<p>海龟的原则很朴素：<strong>宁可少做，不可超支。</strong></p>
+<h2 id="六反直觉的结论波动越小仓位越大">六、反直觉的结论：波动越小，仓位越大<a class="anchor" href="#六反直觉的结论波动越小仓位越大" aria-label="section link">#</a></h2>
+<p>公式里分母是 2N。所以：</p>
+<ul>
+<li><strong>N 小 → 分母小 → 手数多。</strong></li>
+<li><strong>N 大 → 分母大 → 手数少。</strong></li>
+</ul>
+<p>这不是 bug，是设计。</p>
+<p>书中有个大豆的例子：趋势启动时 N 较小，同样的账户可以买到的单位，是趋势末端 N 变大时的 <strong>2.5 倍</strong>。也就是说，<strong>行情刚启动时你仓位最大，行情走远、波动放大后你自动减仓。</strong></p>
+<p>杰里·帕克把这个特性变成了优势。他发现最好的趋势往往始于极低的波动：</p>
+<blockquote>
+<p>如果近期波动很低——不是黄金 5 美元，而是黄金 2.50 美元——我们就会建一个非常大的仓位。</p>
+</blockquote>
+<blockquote>
+<p>低波动通常意味着这个市场已经死了很久：所有人都讨厌它，一连串亏损，窄幅盘整。然后它轰隆隆穿过那些高点，我们就上车了。</p>
+</blockquote>
+<p>这背后的逻辑是：低波动时建仓，止损很近，风险很小；一旦趋势展开，盈亏比极高。<strong>波动率不只是风险度量，它还是机会的价格。</strong></p>
+<h2 id="七单位上限不许把鸡蛋堆在一个市场">七、单位上限：不许把鸡蛋堆在一个市场<a class="anchor" href="#七单位上限不许把鸡蛋堆在一个市场" aria-label="section link">#</a></h2>
+<p>单位再合理，也不能无限加。海龟有一条硬约束：</p>
+<blockquote>
+<p><strong>任何一个市场，最多持有 4 到 5 个单位。</strong></p>
+</blockquote>
+<p>为什么？因为每个单位都是 2% 的风险。如果一个市场允许你加到 10 个单位，那这个市场单独就能让你亏掉 20%——这已经违背了“分散”的初衷。</p>
+<p>同理，不同市场之间还有相关性限制（下一课讲）。单位上限和相关性上限合起来，构成了组合层面的风险预算。</p>
+<h2 id="八一个必须跨过的理解门槛">八、一个必须跨过的理解门槛<a class="anchor" href="#八一个必须跨过的理解门槛" aria-label="section link">#</a></h2>
+<p>有位海龟这样描述初学时的困惑：</p>
+<blockquote>
+<p>当有人说“N 是波动率，N 也是你的单位大小”，我会问：“我怎么分得清这两个？”这就像让你绕着一个谜团打转。但过一阵子就简单了。比如我对莉兹·谢瓦尔说：“我持了半个单位，赚了三个 N”，或者“我持了半个 N 的单位，浮盈半个 N”。我完全明白区别，根本不用想。这东西会烧进你的脑子。</p>
+</blockquote>
+<p>这段困惑非常真实：</p>
+<ul>
+<li><strong>N 是价格单位</strong>：市场一天走多远。</li>
+<li><strong>单位是风险单位</strong>：你愿意亏多少钱。</li>
+<li>“赚了三个 N”说的是<strong>行情走了多远</strong>；“持了两个单位”说的是<strong>你下了多大的注</strong>。</li>
+</ul>
+<p>分清这两件事，海龟系统就算真正入门了。</p>
+<h2 id="本课要点">本课要点<a class="anchor" href="#本课要点" aria-label="section link">#</a></h2>
+<ul>
+<li>一个单位 = 账户权益的 2% 风险，不是固定手数。</li>
+<li>合约数 =（权益 × 风险%）÷（止损距离的美元价值），海龟标准止损为 2N。</li>
+<li>玉米算例：2,000 ÷ 700 = 2.857 → 2 手；永远向下取整。</li>
+<li>同一算法适用于所有市场，所以不需要每个市场的基本面知识。</li>
+<li>N 越小，仓位越大；低波动突破往往是最好的趋势起点。</li>
+<li>单市场单位上限 4–5 个，防止风险集中。</li>
+<li>区分“N（波动）”和“单位（下注大小）”。</li>
+</ul>
+<h2 id="自测">自测<a class="anchor" href="#自测" aria-label="section link">#</a></h2>
+<ol type="1">
+<li>账户 200,000，风险 2%，某市场 1N = 500 美元，用 2N 止损。应做几手？</li>
+<li>账户 100,000，风险 2%，某市场 1N = 1,200 美元，用 2N 止损。算出结果后，你会怎么做？</li>
+<li>为什么“向下取整”比“四舍五入”更符合风险管理的本质？</li>
+</ol>
+<details>
+<summary>参考答案</summary>
+<p><strong>1.</strong> 可承受风险 = 4,000；2N = 1,000；4,000 ÷ 1,000 = 4 手。</p>
+<p><strong>2.</strong> 可承受风险 = 2,000；2N = 2,400；2,000 ÷ 2,400 = 0.83 → 向下取整为 0 手。这意味着该市场波动太大，在 2% 预算内做不了一手，正确做法是**放弃这笔交易**，而不是硬做一手。</p>
+<p><strong>3.</strong> 风险预算是上限。向上取整会系统性突破上限，向下取整保证实际风险不超过计划；代价只是少赚一点，换来确定性。</p>
+</details></div><div class="course-prose course-html" data-l="en" lang="en"><blockquote>
+<p>What you will learn: the Turtle position-sizing formula, how to compute contracts in any market, and why rounding down and unit caps are not optional.</p>
+</blockquote>
+<h2 id="1-a-unit-is-another-name-for-2">1. A unit is another name for 2%<a class="anchor" href="#1-a-unit-is-another-name-for-2" aria-label="section link">#</a></h2>
+<p>The Turtles fixed the risk per trade at <strong>2% of account equity</strong> and called that amount <strong>one unit</strong>.</p>
+<ul>
+<li>$100,000 account: one unit = $2,000 of risk.</li>
+<li>$200,000 account: one unit = $4,000 of risk.</li>
+</ul>
+<p>Note: <strong>a unit is not a fixed number of contracts; it is a fixed dollar risk.</strong> The same $2,000 might be two corn contracts, one yen contract, or zero bond contracts.</p>
+<p>This is how two weeks of training could cover dozens of unfamiliar markets: <strong>the Turtles did not trade "corn" or "gold." They traded units.</strong></p>
+<h2 id="2-the-formula">2. The formula<a class="anchor" href="#2-the-formula" aria-label="section link">#</a></h2>
+<pre><code>Contracts = (Equity × risk%) ÷ (dollar risk of the stop distance)</code></pre>
+<p>The Turtle stop distance is <strong>2N</strong>, so:</p>
+<pre><code>Contracts = (Equity × 2%) ÷ (dollar value of 2N)</code></pre>
+<p>Then <strong>round down</strong> (2.67 → 2, 1.40 → 1).</p>
+<h2 id="3-a-full-corn-example">3. A full corn example<a class="anchor" href="#3-a-full-corn-example" aria-label="section link">#</a></h2>
+<p>Inputs:</p>
+<ul>
+<li>Equity: $100,000</li>
+<li>Risk per trade: 2%</li>
+<li>Corn N = 7 cents</li>
+<li>Corn contract: 5,000 bushels, so 1 cent = $50</li>
+</ul>
+<p>Step one, dollar value of 1N:</p>
+<pre><code>1N = 7 cents × $50 = $350</code></pre>
+<p>Step two, dollar risk of the 2N stop:</p>
+<pre><code>2N = 350 × 2 = $700</code></pre>
+<p>Step three, account risk allowed:</p>
+<pre><code>100,000 × 2% = $2,000</code></pre>
+<p>Step four, divide and round down:</p>
+<pre><code>2,000 ÷ 700 = 2.857… → 2 contracts</code></pre>
+<p>Conclusion: <strong>when that breakout fires, buy two corn contracts.</strong></p>
+<p>Not 2.857, and not rounded up to three. Futures do not trade in fractions, and <strong>rounding up breaks the 2% budget outright.</strong></p>
+<h2 id="4-same-arithmetic-different-market">4. Same arithmetic, different market<a class="anchor" href="#4-same-arithmetic-different-market" aria-label="section link">#</a></h2>
+<p>The book's comparison table (account risk differs by row; focus on the method):</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Market</th>
+<th>1N in $</th>
+<th>2N in $</th>
+<th>Account risk</th>
+<th>Contracts</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Corn</td>
+<td>350</td>
+<td>700</td>
+<td>2,000</td>
+<td>2.0</td>
+</tr>
+<tr>
+<td>Lean hogs</td>
+<td>420</td>
+<td>840</td>
+<td>3,000</td>
+<td>3.0</td>
+</tr>
+<tr>
+<td>Japanese yen</td>
+<td>725</td>
+<td>1,500</td>
+<td>1,875</td>
+<td>1.0</td>
+</tr>
+<tr>
+<td>Ten-year notes</td>
+<td>525</td>
+<td>1,050</td>
+<td>2,000</td>
+<td>1.0</td>
+</tr>
+</tbody>
+</table></div>
+<p>Two full exercises:</p>
+<p><strong>Example one: Swiss franc</strong></p>
+<ul>
+<li>Equity 150,000, risk 1.5%</li>
+<li>1N = $800, so 2N = $1,600</li>
+<li>Allowed risk = 150,000 × 1.5% = $2,250</li>
+<li>2,250 ÷ 1,600 = 1.40 → <strong>1 contract</strong></li>
+</ul>
+<p><strong>Example two: mini corn</strong></p>
+<ul>
+<li>Equity 25,000, risk 2%</li>
+<li>1N = $70, using a 3N stop = $210</li>
+<li>Allowed risk = 25,000 × 2% = $500</li>
+<li>500 ÷ 210 = 2.38 → <strong>2 contracts</strong></li>
+</ul>
+<p>Example two uses a 3N stop. Rules can vary, but <strong>once the stop distance is set, size must be derived from that same distance</strong>, or the risk budget is fiction.</p>
+<h2 id="5-why-round-down">5. Why round down<a class="anchor" href="#5-why-round-down" aria-label="section link">#</a></h2>
+<p>Because the risk budget is a <strong>ceiling</strong>, not a target.</p>
+<ul>
+<li>Rounding 2.67 up to 3 makes the actual 2N risk $2,100 — 5% over the $2,000 budget. Small, but repeated across dozens of trades it becomes systematic overspending.</li>
+<li>Rounding down to 2 leaves actual risk at $1,400, or 1.4%. <strong>Slightly less profit, still alive.</strong></li>
+</ul>
+<p>The principle is plain: <strong>better to trade less than to overspend.</strong></p>
+<h2 id="6-the-counter-intuitive-result-lower-volatility-larger-position">6. The counter-intuitive result: lower volatility, larger position<a class="anchor" href="#6-the-counter-intuitive-result-lower-volatility-larger-position" aria-label="section link">#</a></h2>
+<p>The denominator is 2N, so:</p>
+<ul>
+<li><strong>Small N → smaller denominator → more contracts.</strong></li>
+<li><strong>Large N → larger denominator → fewer contracts.</strong></li>
+</ul>
+<p>This is a feature, not a bug.</p>
+<p>The book's soybean example: at the start of a breakout, N was small enough that the position could be <strong>2.5 times</strong> the size available at the end of the trend, when N had expanded. In other words, <strong>you are largest when the trend begins, and the system automatically shrinks you as volatility expands.</strong></p>
+<p>Jerry Parker turned this into an edge. He found that his best trends often began in very low volatility:</p>
+<blockquote>
+<p>If the recent volatility is very low — not $5 in gold, but $2.50 in gold — then we're going to throw in a very large position.</p>
+</blockquote>
+<blockquote>
+<p>When volatility is low, it usually means that the market has been dead for a while. Everyone hates the market, has had lots of losers in a row, tight consolidation. And then as it motors through those highs, we get on board.</p>
+</blockquote>
+<p>The logic: entering in low volatility puts the stop close and the risk small; if a trend then unfolds, the payoff ratio is enormous. <strong>Volatility is not only a measure of risk; it is the price of opportunity.</strong></p>
+<h2 id="7-unit-caps-do-not-pile-eggs-in-one-market">7. Unit caps: do not pile eggs in one market<a class="anchor" href="#7-unit-caps-do-not-pile-eggs-in-one-market" aria-label="section link">#</a></h2>
+<p>However sound the unit math, you cannot add forever. The Turtles had a hard cap:</p>
+<blockquote>
+<p><strong>No more than four to five units in any one market.</strong></p>
+</blockquote>
+<p>Why? Each unit is 2% of risk. If a single market allowed ten units, that market alone could cost you 20% — which defeats diversification.</p>
+<p>There were also correlation limits between markets (next lesson). Unit caps plus correlation caps together form the portfolio-level risk budget.</p>
+<h2 id="8-a-threshold-every-beginner-must-cross">8. A threshold every beginner must cross<a class="anchor" href="#8-a-threshold-every-beginner-must-cross" aria-label="section link">#</a></h2>
+<p>One Turtle described the early confusion:</p>
+<blockquote>
+<p>When somebody says, "N is volatility and N is your unit size," I say, "How do I know the difference between them?" It's really like wrapping yourself around a conundrum, but after a while it was easy. Pretend I am talking to Liz Cheval: "I have got a half unit on and I am three N up," or "I have got a half N unit on and I am half N positive." I totally understand the difference. This is burned into your brain.</p>
+</blockquote>
+<p>The confusion is real:</p>
+<ul>
+<li><strong>N is a price unit</strong>: how far the market travels in a day.</li>
+<li><strong>A unit is a risk unit</strong>: how much you are willing to lose.</li>
+<li>"Up three N" describes <strong>how far the market moved</strong>; "two units on" describes <strong>how big your bet is</strong>.</li>
+</ul>
+<p>Separate those two and the Turtle system starts to make sense.</p>
+<h2 id="key-points">Key points<a class="anchor" href="#key-points" aria-label="section link">#</a></h2>
+<ul>
+<li>One unit = 2% of equity in risk, not a fixed number of contracts.</li>
+<li>Contracts = (equity × risk%) ÷ (dollar value of the stop distance), Turtle standard 2N.</li>
+<li>Corn example: 2,000 ÷ 700 = 2.857 → 2 contracts; always round down.</li>
+<li>The same arithmetic works in every market, so no fundamental expertise is needed.</li>
+<li>Smaller N means a larger position; low-volatility breakouts are often the best starts.</li>
+<li>Cap units at 4–5 per market to avoid concentration.</li>
+<li>Keep "N (volatility)" and "unit (bet size)" distinct.</li>
+</ul>
+<h2 id="self-test">Self-test<a class="anchor" href="#self-test" aria-label="section link">#</a></h2>
+<ol type="1">
+<li>Equity 200,000, risk 2%, 1N = $500, using a 2N stop. How many contracts?</li>
+<li>Equity 100,000, risk 2%, 1N = $1,200, using a 2N stop. After computing, what do you do?</li>
+<li>Why is rounding down more faithful to risk management than rounding to nearest?</li>
+</ol>
+<details>
+<summary>Answers</summary>
+<p><strong>1.</strong> Allowed risk = 4,000; 2N = 1,000; 4,000 ÷ 1,000 = 4 contracts.</p>
+<p><strong>2.</strong> Allowed risk = 2,000; 2N = 2,400; 2,000 ÷ 2,400 = 0.83 → 0 contracts. The market is too volatile for the 2% budget, so the correct action is to **skip the trade**, not force one contract.</p>
+<p><strong>3.</strong> The budget is a ceiling. Rounding up systematically breaches it; rounding down guarantees actual risk stays within plan, at the cost of slightly less profit.</p>
+</details></div><div class="course-done" data-course-done-bar data-n="10" data-done="0"><p data-course-done-text><span data-as="span" class="course-bi"><span data-l="zh" lang="zh-CN">读完了就标记一下，课程首页的进度条会记住。</span><span data-l="en" lang="en">Mark it when you finish — the progress bar on the course home remembers.</span></span></p><button class="course-btn course-btn--solid" type="button" data-course-done-toggle><span data-as="span" class="course-bi course-bi--inline"><span data-l="zh" lang="zh-CN">标记学完 ✓</span><span data-l="en" lang="en">Mark as done ✓</span></span></button></div><nav class="course-pager" aria-label="上一课 / 下一课"><a href="/turtle/lesson-09.html"><span class="dir">← LESSON 09</span><span class="ttl"><span data-as="span" class="course-bi"><span data-l="zh" lang="zh-CN">N——市场的呼吸</span><span data-l="en" lang="en">N — The Market&amp;#x27;s Breath</span></span></span></a><a class="next" href="/turtle/lesson-11.html"><span class="dir">LESSON 11 →</span><span class="ttl"><span data-as="span" class="course-bi"><span data-l="zh" lang="zh-CN">入场——只跟价格走</span><span data-l="en" lang="en">Entries — Follow Price Only</span></span></span></a></nav></div><aside class="course-side"><div class="course-side-card course-toc"><h4>本页目录</h4><ul class="course-side-list"><li><a href="#一单位2-的另一个名字"><span>一、单位：2% 的另一个名字</span></a></li><li><a href="#二公式"><span>二、公式</span></a></li><li><a href="#三玉米完整算例"><span>三、玉米完整算例</span></a></li><li><a href="#四同一套算法换市场"><span>四、同一套算法，换市场</span></a></li><li><a href="#五为什么必须向下取整"><span>五、为什么必须向下取整</span></a></li><li><a href="#六反直觉的结论波动越小仓位越大"><span>六、反直觉的结论：波动越小，仓位越大</span></a></li><li><a href="#七单位上限不许把鸡蛋堆在一个市场"><span>七、单位上限：不许把鸡蛋堆在一个市场</span></a></li><li><a href="#八一个必须跨过的理解门槛"><span>八、一个必须跨过的理解门槛</span></a></li><li><a href="#本课要点"><span>本课要点</span></a></li><li><a href="#自测"><span>自测</span></a></li></ul></div><div class="course-side-card"><h4>全部课时</h4><ul class="course-side-list"><li><a href="/turtle/lesson-01.html"><span class="n">01</span><span><span data-as="span" class="course-bi course-bi--inline"><span data-l="zh" lang="zh-CN">一个持续十年的赌局</span><span data-l="en" lang="en">A Bet That Lasted a Decade</span></span></span><span class="tick" data-course-side-tick data-n="1" hidden>✓</span></a></li><li><a href="/turtle/lesson-02.html"><span class="n">02</span><span><span data-as="span" class="course-bi course-bi--inline"><span data-l="zh" lang="zh-CN">王子与数学家</span><span data-l="en" lang="en">The Prince of the Pit and the Mathematician</span></span></span><span class="tick" data-course-side-tick data-n="2" hidden>✓</span></a></li><li><a href="/turtle/lesson-03.html"><span class="n">03</span><span><span data-as="span" class="course-bi course-bi--inline"><span data-l="zh" lang="zh-CN">一则广告，上千份简历</span><span data-l="en" lang="en">One Ad, a Thousand Résumés</span></span></span><span class="tick" data-course-side-tick data-n="3" hidden>✓</span></a></li><li><a href="/turtle/lesson-04.html"><span class="n">04</span><span><span data-as="span" class="course-bi course-bi--inline"><span data-l="zh" lang="zh-CN">两周课堂</span><span data-l="en" lang="en">Two Weeks in the Classroom</span></span></span><span class="tick" data-course-side-tick data-n="4" hidden>✓</span></a></li><li><a href="/turtle/lesson-05.html"><span class="n">05</span><span><span data-as="span" class="course-bi course-bi--inline"><span data-l="zh" lang="zh-CN">实验的结局</span><span data-l="en" lang="en">How the Experiment Ended</span></span></span><span class="tick" data-course-side-tick data-n="5" hidden>✓</span></a></li><li><a href="/turtle/lesson-06.html"><span class="n">06</span><span><span data-as="span" class="course-bi course-bi--inline"><span data-l="zh" lang="zh-CN">期望值</span><span data-l="en" lang="en">Expectation</span></span></span><span class="tick" data-course-side-tick data-n="6" hidden>✓</span></a></li><li><a href="/turtle/lesson-07.html"><span class="n">07</span><span><span data-as="span" class="course-bi course-bi--inline"><span data-l="zh" lang="zh-CN">破产风险——你会活着，还是死掉？</span><span data-l="en" lang="en">Risk of Ruin — Will You Live or Die?</span></span></span><span class="tick" data-course-side-tick data-n="7" hidden>✓</span></a></li><li><a href="/turtle/lesson-08.html"><span class="n">08</span><span><span data-as="span" class="course-bi course-bi--inline"><span data-l="zh" lang="zh-CN">钱没有记忆</span><span data-l="en" lang="en">Money Has No Memory</span></span></span><span class="tick" data-course-side-tick data-n="8" hidden>✓</span></a></li><li><a href="/turtle/lesson-09.html"><span class="n">09</span><span><span data-as="span" class="course-bi course-bi--inline"><span data-l="zh" lang="zh-CN">N——市场的呼吸</span><span data-l="en" lang="en">N — The Market&amp;#x27;s Breath</span></span></span><span class="tick" data-course-side-tick data-n="9" hidden>✓</span></a></li><li><a href="/turtle/lesson-10.html" aria-current="page"><span class="n">10</span><span><span data-as="span" class="course-bi course-bi--inline"><span data-l="zh" lang="zh-CN">单位——一笔该做多大</span><span data-l="en" lang="en">Units — How Big Is One Bet?</span></span></span><span class="tick" data-course-side-tick data-n="10" hidden>✓</span></a></li><li><a href="/turtle/lesson-11.html"><span class="n">11</span><span><span data-as="span" class="course-bi course-bi--inline"><span data-l="zh" lang="zh-CN">入场——只跟价格走</span><span data-l="en" lang="en">Entries — Follow Price Only</span></span></span><span class="tick" data-course-side-tick data-n="11" hidden>✓</span></a></li><li><a href="/turtle/lesson-12.html"><span class="n">12</span><span><span data-as="span" class="course-bi course-bi--inline"><span data-l="zh" lang="zh-CN">止损、加仓与减仓</span><span data-l="en" lang="en">Stops, Pyramiding and Cutting Back</span></span></span><span class="tick" data-course-side-tick data-n="12" hidden>✓</span></a></li><li><a href="/turtle/lesson-13.html"><span class="n">13</span><span><span data-as="span" class="course-bi course-bi--inline"><span data-l="zh" lang="zh-CN">组合——把赌注分散到很多张桌子上</span><span data-l="en" lang="en">The Portfolio — Spread Your Bets Across Many Tables</span></span></span><span class="tick" data-course-side-tick data-n="13" hidden>✓</span></a></li><li><a href="/turtle/lesson-14.html"><span class="n">14</span><span><span data-as="span" class="course-bi course-bi--inline"><span data-l="zh" lang="zh-CN">海龟之后</span><span data-l="en" lang="en">After the Turtles</span></span></span><span class="tick" data-course-side-tick data-n="14" hidden>✓</span></a></li><li><a href="/turtle/appendix-a.html"><span class="n">A</span><span><span data-as="span" class="course-bi course-bi--inline"><span data-l="zh" lang="zh-CN">完整规则速查</span><span data-l="en" lang="en">The Complete Rules at a Glance</span></span></span><span class="tick" data-course-side-tick data-n="15" hidden>✓</span></a></li><li><a href="/turtle/appendix-b.html"><span class="n">B</span><span><span data-as="span" class="course-bi course-bi--inline"><span data-l="zh" lang="zh-CN">练习与答案</span><span data-l="en" lang="en">Exercises and Answers</span></span></span><span class="tick" data-course-side-tick data-n="16" hidden>✓</span></a></li></ul></div></aside></div><div class="course-inner"><p class="course-note"><span data-as="span" class="course-bi"><span data-l="zh" lang="zh-CN">本课程是读书笔记式的通识课，不构成任何投资建议。书里的规则写在几十年前的美国期货市场，今天的市场、费用与监管都不同；学的是思维方式，不是可以照搬的买卖信号。</span><span data-l="en" lang="en">This is a reading course, not investment advice. The rules were written for the American futures market decades ago; markets, costs and regulation differ today. Learn the thinking, not a signal to copy.</span></span></p><footer class="course-foot"><nav class="course-foot-nav" aria-label="课程入口"><a href="/turtle.html">课程首页</a><a href="/leeks.html"><span data-as="span" class="course-bi course-bi--inline"><span data-l="zh" lang="zh-CN">韭菜的自我修养</span><span data-l="en" lang="en">The Self-Cultivation of Leeks</span></span></a><a href="/richdad.html"><span data-as="span" class="course-bi course-bi--inline"><span data-l="zh" lang="zh-CN">富爸爸穷爸爸</span><span data-l="en" lang="en">Rich Dad Poor Dad</span></span></a><a href="/wealth.html"><span data-as="span" class="course-bi course-bi--inline"><span data-l="zh" lang="zh-CN">财富自由之路</span><span data-l="en" lang="en">The Road to Financial Freedom</span></span></a><a href="/works.html">作品集</a></nav><p>© 2026 · Christopher · <span data-as="span" class="course-bi course-bi--inline"><span data-l="zh" lang="zh-CN">海龟交易法则</span><span data-l="en" lang="en">The Complete TurtleTrader</span></span></p></footer></div></div><script>
+	(function () {
+		var root = document.querySelector(".course");
+		if (!root) return;
+
+		var slug = root.dataset.course || "course";
+		var LANGS = ["zh", "en", "both"];
+		var buttons = Array.prototype.slice.call(root.querySelectorAll("[data-course-lang-btn]"));
+		var total = Number(root.dataset.total || root.querySelectorAll("[data-course-dot]").length || 0);
+
+		function ls(key, fallback) {
+			try {
+				var v = localStorage.getItem(key);
+				return v === null ? fallback : v;
+			} catch (e) {
+				return fallback;
+			}
+		}
+		function setLs(key, value) {
+			try {
+				localStorage.setItem(key, value);
+			} catch (e) {}
+		}
+		function readJson(key, fallback) {
+			try {
+				var raw = localStorage.getItem(key);
+				return raw ? JSON.parse(raw) : fallback;
+			} catch (e) {
+				return fallback;
+			}
+		}
+		function writeJson(key, value) {
+			try {
+				localStorage.setItem(key, JSON.stringify(value));
+			} catch (e) {}
+		}
+		function tr(text) {
+			return typeof window.__SITE_TR__ === "function" ? window.__SITE_TR__(text) : text;
+		}
+		function setBi(el, zh, en) {
+			var z = el.querySelector('[data-l="zh"]');
+			var e = el.querySelector('[data-l="en"]');
+			if (z && e) {
+				z.textContent = tr(zh);
+				e.textContent = en;
+			} else {
+				el.textContent = tr(zh);
+			}
+		}
+
+		/* ---------- 语言 ---------- */
+		function applyLang(lang) {
+			if (LANGS.indexOf(lang) === -1) lang = buttons.length ? "both" : "zh";
+			root.setAttribute("data-lang", lang);
+			if (root.classList.contains("lk")) root.setAttribute("data-lk-lang", lang);
+			if (root.classList.contains("rd")) root.setAttribute("data-rd-lang", lang);
+			if (slug === "leeks") setLs("lk-lang", lang);
+			if (slug === "richdad") setLs("rd-lang", lang);
+			buttons.forEach(function (b) {
+				b.setAttribute("aria-pressed", String(b.dataset.lang === lang));
+			});
+			var zh = root.dataset.titleZh;
+			var en = root.dataset.titleEn;
+			if (zh && en) document.title = lang === "en" ? en : zh;
+		}
+
+		var savedLang = ls("course-lang", null);
+		if (!savedLang) {
+			var legacyLang = ls("lk-lang", null) || ls("rd-lang", null) || ls("turtle-lang", null);
+			if (legacyLang && LANGS.indexOf(legacyLang) !== -1) {
+				savedLang = legacyLang;
+				setLs("course-lang", legacyLang);
+			}
+		}
+		applyLang(savedLang || (buttons.length ? "both" : "zh"));
+
+		buttons.forEach(function (b) {
+			b.addEventListener("click", function () {
+				var lang = b.dataset.lang || "both";
+				applyLang(lang);
+				setLs("course-lang", lang);
+			});
+		});
+
+		/* ---------- 学习进度 ---------- */
+		var doneKey = "course-done:" + slug;
+		var stored = readJson(doneKey, null);
+		var set = new Set();
+		if (Array.isArray(stored)) {
+			stored.forEach(function (n) {
+				if (Number.isInteger(n) && n > 0) set.add(n);
+			});
+		} else {
+			["lk-done", "rd-done", "turtle-progress", "wealth-read"].forEach(function (key) {
+				var legacy = readJson(key, null);
+				if (Array.isArray(legacy)) {
+					legacy.forEach(function (n) {
+						if (Number.isInteger(n) && n > 0) set.add(n);
+					});
+				}
+			});
+			if (set.size) writeJson(doneKey, Array.from(set));
+		}
+
+		function render() {
+			root.querySelectorAll("[data-course-dot]").forEach(function (el) {
+				el.setAttribute("data-done", set.has(Number(el.dataset.n)) ? "1" : "0");
+			});
+			root.querySelectorAll("[data-course-card]").forEach(function (el) {
+				var n = Number(el.dataset.n);
+				var on = set.has(n);
+				el.setAttribute("data-done", on ? "1" : "0");
+				var badge = el.querySelector("[data-course-card-done]");
+				if (badge) badge.hidden = !on;
+			});
+			root.querySelectorAll("[data-course-side-tick]").forEach(function (el) {
+				el.hidden = !set.has(Number(el.dataset.n));
+			});
+			root.querySelectorAll("[data-course-count]").forEach(function (el) {
+				el.textContent = set.size + " / " + total;
+			});
+			var pct = total > 0 ? Math.round((set.size / total) * 100) : 0;
+			root.querySelectorAll("[data-course-mini]").forEach(function (el) {
+				el.style.width = pct + "%";
+			});
+
+			var bar = root.querySelector("[data-course-done-bar]");
+			if (bar) {
+				var n = Number(bar.dataset.n);
+				var on = set.has(n);
+				bar.setAttribute("data-done", on ? "1" : "0");
+				var text = bar.querySelector("[data-course-done-text]");
+				if (text) {
+					setBi(
+						text,
+						on ? "这一课已经学完，课程进度已记住。" : "读完了就标记一下，课程首页的进度条会记住。",
+						on ? "Lesson complete — progress saved." : "Mark it when you finish — the progress bar remembers."
+					);
+				}
+				var btn = bar.querySelector("[data-course-done-toggle]");
+				if (btn) setBi(btn, on ? "取消标记" : "标记学完 ✓", on ? "Undo" : "Mark as done ✓");
+			}
+		}
+
+		var toggle = root.querySelector("[data-course-done-toggle]");
+		if (toggle) {
+			toggle.addEventListener("click", function () {
+				var bar = root.querySelector("[data-course-done-bar]");
+				var n = Number(bar && bar.dataset.n);
+				if (!n) return;
+				if (set.has(n)) set.delete(n);
+				else set.add(n);
+				writeJson(doneKey, Array.from(set).sort(function (a, b) { return a - b; }));
+				render();
+			});
+		}
+
+		var reset = root.querySelector("[data-course-reset]");
+		if (reset) {
+			var armed = false;
+			var timer = 0;
+			function disarm() {
+				armed = false;
+				window.clearTimeout(timer);
+				reset.removeAttribute("data-armed");
+				setBi(reset, "清空学习进度", "Reset progress");
+			}
+			reset.addEventListener("click", function () {
+				if (!armed) {
+					armed = true;
+					reset.setAttribute("data-armed", "1");
+					setBi(reset, "再点一次确认清空", "Click again to confirm");
+					timer = window.setTimeout(disarm, 4000);
+					return;
+				}
+				set = new Set();
+				writeJson(doneKey, []);
+				render();
+				disarm();
+				setBi(reset, "已清空 ✓", "Cleared ✓");
+				timer = window.setTimeout(disarm, 1800);
+			});
+		}
+
+		render();
+
+		/* ---------- 目录高亮 ---------- */
+		var tocLinks = Array.prototype.slice.call(root.querySelectorAll('.course-toc a[href^="#"]'));
+		if (tocLinks.length) {
+			var heads = tocLinks
+				.map(function (a) {
+					var id = decodeURIComponent(a.getAttribute("href").slice(1));
+					var el = document.getElementById(id);
+					return el ? { id: id, el: el, link: a } : null;
+				})
+				.filter(Boolean);
+			var ticking = false;
+			function spy() {
+				ticking = false;
+				var current = null;
+				heads.forEach(function (h) {
+					if (h.el.getBoundingClientRect().top <= 160) current = h;
+				});
+				heads.forEach(function (h) {
+					h.link.classList.toggle("active", current === h);
+				});
+			}
+			window.addEventListener(
+				"scroll",
+				function () {
+					if (ticking) return;
+					ticking = true;
+					window.requestAnimationFrame(spy);
+				},
+				{ passive: true }
+			);
+			spy();
+		}
+	})();
+</script></div></main><footer class="footer"><div class="wrap"><div class="footer-grid"><div class="footer-brand"><a class="brand" href="/"><span class="brand-mark" aria-hidden="true">C—</span><span class="brand-text"><span class="brand-name">Christopher</span><span class="brand-sub">博客与作品集</span></span></a><p>把读懂的东西，亲手做一遍。这里记录课程创作、投资思考与十年践行的点点滴滴。</p></div><div><h4>站点</h4><ul><li><a href="/">首页</a></li><li><a href="/blog.html">博客</a></li><li><a href="/works.html">作品集</a></li><li><a href="/leeks.html">韭菜园双语课</a></li><li><a href="/richdad.html">两条路 · 富爸爸双语课</a></li><li><a href="/about.html">关于</a></li><li><a href="/search.html">搜索</a></li><li><a href="/rss.xml">RSS 订阅</a></li></ul></div><div><h4>在线作品</h4><ul><li><a href="https://taleb-for-kids-vkkc4zaaicr.qoder.website" target="_blank" rel="noopener noreferrer">跟塔勒布学「不怕不确定」 ↗</a></li><li><a href="https://dynamic-hedging-course-vkkc4zaaicr.qoder.website" target="_blank" rel="noopener noreferrer">动态对冲 · 小学生也能懂 ↗</a></li><li><a href="https://trading-path-7lx5x6ji8nx.qoder.zone" target="_blank" rel="noopener noreferrer">跟陈凯学「交易之路」 ↗</a></li><li><a href="https://trading-for-a-living-7lx5x6ji8nx.qoder.zone" target="_blank" rel="noopener noreferrer">跟埃尔德学交易（以交易为生+卖出的艺术） ↗</a></li></ul></div></div><div class="footer-bottom"><span>© 2026 Christopher <span class="dash">—</span> 西安</span><span>EmDash CMS 驱动 · Astro 构建 · 静态发布</span></div></div></footer><script>
+			(function () {
+				var root = document.documentElement;
+
+				/* 主题切换 */
+				var themeBtn = document.querySelector(".theme-toggle");
+				function paintTheme() {
+					var dark = root.dataset.theme === "dark";
+					if (!themeBtn) return;
+					themeBtn.setAttribute("aria-pressed", String(dark));
+					themeBtn.querySelector(".i-moon").style.display = dark ? "none" : "";
+					themeBtn.querySelector(".i-sun").style.display = dark ? "" : "none";
+				}
+				paintTheme();
+				if (themeBtn) {
+					themeBtn.addEventListener("click", function () {
+						var next = root.dataset.theme === "dark" ? "light" : "dark";
+						root.dataset.theme = next;
+						try { localStorage.setItem("cb-theme", next); } catch (e) {}
+						paintTheme();
+					});
+				}
+
+				/* 语言下拉：点击外部关闭 */
+				var langSwitch = document.getElementById("lang-switch");
+				if (langSwitch) {
+					langSwitch.addEventListener("click", function (e) {
+						if (e.target.closest("a")) langSwitch.open = false;
+					});
+					document.addEventListener("click", function (e) {
+						if (!langSwitch.contains(e.target)) langSwitch.open = false;
+					});
+				}
+
+				/* 移动端抽屉 */
+				var drawer = document.getElementById("drawer");
+				var openBtn = document.querySelector(".nav-toggle");
+				var closeBtn = document.querySelector(".drawer-close");
+				function setDrawer(open) {
+					if (!drawer) return;
+					drawer.classList.toggle("open", open);
+					drawer.setAttribute("aria-hidden", String(!open));
+					if (openBtn) openBtn.setAttribute("aria-expanded", String(open));
+					document.body.style.overflow = open ? "hidden" : "";
+				}
+				if (openBtn) openBtn.addEventListener("click", function () { setDrawer(true); });
+				if (closeBtn) closeBtn.addEventListener("click", function () { setDrawer(false); });
+				if (drawer) {
+					drawer.querySelectorAll("a").forEach(function (a) {
+						a.addEventListener("click", function () { setDrawer(false); });
+					});
+				}
+				document.addEventListener("keydown", function (e) {
+					if (e.key === "Escape") setDrawer(false);
+				});
+
+				/* 入场动画 */
+				var reveals = document.querySelectorAll(".reveal");
+				if ("IntersectionObserver" in window && reveals.length) {
+					var io = new IntersectionObserver(
+						function (entries) {
+							entries.forEach(function (en) {
+								if (en.isIntersecting) { en.target.classList.add("in"); io.unobserve(en.target); }
+							});
+						},
+						{ threshold: 0.12, rootMargin: "0px 0px -6% 0px" }
+					);
+					reveals.forEach(function (el) { io.observe(el); });
+				} else {
+					reveals.forEach(function (el) { el.classList.add("in"); });
+				}
+
+				/* 阅读进度 */
+				var bar = document.querySelector(".read-progress");
+				function progress() {
+					if (!bar) return;
+					var h = document.documentElement;
+					var max = h.scrollHeight - h.clientHeight;
+					bar.style.width = max > 0 ? (h.scrollTop / max) * 100 + "%" : "0";
+				}
+				window.addEventListener("scroll", progress, { passive: true });
+				progress();
+
+				/* 目录高亮 */
+				var tocLinks = Array.prototype.slice.call(document.querySelectorAll(".toc a[href^='#']"));
+				if (tocLinks.length && "IntersectionObserver" in window) {
+					var map = {};
+					tocLinks.forEach(function (a) {
+						var id = decodeURIComponent(a.getAttribute("href").slice(1));
+						map[id] = a;
+					});
+					var heads = Array.prototype.slice.call(document.querySelectorAll(".prose h2[id], .prose h3[id]"));
+					var current = null;
+					function activate(id) {
+						if (current === id) return;
+						current = id;
+						tocLinks.forEach(function (a) { a.classList.remove("active"); });
+						if (map[id]) map[id].classList.add("active");
+					}
+					var to = new IntersectionObserver(
+						function (entries) {
+							entries.forEach(function (en) { if (en.isIntersecting) activate(en.target.id); });
+						},
+						{ rootMargin: "-80px 0px -70% 0px", threshold: 0 }
+					);
+					heads.forEach(function (h) { to.observe(h); });
+				}
+			})();
+		</script></body></html>
