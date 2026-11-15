@@ -64,8 +64,59 @@
 
   var detail = el("aside", "g-detail");
   detail.id = "g-detail";
+  detail.setAttribute("aria-label", "概念释义");
   layout.appendChild(detail);
   root.appendChild(layout);
+
+  /* ---------- 窄屏底部抽屉 ----------
+     112 张卡片在手机上排成一列，页面长达 1.5 万像素。若沿用「滚到页面底部的详情栏」，
+     点一张卡片要平滑滚动两秒、飞过上百张卡片，人根本不知道发生了什么。
+     窄屏改为就地弹起底部抽屉：点哪张卡片，释义立刻出现在眼前，关掉就回到原位。 */
+  var narrow = window.matchMedia("(max-width: 1180px)");
+  var scrim = el("div", "g-sheet-scrim");
+  scrim.addEventListener("click", closeSheet);
+  document.body.appendChild(scrim);
+  var grip = el("div", "g-sheet-grip");
+  var sheetClose = el("button", "g-sheet-close", "×");
+  sheetClose.type = "button";
+  sheetClose.setAttribute("aria-label", "关闭释义");
+  sheetClose.addEventListener("click", closeSheet);
+
+  function sheetOpen() { return document.body.classList.contains("g-sheet-open"); }
+  function openSheet() {
+    if (!narrow.matches) return;
+    document.body.classList.add("g-sheet-open");
+    detail.setAttribute("role", "dialog");
+    detail.setAttribute("aria-modal", "true");
+    detail.removeAttribute("aria-hidden");
+    detail.scrollTop = 0;
+    sheetClose.focus({ preventScroll: true });
+  }
+  function closeSheet() {
+    if (!sheetOpen()) return;
+    document.body.classList.remove("g-sheet-open");
+    detail.removeAttribute("role");
+    detail.removeAttribute("aria-modal");
+    syncSheetA11y();
+    var back = grid.querySelector(".g-card.on");
+    if (back) back.focus({ preventScroll: true });
+  }
+  // 抽屉收起时整块移出视口，必须同时从无障碍树与 Tab 序里摘掉，否则可以 Tab 进看不见的控件。
+  function syncSheetA11y() {
+    if (narrow.matches && !sheetOpen()) detail.setAttribute("aria-hidden", "true");
+    else detail.removeAttribute("aria-hidden");
+  }
+  // .tool-shell 是 position:relative + z-index:2 的层叠上下文：抽屉留在里面时，
+  // 它的 z-index:76 只在这个上下文内部有效，整块仍排在 body 级遮罩(74)之下，
+  // 于是抽屉被自己的遮罩 blur(2px) 糊成一片、字都读不清。
+  // 窄屏把抽屉挂到 body 上，与遮罩同级比较；宽屏再放回网格，恢复右侧常驻详情栏。
+  function placeDetail() {
+    var host = narrow.matches ? document.body : layout;
+    if (detail.parentElement !== host) host.appendChild(detail);
+  }
+  var onBreak = function () { if (!narrow.matches) closeSheet(); placeDetail(); syncSheetA11y(); };
+  if (narrow.addEventListener) narrow.addEventListener("change", onBreak);
+  else if (narrow.addListener) narrow.addListener(onBreak);
 
   /* ---------- 筛选条 ---------- */
   function chipRow(box, items, current, onPick) {
@@ -150,13 +201,13 @@
     selected = id; save();
     renderGrid();
     renderDetail();
-    if (window.matchMedia("(max-width: 1180px)").matches) {
-      detail.scrollIntoView({ behavior: "smooth", block: "start" });
-    }
+    if (narrow.matches) openSheet();
   }
   function renderDetail() {
     var c = BY_ID[selected];
     detail.replaceChildren();
+    detail.appendChild(grip);
+    detail.appendChild(sheetClose);
     if (!c) return;
     var col = PCOLOR[c.part] || PCOLOR[1];
     var tagRow = el("div", "q-meta");
@@ -204,7 +255,8 @@
     var ob = el("button", "btn btn-ghost btn-sm", "复制这条释义");
     ob.type = "button";
     ob.addEventListener("click", function () {
-      var text = c.term + "（" + (c.en || "") + "）\n" + c.def + "\n为什么重要：" + (c.why || "") +
+      // 112 条里只有 10 条有英文名，无英文名时不能留下空括号「（）」
+      var text = c.term + (c.en ? "（" + c.en + "）" : "") + "\n" + c.def + "\n为什么重要：" + (c.why || "") +
         "\n常见的坑：" + (c.trap || "") + (c.quote ? "\n原书：" + c.quote : "") +
         "\n——《财富自由之路》课程词典 第" + pad(c.lesson) + "课";
       if (navigator.clipboard && navigator.clipboard.writeText) {
@@ -240,7 +292,18 @@
   clear.addEventListener("click", function () { input.value = ""; query = ""; save(); renderGrid(); input.focus(); });
   document.addEventListener("keydown", function (e) {
     var tag2 = (e.target.tagName || "").toLowerCase();
-    if (e.key === "/" && tag2 !== "input" && tag2 !== "textarea") { input.focus(); e.preventDefault(); }
+    if (e.key === "Escape" && sheetOpen()) { closeSheet(); e.preventDefault(); return; }
+    if (sheetOpen() && e.key === "Tab") {
+      // 抽屉是模态：Tab 只在抽屉内循环，不会跑到被遮住的卡片网格上。
+      var f = detail.querySelectorAll("button, a[href], input, select, textarea, [tabindex]:not([tabindex='-1'])");
+      if (f.length) {
+        var first = f[0], last = f[f.length - 1];
+        if (e.shiftKey && document.activeElement === first) { last.focus(); e.preventDefault(); }
+        else if (!e.shiftKey && document.activeElement === last) { first.focus(); e.preventDefault(); }
+      }
+      return;
+    }
+    if (e.key === "/" && tag2 !== "input" && tag2 !== "textarea" && !sheetOpen()) { input.focus(); e.preventDefault(); }
     if (e.key === "Escape" && document.activeElement === input) { input.value = ""; query = ""; save(); renderGrid(); }
   });
   var rand = document.getElementById("glossary-random");
@@ -266,12 +329,17 @@
     W.download("财富自由之路-概念词典.md", lines.join("\n"), "text/markdown;charset=utf-8");
     W.toast("已导出 " + list.length + " 条词条");
   });
+  var deepLinked = false;
   if (location.hash) {
     var id = location.hash.replace("#", "");
-    if (BY_ID[id]) selected = id;
+    if (BY_ID[id]) { selected = id; deepLinked = true; }
   }
   syncTabs();
   renderChips();
   renderGrid();
   renderDetail();
+  placeDetail();
+  syncSheetA11y();
+  // 从课程正文点「查概念」带 #id 进来时，直接把那条释义弹出来；普通打开不遮挡首屏。
+  if (deepLinked && narrow.matches) openSheet();
 })();

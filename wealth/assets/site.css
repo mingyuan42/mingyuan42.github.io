@@ -901,6 +901,8 @@ mark { background: rgba(221, 162, 58, .45); color: inherit; padding: 0 1px; bord
 .g-detail { position: sticky; top: 20px; padding: 22px 24px; border: 1px solid var(--line-2); border-radius: var(--r-3); background: var(--surface); box-shadow: var(--shadow-2); max-height: calc(100vh - 40px); overflow-y: auto; }
 .g-detail h2 { margin: 0 0 4px; font-family: var(--display); font-size: 25px; font-weight: 700; letter-spacing: .03em; }
 .g-detail .g-en-big { font-family: var(--mono); font-size: 10.5px; letter-spacing: .12em; color: var(--warm-4); text-transform: uppercase; }
+/* 底部抽屉的三个零件：宽屏用不上（详情栏常驻右侧），只在 ≤1180px 生效 */
+.g-sheet-grip, .g-sheet-close, .g-sheet-scrim { display: none; }
 .g-block { margin-top: 16px; }
 .g-block h4 { display: flex; align-items: center; gap: 7px; margin: 0 0 5px; font-size: 11px; letter-spacing: .1em; color: var(--warm-3); font-weight: 700; }
 .g-block h4::before { content: ""; width: 10px; height: 2px; background: var(--bc, var(--vermilion)); }
@@ -959,7 +961,48 @@ mark { background: rgba(221, 162, 58, .45); color: inherit; padding: 0 1px; bord
   .main { grid-template-columns: minmax(0, 1fr); max-width: 840px; gap: 0; padding: 36px 32px 60px; }
   .toc { display: none; }
   .quiz-layout, .glossary-layout { grid-template-columns: minmax(0, 1fr); }
-  .g-detail { position: static; max-height: none; }
+  /* 词典详情：窄屏改成底部抽屉。点卡片就地弹出，不再平滑滚过上百张卡片。 */
+  .g-sheet-scrim {
+    display: block; position: fixed; inset: 0; z-index: 74;
+    background: var(--scrim); backdrop-filter: blur(2px);
+    opacity: 0; pointer-events: none; transition: opacity .26s ease;
+  }
+  body.g-sheet-open .g-sheet-scrim { opacity: 1; pointer-events: auto; }
+  body.g-sheet-open { overflow: hidden; }
+  .g-detail {
+    position: fixed; left: 0; right: 0; bottom: 0; top: auto; z-index: 76;
+    max-height: min(82vh, 720px); overflow-y: auto; overscroll-behavior: contain;
+    margin: 0 auto; width: min(100%, 720px);
+    padding: 26px 22px calc(24px + env(safe-area-inset-bottom, 0px));
+    border: 1px solid var(--line-2); border-bottom: none;
+    border-radius: 20px 20px 0 0;
+    background: linear-gradient(180deg, var(--overlay) 0%, var(--surface) 96px);
+    box-shadow: var(--shadow-3);
+    transform: translateY(101%); visibility: hidden;
+    /* visibility 用 0s + 延迟切换：打开时立刻可见（否则同一帧里 focus() 会落空，
+       因为 visibility 参与 transition 时 p=0 仍取旧值 hidden），关闭时等滑出动画结束再隐藏。 */
+    transition: transform .3s cubic-bezier(.2, .75, .2, 1), visibility 0s linear .3s;
+  }
+  body.g-sheet-open .g-detail { transform: none; visibility: visible; transition: transform .3s cubic-bezier(.2, .75, .2, 1), visibility 0s; }
+  .g-sheet-grip {
+    display: block; position: absolute; top: 9px; left: 50%; transform: translateX(-50%);
+    width: 46px; height: 4px; border-radius: 3px;
+    background: linear-gradient(90deg, var(--vermilion), var(--gold-2));
+    opacity: .5;
+  }
+  .g-sheet-close {
+    display: flex; align-items: center; justify-content: center;
+    position: absolute; top: 12px; right: 12px; width: 34px; height: 34px;
+    border: 1px solid var(--line-2); border-radius: 50%;
+    background: var(--surface-2); color: var(--vermilion);
+    font-size: 20px; line-height: 1; cursor: pointer;
+    transition: background .16s ease, color .16s ease, transform .16s ease;
+  }
+  .g-sheet-close:hover { background: var(--vermilion); color: var(--surface); transform: rotate(90deg); }
+  .g-detail .q-meta { padding-right: 44px; }
+  @media (prefers-reduced-motion: reduce) {
+    .g-detail, .g-sheet-scrim { transition: none; }
+  }
   .lab-grid { grid-template-columns: minmax(0, 1fr); }
   .rail { position: static; max-height: none; }
   .rail-controls { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 14px 18px; }
