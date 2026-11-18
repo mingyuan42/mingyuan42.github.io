@@ -1,4 +1,4 @@
-/* 股票大作手回忆录 · 工具页交互（练习册 / 卡片 / 复习表）
+/* 股票大作手回忆录 · 工具页交互（练习册 / 卡片 / 复习计划）
  * 从独立站点 site.js 抽出工具相关逻辑，自包含，使用独立 localStorage 键。
  * 课程外壳的进度、导航、目录高亮由 Astro CourseRuntime 负责，此处不重复。 */
 (function () {
@@ -40,7 +40,7 @@
   function againCards() { return Object.keys(state.cards).filter(function (id) { return state.cards[id] === "again"; }).length; }
   function examScore() { return Object.keys(state.exam).filter(function (id) { return state.exam[id]; }).length * 5; }
 
-  /* ---------- 练习册：模块闯关自评 ---------- */
+  /* ---------- 练习册：模块自测自评 ---------- */
   function paintModuleCounts() {
     all("[data-module-count]").forEach(function (el) {
       var prefix = el.getAttribute("data-module-count");
@@ -67,14 +67,14 @@
   });
   paintModuleCounts();
 
-  /* ---------- 期末大考计分 ---------- */
+  /* ---------- 综合测验计分 ---------- */
   var examScoreEl = doc.getElementById("exam-score");
   var examVerdictEl = doc.getElementById("exam-verdict");
   function verdictFor(score) {
-    if (score >= 90) return "可以当「小老师」了：挑一课讲给家人听。";
+    if (score >= 90) return "已经讲得通透：挑一课讲给同事听，检验是否真懂。";
     if (score >= 75) return "基本掌握：把错题重做一遍，再讲给别人听。";
-    if (score >= 60) return "还不够稳：回到讲义，重读每课的「一句话带走」。";
-    return "先别急着考试：把 24 课再过一遍，每天 25 分钟。";
+    if (score >= 60) return "还不够稳：回到讲义，重读每课的「核心结论」。";
+    return "先别急着测验：把 24 课复盘一遍，每天 25 分钟。";
   }
   function paintExam() {
     if (!examScoreEl) return;
@@ -112,7 +112,7 @@
   }
   paintExam();
 
-  /* ---------- 讲给家人听评分表 ---------- */
+  /* ---------- 讲给同事听评分表 ---------- */
   var rubricTotal = doc.getElementById("rubric-total");
   var rubricVerdict = doc.getElementById("rubric-verdict");
   function paintRubric() {
@@ -120,8 +120,8 @@
     var total = state.rubric.reduce(function (sum, value) { return sum + (Number(value) || 0); }, 0);
     rubricTotal.textContent = String(total);
     if (rubricVerdict) {
-      rubricVerdict.textContent = total >= 16 ? "可以当「小老师」了。"
-        : (total >= 12 ? "基本掌握，再复述一遍。" : "回到讲义，把「一句话带走」重读，再讲一次。");
+      rubricVerdict.textContent = total >= 16 ? "可以当「讲得通透」了。"
+        : (total >= 12 ? "基本掌握，再复述一遍。" : "回到讲义，把「核心结论」重读，再讲一次。");
     }
   }
   all("select[data-rubric]").forEach(function (select) {
@@ -227,7 +227,7 @@
     applyFilter();
   }
 
-  /* ---------- 24 天复习表 ---------- */
+  /* ---------- 24 天复习计划 ---------- */
   var reviewCount = doc.getElementById("review-count");
   function paintDays() {
     if (reviewCount) reviewCount.textContent = state.days.length + " / " + DAY_TOTAL + " 天";

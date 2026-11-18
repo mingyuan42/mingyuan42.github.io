@@ -6,7 +6,7 @@
     <atom:link href="https://chenmingyuan.site/ja/rss.xml" rel="self" type="application/rss+xml"/>
     <language>ja-JP</language>
     <description>Christopher の個人ブログ兼ポートフォリオ。ゼロから始める読書講座が 12 サイト、リー・シャオライ『経済的自由への道』や『タートル流投資の魔術』を含み、ほかにタレブの制作ノート、投資ノート、十年の実践記録も。EmDash CMS で駆動。</description>
-    <lastBuildDate>Mon, 16 Nov 2026 11:44:46 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 18 Nov 2026 14:37:59 GMT</lastBuildDate>
     <item>
       <title>彼はすべての変数を計算し尽くしたのに、良心がどれだけ耐えられるかだけは計算しなかった</title>
       <link>https://chenmingyuan.site/ja/blog/betrayal-conscience-load.html</link>
@@ -68,7 +68,7 @@
       <link>https://chenmingyuan.site/ja/blog/why-taleb-for-kids.html</link>
       <guid isPermaLink="true">https://chenmingyuan.site/ja/blog/why-taleb-for-kids.html</guid>
       <pubDate>Sat, 03 Oct 2026 10:00:00 GMT</pubDate>
-      <description>分厚い五冊も、じつは一つの問いに答えているだけです。世界はよく突然豹変する、私たちはどうすればよいのか。私はそれらを12回の授業、32枚のカード、21日間の復習表に分け、この講がどう設計されたかを話します。</description>
+      <description>分厚い5冊の本が答えるのは、じつは一つの問いだけです。世界は突然顔を変えるのが好き——私たちはどうすればいいのか。12講、32枚の暗記カード、21日間の復習計画に組み直して、この講座の設計を説明します。</description>
     </item>
   </channel>
 </rss>
